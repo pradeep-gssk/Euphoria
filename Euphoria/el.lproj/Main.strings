@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "SignIn"; ObjectID = "QFM-zG-gjF"; */
+"QFM-zG-gjF.normalTitle" = "SignIn";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Re9-Sg-DBG"; */
+"Re9-Sg-DBG.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Facebook"; ObjectID = "mha-h9-fmT"; */
+"mha-h9-fmT.normalTitle" = "Facebook";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "tyQ-k6-bM4"; */
+"tyQ-k6-bM4.placeholder" = "Email";

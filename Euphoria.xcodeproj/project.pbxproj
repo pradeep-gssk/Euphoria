@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		252701C181E4E18D368E57AD /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE72C4D7830F19A8CEF6F8AD /* Pods_Euphoria.framework */; };
+		DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5762209E226000BBE056 /* AppDelegate.swift */; };
+		DE7D5768209E226000BBE056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7D5766209E226000BBE056 /* Main.storyboard */; };
+		DE7D576A209E226100BBE056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7D5769209E226100BBE056 /* Assets.xcassets */; };
+		DE7D576D209E226100BBE056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7D576B209E226100BBE056 /* LaunchScreen.storyboard */; };
+		DE7D5778209E226100BBE056 /* EuphoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5777209E226100BBE056 /* EuphoriaTests.swift */; };
+		DE7D5783209E226100BBE056 /* EuphoriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5782209E226100BBE056 /* EuphoriaUITests.swift */; };
+		DE7D5792209E257B00BBE056 /* EUUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5791209E257B00BBE056 /* EUUser.swift */; };
+		DE7D5795209E25E900BBE056 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5794209E25E900BBE056 /* Enums.swift */; };
+		DE7D5797209E268900BBE056 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5796209E268900BBE056 /* Constants.swift */; };
+		DE7D579A209E28DA00BBE056 /* FacebookHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5799209E28DA00BBE056 /* FacebookHelper.swift */; };
+		DE7D57A2209E32A900BBE056 /* EULoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D57A1209E32A900BBE056 /* EULoginViewController.swift */; };
+		DE7D57A5209E32E100BBE056 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D57A4209E32E100BBE056 /* UIViewController+.swift */; };
+		DE7D57A7209E33F100BBE056 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D57A6209E33F100BBE056 /* String+.swift */; };
+		DE7D57EE209E36E600BBE056 /* euphoria.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE7D57F0209E36E600BBE056 /* euphoria.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE7D5774209E226100BBE056 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE7D5757209E226000BBE056 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE7D575E209E226000BBE056;
+			remoteInfo = Euphoria;
+		};
+		DE7D577F209E226100BBE056 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE7D5757209E226000BBE056 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE7D575E209E226000BBE056;
+			remoteInfo = Euphoria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D950DF852468DECD785155A /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
+		499E3F93819D1BD43EB10375 /* Pods-Euphoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.debug.xcconfig"; sourceTree = "<group>"; };
+		DE72C4D7830F19A8CEF6F8AD /* Pods_Euphoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euphoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7D575F209E226000BBE056 /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7D5762209E226000BBE056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE7D5767209E226000BBE056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE7D5769209E226100BBE056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE7D576C209E226100BBE056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE7D576E209E226100BBE056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7D5773209E226100BBE056 /* EuphoriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuphoriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7D5777209E226100BBE056 /* EuphoriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuphoriaTests.swift; sourceTree = "<group>"; };
+		DE7D5779209E226100BBE056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7D577E209E226100BBE056 /* EuphoriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuphoriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7D5782209E226100BBE056 /* EuphoriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuphoriaUITests.swift; sourceTree = "<group>"; };
+		DE7D5784209E226100BBE056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7D5791209E257B00BBE056 /* EUUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUUser.swift; sourceTree = "<group>"; };
+		DE7D5794209E25E900BBE056 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		DE7D5796209E268900BBE056 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DE7D5799209E28DA00BBE056 /* FacebookHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookHelper.swift; sourceTree = "<group>"; };
+		DE7D57A1209E32A900BBE056 /* EULoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EULoginViewController.swift; sourceTree = "<group>"; };
+		DE7D57A4209E32E100BBE056 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		DE7D57A6209E33F100BBE056 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		DE7D57EA209E36C200BBE056 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Main.strings; sourceTree = "<group>"; };
+		DE7D57EB209E36C200BBE056 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		DE7D57EF209E36E600BBE056 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/euphoria.strings; sourceTree = "<group>"; };
+		DE7D57F1209E36EB00BBE056 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/euphoria.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE7D575C209E226000BBE056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252701C181E4E18D368E57AD /* Pods_Euphoria.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7D5770209E226100BBE056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7D577B209E226100BBE056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EE0787978C9BE7214ABCD7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE72C4D7830F19A8CEF6F8AD /* Pods_Euphoria.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D68AD015CB3ED249D62A9DF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				499E3F93819D1BD43EB10375 /* Pods-Euphoria.debug.xcconfig */,
+				2D950DF852468DECD785155A /* Pods-Euphoria.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE7D5756209E226000BBE056 = {
+			isa = PBXGroup;
+			children = (
+				DE7D5761209E226000BBE056 /* Euphoria */,
+				DE7D5776209E226100BBE056 /* EuphoriaTests */,
+				DE7D5781209E226100BBE056 /* EuphoriaUITests */,
+				DE7D5760209E226000BBE056 /* Products */,
+				D68AD015CB3ED249D62A9DF2 /* Pods */,
+				2EE0787978C9BE7214ABCD7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE7D5760209E226000BBE056 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D575F209E226000BBE056 /* Euphoria.app */,
+				DE7D5773209E226100BBE056 /* EuphoriaTests.xctest */,
+				DE7D577E209E226100BBE056 /* EuphoriaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE7D5761209E226000BBE056 /* Euphoria */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D5762209E226000BBE056 /* AppDelegate.swift */,
+				DE7D57A3209E32C100BBE056 /* Extensions */,
+				DE7D5798209E28BD00BBE056 /* Helper */,
+				DE7D5790209E256100BBE056 /* Models */,
+				DE7D5793209E25D400BBE056 /* Constants */,
+				DE7D579B209E2D1100BBE056 /* ViewController */,
+				DE7D5766209E226000BBE056 /* Main.storyboard */,
+				DE7D5769209E226100BBE056 /* Assets.xcassets */,
+				DE7D576B209E226100BBE056 /* LaunchScreen.storyboard */,
+				DE7D576E209E226100BBE056 /* Info.plist */,
+				DE7D57F0209E36E600BBE056 /* euphoria.strings */,
+			);
+			path = Euphoria;
+			sourceTree = "<group>";
+		};
+		DE7D5776209E226100BBE056 /* EuphoriaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D5777209E226100BBE056 /* EuphoriaTests.swift */,
+				DE7D5779209E226100BBE056 /* Info.plist */,
+			);
+			path = EuphoriaTests;
+			sourceTree = "<group>";
+		};
+		DE7D5781209E226100BBE056 /* EuphoriaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D5782209E226100BBE056 /* EuphoriaUITests.swift */,
+				DE7D5784209E226100BBE056 /* Info.plist */,
+			);
+			path = EuphoriaUITests;
+			sourceTree = "<group>";
+		};
+		DE7D5790209E256100BBE056 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D5791209E257B00BBE056 /* EUUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE7D5793209E25D400BBE056 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D5794209E25E900BBE056 /* Enums.swift */,
+				DE7D5796209E268900BBE056 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DE7D5798209E28BD00BBE056 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D5799209E28DA00BBE056 /* FacebookHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DE7D579B209E2D1100BBE056 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D57A0209E329B00BBE056 /* Login */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DE7D57A0209E329B00BBE056 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D57A1209E32A900BBE056 /* EULoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DE7D57A3209E32C100BBE056 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D57A4209E32E100BBE056 /* UIViewController+.swift */,
+				DE7D57A6209E33F100BBE056 /* String+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE7D575E209E226000BBE056 /* Euphoria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7D5787209E226100BBE056 /* Build configuration list for PBXNativeTarget "Euphoria" */;
+			buildPhases = (
+				13F06288D5E0D612D6AC2EEE /* [CP] Check Pods Manifest.lock */,
+				DE7D575B209E226000BBE056 /* Sources */,
+				DE7D575C209E226000BBE056 /* Frameworks */,
+				DE7D575D209E226000BBE056 /* Resources */,
+				A0DE93618BA5210387220E30 /* [CP] Embed Pods Frameworks */,
+				8A474A1277D36F5B230D87B3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Euphoria;
+			productName = Euphoria;
+			productReference = DE7D575F209E226000BBE056 /* Euphoria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE7D5772209E226100BBE056 /* EuphoriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7D578A209E226100BBE056 /* Build configuration list for PBXNativeTarget "EuphoriaTests" */;
+			buildPhases = (
+				DE7D576F209E226100BBE056 /* Sources */,
+				DE7D5770209E226100BBE056 /* Frameworks */,
+				DE7D5771209E226100BBE056 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE7D5775209E226100BBE056 /* PBXTargetDependency */,
+			);
+			name = EuphoriaTests;
+			productName = EuphoriaTests;
+			productReference = DE7D5773209E226100BBE056 /* EuphoriaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE7D577D209E226100BBE056 /* EuphoriaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7D578D209E226100BBE056 /* Build configuration list for PBXNativeTarget "EuphoriaUITests" */;
+			buildPhases = (
+				DE7D577A209E226100BBE056 /* Sources */,
+				DE7D577B209E226100BBE056 /* Frameworks */,
+				DE7D577C209E226100BBE056 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE7D5780209E226100BBE056 /* PBXTargetDependency */,
+			);
+			name = EuphoriaUITests;
+			productName = EuphoriaUITests;
+			productReference = DE7D577E209E226100BBE056 /* EuphoriaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE7D5757209E226000BBE056 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Guduru, Pradeep(AWF)";
+				TargetAttributes = {
+					DE7D575E209E226000BBE056 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					DE7D5772209E226100BBE056 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DE7D575E209E226000BBE056;
+					};
+					DE7D577D209E226100BBE056 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DE7D575E209E226000BBE056;
+					};
+				};
+			};
+			buildConfigurationList = DE7D575A209E226000BBE056 /* Build configuration list for PBXProject "Euphoria" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				el,
+			);
+			mainGroup = DE7D5756209E226000BBE056;
+			productRefGroup = DE7D5760209E226000BBE056 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE7D575E209E226000BBE056 /* Euphoria */,
+				DE7D5772209E226100BBE056 /* EuphoriaTests */,
+				DE7D577D209E226100BBE056 /* EuphoriaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE7D575D209E226000BBE056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7D576D209E226100BBE056 /* LaunchScreen.storyboard in Resources */,
+				DE7D57EE209E36E600BBE056 /* euphoria.strings in Resources */,
+				DE7D576A209E226100BBE056 /* Assets.xcassets in Resources */,
+				DE7D5768209E226000BBE056 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7D5771209E226100BBE056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7D577C209E226100BBE056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13F06288D5E0D612D6AC2EEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Euphoria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A474A1277D36F5B230D87B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0DE93618BA5210387220E30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE7D575B209E226000BBE056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7D57A5209E32E100BBE056 /* UIViewController+.swift in Sources */,
+				DE7D579A209E28DA00BBE056 /* FacebookHelper.swift in Sources */,
+				DE7D57A7209E33F100BBE056 /* String+.swift in Sources */,
+				DE7D5792209E257B00BBE056 /* EUUser.swift in Sources */,
+				DE7D5795209E25E900BBE056 /* Enums.swift in Sources */,
+				DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */,
+				DE7D57A2209E32A900BBE056 /* EULoginViewController.swift in Sources */,
+				DE7D5797209E268900BBE056 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7D576F209E226100BBE056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7D5778209E226100BBE056 /* EuphoriaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7D577A209E226100BBE056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7D5783209E226100BBE056 /* EuphoriaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE7D5775209E226100BBE056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE7D575E209E226000BBE056 /* Euphoria */;
+			targetProxy = DE7D5774209E226100BBE056 /* PBXContainerItemProxy */;
+		};
+		DE7D5780209E226100BBE056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE7D575E209E226000BBE056 /* Euphoria */;
+			targetProxy = DE7D577F209E226100BBE056 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE7D5766209E226000BBE056 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE7D5767209E226000BBE056 /* Base */,
+				DE7D57EA209E36C200BBE056 /* el */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE7D576B209E226100BBE056 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE7D576C209E226100BBE056 /* Base */,
+				DE7D57EB209E36C200BBE056 /* el */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DE7D57F0209E36E600BBE056 /* euphoria.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE7D57EF209E36E600BBE056 /* en */,
+				DE7D57F1209E36EB00BBE056 /* el */,
+			);
+			name = euphoria.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE7D5785209E226100BBE056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE7D5786209E226100BBE056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE7D5788209E226100BBE056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499E3F93819D1BD43EB10375 /* Pods-Euphoria.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Euphoria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euphoria.alpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE7D5789209E226100BBE056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D950DF852468DECD785155A /* Pods-Euphoria.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Euphoria/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.euphoria.alpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE7D578B209E226100BBE056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EuphoriaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Pradeep.EuphoriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Euphoria.app/Euphoria";
+			};
+			name = Debug;
+		};
+		DE7D578C209E226100BBE056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EuphoriaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Pradeep.EuphoriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Euphoria.app/Euphoria";
+			};
+			name = Release;
+		};
+		DE7D578E209E226100BBE056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EuphoriaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Pradeep.EuphoriaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Euphoria;
+			};
+			name = Debug;
+		};
+		DE7D578F209E226100BBE056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EuphoriaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Pradeep.EuphoriaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Euphoria;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE7D575A209E226000BBE056 /* Build configuration list for PBXProject "Euphoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7D5785209E226100BBE056 /* Debug */,
+				DE7D5786209E226100BBE056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE7D5787209E226100BBE056 /* Build configuration list for PBXNativeTarget "Euphoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7D5788209E226100BBE056 /* Debug */,
+				DE7D5789209E226100BBE056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE7D578A209E226100BBE056 /* Build configuration list for PBXNativeTarget "EuphoriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7D578B209E226100BBE056 /* Debug */,
+				DE7D578C209E226100BBE056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE7D578D209E226100BBE056 /* Build configuration list for PBXNativeTarget "EuphoriaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7D578E209E226100BBE056 /* Debug */,
+				DE7D578F209E226100BBE056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE7D5757209E226000BBE056 /* Project object */;
+}

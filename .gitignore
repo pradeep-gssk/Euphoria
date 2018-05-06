@@ -1,0 +1,37 @@
+.DS_Store
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea
+*.hmap
+*.xccheckout
+*.ipa
+*.xcuserstate
+*.xcscmblueprint
+
+# CocoaPods
+#
+# the pros and cons are mentioned at:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
+#
+
+Pods/
+Build/
+consumervenice.xcworkspace/xcshareddata/consumervenice.xcscmblueprint
+
+# Bundler
+
+.bundle
+deviceinfo.json
+Gemfile.lock
+Podfile.lock
