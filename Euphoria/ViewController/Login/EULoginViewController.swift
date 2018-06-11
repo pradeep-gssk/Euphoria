@@ -16,7 +16,8 @@ class EULoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
-
+    @IBOutlet weak var createNewAccountButton: UIButton!
+    
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -24,10 +25,16 @@ class EULoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.facebookButton.rx.tap.subscribe({[weak self] state in
-            guard let strongSelf = self else { return }
-            strongSelf.loginWithFacebook()
-        }).disposed(by: self.disposeBag)        
+        self.emailTextField.setLeftPaddingPoints(10)
+        self.emailTextField.setRightPaddingPoints(10)
+        
+        self.passwordTextField.setLeftPaddingPoints(10)
+        self.passwordTextField.setRightPaddingPoints(10)
+        
+//        self.facebookButton.rx.tap.subscribe({[weak self] state in
+//            guard let strongSelf = self else { return }
+//            strongSelf.loginWithFacebook()
+//        }).disposed(by: self.disposeBag)        
     }
     
     func loginWithFacebook() {

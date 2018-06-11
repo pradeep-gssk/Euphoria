@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		252701C181E4E18D368E57AD /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE72C4D7830F19A8CEF6F8AD /* Pods_Euphoria.framework */; };
+		5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */; };
 		52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE636020CDD3F700A532DE /* UITextField+.swift */; };
 		DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5762209E226000BBE056 /* AppDelegate.swift */; };
 		DE7D5768209E226000BBE056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7D5766209E226000BBE056 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		2D950DF852468DECD785155A /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
 		499E3F93819D1BD43EB10375 /* Pods-Euphoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.debug.xcconfig"; sourceTree = "<group>"; };
+		5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EURegistrationViewController.swift; sourceTree = "<group>"; };
 		52FE636020CDD3F700A532DE /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		DE72C4D7830F19A8CEF6F8AD /* Pods_Euphoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euphoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7D575F209E226000BBE056 /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,14 @@
 				DE72C4D7830F19A8CEF6F8AD /* Pods_Euphoria.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5248B85020CE38A600BF4C16 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		D68AD015CB3ED249D62A9DF2 /* Pods */ = {
@@ -202,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				DE7D57A0209E329B00BBE056 /* Login */,
+				5248B85020CE38A600BF4C16 /* Registration */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -417,6 +428,7 @@
 				52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */,
 				DE7D57A2209E32A900BBE056 /* EULoginViewController.swift in Sources */,
 				DE7D5797209E268900BBE056 /* Constants.swift in Sources */,
+				5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
