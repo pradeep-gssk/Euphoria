@@ -25,11 +25,9 @@ class EULoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.emailTextField.setLeftPaddingPoints(10)
-        self.emailTextField.setRightPaddingPoints(10)
+        self.emailTextField.setPaddingPoints(10)
         
-        self.passwordTextField.setLeftPaddingPoints(10)
-        self.passwordTextField.setRightPaddingPoints(10)
+        self.passwordTextField.setPaddingPoints(10)
         
 //        self.facebookButton.rx.tap.subscribe({[weak self] state in
 //            guard let strongSelf = self else { return }

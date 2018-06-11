@@ -20,16 +20,29 @@ class EURegistrationViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        backButton.rx.tap.subscribe({[weak self] state in
+        
+        self.firstNameTextField.setPaddingPoints(10)
+        self.lastNameTextField.setPaddingPoints(10)
+        self.dobTextField.setPaddingPoints(10)
+        self.emailTextField.setPaddingPoints(10)
+        self.passwordTextField.setPaddingPoints(10)
+        
+        self.backButton.rx.tap.subscribe({[weak self] state in
             guard let strongSelf = self else { return }
             strongSelf.navigationController?.popViewController(animated: true)
         }).disposed(by: self.disposeBag)
+        
+        self.dobTextField.inputView = self.datePicker
+        
+        self.datePicker.rx.value.subscribe({[weak self] date in
+            print(date.element)
+        }).disposed(by: self.disposeBag)        
     }
 
     override func didReceiveMemoryWarning() {
