@@ -19,15 +19,27 @@ class EULoginViewController: UIViewController {
     @IBOutlet weak var createNewAccountButton: UIButton!
     
     private let disposeBag = DisposeBag()
+    
+    func removeConcentViewIfExist() {
+        guard let navigationController = self.navigationController, navigationController.viewControllers.first is EUConcentViewController else {
+            return
+        }
+        
+        var viewControllers = navigationController.viewControllers
+        viewControllers.removeFirst()
+        navigationController.viewControllers = viewControllers
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
+        self.removeConcentViewIfExist()
         self.emailTextField.setPaddingPoints(10)
         
         self.passwordTextField.setPaddingPoints(10)
+        
+        self.signInButton.rx.tap.subscribe({[weak self] state in
+        }).disposed(by: self.disposeBag)
         
 //        self.facebookButton.rx.tap.subscribe({[weak self] state in
 //            guard let strongSelf = self else { return }

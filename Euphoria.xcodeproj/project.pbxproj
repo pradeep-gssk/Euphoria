@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		252701C181E4E18D368E57AD /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE72C4D7830F19A8CEF6F8AD /* Pods_Euphoria.framework */; };
+		521E474620D714CC00EB47CC /* EUConcentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E474520D714CC00EB47CC /* EUConcentViewController.swift */; };
+		521E474820D7186400EB47CC /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E474720D7186400EB47CC /* UIColor+.swift */; };
 		5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */; };
 		52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE636020CDD3F700A532DE /* UITextField+.swift */; };
 		DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5762209E226000BBE056 /* AppDelegate.swift */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		2D950DF852468DECD785155A /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
 		499E3F93819D1BD43EB10375 /* Pods-Euphoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.debug.xcconfig"; sourceTree = "<group>"; };
+		521E474520D714CC00EB47CC /* EUConcentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUConcentViewController.swift; sourceTree = "<group>"; };
+		521E474720D7186400EB47CC /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EURegistrationViewController.swift; sourceTree = "<group>"; };
 		52FE636020CDD3F700A532DE /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		DE72C4D7830F19A8CEF6F8AD /* Pods_Euphoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euphoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +110,14 @@
 				DE72C4D7830F19A8CEF6F8AD /* Pods_Euphoria.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		521E474420D714B100EB47CC /* Concent */ = {
+			isa = PBXGroup;
+			children = (
+				521E474520D714CC00EB47CC /* EUConcentViewController.swift */,
+			);
+			path = Concent;
 			sourceTree = "<group>";
 		};
 		5248B85020CE38A600BF4C16 /* Registration */ = {
@@ -211,6 +223,7 @@
 		DE7D579B209E2D1100BBE056 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				521E474420D714B100EB47CC /* Concent */,
 				DE7D57A0209E329B00BBE056 /* Login */,
 				5248B85020CE38A600BF4C16 /* Registration */,
 			);
@@ -231,6 +244,7 @@
 				DE7D57A4209E32E100BBE056 /* UIViewController+.swift */,
 				DE7D57A6209E33F100BBE056 /* String+.swift */,
 				52FE636020CDD3F700A532DE /* UITextField+.swift */,
+				521E474720D7186400EB47CC /* UIColor+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -424,10 +438,12 @@
 				DE7D57A7209E33F100BBE056 /* String+.swift in Sources */,
 				DE7D5792209E257B00BBE056 /* EUUser.swift in Sources */,
 				DE7D5795209E25E900BBE056 /* Enums.swift in Sources */,
+				521E474820D7186400EB47CC /* UIColor+.swift in Sources */,
 				DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */,
 				52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */,
 				DE7D57A2209E32A900BBE056 /* EULoginViewController.swift in Sources */,
 				DE7D5797209E268900BBE056 /* Constants.swift in Sources */,
+				521E474620D714CC00EB47CC /* EUConcentViewController.swift in Sources */,
 				5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
