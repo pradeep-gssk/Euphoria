@@ -10,25 +10,25 @@ import UIKit
 
 extension UITextField {
     
-    func setPaddingPoints(_ amount:CGFloat){
-        self.setLeftPaddingPoints(amount)
-        self.setRightPaddingPoints(amount)
+    func setPaddingPointsOnLeft(_ left:CGFloat, andRight right:CGFloat){
+        self.setLeftPaddingPoints(left)
+        self.setRightPaddingPoints(right)
     }
     
-    func setLeftPaddingPoints(_ amount:CGFloat){
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
+    func setLeftPaddingPoints(_ value:CGFloat){
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: value, height: self.frame.size.height))
         self.leftView = paddingView
         self.leftViewMode = .always
     }
     
-    func setRightPaddingPoints(_ amount:CGFloat) {
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
+    func setRightPaddingPoints(_ value:CGFloat) {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: value, height: self.frame.size.height))
         self.rightView = paddingView
         self.rightViewMode = .always
     }
     
-    func desginView() {
-        self.setPaddingPoints(14)
+    func desginView(left:CGFloat = 14, right:CGFloat = 14) {
+        self.setPaddingPointsOnLeft(left, andRight: right)
         self.layer.masksToBounds = false
         self.layer.cornerRadius = 5.0
         self.layer.shadowColor = UIColor.color(red: 74, green: 74, blue: 74, alpha: 1).cgColor
@@ -37,7 +37,5 @@ extension UITextField {
         self.layer.shouldRasterize = true
         self.layer.shadowOpacity = 1.0
         self.layer.sublayerTransform = CATransform3DMakeTranslation(0, 7, 0)
-        
-        //myTextField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
     }
 }
