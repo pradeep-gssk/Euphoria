@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         if !UserDefaults.standard.bool(forKey: I_AGREE) {
-            self.window?.rootViewController = EUConcentViewController.viewControllerForConcentView()
+            self.window?.rootViewController = EUConcentViewController.loadConcentView()
         }
         
         return true

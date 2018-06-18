@@ -9,21 +9,37 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import WebKit
 
 class EUConcentViewController: UIViewController {
+    
+    static func loadConcentView() -> UIViewController {
+        self.htmlViewType = .Concent
+        return self.viewControllerForConcentView("ConcentNavViewController")
+    }
+    
+    static func loadPrivacyView() -> UIViewController {
+        self.htmlViewType = .Privacy
+        return self.viewControllerForConcentView("ConcentViewController")
+    }
 
-    static func viewControllerForConcentView() -> UIViewController {
+    private static func viewControllerForConcentView(_ identifier: String) -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: "ConcentNavViewController")
+        return storyboard.instantiateViewController(withIdentifier: identifier)
     }
     
     @IBOutlet weak var policyView: UIView!
     @IBOutlet weak var iagreeButton: UIButton!
+    @IBOutlet weak var webView: WKWebView!
+    
+    private static var htmlViewType: HtmlViewType = .Concent
+    
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.designViews()
+        self.loadWebView()
         
         self.iagreeButton.rx.tap.subscribe({[weak self] state in
             guard let strongSelf = self else { return }
@@ -41,6 +57,20 @@ class EUConcentViewController: UIViewController {
         self.policyView.layer.shadowOffset = CGSize(width: -1, height: 2)
         self.policyView.layer.shadowRadius = 4.0
         self.policyView.layer.shouldRasterize = true
+    }
+    
+    func loadWebView()  {
+        guard let path = Bundle.main.path(forResource: EUConcentViewController.htmlViewType.description, ofType: "html") else { return }
+        
+        do {
+            let htmlString = try String(contentsOfFile: path, encoding: .utf8)
+            DispatchQueue.main.async {
+                self.webView.loadHTMLString(htmlString, baseURL: nil)
+            }
+        }
+        catch {
+            print("error")
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -50,6 +50,7 @@ class EURegistrationTableViewController: UITableViewController {
     @IBOutlet weak var genderTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var checkBox: UIButton!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var pickerView: UIPickerView!
@@ -73,7 +74,12 @@ class EURegistrationTableViewController: UITableViewController {
         self.datePicker.rx.value.subscribe({[weak self] date in
             print(date.element)
         }).disposed(by: self.disposeBag)
-
+        
+        self.checkBox.rx.tap.subscribe({[weak self] date in
+            guard let strongSelf = self else { return }
+            let viewController = EUConcentViewController.loadPrivacyView()
+            strongSelf.navigationController?.show(viewController, sender: self)
+        }).disposed(by: self.disposeBag)
     }
 }
 

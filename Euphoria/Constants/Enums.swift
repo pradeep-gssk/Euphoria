@@ -17,3 +17,14 @@ enum LoginType : String {
     case GENERAL = "general"
     case FACEBOOK = "facebook"
 }
+
+enum HtmlViewType : String {
+    case Concent = "Concent"
+    case Privacy = "Privacy"
+    
+    var description : String {
+        get {
+            return self.rawValue
+        }
+    }
+}

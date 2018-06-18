@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		252701C181E4E18D368E57AD /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE72C4D7830F19A8CEF6F8AD /* Pods_Euphoria.framework */; };
+		520A50C220D788A800F57D3E /* Concent.html in Resources */ = {isa = PBXBuildFile; fileRef = 520A50C120D788A700F57D3E /* Concent.html */; };
+		520A50C420D793BC00F57D3E /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 520A50C320D793BC00F57D3E /* Privacy.html */; };
 		521E474620D714CC00EB47CC /* EUConcentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E474520D714CC00EB47CC /* EUConcentViewController.swift */; };
 		521E474820D7186400EB47CC /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E474720D7186400EB47CC /* UIColor+.swift */; };
 		5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		2D950DF852468DECD785155A /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
 		499E3F93819D1BD43EB10375 /* Pods-Euphoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.debug.xcconfig"; sourceTree = "<group>"; };
+		520A50C120D788A700F57D3E /* Concent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Concent.html; sourceTree = "<group>"; };
+		520A50C320D793BC00F57D3E /* Privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Privacy.html; sourceTree = "<group>"; };
 		521E474520D714CC00EB47CC /* EUConcentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUConcentViewController.swift; sourceTree = "<group>"; };
 		521E474720D7186400EB47CC /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EURegistrationViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				DE7D5769209E226100BBE056 /* Assets.xcassets */,
 				DE7D576B209E226100BBE056 /* LaunchScreen.storyboard */,
 				DE7D576E209E226100BBE056 /* Info.plist */,
+				520A50C120D788A700F57D3E /* Concent.html */,
+				520A50C320D793BC00F57D3E /* Privacy.html */,
 				DE7D57F0209E36E600BBE056 /* euphoria.strings */,
 			);
 			path = Euphoria;
@@ -357,7 +363,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7D576D209E226100BBE056 /* LaunchScreen.storyboard in Resources */,
+				520A50C220D788A800F57D3E /* Concent.html in Resources */,
 				DE7D57EE209E36E600BBE056 /* euphoria.strings in Resources */,
+				520A50C420D793BC00F57D3E /* Privacy.html in Resources */,
 				DE7D576A209E226100BBE056 /* Assets.xcassets in Resources */,
 				DE7D5768209E226000BBE056 /* Main.storyboard in Resources */,
 			);
