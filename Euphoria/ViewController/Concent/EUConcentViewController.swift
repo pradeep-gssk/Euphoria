@@ -27,6 +27,7 @@ class EUConcentViewController: UIViewController {
         
         self.iagreeButton.rx.tap.subscribe({[weak self] state in
             guard let strongSelf = self else { return }
+            UserDefaults.standard.set(true, forKey: I_AGREE)
             strongSelf.performSegue(withIdentifier: "ShowLoginView", sender: self)
         }).disposed(by: self.disposeBag)
     }

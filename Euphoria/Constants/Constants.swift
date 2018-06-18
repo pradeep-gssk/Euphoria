@@ -9,3 +9,4 @@
 import Foundation
 
 let USER_PROFILE_DATA = "user_profile_data"
+let I_AGREE = "i_agree"

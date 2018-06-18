@@ -26,4 +26,18 @@ extension UITextField {
         self.rightView = paddingView
         self.rightViewMode = .always
     }
+    
+    func desginView() {
+        self.setPaddingPoints(14)
+        self.layer.masksToBounds = false
+        self.layer.cornerRadius = 5.0
+        self.layer.shadowColor = UIColor.color(red: 74, green: 74, blue: 74, alpha: 1).cgColor
+        self.layer.shadowOffset = CGSize(width: -1, height: 2)
+        self.layer.shadowRadius = 2.0
+        self.layer.shouldRasterize = true
+        self.layer.shadowOpacity = 1.0
+        self.layer.sublayerTransform = CATransform3DMakeTranslation(0, 7, 0)
+        
+        //myTextField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
+    }
 }
