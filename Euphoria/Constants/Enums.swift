@@ -27,4 +27,13 @@ enum HtmlViewType : String {
             return self.rawValue
         }
     }
+    
+    var title : String {
+        switch self {
+        case .Concent:
+            return "I AGREE"
+        case .Privacy:
+            return "CONFIRM"
+        }
+    }
 }

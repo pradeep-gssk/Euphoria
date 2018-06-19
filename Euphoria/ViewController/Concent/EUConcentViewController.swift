@@ -43,8 +43,14 @@ class EUConcentViewController: UIViewController {
         
         self.iagreeButton.rx.tap.subscribe({[weak self] state in
             guard let strongSelf = self else { return }
-            UserDefaults.standard.set(true, forKey: I_AGREE)
-            strongSelf.performSegue(withIdentifier: "ShowLoginView", sender: self)
+            
+            switch EUConcentViewController.htmlViewType {
+            case .Concent:
+                UserDefaults.standard.set(true, forKey: I_AGREE)
+                strongSelf.performSegue(withIdentifier: "ShowLoginView", sender: self)
+            case .Privacy:
+                strongSelf.navigationController?.popViewController(animated: true)
+            }
         }).disposed(by: self.disposeBag)
     }
     
@@ -57,6 +63,8 @@ class EUConcentViewController: UIViewController {
         self.policyView.layer.shadowOffset = CGSize(width: -1, height: 2)
         self.policyView.layer.shadowRadius = 4.0
         self.policyView.layer.shouldRasterize = true
+        
+        self.iagreeButton.setTitle(EUConcentViewController.htmlViewType.title, for: .normal)
     }
     
     func loadWebView()  {
