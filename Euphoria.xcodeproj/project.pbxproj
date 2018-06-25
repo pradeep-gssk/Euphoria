@@ -12,6 +12,13 @@
 		520A50C420D793BC00F57D3E /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 520A50C320D793BC00F57D3E /* Privacy.html */; };
 		521E474620D714CC00EB47CC /* EUConcentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E474520D714CC00EB47CC /* EUConcentViewController.swift */; };
 		521E474820D7186400EB47CC /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E474720D7186400EB47CC /* UIColor+.swift */; };
+		523CDEA820E01F6100704B1F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CDEA720E01F6100704B1F /* Login.storyboard */; };
+		523CDEAC20E0289C00704B1F /* EUHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */; };
+		523CDEAE20E028B600704B1F /* EUNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEAD20E028B600704B1F /* EUNavigationController.swift */; };
+		523CDEB620E0393700704B1F /* EUQuestionnairesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEB520E0393700704B1F /* EUQuestionnairesTableViewController.swift */; };
+		523CDEB820E0396100704B1F /* Questionnaires.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CDEB720E0396100704B1F /* Questionnaires.storyboard */; };
+		523CDEF420E0A1D400704B1F /* EUQuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEF320E0A1D400704B1F /* EUQuestionnaireViewController.swift */; };
+		523CDEF820E0AB2600704B1F /* EUQuestionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEF720E0AB2600704B1F /* EUQuestionnaire.swift */; };
 		5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */; };
 		52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE636020CDD3F700A532DE /* UITextField+.swift */; };
 		DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5762209E226000BBE056 /* AppDelegate.swift */; };
@@ -54,6 +61,13 @@
 		520A50C320D793BC00F57D3E /* Privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Privacy.html; sourceTree = "<group>"; };
 		521E474520D714CC00EB47CC /* EUConcentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUConcentViewController.swift; sourceTree = "<group>"; };
 		521E474720D7186400EB47CC /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		523CDEA720E01F6100704B1F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHomeTableViewController.swift; sourceTree = "<group>"; };
+		523CDEAD20E028B600704B1F /* EUNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUNavigationController.swift; sourceTree = "<group>"; };
+		523CDEB520E0393700704B1F /* EUQuestionnairesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnairesTableViewController.swift; sourceTree = "<group>"; };
+		523CDEB720E0396100704B1F /* Questionnaires.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Questionnaires.storyboard; sourceTree = "<group>"; };
+		523CDEF320E0A1D400704B1F /* EUQuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireViewController.swift; sourceTree = "<group>"; };
+		523CDEF720E0AB2600704B1F /* EUQuestionnaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaire.swift; sourceTree = "<group>"; };
 		5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EURegistrationViewController.swift; sourceTree = "<group>"; };
 		52FE636020CDD3F700A532DE /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		DE72C4D7830F19A8CEF6F8AD /* Pods_Euphoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euphoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +138,25 @@
 			path = Concent;
 			sourceTree = "<group>";
 		};
+		523CDEAA20E0288200704B1F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				523CDEAD20E028B600704B1F /* EUNavigationController.swift */,
+				523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */,
+				523CDEB420E0392800704B1F /* Questionnaires */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		523CDEB420E0392800704B1F /* Questionnaires */ = {
+			isa = PBXGroup;
+			children = (
+				523CDEB520E0393700704B1F /* EUQuestionnairesTableViewController.swift */,
+				523CDEF320E0A1D400704B1F /* EUQuestionnaireViewController.swift */,
+			);
+			path = Questionnaires;
+			sourceTree = "<group>";
+		};
 		5248B85020CE38A600BF4C16 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +205,9 @@
 				DE7D5790209E256100BBE056 /* Models */,
 				DE7D5793209E25D400BBE056 /* Constants */,
 				DE7D579B209E2D1100BBE056 /* ViewController */,
+				523CDEA720E01F6100704B1F /* Login.storyboard */,
 				DE7D5766209E226000BBE056 /* Main.storyboard */,
+				523CDEB720E0396100704B1F /* Questionnaires.storyboard */,
 				DE7D5769209E226100BBE056 /* Assets.xcassets */,
 				DE7D576B209E226100BBE056 /* LaunchScreen.storyboard */,
 				DE7D576E209E226100BBE056 /* Info.plist */,
@@ -205,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				DE7D5791209E257B00BBE056 /* EUUser.swift */,
+				523CDEF720E0AB2600704B1F /* EUQuestionnaire.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,6 +268,7 @@
 				521E474420D714B100EB47CC /* Concent */,
 				DE7D57A0209E329B00BBE056 /* Login */,
 				5248B85020CE38A600BF4C16 /* Registration */,
+				523CDEAA20E0288200704B1F /* Home */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -364,10 +401,12 @@
 			files = (
 				DE7D576D209E226100BBE056 /* LaunchScreen.storyboard in Resources */,
 				520A50C220D788A800F57D3E /* Concent.html in Resources */,
+				523CDEA820E01F6100704B1F /* Login.storyboard in Resources */,
 				DE7D57EE209E36E600BBE056 /* euphoria.strings in Resources */,
 				520A50C420D793BC00F57D3E /* Privacy.html in Resources */,
 				DE7D576A209E226100BBE056 /* Assets.xcassets in Resources */,
 				DE7D5768209E226000BBE056 /* Main.storyboard in Resources */,
+				523CDEB820E0396100704B1F /* Questionnaires.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,11 +487,16 @@
 				DE7D5795209E25E900BBE056 /* Enums.swift in Sources */,
 				521E474820D7186400EB47CC /* UIColor+.swift in Sources */,
 				DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */,
+				523CDEAE20E028B600704B1F /* EUNavigationController.swift in Sources */,
 				52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */,
+				523CDEAC20E0289C00704B1F /* EUHomeTableViewController.swift in Sources */,
 				DE7D57A2209E32A900BBE056 /* EULoginViewController.swift in Sources */,
 				DE7D5797209E268900BBE056 /* Constants.swift in Sources */,
 				521E474620D714CC00EB47CC /* EUConcentViewController.swift in Sources */,
+				523CDEF820E0AB2600704B1F /* EUQuestionnaire.swift in Sources */,
 				5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */,
+				523CDEF420E0A1D400704B1F /* EUQuestionnaireViewController.swift in Sources */,
+				523CDEB620E0393700704B1F /* EUQuestionnairesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

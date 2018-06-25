@@ -24,7 +24,7 @@ class EUConcentViewController: UIViewController {
     }
 
     private static func viewControllerForConcentView(_ identifier: String) -> UIViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: identifier)
     }
     

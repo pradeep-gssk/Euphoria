@@ -19,9 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        if !UserDefaults.standard.bool(forKey: I_AGREE) {
-            self.window?.rootViewController = EUConcentViewController.loadConcentView()
-        }
+//        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
+//            self.showLoginView()
+//            return true
+//        }
         
         return true
     }
@@ -49,7 +50,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
-        print("came ehre")
         return true
     }
 
@@ -59,6 +59,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         return true
+    }
+    
+    func showLoginView()  {
+        guard UserDefaults.standard.bool(forKey: I_AGREE) else {
+            self.window?.rootViewController = EUConcentViewController.loadConcentView()
+            return
+        }
+        
+        let loginStoryboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
+        let navigationController = loginStoryboard.instantiateInitialViewController()
+        self.window?.rootViewController = navigationController
     }
 }
 

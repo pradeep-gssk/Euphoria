@@ -41,4 +41,14 @@ extension UIViewController {
         self.navigationController?.present(alert, animated: true, completion: {
         })
     }
+    
+    func stretchBlueImage(_ imageView: UIImageView) {
+        if let image = UIImage(named: "titleBlue") {
+            self.stretchTitleImage(image, imageView: imageView)
+        }
+    }
+    
+    private func stretchTitleImage(_ image: UIImage, imageView: UIImageView) {
+        imageView.image = image.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20), resizingMode: .stretch)
+    }
 }
