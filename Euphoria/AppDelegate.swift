@@ -19,10 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
-//        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
-//            self.showLoginView()
-//            return true
-//        }
+        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
+            self.showLoginView()
+            return true
+        }
         
         return true
     }
@@ -69,6 +69,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let loginStoryboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
         let navigationController = loginStoryboard.instantiateInitialViewController()
+        self.window?.rootViewController = navigationController
+    }
+    
+    func showHomeView(){
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let navigationController = mainStoryboard.instantiateInitialViewController()
         self.window?.rootViewController = navigationController
     }
 }

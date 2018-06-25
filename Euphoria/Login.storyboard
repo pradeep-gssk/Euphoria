@@ -28,14 +28,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TU8-Wh-N4b">
                                 <rect key="frame" x="37" y="40" width="300.5" height="580"/>
                                 <subviews>
-                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58y-mp-lfF">
+                                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oz5-va-Yia">
                                         <rect key="frame" x="20" y="14" width="260.5" height="466"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <wkWebViewConfiguration key="configuration">
-                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                            <wkPreferences key="preferences"/>
-                                        </wkWebViewConfiguration>
-                                    </wkWebView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </webView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pG-Ng-5Mb">
                                         <rect key="frame" x="76.5" y="500" width="149" height="40"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,12 +48,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="58y-mp-lfF" firstAttribute="leading" secondItem="TU8-Wh-N4b" secondAttribute="leading" constant="20" id="E2X-mB-ttq"/>
                                     <constraint firstAttribute="bottom" secondItem="6pG-Ng-5Mb" secondAttribute="bottom" constant="40" id="N1o-lG-Lko"/>
-                                    <constraint firstItem="6pG-Ng-5Mb" firstAttribute="top" secondItem="58y-mp-lfF" secondAttribute="bottom" constant="20" id="V2Q-ee-atC"/>
+                                    <constraint firstAttribute="trailing" secondItem="oz5-va-Yia" secondAttribute="trailing" constant="20" id="Nes-oO-0Dx"/>
+                                    <constraint firstItem="6pG-Ng-5Mb" firstAttribute="top" secondItem="oz5-va-Yia" secondAttribute="bottom" constant="20" id="Wh3-bB-S0y"/>
                                     <constraint firstItem="6pG-Ng-5Mb" firstAttribute="centerX" secondItem="TU8-Wh-N4b" secondAttribute="centerX" id="eE2-cx-SQA"/>
-                                    <constraint firstAttribute="trailing" secondItem="58y-mp-lfF" secondAttribute="trailing" constant="20" id="jgq-oy-z6i"/>
-                                    <constraint firstItem="58y-mp-lfF" firstAttribute="top" secondItem="TU8-Wh-N4b" secondAttribute="top" constant="14" id="vk5-kv-nu8"/>
+                                    <constraint firstItem="oz5-va-Yia" firstAttribute="top" secondItem="TU8-Wh-N4b" secondAttribute="top" constant="14" id="mTi-C6-jfl"/>
+                                    <constraint firstItem="oz5-va-Yia" firstAttribute="leading" secondItem="TU8-Wh-N4b" secondAttribute="leading" constant="20" id="r8P-HC-R5M"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPj-bV-tmo">
@@ -91,7 +87,7 @@
                     <connections>
                         <outlet property="iagreeButton" destination="6pG-Ng-5Mb" id="7zl-rh-b5I"/>
                         <outlet property="policyView" destination="TU8-Wh-N4b" id="8v7-Wx-oSH"/>
-                        <outlet property="webView" destination="58y-mp-lfF" id="CRy-co-2wu"/>
+                        <outlet property="webView" destination="oz5-va-Yia" id="V3u-6A-air"/>
                         <segue destination="7tf-33-OQm" kind="show" identifier="ShowLoginView" id="dav-8v-nWU"/>
                     </connections>
                 </viewController>
@@ -697,6 +693,6 @@ including the privacy policy</string>
         <image name="rectRedButton" width="248" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WMR-eh-Pv0"/>
+        <segue reference="dav-8v-nWU"/>
     </inferredMetricsTieBreakers>
 </document>

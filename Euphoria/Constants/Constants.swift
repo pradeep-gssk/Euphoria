@@ -6,7 +6,9 @@
 //  Copyright © 2018 Guduru, Pradeep(AWF). All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 let USER_PROFILE_DATA = "user_profile_data"
 let I_AGREE = "i_agree"
+
+let appDelegate = UIApplication.shared.delegate as! AppDelegate

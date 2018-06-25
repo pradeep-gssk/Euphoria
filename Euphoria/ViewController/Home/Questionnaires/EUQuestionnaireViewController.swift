@@ -19,6 +19,7 @@ class EUQuestionnaireViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var otherTextField: UITextField!
+    @IBOutlet weak var mainStackView: UIStackView!
     
     private let disposeBag = DisposeBag()
     private var currentIndex = 0
@@ -43,10 +44,17 @@ class EUQuestionnaireViewController: UIViewController {
         self.titleLabel.text = self.questionnaire.detail
         self.otherTextField.setPaddingPointsOnLeft(14, andRight: 14)
         
-//        let overlayIndicator = UIView(frame: CGRect(x: 0, y: 90, width: UIScreen.main.bounds.width, height: 35))
-//        overlayIndicator.backgroundColor = UIColor.red
-//        overlayIndicator.alpha = 0.5
-//        self.pickerView.addSubview(overlayIndicator)
+        self.mainStackView.spacing = (UIScreen.main.bounds.height > 480) ? 10 : 0
+        
+        let overlayIndicator = UIView(frame: CGRect(x: 0, y: 90, width: UIScreen.main.bounds.width, height: 35))
+        overlayIndicator.backgroundColor = UIColor.red
+        overlayIndicator.alpha = 0.5
+        self.pickerView.addSubview(overlayIndicator)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print(self.pickerView)
     }
     
     func showCurrentQuestionnaire() {
@@ -70,6 +78,5 @@ extension EUQuestionnaireViewController: UIPickerViewDelegate {
         let option = self.options[row]
         return NSAttributedString(string: option, attributes: [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "GillSans", size: 24) ?? UIFont.systemFont(ofSize: 24)])
     }
-    
 }
 

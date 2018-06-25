@@ -21,7 +21,11 @@ class EUQuestionnairesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.stretchBlueImage(self.titleImageView)
-        self.navigationController?.toolbar.barTintColor = UIColor(named: "toolBarColor")
+        if #available(iOS 11.0, *) {
+            self.navigationController?.toolbar.barTintColor = UIColor(named: "toolBarColor")
+        } else {
+            self.navigationController?.toolbar.barTintColor = UIColor(red: (250.0/255.0), green: (250.0/255.0), blue: (250.0/255.0), alpha: 0.9)
+        }
         self.tableView.tableFooterView = UIView()
         
         self.homeButton.rx.tap.subscribe({[weak self] state in

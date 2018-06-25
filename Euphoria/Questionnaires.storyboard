@@ -163,8 +163,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4gr-oL-3r4">
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a8A-aC-T7e">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="a8A-aC-T7e">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="399"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygI-Ez-FLO">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -195,26 +195,27 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xxs-Ka-4ug">
-                                                <rect key="frame" x="0.0" y="50" width="375" height="99"/>
+                                                <rect key="frame" x="0.0" y="50" width="375" height="83"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Which are the main activities and experiences you are most interest in?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnc-vZ-b8c">
-                                                        <rect key="frame" x="25" y="8" width="325" height="83"/>
+                                                        <rect key="frame" x="25" y="0.0" width="325" height="83"/>
                                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <edgeInsets key="layoutMargins" top="8" left="25" bottom="8" right="25"/>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="25" bottom="0.0" right="25"/>
                                             </stackView>
-                                            <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="srg-Nb-nBV">
-                                                <rect key="frame" x="0.0" y="149" width="375" height="216"/>
+                                            <pickerView contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="746" translatesAutoresizingMaskIntoConstraints="NO" id="srg-Nb-nBV">
+                                                <rect key="frame" x="0.0" y="133" width="375" height="216"/>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                                 <connections>
                                                     <outlet property="dataSource" destination="hYE-x0-XDq" id="Nar-WX-9En"/>
                                                     <outlet property="delegate" destination="hYE-x0-XDq" id="A2R-C0-ikB"/>
                                                 </connections>
                                             </pickerView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ky-fs-bM1">
-                                                <rect key="frame" x="0.0" y="365" width="375" height="50"/>
+                                                <rect key="frame" x="0.0" y="349" width="375" height="50"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Other" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fzb-mq-cOi">
                                                         <rect key="frame" x="104" y="9" width="167" height="32"/>
@@ -273,6 +274,10 @@
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titleBlue" translatesAutoresizingMaskIntoConstraints="NO" id="z90-Mf-PvN">
                                     <rect key="frame" x="0.0" y="0.0" width="145" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="145" id="Gxi-SQ-Vb9"/>
+                                        <constraint firstAttribute="height" constant="25" id="qAZ-2x-o9J"/>
+                                    </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTIONNAIRES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPd-te-kgt">
                                     <rect key="frame" x="0.0" y="0.0" width="145" height="25"/>
@@ -283,14 +288,12 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="z90-Mf-PvN" secondAttribute="trailing" id="En6-Ds-b77"/>
+                                <constraint firstItem="z90-Mf-PvN" firstAttribute="centerX" secondItem="9sy-tT-Bc0" secondAttribute="centerX" id="BtW-bN-idT"/>
                                 <constraint firstItem="CPd-te-kgt" firstAttribute="top" secondItem="9sy-tT-Bc0" secondAttribute="top" id="Ue4-Qp-cCM"/>
                                 <constraint firstAttribute="trailing" secondItem="CPd-te-kgt" secondAttribute="trailing" id="X6b-9W-3pN"/>
+                                <constraint firstItem="z90-Mf-PvN" firstAttribute="centerY" secondItem="9sy-tT-Bc0" secondAttribute="centerY" id="YmI-c9-PwV"/>
                                 <constraint firstItem="CPd-te-kgt" firstAttribute="leading" secondItem="9sy-tT-Bc0" secondAttribute="leading" id="doA-2h-g6h"/>
                                 <constraint firstAttribute="bottom" secondItem="CPd-te-kgt" secondAttribute="bottom" id="dzR-mA-Efk"/>
-                                <constraint firstItem="z90-Mf-PvN" firstAttribute="top" secondItem="9sy-tT-Bc0" secondAttribute="top" id="oIO-EA-9Cm"/>
-                                <constraint firstItem="z90-Mf-PvN" firstAttribute="leading" secondItem="9sy-tT-Bc0" secondAttribute="leading" id="wde-NG-Zg7"/>
-                                <constraint firstAttribute="bottom" secondItem="z90-Mf-PvN" secondAttribute="bottom" id="zsB-KG-mhk"/>
                             </constraints>
                         </view>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="34c-iR-ex9">
@@ -305,6 +308,7 @@
                     <connections>
                         <outlet property="backButton" destination="S2q-Aw-Gp7" id="lsi-OQ-LAN"/>
                         <outlet property="homeButton" destination="bsY-bP-KFo" id="iin-uh-QTz"/>
+                        <outlet property="mainStackView" destination="a8A-aC-T7e" id="tXk-eD-xQs"/>
                         <outlet property="otherTextField" destination="fzb-mq-cOi" id="6fM-wv-BHM"/>
                         <outlet property="pickerView" destination="srg-Nb-nBV" id="IcS-eg-xPo"/>
                         <outlet property="questionLabel" destination="Nnc-vZ-b8c" id="TDa-H0-85U"/>

@@ -30,7 +30,7 @@ class EUConcentViewController: UIViewController {
     
     @IBOutlet weak var policyView: UIView!
     @IBOutlet weak var iagreeButton: UIButton!
-    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var webView: UIWebView!
     
     private static var htmlViewType: HtmlViewType = .Concent
     
@@ -80,21 +80,4 @@ class EUConcentViewController: UIViewController {
             print("error")
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

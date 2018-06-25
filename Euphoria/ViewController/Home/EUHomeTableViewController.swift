@@ -18,7 +18,11 @@ class EUHomeTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.toolbar.barTintColor = UIColor(named: "navBarColor")
+        if #available(iOS 11.0, *) {
+            self.navigationController?.toolbar.barTintColor = UIColor(named: "navBarColor")
+        } else {
+            self.navigationController?.toolbar.barTintColor = UIColor(red: (243.0/255.0), green: (239.0/255.0), blue: (234.0/255.0), alpha: 1.0)
+        }
     }
     
     // MARK: - Table view delegate
