@@ -17,9 +17,6 @@ class EUQuestionnaireViewController: UIViewController {
     @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var pickerView: UIPickerView!
-    @IBOutlet weak var otherTextField: UITextField!
-    @IBOutlet weak var mainStackView: UIStackView!
     
     private let disposeBag = DisposeBag()
     private var currentIndex = 0
@@ -27,6 +24,7 @@ class EUQuestionnaireViewController: UIViewController {
     var questionnaire: EUQuestionnaire = EUQuestionnaire()
     
     let options: [String] = ["Relaxation", "Movement", "Healing", "Detox", "Food and nature", "Beauty/pampering", "Recovery", "Weight loss"]
+    var selectedOption: [Int: String] = [:]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,19 +40,10 @@ class EUQuestionnaireViewController: UIViewController {
         }).disposed(by: self.disposeBag)
         
         self.titleLabel.text = self.questionnaire.detail
-        self.otherTextField.setPaddingPointsOnLeft(14, andRight: 14)
-        
-        self.mainStackView.spacing = (UIScreen.main.bounds.height > 480) ? 10 : 0
         
         let overlayIndicator = UIView(frame: CGRect(x: 0, y: 90, width: UIScreen.main.bounds.width, height: 35))
         overlayIndicator.backgroundColor = UIColor.red
         overlayIndicator.alpha = 0.5
-        self.pickerView.addSubview(overlayIndicator)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print(self.pickerView)
     }
     
     func showCurrentQuestionnaire() {
@@ -62,21 +51,58 @@ class EUQuestionnaireViewController: UIViewController {
     }
 }
 
-extension EUQuestionnaireViewController: UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+extension EUQuestionnaireViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return self.options.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch section {
+        case 0:
+            return self.options.count
+        default:
+            return 1
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            let option = self.options[indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OptionCell", for: indexPath) as! EUQuestionnairesViewTableViewCell
+            
+            cell.accessoryType = (self.selectedOption[indexPath.row] != nil) ? .checkmark : .none
+            cell.titleLabel.text = option
+            return cell
+        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "OtherCell", for: indexPath) as! EUQuestionnairesViewTableViewCell
+        return cell
     }
 }
 
-extension EUQuestionnaireViewController: UIPickerViewDelegate {
-    
-    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        let option = self.options[row]
-        return NSAttributedString(string: option, attributes: [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont(name: "GillSans", size: 24) ?? UIFont.systemFont(ofSize: 24)])
+extension EUQuestionnaireViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (self.selectedOption[indexPath.row] != nil) {
+            self.selectedOption.removeValue(forKey: indexPath.row)
+        }
+        else {
+            self.selectedOption[indexPath.row] = ""
+        }
+        
+        tableView.reloadRows(at: [indexPath], with: .none)
     }
 }
 
+class EUQuestionnairesViewTableViewCell: UITableViewCell {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var otherTextField: UITextField!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        if let textField = self.otherTextField {
+            textField.setPaddingPointsOnLeft(14, andRight: 14)
+        }
+    }
+}

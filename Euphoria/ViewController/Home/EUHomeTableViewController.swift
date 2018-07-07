@@ -28,9 +28,26 @@ class EUHomeTableViewController: UITableViewController {
     // MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Questionnaires", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "QuestionnairesTableViewController")
-        self.navigationController?.show(viewController, sender: self)
+        
+        switch Home(rawValue: indexPath.row) {
+        case .Questionnaires?:
+            let storyboard = UIStoryboard(name: "Questionnaires", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "QuestionnairesTableViewController")
+            self.navigationController?.show(viewController, sender: self)
+        case .Diet?:
+            let storyboard = UIStoryboard(name: "Diet", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "DietTableViewController")
+            self.navigationController?.show(viewController, sender: self)
+        case .Exercises?:
+            let storyboard = UIStoryboard(name: "Exercises", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "ExerciseTableViewController")
+            self.navigationController?.show(viewController, sender: self)
+        default:
+            break
+        }
+        
+        
+        
     }
     
     @IBAction func unwindToHome(_ sender: UIStoryboardSegue) { }

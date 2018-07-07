@@ -51,4 +51,12 @@ extension UIViewController {
     private func stretchTitleImage(_ image: UIImage, imageView: UIImageView) {
         imageView.image = image.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20), resizingMode: .stretch)
     }
+    
+    func setToolBarColor() {
+        if #available(iOS 11.0, *) {
+            self.navigationController?.toolbar.barTintColor = UIColor(named: "toolBarColor")
+        } else {
+            self.navigationController?.toolbar.barTintColor = UIColor(red: (250.0/255.0), green: (250.0/255.0), blue: (250.0/255.0), alpha: 0.9)
+        }
+    }
 }

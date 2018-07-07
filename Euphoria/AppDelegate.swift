@@ -19,10 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
-            self.showLoginView()
-            return true
-        }
+//        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
+//            self.showLoginView()
+//            return true
+//        }
+        
+        self.showHomeView()
         
         return true
     }
