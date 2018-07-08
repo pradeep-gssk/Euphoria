@@ -22,9 +22,9 @@ class EUHomeTableViewController: UITableViewController {
         self.tableView.tableFooterView = UIView()
         
         self.settingsButton.rx.tap.bind(onNext: {
-            let model = self.getSettingsModel()
-            let viewController = self.getListViewController(model: model)
-            self.navigationController?.show(viewController, sender: model)
+            let viewModel = self.getSettingsModel()
+            let viewController = UIViewController.getListViewController(viewModel: viewModel)
+            self.navigationController?.show(viewController, sender: viewModel)
         }).disposed(by: self.disposeBag)
     }
     
@@ -37,72 +37,59 @@ class EUHomeTableViewController: UITableViewController {
         }
     }
     
-    func getViewController(storyboard: String, identifier: String) -> UIViewController {
-        let storyboard = UIStoryboard(name: storyboard, bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: identifier)
-    }
-    
-    func getListViewController(model: EUViewModel) -> EUListViewController {
-        let viewController = self.getViewController(storyboard: "Main", identifier: "ListViewController") as! EUListViewController
-        viewController.model = model
-        return viewController
-    }
-    
     func getQuestionnairesModel() -> EUViewModel {
-        let questionnaires: [EUItem] = [EUItem(title: "Q1", detail: "Questionnaire 1"), EUItem(title: "Q2", detail: "Questionnaire 2"), EUItem(title: "Q3", detail: "Questionnaire 3"), EUItem(title: "Q4", detail: "Questionnaire 4"), EUItem(title: "Q5", detail: "Questionnaire 5")]
-
+        let questionnaires = HomeType.Questionnaires.items
         let titleImage = UIImage(named: "titleBlue")?.stretch()
         let cellLayout = EUCellLayoutSettings(ovalImage: UIImage(named: "ovalBlue"), rectImage: UIImage(named: "rectangleBlue"))
-        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 145, height: 25), title: "QUESTIONNAIRES", titleImage: titleImage, detail: nil, cellLayout: cellLayout, homeType: .Questionnaires, items: questionnaires)
-        return EUListModel(layoutSettings: layoutSettings)
+        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 145, height: 25), title: HomeType.Questionnaires.title, titleImage: titleImage, detail: nil, cellLayout: cellLayout, homeType: .Questionnaires, items: questionnaires)
+        return EUQuestionnairesModel(layoutSettings: layoutSettings)
     }
     
     func getDietModel() -> EUViewModel {
-        let diets: [EUItem] = [EUItem(title: "F", detail: "Fruits"), EUItem(title: "V", detail: "Vegetables"), EUItem(title: "C", detail: "Cereals"), EUItem(title: "M", detail: "Meat"), EUItem(title: "F", detail: "Fish")]
-
+        let diets = HomeType.Diet.items
         let cellLayout = EUCellLayoutSettings(ovalImage: UIImage(named: "ovalGreen"), rectImage: UIImage(named: "rectangleGreen"))
-        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: "DIET", titleImage: UIImage(named: "titleGreen"), detail: nil, cellLayout: cellLayout, homeType: .Diet, items: diets)
-        return EUListModel(layoutSettings: layoutSettings)
+        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: HomeType.Diet.title, titleImage: UIImage(named: "titleGreen"), detail: nil, cellLayout: cellLayout, homeType: .Diet, items: diets)
+        return EUDietModel(layoutSettings: layoutSettings)
     }
     
     func getExercisesModel() -> EUViewModel {
-        let exercises: [EUItem] = [EUItem(title: "Y", detail: "Yoga"), EUItem(title: "P", detail: "Pilates"), EUItem(title: "R", detail: "Running"), EUItem(title: "C", detail: "Climbing"), EUItem(title: "Q", detail: "Qi Gong"), EUItem(title: "S", detail: "Stretching")]
+        let exercises = HomeType.Exercises.items
         
         let cellLayout = EUCellLayoutSettings(ovalImage: UIImage(named: "ovalRed"), rectImage: UIImage(named: "rectangleRed"))
-        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: "EXERCISES", titleImage: UIImage(named: "titleRed"), detail: nil, cellLayout: cellLayout, homeType: .Exercises, items: exercises)
-        return EUListModel(layoutSettings: layoutSettings)
+        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: HomeType.Exercises.title, titleImage: UIImage(named: "titleRed"), detail: nil, cellLayout: cellLayout, homeType: .Exercises, items: exercises)
+        return EUExercisesModel(layoutSettings: layoutSettings)
     }
     
     func getActivitiesModel() -> EUViewModel {
-        let activities: [EUItem] = [EUItem(title: "C", detail: "my Calendar")]
+        let activities = HomeType.Activities.items
         
         let cellLayout = EUCellLayoutSettings(ovalImage: UIImage(named: "ovalBrown"), rectImage: UIImage(named: "rectangleBrown"))
-        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: "ACTIVITIES", titleImage: UIImage(named: "titleBrown"), detail: nil, cellLayout: cellLayout, homeType: .Activities, items: activities)
-        return EUListModel(layoutSettings: layoutSettings)
+        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: HomeType.Activities.title, titleImage: UIImage(named: "titleBrown"), detail: nil, cellLayout: cellLayout, homeType: .Activities, items: activities)
+        return EUActivitiesModel(layoutSettings: layoutSettings)
     }
     
     func getHistoryModel() -> EUViewModel {
-        let history: [EUItem] = [EUItem(title: "F", detail: "my Face"), EUItem(title: "T", detail: "my Tongue")]
+        let history = HomeType.History.items
         
         let cellLayout = EUCellLayoutSettings(ovalImage: UIImage(named: "ovalBlue"), rectImage: UIImage(named: "rectangleBlue"))
-        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: "HISTORY", titleImage: UIImage(named: "titleBlue"), detail: nil, cellLayout: cellLayout, homeType: .History, items: history)
-        return EUListModel(layoutSettings: layoutSettings)
+        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: HomeType.History.title, titleImage: UIImage(named: "titleBlue"), detail: nil, cellLayout: cellLayout, homeType: .History, items: history)
+        return EUHistoryModel(layoutSettings: layoutSettings)
     }
     
     func getGalleryModel() -> EUViewModel {
-        let diets: [EUItem] = [EUItem(title: "V", detail: "Videos"), EUItem(title: "O", detail: "Other")]
+        let diets = HomeType.Gallery.items
         
         let cellLayout = EUCellLayoutSettings(ovalImage: UIImage(named: "ovalGreen"), rectImage: UIImage(named: "rectangleGreen"))
-        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: "GALLERY", titleImage: UIImage(named: "titleGreen"), detail: nil, cellLayout: cellLayout, homeType: .Gallery, items: diets)
-        return EUListModel(layoutSettings: layoutSettings)
+        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: HomeType.Gallery.title, titleImage: UIImage(named: "titleGreen"), detail: nil, cellLayout: cellLayout, homeType: .Gallery, items: diets)
+        return EUGalleryModel(layoutSettings: layoutSettings)
     }
     
     func getSettingsModel() -> EUViewModel {
-        let history: [EUItem] = [EUItem(title: "A", detail: "my Account"), EUItem(title: "S", detail: "Sign in options"), EUItem(title: "S", detail: "Sync your settings")]
+        let settings = HomeType.Settings.items
         
         let cellLayout = EUCellLayoutSettings(ovalImage: UIImage(named: "ovalBlue"), rectImage: UIImage(named: "rectangleBlue"))
-        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: "SETTINGS", titleImage: UIImage(named: "titleBlue"), detail: nil, cellLayout: cellLayout, homeType: .Settings, items: history)
-        return EUListModel(layoutSettings: layoutSettings)
+        let layoutSettings = EULayoutSettings(titleViewSize: CGSize(width: 93, height: 25), title: HomeType.Settings.title, titleImage: UIImage(named: "titleBlue"), detail: nil, cellLayout: cellLayout, homeType: .Settings, items: settings)
+        return EUSettingsModel(layoutSettings: layoutSettings)
     }
 
     // MARK: - Table view delegate
@@ -111,34 +98,34 @@ class EUHomeTableViewController: UITableViewController {
         
         switch HomeType(rawValue: indexPath.row) {
         case .Questionnaires?:
-            let model = self.getQuestionnairesModel()
-            let viewController = self.getListViewController(model: model)
-            self.navigationController?.show(viewController, sender: model)
+            let viewModel = self.getQuestionnairesModel()
+            let viewController = UIViewController.getListViewController(viewModel: viewModel)
+            self.navigationController?.show(viewController, sender: viewModel)
             
         case .Diet?:
-            let model = self.getDietModel()
-            let viewController = self.getListViewController(model: model)
-            self.navigationController?.show(viewController, sender: model)
+            let viewModel = self.getDietModel()
+            let viewController = UIViewController.getListViewController(viewModel: viewModel)
+            self.navigationController?.show(viewController, sender: viewModel)
             
         case .Exercises?:
-            let model = self.getExercisesModel()
-            let viewController = self.getListViewController(model: model)
-            self.navigationController?.show(viewController, sender: model)
+            let viewModel = self.getExercisesModel()
+            let viewController = UIViewController.getListViewController(viewModel: viewModel)
+            self.navigationController?.show(viewController, sender: viewModel)
             
         case .Activities?:
-            let model = self.getActivitiesModel()
-            let viewController = self.getListViewController(model: model)
-            self.navigationController?.show(viewController, sender: model)
+            let viewModel = self.getActivitiesModel()
+            let viewController = UIViewController.getListViewController(viewModel: viewModel)
+            self.navigationController?.show(viewController, sender: viewModel)
             
         case .History?:
-            let model = self.getHistoryModel()
-            let viewController = self.getListViewController(model: model)
-            self.navigationController?.show(viewController, sender: model)
+            let viewModel = self.getHistoryModel()
+            let viewController = UIViewController.getListViewController(viewModel: viewModel)
+            self.navigationController?.show(viewController, sender: viewModel)
             
         case .Gallery?:
-            let model = self.getGalleryModel()
-            let viewController = self.getListViewController(model: model)
-            self.navigationController?.show(viewController, sender: model)
+            let viewModel = self.getGalleryModel()
+            let viewController = UIViewController.getListViewController(viewModel: viewModel)
+            self.navigationController?.show(viewController, sender: viewModel)
             
         default:
             break

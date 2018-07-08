@@ -7,7 +7,10 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol EUViewModel: class {
     var layoutSettings: EULayoutSettings { get }
+    var selectedListItem: PublishSubject<EUItem> {get set}
+    var navigateToVC: Observable<(navigation: LCFNavigation, viewController: UIViewController)> {get}
 }

@@ -37,3 +37,8 @@ enum HtmlViewType : String {
         }
     }
 }
+
+enum LCFNavigation {
+    case push
+    case present
+}

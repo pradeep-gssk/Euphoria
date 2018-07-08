@@ -18,21 +18,20 @@ class EUListViewController: UITableViewController {
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var backButton: UIBarButtonItem!
     
-    var model: EUViewModel?
+    var viewModel: EUViewModel?
     private let disposeBag = DisposeBag()
     private var items = [EUItem]()
     private var cellLayout: EUCellLayoutSettings?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let viewModel = self.viewModel else { return }
         
-        if let model = self.model {
-            self.titleLabel.text = model.layoutSettings.title
-            self.titleImageView.image = model.layoutSettings.titleImage
-            self.titleView.frame = CGRect(origin: .zero, size: model.layoutSettings.titleViewSize)
-            self.items = model.layoutSettings.items
-            self.cellLayout = model.layoutSettings.cellLayout
-        }
+        self.titleLabel.text = viewModel.layoutSettings.title
+        self.titleImageView.image = viewModel.layoutSettings.titleImage
+        self.titleView.frame = CGRect(origin: .zero, size: viewModel.layoutSettings.titleViewSize)
+        self.items = viewModel.layoutSettings.items
+        self.cellLayout = viewModel.layoutSettings.cellLayout
         
         self.homeButton.rx.tap.subscribe({[weak self] state in
             self?.performSegue(withIdentifier: "GoToHome", sender: self)
@@ -41,11 +40,7 @@ class EUListViewController: UITableViewController {
         self.backButton.rx.tap.subscribe({[weak self] state in
             self?.navigationController?.popViewController(animated: true)
         }).disposed(by: self.disposeBag)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.bindViewModel()
     }
 
     // MARK: - Table view data source
@@ -68,6 +63,23 @@ class EUListViewController: UITableViewController {
         cell.detailLabel.text = item.detail
         
         return cell
+    }
+    
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let viewModel = self.viewModel else { return }
+        let item = self.items[indexPath.row]
+        viewModel.selectedListItem.onNext(item)
+    }
+}
+
+extension EUListViewController {
+    func bindViewModel() {
+        guard let viewModel = self.viewModel else { return }
+        viewModel.navigateToVC.observeOn(MainScheduler.instance).bind(onNext: {(navigation, viewController) in
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }).disposed(by: disposeBag)
     }
 }
 

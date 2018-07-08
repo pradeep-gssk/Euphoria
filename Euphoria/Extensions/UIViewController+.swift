@@ -42,15 +42,22 @@ extension UIViewController {
         })
     }
     
-//    func stretchBlueImage(_ imageView: UIImageView) {
-//        if let image = UIImage(named: "titleBlue") {
-//            self.stretchTitleImage(image, imageView: imageView)
-//        }
-//    }
-//
-//    private func stretchTitleImage(_ image: UIImage, imageView: UIImageView) {
-//        imageView.image = image.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20), resizingMode: .stretch)
-//    }
+    static func getViewController(storyboard: String, identifier: String) -> UIViewController {
+        let storyboard = UIStoryboard(name: storyboard, bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: identifier)
+    }
+    
+    static func getListViewController(viewModel: EUViewModel) -> EUListViewController {
+        let viewController = self.getViewController(storyboard: "Main", identifier: "ListViewController") as! EUListViewController
+        viewController.viewModel = viewModel
+        return viewController
+    }
+    
+    static func getVideosListViewController(viewModel: EUViewModel) -> EUVideosListViewController {
+        let viewController = self.getViewController(storyboard: "Main", identifier: "VideosListViewController") as! EUVideosListViewController
+        viewController.viewModel = viewModel
+        return viewController
+    }
     
     func setToolBarColor() {
         if #available(iOS 11.0, *) {
