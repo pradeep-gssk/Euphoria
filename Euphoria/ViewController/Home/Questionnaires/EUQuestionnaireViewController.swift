@@ -29,7 +29,7 @@ class EUQuestionnaireViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.stretchBlueImage(self.titleImageView)
+//        self.stretchBlueImage(self.titleImageView)
         
         self.homeButton.rx.tap.subscribe({[weak self] state in
             self?.performSegue(withIdentifier: "GoToHome", sender: self)

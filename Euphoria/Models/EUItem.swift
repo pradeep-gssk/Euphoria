@@ -1,15 +1,14 @@
 //
-//  EUQuestionnaire.swift
+//  EUItem.swift
 //  Euphoria
 //
-//  Created by Krishna Pradeep on 6/24/18.
+//  Created by Krishna Pradeep on 7/7/18.
 //  Copyright © 2018 Guduru, Pradeep(AWF). All rights reserved.
 //
 
 import Foundation
 
-
-struct EUQuestionnaire {
+struct EUItem {
     var title: String = ""
     var detail: String = ""
     
@@ -21,5 +20,3 @@ struct EUQuestionnaire {
         self.detail = detail
     }
 }
-
-

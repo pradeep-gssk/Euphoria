@@ -15,19 +15,24 @@
 		523CDEA820E01F6100704B1F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CDEA720E01F6100704B1F /* Login.storyboard */; };
 		523CDEAC20E0289C00704B1F /* EUHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */; };
 		523CDEAE20E028B600704B1F /* EUNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEAD20E028B600704B1F /* EUNavigationController.swift */; };
-		523CDEB620E0393700704B1F /* EUQuestionnairesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEB520E0393700704B1F /* EUQuestionnairesTableViewController.swift */; };
 		523CDEB820E0396100704B1F /* Questionnaires.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CDEB720E0396100704B1F /* Questionnaires.storyboard */; };
 		523CDEF420E0A1D400704B1F /* EUQuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEF320E0A1D400704B1F /* EUQuestionnaireViewController.swift */; };
 		523CDEF820E0AB2600704B1F /* EUQuestionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEF720E0AB2600704B1F /* EUQuestionnaire.swift */; };
 		5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */; };
+		526EF7E020F1B8A5001BDE62 /* EUItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7DF20F1B8A5001BDE62 /* EUItem.swift */; };
+		526EF7EE20F1C5FA001BDE62 /* EUListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7ED20F1C5FA001BDE62 /* EUListViewController.swift */; };
+		526EF7F220F1CAC6001BDE62 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7F120F1CAC6001BDE62 /* UIImage+.swift */; };
+		526EF7FA20F1D141001BDE62 /* EULayoutSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7F820F1D140001BDE62 /* EULayoutSettings.swift */; };
+		526EF7FB20F1D141001BDE62 /* EUListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7F920F1D140001BDE62 /* EUListModel.swift */; };
+		526EF7FD20F1D14F001BDE62 /* EUViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7FC20F1D14F001BDE62 /* EUViewModel.swift */; };
+		526EF7FF20F1D195001BDE62 /* EUVideosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7FE20F1D194001BDE62 /* EUVideosModel.swift */; };
+		526EF80120F1D19B001BDE62 /* EUVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF80020F1D19A001BDE62 /* EUVideosViewController.swift */; };
 		52C5D6E020F16598003F0A92 /* Exercises.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C5D6DF20F16598003F0A92 /* Exercises.storyboard */; };
-		52C5D6E320F1662A003F0A92 /* EUExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5D6E220F1662A003F0A92 /* EUExerciseTableViewController.swift */; };
 		52C5D6E520F16735003F0A92 /* EUExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5D6E420F16735003F0A92 /* EUExercise.swift */; };
 		52C5D6E720F1699A003F0A92 /* EUExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5D6E620F1699A003F0A92 /* EUExerciseListViewController.swift */; };
 		52C5D6E920F169BF003F0A92 /* EUExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5D6E820F169BF003F0A92 /* EUExerciseViewController.swift */; };
 		52C6753420ED6A81009EBD6E /* Diet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C6753320ED6A81009EBD6E /* Diet.storyboard */; };
 		52C6753620ED6BEA009EBD6E /* EUDiet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6753520ED6BEA009EBD6E /* EUDiet.swift */; };
-		52C6753920ED6C4A009EBD6E /* EUDietTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6753820ED6C4A009EBD6E /* EUDietTableViewController.swift */; };
 		52C6753B20ED6F1C009EBD6E /* EUDietListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6753A20ED6F1C009EBD6E /* EUDietListViewController.swift */; };
 		52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE636020CDD3F700A532DE /* UITextField+.swift */; };
 		DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5762209E226000BBE056 /* AppDelegate.swift */; };
@@ -71,19 +76,24 @@
 		523CDEA720E01F6100704B1F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHomeTableViewController.swift; sourceTree = "<group>"; };
 		523CDEAD20E028B600704B1F /* EUNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUNavigationController.swift; sourceTree = "<group>"; };
-		523CDEB520E0393700704B1F /* EUQuestionnairesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnairesTableViewController.swift; sourceTree = "<group>"; };
 		523CDEB720E0396100704B1F /* Questionnaires.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Questionnaires.storyboard; sourceTree = "<group>"; };
 		523CDEF320E0A1D400704B1F /* EUQuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireViewController.swift; sourceTree = "<group>"; };
 		523CDEF720E0AB2600704B1F /* EUQuestionnaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaire.swift; sourceTree = "<group>"; };
 		5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EURegistrationViewController.swift; sourceTree = "<group>"; };
+		526EF7DF20F1B8A5001BDE62 /* EUItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUItem.swift; sourceTree = "<group>"; };
+		526EF7ED20F1C5FA001BDE62 /* EUListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUListViewController.swift; sourceTree = "<group>"; };
+		526EF7F120F1CAC6001BDE62 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		526EF7F820F1D140001BDE62 /* EULayoutSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EULayoutSettings.swift; sourceTree = "<group>"; };
+		526EF7F920F1D140001BDE62 /* EUListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUListModel.swift; sourceTree = "<group>"; };
+		526EF7FC20F1D14F001BDE62 /* EUViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUViewModel.swift; sourceTree = "<group>"; };
+		526EF7FE20F1D194001BDE62 /* EUVideosModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUVideosModel.swift; sourceTree = "<group>"; };
+		526EF80020F1D19A001BDE62 /* EUVideosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUVideosViewController.swift; sourceTree = "<group>"; };
 		52C5D6DF20F16598003F0A92 /* Exercises.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercises.storyboard; sourceTree = "<group>"; };
-		52C5D6E220F1662A003F0A92 /* EUExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExerciseTableViewController.swift; sourceTree = "<group>"; };
 		52C5D6E420F16735003F0A92 /* EUExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExercise.swift; sourceTree = "<group>"; };
 		52C5D6E620F1699A003F0A92 /* EUExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExerciseListViewController.swift; sourceTree = "<group>"; };
 		52C5D6E820F169BF003F0A92 /* EUExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExerciseViewController.swift; sourceTree = "<group>"; };
 		52C6753320ED6A81009EBD6E /* Diet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Diet.storyboard; sourceTree = "<group>"; };
 		52C6753520ED6BEA009EBD6E /* EUDiet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDiet.swift; sourceTree = "<group>"; };
-		52C6753820ED6C4A009EBD6E /* EUDietTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDietTableViewController.swift; sourceTree = "<group>"; };
 		52C6753A20ED6F1C009EBD6E /* EUDietListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDietListViewController.swift; sourceTree = "<group>"; };
 		52FE636020CDD3F700A532DE /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		97D08EEA31554B8C75D58A3E /* Pods-Euphoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +163,8 @@
 			children = (
 				523CDEAD20E028B600704B1F /* EUNavigationController.swift */,
 				523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */,
+				526EF7ED20F1C5FA001BDE62 /* EUListViewController.swift */,
+				526EF80020F1D19A001BDE62 /* EUVideosViewController.swift */,
 				523CDEB420E0392800704B1F /* Questionnaires */,
 				52C6753720ED6C32009EBD6E /* Diet */,
 				52C5D6E120F165F6003F0A92 /* Exercises */,
@@ -163,7 +175,6 @@
 		523CDEB420E0392800704B1F /* Questionnaires */ = {
 			isa = PBXGroup;
 			children = (
-				523CDEB520E0393700704B1F /* EUQuestionnairesTableViewController.swift */,
 				523CDEF320E0A1D400704B1F /* EUQuestionnaireViewController.swift */,
 			);
 			path = Questionnaires;
@@ -177,10 +188,20 @@
 			path = Registration;
 			sourceTree = "<group>";
 		};
+		526EF7F320F1D113001BDE62 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				526EF7F820F1D140001BDE62 /* EULayoutSettings.swift */,
+				526EF7FC20F1D14F001BDE62 /* EUViewModel.swift */,
+				526EF7F920F1D140001BDE62 /* EUListModel.swift */,
+				526EF7FE20F1D194001BDE62 /* EUVideosModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		52C5D6E120F165F6003F0A92 /* Exercises */ = {
 			isa = PBXGroup;
 			children = (
-				52C5D6E220F1662A003F0A92 /* EUExerciseTableViewController.swift */,
 				52C5D6E620F1699A003F0A92 /* EUExerciseListViewController.swift */,
 				52C5D6E820F169BF003F0A92 /* EUExerciseViewController.swift */,
 			);
@@ -190,7 +211,6 @@
 		52C6753720ED6C32009EBD6E /* Diet */ = {
 			isa = PBXGroup;
 			children = (
-				52C6753820ED6C4A009EBD6E /* EUDietTableViewController.swift */,
 				52C6753A20ED6F1C009EBD6E /* EUDietListViewController.swift */,
 			);
 			path = Diet;
@@ -242,6 +262,7 @@
 				DE7D57A3209E32C100BBE056 /* Extensions */,
 				DE7D5798209E28BD00BBE056 /* Helper */,
 				DE7D5790209E256100BBE056 /* Models */,
+				526EF7F320F1D113001BDE62 /* ViewModels */,
 				DE7D5793209E25D400BBE056 /* Constants */,
 				DE7D579B209E2D1100BBE056 /* ViewController */,
 				523CDEA720E01F6100704B1F /* Login.storyboard */,
@@ -284,6 +305,7 @@
 				523CDEF720E0AB2600704B1F /* EUQuestionnaire.swift */,
 				52C6753520ED6BEA009EBD6E /* EUDiet.swift */,
 				52C5D6E420F16735003F0A92 /* EUExercise.swift */,
+				526EF7DF20F1B8A5001BDE62 /* EUItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,6 +353,7 @@
 				DE7D57A6209E33F100BBE056 /* String+.swift */,
 				52FE636020CDD3F700A532DE /* UITextField+.swift */,
 				521E474720D7186400EB47CC /* UIColor+.swift */,
+				526EF7F120F1CAC6001BDE62 /* UIImage+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -527,27 +550,32 @@
 			files = (
 				DE7D57A5209E32E100BBE056 /* UIViewController+.swift in Sources */,
 				DE7D579A209E28DA00BBE056 /* FacebookHelper.swift in Sources */,
-				52C6753920ED6C4A009EBD6E /* EUDietTableViewController.swift in Sources */,
+				526EF7FF20F1D195001BDE62 /* EUVideosModel.swift in Sources */,
 				DE7D57A7209E33F100BBE056 /* String+.swift in Sources */,
+				526EF7FB20F1D141001BDE62 /* EUListModel.swift in Sources */,
 				DE7D5792209E257B00BBE056 /* EUUser.swift in Sources */,
 				DE7D5795209E25E900BBE056 /* Enums.swift in Sources */,
+				526EF80120F1D19B001BDE62 /* EUVideosViewController.swift in Sources */,
 				521E474820D7186400EB47CC /* UIColor+.swift in Sources */,
+				526EF7EE20F1C5FA001BDE62 /* EUListViewController.swift in Sources */,
 				DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */,
 				523CDEAE20E028B600704B1F /* EUNavigationController.swift in Sources */,
 				52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */,
 				523CDEAC20E0289C00704B1F /* EUHomeTableViewController.swift in Sources */,
 				DE7D57A2209E32A900BBE056 /* EULoginViewController.swift in Sources */,
+				526EF7FA20F1D141001BDE62 /* EULayoutSettings.swift in Sources */,
 				52C6753B20ED6F1C009EBD6E /* EUDietListViewController.swift in Sources */,
+				526EF7FD20F1D14F001BDE62 /* EUViewModel.swift in Sources */,
 				DE7D5797209E268900BBE056 /* Constants.swift in Sources */,
 				521E474620D714CC00EB47CC /* EUConcentViewController.swift in Sources */,
 				523CDEF820E0AB2600704B1F /* EUQuestionnaire.swift in Sources */,
-				52C5D6E320F1662A003F0A92 /* EUExerciseTableViewController.swift in Sources */,
 				52C5D6E520F16735003F0A92 /* EUExercise.swift in Sources */,
 				52C5D6E920F169BF003F0A92 /* EUExerciseViewController.swift in Sources */,
+				526EF7E020F1B8A5001BDE62 /* EUItem.swift in Sources */,
 				5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */,
 				52C5D6E720F1699A003F0A92 /* EUExerciseListViewController.swift in Sources */,
 				523CDEF420E0A1D400704B1F /* EUQuestionnaireViewController.swift in Sources */,
-				523CDEB620E0393700704B1F /* EUQuestionnairesTableViewController.swift in Sources */,
+				526EF7F220F1CAC6001BDE62 /* UIImage+.swift in Sources */,
 				52C6753620ED6BEA009EBD6E /* EUDiet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

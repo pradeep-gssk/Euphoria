@@ -18,16 +18,6 @@ enum LoginType : String {
     case FACEBOOK = "facebook"
 }
 
-enum Home: Int {
-    case Questionnaires
-    case Diet
-    case Exercises
-    case Activities
-    case History
-    case Gallery
-    case Timer    
-}
-
 enum HtmlViewType : String {
     case Concent = "Concent"
     case Privacy = "Privacy"
