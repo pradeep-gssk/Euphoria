@@ -11,7 +11,7 @@ import RxSwift
 
 class EUGalleryModel: EUViewModel {
     var layoutSettings: EULayoutSettings
-    var selectedListItem: PublishSubject<EUItem> = PublishSubject()
+    var selectedListItem: PublishSubject<EUItem?> = PublishSubject()
     
     var navigateToVC: Observable<(navigation: LCFNavigation, viewController: UIViewController)> {
         return self.selectedListItem.map({ (item) -> (LCFNavigation, UIViewController) in

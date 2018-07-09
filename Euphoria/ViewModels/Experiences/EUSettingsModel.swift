@@ -11,10 +11,13 @@ import RxSwift
 
 class EUSettingsModel: EUViewModel {
     var layoutSettings: EULayoutSettings
-    var selectedListItem: PublishSubject<EUItem> = PublishSubject()
+    var selectedListItem: PublishSubject<EUItem?> = PublishSubject()
     
     var navigateToVC: Observable<(navigation: LCFNavigation, viewController: UIViewController)> {
-        return Observable.just((LCFNavigation.push, UIViewController()))
+        return self.selectedListItem.unwrap().map({ (item) -> (LCFNavigation, UIViewController) in
+            let viewController = UIViewController.getSettingsViewController(identifier: item.identifier)
+            return (LCFNavigation.push, viewController)
+        })
     }
     
     init(layoutSettings: EULayoutSettings) {

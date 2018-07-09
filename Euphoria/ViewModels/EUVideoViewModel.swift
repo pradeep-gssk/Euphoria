@@ -11,10 +11,10 @@ import RxSwift
 
 class EUVideoViewModel: EUViewModel {
     var layoutSettings: EULayoutSettings
-    var selectedListItem: PublishSubject<EUItem> = PublishSubject()
+    var selectedListItem: PublishSubject<EUItem?> = PublishSubject()
     
     var navigateToVC: Observable<(navigation: LCFNavigation, viewController: UIViewController)> {
-        return Observable.just((LCFNavigation.push, UIViewController()))
+        return Observable.empty()
     }
     
     init(layoutSettings: EULayoutSettings) {

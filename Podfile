@@ -7,6 +7,7 @@ target 'Euphoria' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod "RxSwiftExt"
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
   pod 'MBProgressHUD'

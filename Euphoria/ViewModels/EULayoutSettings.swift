@@ -42,7 +42,7 @@ enum HomeType: Int {
             return [EUItem(title: "V", detail: "Videos"), EUItem(title: "O", detail: "Other")]
             
         case .Settings:
-            return [EUItem(title: "A", detail: "my Account"), EUItem(title: "S", detail: "Sign in options"), EUItem(title: "S", detail: "Sync your settings")]
+            return [EUItem(title: "A", detail: "my Account", identifier: "AccountViewController"), EUItem(title: "S", detail: "Sign in options", identifier: "SignInOptionsViewController"), EUItem(title: "S", detail: "Sync your settings", identifier: "SyncSettingsViewController")]
             
         case .Videos:
             return [EUItem(title: "C", detail: "Our concept"), EUItem(title: "D", detail: "Diet Therapy"), EUItem(title: "E", detail: "Exercises"), EUItem(title: "M", detail: "Mind Work"), EUItem(title: "A", detail: "Activities")]
@@ -121,3 +121,33 @@ struct EUCellLayoutSettings {
         self.rectImage = rectImage
     }
 }
+
+struct EUIndexLayoutSettings {
+    var titleViewSize: CGSize
+    var title: String
+    var titleImage: UIImage?
+    var detail: String?
+    var homeType: HomeType
+    var searchPlaceHolder: String
+    var indexes: [String]
+    var items: [EUIndexItem]
+    
+    init(titleViewSize: CGSize,
+         title: String,
+         titleImage: UIImage?,
+         detail: String?,
+         homeType: HomeType,
+         searchPlaceHolder: String,
+         indexes: [String],
+         items: [EUIndexItem]) {
+        self.titleViewSize = titleViewSize
+        self.title = title
+        self.titleImage = titleImage
+        self.detail = detail
+        self.homeType = homeType
+        self.searchPlaceHolder = searchPlaceHolder
+        self.indexes = indexes
+        self.items = items
+    }
+}
+

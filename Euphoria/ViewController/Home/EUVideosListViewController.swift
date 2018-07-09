@@ -55,6 +55,7 @@ class EUVideosListViewController: UIViewController {
         self.backButton.rx.tap.subscribe({[weak self] state in
             self?.navigationController?.popViewController(animated: true)
         }).disposed(by: self.disposeBag)
+        self.bindViewModel()
     }
 }
 
@@ -80,6 +81,16 @@ extension EUVideosListViewController: UICollectionViewDataSource {
 
 extension EUVideosListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.viewModel?.selectedListItem.onNext(nil)
+    }
+}
+
+extension EUVideosListViewController {
+    func bindViewModel() {
+        guard let viewModel = self.viewModel else { return }
+        viewModel.navigateToVC.observeOn(MainScheduler.instance).bind(onNext: {(navigation, viewController) in
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }).disposed(by: disposeBag)
     }
 }
 

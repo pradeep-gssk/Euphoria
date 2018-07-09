@@ -20,7 +20,7 @@ class EUHomeTableViewController: UITableViewController {
         super.viewDidLoad()
 
         self.tableView.tableFooterView = UIView()
-        
+
         self.settingsButton.rx.tap.bind(onNext: {
             let viewModel = self.getSettingsModel()
             let viewController = UIViewController.getListViewController(viewModel: viewModel)
@@ -132,7 +132,9 @@ class EUHomeTableViewController: UITableViewController {
         }
     }
     
-    @IBAction func unwindToHome(_ sender: UIStoryboardSegue) { }
+    @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
+        self.navigationController?.isToolbarHidden = false
+    }
 }
 
 

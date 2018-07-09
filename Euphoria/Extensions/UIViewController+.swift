@@ -59,6 +59,38 @@ extension UIViewController {
         return viewController
     }
     
+    static func getVideoViewController(viewModel: EUViewModel) -> EUVideoViewController {
+        let viewController = self.getViewController(storyboard: "Main", identifier: "VideoViewController") as! EUVideoViewController
+        viewController.viewModel = viewModel
+        return viewController
+    }
+    
+    static func getIndexViewController(indexViewModel: EUIndexViewModel) -> EUIndexListViewController {
+        let viewController = self.getViewController(storyboard: "Main", identifier: "IndexViewController") as! EUIndexListViewController
+        viewController.indexViewModel = indexViewModel
+        return viewController
+    }
+    
+    static func getSettingsViewController(identifier: String) -> UIViewController {
+        let viewController = self.getViewController(storyboard: "Settings", identifier: identifier)
+        return viewController
+    }
+    
+    static func getAccountViewController() -> EUAccountViewController {
+        let viewController = self.getViewController(storyboard: "Settings", identifier: "AccountViewController") as! EUAccountViewController
+        return viewController
+    }
+
+    static func getSignInOptionsViewController() -> EUSignInOptionsViewController {
+        let viewController = self.getViewController(storyboard: "Settings", identifier: "SignInOptionsViewController") as! EUSignInOptionsViewController
+        return viewController
+    }
+
+    static func getSyncSettingsViewController() -> EUSyncSettingsViewController {
+        let viewController = self.getViewController(storyboard: "Settings", identifier: "SyncSettingsViewController") as! EUSyncSettingsViewController
+        return viewController
+    }
+
     func setToolBarColor() {
         if #available(iOS 11.0, *) {
             self.navigationController?.toolbar.barTintColor = UIColor(named: "toolBarColor")

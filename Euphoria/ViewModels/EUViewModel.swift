@@ -11,6 +11,13 @@ import RxSwift
 
 protocol EUViewModel: class {
     var layoutSettings: EULayoutSettings { get }
-    var selectedListItem: PublishSubject<EUItem> {get set}
-    var navigateToVC: Observable<(navigation: LCFNavigation, viewController: UIViewController)> {get}
+    var selectedListItem: PublishSubject<EUItem?> { get }
+    var navigateToVC: Observable<(navigation: LCFNavigation, viewController: UIViewController)> { get }
+}
+
+
+protocol EUIndexViewModel: class {
+    var layoutSettings: EUIndexLayoutSettings { get }
+    var selectedListItem: PublishSubject<EUItem?> { get }
+    var navigateToVC: Observable<(navigation: LCFNavigation, viewController: UIViewController)> { get }
 }

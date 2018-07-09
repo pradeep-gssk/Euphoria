@@ -12,6 +12,13 @@
 		520A50C420D793BC00F57D3E /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 520A50C320D793BC00F57D3E /* Privacy.html */; };
 		521E474620D714CC00EB47CC /* EUConcentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E474520D714CC00EB47CC /* EUConcentViewController.swift */; };
 		521E474820D7186400EB47CC /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E474720D7186400EB47CC /* UIColor+.swift */; };
+		522F1FD020F28F6C0099D55F /* EUVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FCF20F28F6C0099D55F /* EUVideoViewController.swift */; };
+		522F1FD220F29CCC0099D55F /* EUIndexListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FD120F29CCC0099D55F /* EUIndexListViewController.swift */; };
+		522F1FD420F29FF00099D55F /* EUIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FD320F29FF00099D55F /* EUIndexModel.swift */; };
+		522F1FD720F2B2620099D55F /* EUAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FD620F2B2620099D55F /* EUAccountViewController.swift */; };
+		522F1FD920F2B27B0099D55F /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522F1FD820F2B27B0099D55F /* Settings.storyboard */; };
+		522F1FDB20F2C3500099D55F /* EUSignInOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FDA20F2C3500099D55F /* EUSignInOptionsViewController.swift */; };
+		522F1FDD20F316910099D55F /* EUSyncSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FDC20F316910099D55F /* EUSyncSettingsViewController.swift */; };
 		523CDEA820E01F6100704B1F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CDEA720E01F6100704B1F /* Login.storyboard */; };
 		523CDEAC20E0289C00704B1F /* EUHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */; };
 		523CDEAE20E028B600704B1F /* EUNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEAD20E028B600704B1F /* EUNavigationController.swift */; };
@@ -37,13 +44,8 @@
 		528E2C4520F1F5C100651A24 /* EUVideosCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C4420F1F5C100651A24 /* EUVideosCollectionModel.swift */; };
 		528E2C4720F1FD2C00651A24 /* EUVideosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C4620F1FD2C00651A24 /* EUVideosListViewController.swift */; };
 		528E2C4920F2008400651A24 /* EUVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C4820F2008400651A24 /* EUVideoViewModel.swift */; };
-		52C5D6E020F16598003F0A92 /* Exercises.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C5D6DF20F16598003F0A92 /* Exercises.storyboard */; };
 		52C5D6E520F16735003F0A92 /* EUExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5D6E420F16735003F0A92 /* EUExercise.swift */; };
-		52C5D6E720F1699A003F0A92 /* EUExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5D6E620F1699A003F0A92 /* EUExerciseListViewController.swift */; };
-		52C5D6E920F169BF003F0A92 /* EUExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5D6E820F169BF003F0A92 /* EUExerciseViewController.swift */; };
-		52C6753420ED6A81009EBD6E /* Diet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C6753320ED6A81009EBD6E /* Diet.storyboard */; };
 		52C6753620ED6BEA009EBD6E /* EUDiet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6753520ED6BEA009EBD6E /* EUDiet.swift */; };
-		52C6753B20ED6F1C009EBD6E /* EUDietListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6753A20ED6F1C009EBD6E /* EUDietListViewController.swift */; };
 		52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE636020CDD3F700A532DE /* UITextField+.swift */; };
 		DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5762209E226000BBE056 /* AppDelegate.swift */; };
 		DE7D5768209E226000BBE056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7D5766209E226000BBE056 /* Main.storyboard */; };
@@ -83,6 +85,13 @@
 		520A50C320D793BC00F57D3E /* Privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Privacy.html; sourceTree = "<group>"; };
 		521E474520D714CC00EB47CC /* EUConcentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUConcentViewController.swift; sourceTree = "<group>"; };
 		521E474720D7186400EB47CC /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		522F1FCF20F28F6C0099D55F /* EUVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideoViewController.swift; sourceTree = "<group>"; };
+		522F1FD120F29CCC0099D55F /* EUIndexListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUIndexListViewController.swift; sourceTree = "<group>"; };
+		522F1FD320F29FF00099D55F /* EUIndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUIndexModel.swift; sourceTree = "<group>"; };
+		522F1FD620F2B2620099D55F /* EUAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUAccountViewController.swift; sourceTree = "<group>"; };
+		522F1FD820F2B27B0099D55F /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		522F1FDA20F2C3500099D55F /* EUSignInOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSignInOptionsViewController.swift; sourceTree = "<group>"; };
+		522F1FDC20F316910099D55F /* EUSyncSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSyncSettingsViewController.swift; sourceTree = "<group>"; };
 		523CDEA720E01F6100704B1F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHomeTableViewController.swift; sourceTree = "<group>"; };
 		523CDEAD20E028B600704B1F /* EUNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUNavigationController.swift; sourceTree = "<group>"; };
@@ -108,13 +117,8 @@
 		528E2C4420F1F5C100651A24 /* EUVideosCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosCollectionModel.swift; sourceTree = "<group>"; };
 		528E2C4620F1FD2C00651A24 /* EUVideosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosListViewController.swift; sourceTree = "<group>"; };
 		528E2C4820F2008400651A24 /* EUVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideoViewModel.swift; sourceTree = "<group>"; };
-		52C5D6DF20F16598003F0A92 /* Exercises.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercises.storyboard; sourceTree = "<group>"; };
 		52C5D6E420F16735003F0A92 /* EUExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExercise.swift; sourceTree = "<group>"; };
-		52C5D6E620F1699A003F0A92 /* EUExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExerciseListViewController.swift; sourceTree = "<group>"; };
-		52C5D6E820F169BF003F0A92 /* EUExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExerciseViewController.swift; sourceTree = "<group>"; };
-		52C6753320ED6A81009EBD6E /* Diet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Diet.storyboard; sourceTree = "<group>"; };
 		52C6753520ED6BEA009EBD6E /* EUDiet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDiet.swift; sourceTree = "<group>"; };
-		52C6753A20ED6F1C009EBD6E /* EUDietListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDietListViewController.swift; sourceTree = "<group>"; };
 		52FE636020CDD3F700A532DE /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		97D08EEA31554B8C75D58A3E /* Pods-Euphoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.debug.xcconfig"; sourceTree = "<group>"; };
 		CD1428CD891CD330BC37549A /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +182,16 @@
 			path = Concent;
 			sourceTree = "<group>";
 		};
+		522F1FD520F2B2220099D55F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				522F1FD620F2B2620099D55F /* EUAccountViewController.swift */,
+				522F1FDA20F2C3500099D55F /* EUSignInOptionsViewController.swift */,
+				522F1FDC20F316910099D55F /* EUSyncSettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		523CDEAA20E0288200704B1F /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,9 +199,9 @@
 				523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */,
 				526EF7ED20F1C5FA001BDE62 /* EUListViewController.swift */,
 				528E2C4620F1FD2C00651A24 /* EUVideosListViewController.swift */,
+				522F1FCF20F28F6C0099D55F /* EUVideoViewController.swift */,
+				522F1FD120F29CCC0099D55F /* EUIndexListViewController.swift */,
 				523CDEB420E0392800704B1F /* Questionnaires */,
-				52C6753720ED6C32009EBD6E /* Diet */,
-				52C5D6E120F165F6003F0A92 /* Exercises */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -216,6 +230,7 @@
 				528E2C2F20F1E6C600651A24 /* Experiences */,
 				528E2C4420F1F5C100651A24 /* EUVideosCollectionModel.swift */,
 				528E2C4820F2008400651A24 /* EUVideoViewModel.swift */,
+				522F1FD320F29FF00099D55F /* EUIndexModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -235,23 +250,6 @@
 				528E2C4220F1E77200651A24 /* EUOtherModel.swift */,
 			);
 			path = Experiences;
-			sourceTree = "<group>";
-		};
-		52C5D6E120F165F6003F0A92 /* Exercises */ = {
-			isa = PBXGroup;
-			children = (
-				52C5D6E620F1699A003F0A92 /* EUExerciseListViewController.swift */,
-				52C5D6E820F169BF003F0A92 /* EUExerciseViewController.swift */,
-			);
-			path = Exercises;
-			sourceTree = "<group>";
-		};
-		52C6753720ED6C32009EBD6E /* Diet */ = {
-			isa = PBXGroup;
-			children = (
-				52C6753A20ED6F1C009EBD6E /* EUDietListViewController.swift */,
-			);
-			path = Diet;
 			sourceTree = "<group>";
 		};
 		87A03178957465622370F27B /* Frameworks */ = {
@@ -306,8 +304,7 @@
 				523CDEA720E01F6100704B1F /* Login.storyboard */,
 				DE7D5766209E226000BBE056 /* Main.storyboard */,
 				523CDEB720E0396100704B1F /* Questionnaires.storyboard */,
-				52C6753320ED6A81009EBD6E /* Diet.storyboard */,
-				52C5D6DF20F16598003F0A92 /* Exercises.storyboard */,
+				522F1FD820F2B27B0099D55F /* Settings.storyboard */,
 				DE7D5769209E226100BBE056 /* Assets.xcassets */,
 				DE7D576B209E226100BBE056 /* LaunchScreen.storyboard */,
 				DE7D576E209E226100BBE056 /* Info.plist */,
@@ -372,6 +369,7 @@
 				DE7D57A0209E329B00BBE056 /* Login */,
 				5248B85020CE38A600BF4C16 /* Registration */,
 				523CDEAA20E0288200704B1F /* Home */,
+				522F1FD520F2B2220099D55F /* Settings */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -507,12 +505,11 @@
 				520A50C220D788A800F57D3E /* Concent.html in Resources */,
 				523CDEA820E01F6100704B1F /* Login.storyboard in Resources */,
 				DE7D57EE209E36E600BBE056 /* euphoria.strings in Resources */,
-				52C5D6E020F16598003F0A92 /* Exercises.storyboard in Resources */,
 				520A50C420D793BC00F57D3E /* Privacy.html in Resources */,
 				DE7D576A209E226100BBE056 /* Assets.xcassets in Resources */,
+				522F1FD920F2B27B0099D55F /* Settings.storyboard in Resources */,
 				DE7D5768209E226000BBE056 /* Main.storyboard in Resources */,
 				523CDEB820E0396100704B1F /* Questionnaires.storyboard in Resources */,
-				52C6753420ED6A81009EBD6E /* Diet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +543,7 @@
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -555,6 +553,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -599,13 +598,16 @@
 				DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */,
 				528E2C4920F2008400651A24 /* EUVideoViewModel.swift in Sources */,
 				528E2C4320F1E77200651A24 /* EUOtherModel.swift in Sources */,
+				522F1FD220F29CCC0099D55F /* EUIndexListViewController.swift in Sources */,
 				523CDEAE20E028B600704B1F /* EUNavigationController.swift in Sources */,
+				522F1FDB20F2C3500099D55F /* EUSignInOptionsViewController.swift in Sources */,
+				522F1FD020F28F6C0099D55F /* EUVideoViewController.swift in Sources */,
 				52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */,
 				523CDEAC20E0289C00704B1F /* EUHomeTableViewController.swift in Sources */,
 				DE7D57A2209E32A900BBE056 /* EULoginViewController.swift in Sources */,
 				526EF7FA20F1D141001BDE62 /* EULayoutSettings.swift in Sources */,
-				52C6753B20ED6F1C009EBD6E /* EUDietListViewController.swift in Sources */,
 				526EF7FD20F1D14F001BDE62 /* EUViewModel.swift in Sources */,
+				522F1FDD20F316910099D55F /* EUSyncSettingsViewController.swift in Sources */,
 				DE7D5797209E268900BBE056 /* Constants.swift in Sources */,
 				528E2C3D20F1E73000651A24 /* EUSettingsModel.swift in Sources */,
 				521E474620D714CC00EB47CC /* EUConcentViewController.swift in Sources */,
@@ -614,12 +616,12 @@
 				523CDEF820E0AB2600704B1F /* EUQuestionnaire.swift in Sources */,
 				528E2C3220F1E6DA00651A24 /* EUDietModel.swift in Sources */,
 				52C5D6E520F16735003F0A92 /* EUExercise.swift in Sources */,
-				52C5D6E920F169BF003F0A92 /* EUExerciseViewController.swift in Sources */,
+				522F1FD420F29FF00099D55F /* EUIndexModel.swift in Sources */,
+				522F1FD720F2B2620099D55F /* EUAccountViewController.swift in Sources */,
 				526EF7E020F1B8A5001BDE62 /* EUItem.swift in Sources */,
 				528E2C3720F1E70500651A24 /* EUActivitiesModel.swift in Sources */,
 				5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */,
 				528E2C3920F1E71300651A24 /* EUHistoryModel.swift in Sources */,
-				52C5D6E720F1699A003F0A92 /* EUExerciseListViewController.swift in Sources */,
 				523CDEF420E0A1D400704B1F /* EUQuestionnaireViewController.swift in Sources */,
 				528E2C3320F1E6DA00651A24 /* EUQuestionnairesModel.swift in Sources */,
 				526EF7F220F1CAC6001BDE62 /* UIImage+.swift in Sources */,
