@@ -23,6 +23,8 @@ class EUIndexListViewController: UIViewController {
     @IBOutlet weak var indexTableView: UITableView!
     
     var indexViewModel: EUIndexViewModel?
+    var homeType: HomeType?
+    
     private let disposeBag = DisposeBag()
     private var indexItems = [EUIndexItem]()
     private var indexes = [String]()
@@ -104,7 +106,27 @@ extension EUIndexListViewController: UITableViewDataSource {
 }
 
 extension EUIndexListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let homeType = self.homeType else {
+            return
+        }
+        
+        let items = self.indexItems[indexPath.section]
+        let item = items.items[indexPath.row]
+        
+        switch homeType {
+        case .History:
+            //
+//            let viewController = UIViewController.getViewController(storyboard: "History", identifier: "ImageViewController") as! EUImageViewController
+            let viewController = UIViewController.getViewController(storyboard: "History", identifier: "TakePhotoViewController") as! EUTakePhotoViewController
+            viewController.item = item
+            viewController.homeType = homeType
+            self.navigationController?.pushViewController(viewController, animated: true)
+        default:
+            break
+        }
+        
+    }
 }
 
 class EUIndexListViewCell: UITableViewCell {

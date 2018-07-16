@@ -65,9 +65,10 @@ extension UIViewController {
         return viewController
     }
     
-    static func getIndexViewController(indexViewModel: EUIndexViewModel) -> EUIndexListViewController {
+    static func getIndexViewController(indexViewModel: EUIndexViewModel, homeType: HomeType) -> EUIndexListViewController {
         let viewController = self.getViewController(storyboard: "Main", identifier: "IndexViewController") as! EUIndexListViewController
         viewController.indexViewModel = indexViewModel
+        viewController.homeType = homeType
         return viewController
     }
     

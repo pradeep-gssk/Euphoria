@@ -14,7 +14,10 @@ class EUTimerModel: EUViewModel {
     var selectedListItem: PublishSubject<EUItem?> = PublishSubject()
     
     var navigateToVC: Observable<(navigation: LCFNavigation, viewController: UIViewController)> {
-        return Observable.empty()
+        return self.selectedListItem.unwrap().map({ (item) -> (LCFNavigation, UIViewController) in
+            let viewController = UIViewController.getViewController(storyboard: "Timer", identifier: "SessionsViewController") as! EUSessionsViewController
+            return (LCFNavigation.push, viewController)
+        })
     }
     
     init(layoutSettings: EULayoutSettings) {

@@ -57,7 +57,7 @@ class EUHistoryModel: EUViewModel {
     var navigateToVC: Observable<(navigation: LCFNavigation, viewController: UIViewController)> {
         return self.selectedListItem.unwrap().map({ (item) -> (LCFNavigation, UIViewController) in
             let indexViewModel = self.getIndexesModel(item: item)
-            let viewController = UIViewController.getIndexViewController(indexViewModel: indexViewModel)
+            let viewController = UIViewController.getIndexViewController(indexViewModel: indexViewModel, homeType: .History)
             return (LCFNavigation.push, viewController)
         })
     }

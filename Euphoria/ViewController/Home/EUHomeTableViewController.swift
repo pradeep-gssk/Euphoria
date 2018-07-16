@@ -127,6 +127,10 @@ class EUHomeTableViewController: UITableViewController {
             let viewController = UIViewController.getListViewController(viewModel: viewModel)
             self.navigationController?.show(viewController, sender: viewModel)
             
+        case .Timer?:
+            let viewController = UIViewController.getViewController(storyboard: "Timer", identifier: "SessionsViewController") as! EUSessionsViewController
+            self.navigationController?.show(viewController, sender: self)
+            
         default:
             break
         }
