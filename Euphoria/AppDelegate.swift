@@ -13,16 +13,24 @@ import FBSDKCoreKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var sessions: [EUSession] = []
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        if let decoded = UserDefaults.standard.object(forKey: SESSIONS) as? Data,
+            let items = NSKeyedUnarchiver.unarchiveObject(with: decoded) as? [EUSession] {
+            self.sessions = items
+        }
+        
 //        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
 //            self.showLoginView()
 //            return true
 //        }
+        
+        
+        
         
         self.showHomeView()
         
@@ -79,5 +87,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = mainStoryboard.instantiateInitialViewController()
         self.window?.rootViewController = navigationController
     }
+    
+//    func encode(_ session: EUSession)  {
+//        self.sessions.append(session)
+//        let encodedData = NSKeyedArchiver.archivedData(withRootObject: self.sessions)
+//        UserDefaults.standard.set(encodedData, forKey: SESSIONS)
+//
+//    }
 }
 

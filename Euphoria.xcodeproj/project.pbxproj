@@ -49,6 +49,10 @@
 		528E2C4520F1F5C100651A24 /* EUVideosCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C4420F1F5C100651A24 /* EUVideosCollectionModel.swift */; };
 		528E2C4720F1FD2C00651A24 /* EUVideosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C4620F1FD2C00651A24 /* EUVideosListViewController.swift */; };
 		528E2C4920F2008400651A24 /* EUVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C4820F2008400651A24 /* EUVideoViewModel.swift */; };
+		52C37BD221055C6100AD7C42 /* EUSetTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C37BD121055C6100AD7C42 /* EUSetTimerViewController.swift */; };
+		52C37BD6210565D900AD7C42 /* EUSessionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C37BD5210565D900AD7C42 /* EUSessionDetailsViewController.swift */; };
+		52C37BD82105664400AD7C42 /* EUSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C37BD72105664400AD7C42 /* EUSession.swift */; };
+		52C37BDE210588CD00AD7C42 /* EUTimerCountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C37BDD210588CD00AD7C42 /* EUTimerCountDownViewController.swift */; };
 		52C5D6E520F16735003F0A92 /* EUExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5D6E420F16735003F0A92 /* EUExercise.swift */; };
 		52C6753620ED6BEA009EBD6E /* EUDiet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6753520ED6BEA009EBD6E /* EUDiet.swift */; };
 		52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE636020CDD3F700A532DE /* UITextField+.swift */; };
@@ -127,6 +131,10 @@
 		528E2C4420F1F5C100651A24 /* EUVideosCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosCollectionModel.swift; sourceTree = "<group>"; };
 		528E2C4620F1FD2C00651A24 /* EUVideosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosListViewController.swift; sourceTree = "<group>"; };
 		528E2C4820F2008400651A24 /* EUVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideoViewModel.swift; sourceTree = "<group>"; };
+		52C37BD121055C6100AD7C42 /* EUSetTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSetTimerViewController.swift; sourceTree = "<group>"; };
+		52C37BD5210565D900AD7C42 /* EUSessionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSessionDetailsViewController.swift; sourceTree = "<group>"; };
+		52C37BD72105664400AD7C42 /* EUSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSession.swift; sourceTree = "<group>"; };
+		52C37BDD210588CD00AD7C42 /* EUTimerCountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerCountDownViewController.swift; sourceTree = "<group>"; };
 		52C5D6E420F16735003F0A92 /* EUExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExercise.swift; sourceTree = "<group>"; };
 		52C6753520ED6BEA009EBD6E /* EUDiet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDiet.swift; sourceTree = "<group>"; };
 		52FE636020CDD3F700A532DE /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
@@ -215,6 +223,9 @@
 			isa = PBXGroup;
 			children = (
 				523B4F7B20FCA43C004A96D1 /* EUSessionsViewController.swift */,
+				52C37BD121055C6100AD7C42 /* EUSetTimerViewController.swift */,
+				52C37BD5210565D900AD7C42 /* EUSessionDetailsViewController.swift */,
+				52C37BDD210588CD00AD7C42 /* EUTimerCountDownViewController.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -370,6 +381,7 @@
 				52C6753520ED6BEA009EBD6E /* EUDiet.swift */,
 				52C5D6E420F16735003F0A92 /* EUExercise.swift */,
 				526EF7DF20F1B8A5001BDE62 /* EUItem.swift */,
+				52C37BD72105664400AD7C42 /* EUSession.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -626,6 +638,7 @@
 				528E2C4520F1F5C100651A24 /* EUVideosCollectionModel.swift in Sources */,
 				528E2C3520F1E6F500651A24 /* EUExercisesModel.swift in Sources */,
 				521E474820D7186400EB47CC /* UIColor+.swift in Sources */,
+				52C37BD82105664400AD7C42 /* EUSession.swift in Sources */,
 				528E2C3F20F1E73F00651A24 /* EUVideosModel.swift in Sources */,
 				526EF7EE20F1C5FA001BDE62 /* EUListViewController.swift in Sources */,
 				DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */,
@@ -633,6 +646,7 @@
 				528E2C4320F1E77200651A24 /* EUOtherModel.swift in Sources */,
 				522F1FD220F29CCC0099D55F /* EUIndexListViewController.swift in Sources */,
 				523CDEAE20E028B600704B1F /* EUNavigationController.swift in Sources */,
+				52C37BD221055C6100AD7C42 /* EUSetTimerViewController.swift in Sources */,
 				522F1FDB20F2C3500099D55F /* EUSignInOptionsViewController.swift in Sources */,
 				522F1FD020F28F6C0099D55F /* EUVideoViewController.swift in Sources */,
 				52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */,
@@ -655,10 +669,12 @@
 				522F1FD720F2B2620099D55F /* EUAccountViewController.swift in Sources */,
 				526EF7E020F1B8A5001BDE62 /* EUItem.swift in Sources */,
 				528E2C3720F1E70500651A24 /* EUActivitiesModel.swift in Sources */,
+				52C37BDE210588CD00AD7C42 /* EUTimerCountDownViewController.swift in Sources */,
 				5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */,
 				528E2C3920F1E71300651A24 /* EUHistoryModel.swift in Sources */,
 				523CDEF420E0A1D400704B1F /* EUQuestionnaireViewController.swift in Sources */,
 				528E2C3320F1E6DA00651A24 /* EUQuestionnairesModel.swift in Sources */,
+				52C37BD6210565D900AD7C42 /* EUSessionDetailsViewController.swift in Sources */,
 				523B4F7520FC93A8004A96D1 /* EUImageViewController.swift in Sources */,
 				526EF7F220F1CAC6001BDE62 /* UIImage+.swift in Sources */,
 				52C6753620ED6BEA009EBD6E /* EUDiet.swift in Sources */,

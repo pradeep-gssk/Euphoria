@@ -17,6 +17,8 @@ class EUSessionsViewController: UIViewController {
     @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var sessionsTableView: UITableView!
     
+    let sessions = appDelegate.sessions
+    
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -33,6 +35,20 @@ class EUSessionsViewController: UIViewController {
             self?.navigationController?.popViewController(animated: true)
         }).disposed(by: self.disposeBag)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isToolbarHidden = false
+    }
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? EUSessionDetailsViewController, let session = sender as? EUSession {
+            viewController.session = session
+        }
+    }
 }
 
 extension EUSessionsViewController: UITableViewDataSource {
@@ -41,7 +57,7 @@ extension EUSessionsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 0 ? 1 : 0
+        return section == 0 ? 1 : self.sessions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,8 +68,9 @@ extension EUSessionsViewController: UITableViewDataSource {
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "SessionCell", for: indexPath) as! EUSessionsTableViewCell
-        cell.title.text = "Session 1"
-        cell.timer.text = "00:20"
+        let session = self.sessions[indexPath.row]
+        cell.title.text = session.session
+        cell.timer.text = session.countDownDuration.duration
         return cell
     }
 }
@@ -61,9 +78,11 @@ extension EUSessionsViewController: UITableViewDataSource {
 extension EUSessionsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
+            self.performSegue(withIdentifier: "ShowSetTimer", sender: self)
         }
         else {
-            
+            let session = self.sessions[indexPath.row]
+            self.performSegue(withIdentifier: "ShowSessionDetail", sender: session)
         }
     }
 }

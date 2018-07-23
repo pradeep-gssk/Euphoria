@@ -12,3 +12,5 @@ let USER_PROFILE_DATA = "user_profile_data"
 let I_AGREE = "i_agree"
 
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
+let SESSIONS: String = "sessions"
