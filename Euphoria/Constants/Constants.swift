@@ -14,3 +14,5 @@ let I_AGREE = "i_agree"
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
 let SESSIONS: String = "sessions"
+
+let baseUrl = "http://webapi.spasoftware.gr/"

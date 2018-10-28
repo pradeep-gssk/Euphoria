@@ -24,10 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.sessions = items
         }
         
-//        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
-//            self.showLoginView()
-//            return true
-//        }
+        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
+            self.showLoginView()
+            return true
+        }
         
         
         

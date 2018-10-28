@@ -80,8 +80,26 @@ class EURegistrationTableViewController: UITableViewController {
             let viewController = EUConcentViewController.loadPrivacyView()
             strongSelf.navigationController?.show(viewController, sender: self)
         }).disposed(by: self.disposeBag)
+        
+        self.submitButton.rx.tap.subscribe({[weak self] date in
+            self?.registerUser()
+        }).disposed(by: self.disposeBag)
+    }
+    
+    func registerUser() {
+        let language: String = Locale.current.languageCode ?? "el-GR"
+        let data: [String: Any] = ["id": 0, "FolderId": 0, "Alias": "", "Name": "Sri", "Surname": "Guduru", "Email": "eenadu17@gmail.com", "DateOfBirth": "03/10/1984", "Language": language, "Gender": 1,  "Phone": "5109458011", "Password": "pradeep123", "PMSProperty": "", "PMSRoom": "", "PMSAccount": "", "PMSReservationId": "", "IsInhouse": false]
+        
+        let router = Router(endpoint: .Registration(data: data))
+        
+        APIManager.shared.requestJSON(router: router, success: { (response) in
+            print(response)
+        }, failure: { (error: Error) in
+            print(error)
+        })
     }
 }
+
 
 extension EURegistrationTableViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
