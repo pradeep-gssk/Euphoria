@@ -7,25 +7,15 @@
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
 
 class EUHomeTableViewController: UITableViewController {
 
     @IBOutlet weak var settingsButton: UIButton!
     
-    private let disposeBag = DisposeBag()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tableView.tableFooterView = UIView()
-
-        self.settingsButton.rx.tap.bind(onNext: {
-            let viewModel = self.getSettingsModel()
-            let viewController = UIViewController.getListViewController(viewModel: viewModel)
-            self.navigationController?.show(viewController, sender: viewModel)
-        }).disposed(by: self.disposeBag)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,6 +25,12 @@ class EUHomeTableViewController: UITableViewController {
         } else {
             self.navigationController?.toolbar.barTintColor = UIColor(red: (243.0/255.0), green: (239.0/255.0), blue: (234.0/255.0), alpha: 1.0)
         }
+    }
+    
+    @IBAction func didTapSettingsButton(_ sender: Any) {
+        let viewModel = self.getSettingsModel()
+        let viewController = UIViewController.getListViewController(viewModel: viewModel)
+        self.navigationController?.show(viewController, sender: viewModel)
     }
     
     func getQuestionnairesModel() -> EUViewModel {

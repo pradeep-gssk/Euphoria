@@ -25,8 +25,7 @@ extension URLRequest {
         }
         
         if router.parameters.count > 0 {
-            let parameters = router.parameters.map { "\($0)=\($1)" }.joined(separator: "&")
-            self.httpBody = parameters.data(using: .utf8, allowLossyConversion: false)
+            self.httpBody = try router.httpBody()
         }
     }
 }

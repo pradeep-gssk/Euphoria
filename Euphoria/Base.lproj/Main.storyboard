@@ -463,6 +463,9 @@
                                 <rect key="frame" x="16" y="7" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="settings"/>
+                                <connections>
+                                    <action selector="didTapSettingsButton:" destination="3wx-mZ-OKf" eventType="touchUpInside" id="4mC-9d-8pG"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="hmq-wz-7Mb">

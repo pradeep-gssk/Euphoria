@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
 
 class EULoginViewController: UIViewController {
     
@@ -16,9 +14,7 @@ class EULoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
-    
-    private let disposeBag = DisposeBag()
-    
+        
     func removeConcentViewIfExist() {
         guard let navigationController = self.navigationController, navigationController.viewControllers.first is EUConcentViewController else {
             return
@@ -35,15 +31,23 @@ class EULoginViewController: UIViewController {
         self.removeConcentViewIfExist()
         self.emailTextField.desginView()
         self.passwordTextField.desginView()
+    }
+    
+    //TODO: show errors
+    @IBAction func didTapSignInButton(_ sender: Any) {
+        guard let email = self.emailTextField.text else { return }
+        guard let password = self.passwordTextField.text else { return }
         
-        self.signInButton.rx.tap.subscribe({[weak self] state in
-            guard let strongSelf = self else { return }
-        }).disposed(by: self.disposeBag)
-
-        self.facebookButton.rx.tap.subscribe({[weak self] state in
-            guard let strongSelf = self else { return }
-            strongSelf.loginWithFacebook()
-        }).disposed(by: self.disposeBag)
+        let router = Router(endpoint: .Login(email: email, password: password))
+        APIManager.shared.requestJSON(router: router, success: { (response) in
+            print(response)
+        }, failure: { (error) in
+            print(error)
+        })
+    }
+    
+    @IBAction func didTapFacebookButton(_ sender: Any) {
+        self.loginWithFacebook()
     }
     
     func loginWithFacebook() {
@@ -60,21 +64,4 @@ class EULoginViewController: UIViewController {
             self.showAlertWithMessage((error?.localizedDescription)!)
         })
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

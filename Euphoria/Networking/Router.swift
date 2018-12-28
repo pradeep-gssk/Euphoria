@@ -29,6 +29,7 @@ enum HTTPMethod: String {
 }
 
 typealias Parameters = [String: Any]
+typealias HTTPBody = Data
 typealias HTTPHeaders = [String: String]
 
 enum Endpoint {
@@ -46,11 +47,24 @@ class Router: NSObject {
     }
     
     var method: HTTPMethod {
-        return .post
+        switch self.endpoint {
+        case .Login(_, _):
+            return .get
+        default:
+            return .post
+        }
+        
     }
     
     var path: String {
-        return "api/Person"
+        switch self.endpoint {
+        case .Login(let email, let password):
+            return "api/person/Login?user=\(email)&password=\(password)"
+        case .Registration(_):
+            return "api/Person"
+        default:
+            return "api/Person"
+        }
     }
     
     var parameters: Parameters {
@@ -63,10 +77,28 @@ class Router: NSObject {
     }
     
     var headers: HTTPHeaders {
-        return ["Content-Type": "application/x-www-form-urlencoded"]
+        return ["Authorization": "Basic Y2tjOjEyMzQ=", "Content-Type": "application/json"]
     }
     
     var fullPath: String {
         return "\(baseUrl)\(self.path)"
+    }
+    
+    func httpBody() throws -> HTTPBody {
+        switch self.endpoint {
+        case .Registration(let data):
+            do {
+                let data = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
+                return data
+            } catch {
+                throw NSError(domain:"Wrong parameters", code:999, userInfo:nil)
+            }
+        default:
+            let parameters = self.parameters.map { "\($0)=\($1)" }.joined(separator: "&")
+            guard let data = parameters.data(using: .utf8, allowLossyConversion: false)  else {
+                throw NSError(domain:"Wrong parameters", code:999, userInfo:nil)
+            }
+            return data
+        }
     }
 }

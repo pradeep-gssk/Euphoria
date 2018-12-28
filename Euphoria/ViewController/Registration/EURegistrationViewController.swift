@@ -7,39 +7,14 @@
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
 
 class EURegistrationViewController: UIViewController {
     
     @IBOutlet weak var backButton: UIButton!
-    private let disposeBag = DisposeBag()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.backButton.rx.tap.subscribe({[weak self] state in
-            guard let strongSelf = self else { return }
-            strongSelf.navigationController?.popViewController(animated: true)
-        }).disposed(by: self.disposeBag)
+    @IBAction func didTapBackButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 class EURegistrationTableViewController: UITableViewController {
@@ -55,8 +30,6 @@ class EURegistrationTableViewController: UITableViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var pickerView: UIPickerView!
     
-    private let disposeBag = DisposeBag()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.firstNameTextField.desginView()
@@ -70,28 +43,27 @@ class EURegistrationTableViewController: UITableViewController {
         self.genderTextField.inputView = self.pickerView
         
         self.datePicker.maximumDate = Date()
+    }
+    
+    @IBAction func didChangeDatePickerValue(_ sender: Any) {
         
-        self.datePicker.rx.value.subscribe({[weak self] date in
-            print(date.element)
-        }).disposed(by: self.disposeBag)
-        
-        self.checkBox.rx.tap.subscribe({[weak self] date in
-            guard let strongSelf = self else { return }
-            let viewController = EUConcentViewController.loadPrivacyView()
-            strongSelf.navigationController?.show(viewController, sender: self)
-        }).disposed(by: self.disposeBag)
-        
-        self.submitButton.rx.tap.subscribe({[weak self] date in
-            self?.registerUser()
-        }).disposed(by: self.disposeBag)
+    }
+    
+    @IBAction func didTapCheckBox(_ sender: Any) {
+        let viewController = EUConcentViewController.loadPrivacyView()
+        self.navigationController?.show(viewController, sender: self)
+    }
+    
+    @IBAction func didTapSubmitButton(_ sender: Any) {
+        self.registerUser()
     }
     
     func registerUser() {
         let language: String = Locale.current.languageCode ?? "el-GR"
-        let data: [String: Any] = ["id": 0, "FolderId": 0, "Alias": "", "Name": "Sri", "Surname": "Guduru", "Email": "eenadu17@gmail.com", "DateOfBirth": "03/10/1984", "Language": language, "Gender": 1,  "Phone": "5109458011", "Password": "pradeep123", "PMSProperty": "", "PMSRoom": "", "PMSAccount": "", "PMSReservationId": "", "IsInhouse": false]
+        let data: [String: Any] = ["id": 0, "FolderId": 0, "Alias": "", "Name": "Sri", "Surname": "Guduru", "Email": "eenadu18@gmail.com", "DateOfBirth": "03-10-1984", "Language": language, "Gender": 1,  "Phone": "5109458010", "Password": "pradeep123", "PMSProperty": "", "PMSRoom": "", "PMSAccount": "", "PMSReservationId": "", "IsInhouse": false]
         
         let router = Router(endpoint: .Registration(data: data))
-        
+
         APIManager.shared.requestJSON(router: router, success: { (response) in
             print(response)
         }, failure: { (error: Error) in
@@ -99,7 +71,6 @@ class EURegistrationTableViewController: UITableViewController {
         })
     }
 }
-
 
 extension EURegistrationTableViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

@@ -167,6 +167,9 @@
                                                 <state key="normal" title="SIGN IN" backgroundImage="rectGreenButton">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="didTapSignInButton:" destination="7tf-33-OQm" eventType="touchUpInside" id="CvQ-EN-mxD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G74-G2-fY8">
                                                 <rect key="frame" x="67" y="235" width="240" height="50"/>
@@ -178,6 +181,9 @@
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
                                                 <inset key="titleEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="SIGN IN with facebook" backgroundImage="rectBlueButton"/>
+                                                <connections>
+                                                    <action selector="didTapFacebookButton:" destination="7tf-33-OQm" eventType="touchUpInside" id="DL5-bM-nIM"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61y-K4-e4k">
                                                 <rect key="frame" x="93" y="237" width="11" height="43"/>
@@ -302,6 +308,9 @@
                                 <state key="normal" image="backBrown">
                                     <color key="titleColor" red="0.65098039220000004" green="0.058823529409999999" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="dL1-ju-OfW" eventType="touchUpInside" id="ve6-uE-uiF"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="design" translatesAutoresizingMaskIntoConstraints="NO" id="x5c-gR-7VQ">
                                 <rect key="frame" x="0.0" y="252" width="375" height="415"/>
@@ -567,6 +576,9 @@ including the privacy policy</string>
                                                         <constraint firstAttribute="width" constant="36" id="yRr-RV-gcH"/>
                                                     </constraints>
                                                     <state key="normal" image="checkBox"/>
+                                                    <connections>
+                                                        <action selector="didTapCheckBox:" destination="85g-gD-IVZ" eventType="touchUpInside" id="6fW-Cg-xMH"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -595,6 +607,9 @@ including the privacy policy</string>
                                                     <state key="normal" title="SUBMIT" backgroundImage="rectRedButton">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="didTapSubmitButton:" destination="85g-gD-IVZ" eventType="touchUpInside" id="mIk-vs-SFk"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -632,6 +647,9 @@ including the privacy policy</string>
                     <date key="date" timeIntervalSinceReferenceDate="550991874.11720896">
                         <!--2018-06-18 05:17:54 +0000-->
                     </date>
+                    <connections>
+                        <action selector="didChangeDatePickerValue:" destination="85g-gD-IVZ" eventType="valueChanged" id="Y7Z-ON-HaS"/>
+                    </connections>
                 </datePicker>
                 <pickerView contentMode="scaleToFill" id="VDd-KH-jPF">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
@@ -682,12 +700,12 @@ including the privacy policy</string>
         </scene>
     </scenes>
     <resources>
-        <image name="backBrown" width="17" height="14"/>
+        <image name="backBrown" width="25" height="21"/>
         <image name="checkBox" width="20" height="20"/>
         <image name="design" width="375" height="410"/>
         <image name="icon" width="262" height="230"/>
         <image name="ovalRedButton" width="149" height="40"/>
-        <image name="placeholder" width="87" height="87"/>
+        <image name="placeholder" width="155" height="155"/>
         <image name="rectBlueButton" width="248" height="58"/>
         <image name="rectGreenButton" width="248" height="58"/>
         <image name="rectRedButton" width="248" height="58"/>
