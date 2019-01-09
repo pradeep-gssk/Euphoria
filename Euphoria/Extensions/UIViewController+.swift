@@ -25,11 +25,13 @@ extension UIViewController {
     }
     
     func hideLoadingScreen() {
-        if let navigationController = self.navigationController {
-            MBProgressHUD.hide(for: navigationController.view, animated: true)
-        }
-        else {
-            MBProgressHUD.hide(for: self.view, animated: true)
+        DispatchQueue.main.async {
+            if let navigationController = self.navigationController {
+                MBProgressHUD.hide(for: navigationController.view, animated: true)
+            }
+            else {
+                MBProgressHUD.hide(for: self.view, animated: true)
+            }
         }
     }
     

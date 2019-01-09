@@ -37,11 +37,13 @@ class EULoginViewController: UIViewController {
     @IBAction func didTapSignInButton(_ sender: Any) {
         guard let email = self.emailTextField.text else { return }
         guard let password = self.passwordTextField.text else { return }
-        
+        self.showLoadingScreen()
         let router = Router(endpoint: .Login(email: email, password: password))
         APIManager.shared.requestJSON(router: router, success: { (response) in
+            self.hideLoadingScreen()
             print(response)
         }, failure: { (error) in
+            self.hideLoadingScreen()
             print(error)
         })
     }
