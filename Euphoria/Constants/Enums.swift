@@ -2,21 +2,11 @@
 //  Enums.swift
 //  Euphoria
 //
-//  Created by Guduru, Pradeep(AWF) on 5/5/18.
-//  Copyright © 2018 Guduru, Pradeep(AWF). All rights reserved.
+//  Created by Guduru, Pradeep(AWF) on 2/9/19.
+//  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 
 import Foundation
-
-enum UserType : String {
-    case Doctor = "doctor"
-    case Patient = "patient"
-}
-
-enum LoginType : String {
-    case GENERAL = "general"
-    case FACEBOOK = "facebook"
-}
 
 enum HtmlViewType : String {
     case Concent = "Concent"
@@ -38,7 +28,12 @@ enum HtmlViewType : String {
     }
 }
 
-enum LCFNavigation {
-    case push
-    case present
+enum HomeType: Int {
+    case Questionnaires
+}
+
+enum OptionType: Int {
+    case never = 0
+    case toggle = 1
+    case always = 2
 }

@@ -7,190 +7,123 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B695D871A6B1995479E6CD4 /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA54DC2C0621B75775B7B1ED /* Pods_Euphoria.framework */; };
-		520A50C220D788A800F57D3E /* Concent.html in Resources */ = {isa = PBXBuildFile; fileRef = 520A50C120D788A700F57D3E /* Concent.html */; };
-		520A50C420D793BC00F57D3E /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 520A50C320D793BC00F57D3E /* Privacy.html */; };
-		521E474620D714CC00EB47CC /* EUConcentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E474520D714CC00EB47CC /* EUConcentViewController.swift */; };
-		521E474820D7186400EB47CC /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E474720D7186400EB47CC /* UIColor+.swift */; };
-		522F1FD020F28F6C0099D55F /* EUVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FCF20F28F6C0099D55F /* EUVideoViewController.swift */; };
-		522F1FD220F29CCC0099D55F /* EUIndexListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FD120F29CCC0099D55F /* EUIndexListViewController.swift */; };
-		522F1FD420F29FF00099D55F /* EUIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FD320F29FF00099D55F /* EUIndexModel.swift */; };
-		522F1FD720F2B2620099D55F /* EUAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FD620F2B2620099D55F /* EUAccountViewController.swift */; };
-		522F1FD920F2B27B0099D55F /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522F1FD820F2B27B0099D55F /* Settings.storyboard */; };
-		522F1FDB20F2C3500099D55F /* EUSignInOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FDA20F2C3500099D55F /* EUSignInOptionsViewController.swift */; };
-		522F1FDD20F316910099D55F /* EUSyncSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F1FDC20F316910099D55F /* EUSyncSettingsViewController.swift */; };
-		523B4F7220FC92FA004A96D1 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523B4F7120FC92FA004A96D1 /* History.storyboard */; };
-		523B4F7520FC93A8004A96D1 /* EUImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B4F7420FC93A8004A96D1 /* EUImageViewController.swift */; };
-		523B4F7720FC998C004A96D1 /* EUTakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B4F7620FC998C004A96D1 /* EUTakePhotoViewController.swift */; };
-		523B4F7A20FCA0C6004A96D1 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523B4F7920FCA0C6004A96D1 /* Timer.storyboard */; };
-		523B4F7C20FCA43C004A96D1 /* EUSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B4F7B20FCA43C004A96D1 /* EUSessionsViewController.swift */; };
-		523CDEA820E01F6100704B1F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CDEA720E01F6100704B1F /* Login.storyboard */; };
-		523CDEAC20E0289C00704B1F /* EUHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */; };
-		523CDEAE20E028B600704B1F /* EUNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEAD20E028B600704B1F /* EUNavigationController.swift */; };
-		523CDEB820E0396100704B1F /* Questionnaires.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CDEB720E0396100704B1F /* Questionnaires.storyboard */; };
-		523CDEF420E0A1D400704B1F /* EUQuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEF320E0A1D400704B1F /* EUQuestionnaireViewController.swift */; };
-		523CDEF820E0AB2600704B1F /* EUQuestionnaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CDEF720E0AB2600704B1F /* EUQuestionnaire.swift */; };
-		5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */; };
-		526EF7E020F1B8A5001BDE62 /* EUItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7DF20F1B8A5001BDE62 /* EUItem.swift */; };
-		526EF7EE20F1C5FA001BDE62 /* EUListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7ED20F1C5FA001BDE62 /* EUListViewController.swift */; };
-		526EF7F220F1CAC6001BDE62 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7F120F1CAC6001BDE62 /* UIImage+.swift */; };
-		526EF7FA20F1D141001BDE62 /* EULayoutSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7F820F1D140001BDE62 /* EULayoutSettings.swift */; };
-		526EF7FD20F1D14F001BDE62 /* EUViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EF7FC20F1D14F001BDE62 /* EUViewModel.swift */; };
-		528E2C3220F1E6DA00651A24 /* EUDietModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C3020F1E6D900651A24 /* EUDietModel.swift */; };
-		528E2C3320F1E6DA00651A24 /* EUQuestionnairesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C3120F1E6D900651A24 /* EUQuestionnairesModel.swift */; };
-		528E2C3520F1E6F500651A24 /* EUExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C3420F1E6F500651A24 /* EUExercisesModel.swift */; };
-		528E2C3720F1E70500651A24 /* EUActivitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C3620F1E70500651A24 /* EUActivitiesModel.swift */; };
-		528E2C3920F1E71300651A24 /* EUHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C3820F1E71300651A24 /* EUHistoryModel.swift */; };
-		528E2C3B20F1E72200651A24 /* EUGalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C3A20F1E72200651A24 /* EUGalleryModel.swift */; };
-		528E2C3D20F1E73000651A24 /* EUSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C3C20F1E73000651A24 /* EUSettingsModel.swift */; };
-		528E2C3F20F1E73F00651A24 /* EUVideosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C3E20F1E73F00651A24 /* EUVideosModel.swift */; };
-		528E2C4120F1E75B00651A24 /* EUTimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C4020F1E75B00651A24 /* EUTimerModel.swift */; };
-		528E2C4320F1E77200651A24 /* EUOtherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C4220F1E77200651A24 /* EUOtherModel.swift */; };
-		528E2C4520F1F5C100651A24 /* EUVideosCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C4420F1F5C100651A24 /* EUVideosCollectionModel.swift */; };
-		528E2C4720F1FD2C00651A24 /* EUVideosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C4620F1FD2C00651A24 /* EUVideosListViewController.swift */; };
-		528E2C4920F2008400651A24 /* EUVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528E2C4820F2008400651A24 /* EUVideoViewModel.swift */; };
-		52C37BD221055C6100AD7C42 /* EUSetTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C37BD121055C6100AD7C42 /* EUSetTimerViewController.swift */; };
-		52C37BD6210565D900AD7C42 /* EUSessionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C37BD5210565D900AD7C42 /* EUSessionDetailsViewController.swift */; };
-		52C37BD82105664400AD7C42 /* EUSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C37BD72105664400AD7C42 /* EUSession.swift */; };
-		52C37BDE210588CD00AD7C42 /* EUTimerCountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C37BDD210588CD00AD7C42 /* EUTimerCountDownViewController.swift */; };
-		52C5D6E520F16735003F0A92 /* EUExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5D6E420F16735003F0A92 /* EUExercise.swift */; };
-		52C6753620ED6BEA009EBD6E /* EUDiet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C6753520ED6BEA009EBD6E /* EUDiet.swift */; };
-		52EF3A1B21853EC900E0DF62 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF3A1A21853EC900E0DF62 /* APIManager.swift */; };
-		52EF3A1D21853EDD00E0DF62 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF3A1C21853EDD00E0DF62 /* Router.swift */; };
-		52EF3A1F2185466700E0DF62 /* URLRequest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF3A1E2185466700E0DF62 /* URLRequest+.swift */; };
-		52EF3A21218546E500E0DF62 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF3A20218546E500E0DF62 /* Response.swift */; };
-		52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FE636020CDD3F700A532DE /* UITextField+.swift */; };
-		DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5762209E226000BBE056 /* AppDelegate.swift */; };
-		DE7D5768209E226000BBE056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7D5766209E226000BBE056 /* Main.storyboard */; };
-		DE7D576A209E226100BBE056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7D5769209E226100BBE056 /* Assets.xcassets */; };
-		DE7D576D209E226100BBE056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7D576B209E226100BBE056 /* LaunchScreen.storyboard */; };
-		DE7D5778209E226100BBE056 /* EuphoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5777209E226100BBE056 /* EuphoriaTests.swift */; };
-		DE7D5783209E226100BBE056 /* EuphoriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5782209E226100BBE056 /* EuphoriaUITests.swift */; };
-		DE7D5792209E257B00BBE056 /* EUUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5791209E257B00BBE056 /* EUUser.swift */; };
-		DE7D5795209E25E900BBE056 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5794209E25E900BBE056 /* Enums.swift */; };
-		DE7D5797209E268900BBE056 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5796209E268900BBE056 /* Constants.swift */; };
-		DE7D579A209E28DA00BBE056 /* FacebookHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D5799209E28DA00BBE056 /* FacebookHelper.swift */; };
-		DE7D57A2209E32A900BBE056 /* EULoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D57A1209E32A900BBE056 /* EULoginViewController.swift */; };
-		DE7D57A5209E32E100BBE056 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D57A4209E32E100BBE056 /* UIViewController+.swift */; };
-		DE7D57A7209E33F100BBE056 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D57A6209E33F100BBE056 /* String+.swift */; };
-		DE7D57EE209E36E600BBE056 /* euphoria.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE7D57F0209E36E600BBE056 /* euphoria.strings */; };
+		2CC0580927CBF46B65BA3114 /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A05858C8C3D56EA48D0900 /* Pods_Euphoria.framework */; };
+		DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6DA622103625008B4D12 /* Questionnaire2.json */; };
+		DE5F6DBA22103C66008B4D12 /* Questionnaires+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */; };
+		DE5F6DBB22103C66008B4D12 /* Questionnaires+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB522103C66008B4D12 /* Questionnaires+CoreDataProperties.swift */; };
+		DE5F6DBC22103C66008B4D12 /* Option+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB622103C66008B4D12 /* Option+CoreDataClass.swift */; };
+		DE5F6DBD22103C66008B4D12 /* Option+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB722103C66008B4D12 /* Option+CoreDataProperties.swift */; };
+		DE5F6DBE22103C66008B4D12 /* Questionnaire+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB822103C66008B4D12 /* Questionnaire+CoreDataClass.swift */; };
+		DE5F6DBF22103C66008B4D12 /* Questionnaire+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB922103C66008B4D12 /* Questionnaire+CoreDataProperties.swift */; };
+		DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */; };
+		DE94C4E8220F74F200C4C2ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE94C4E6220F74F200C4C2ED /* Main.storyboard */; };
+		DE94C4EA220F74F200C4C2ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE94C4E9220F74F200C4C2ED /* Assets.xcassets */; };
+		DE94C4ED220F74F200C4C2ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE94C4EB220F74F200C4C2ED /* LaunchScreen.storyboard */; };
+		DE94C4F8220F74F200C4C2ED /* EuphoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C4F7220F74F200C4C2ED /* EuphoriaTests.swift */; };
+		DE94C503220F74F200C4C2ED /* EuphoriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C502220F74F200C4C2ED /* EuphoriaUITests.swift */; };
+		DE94C512220F764A00C4C2ED /* EUHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C511220F764A00C4C2ED /* EUHomeTableViewController.swift */; };
+		DE94C51D220F7AB000C4C2ED /* Questionnaires.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE94C51B220F7AB000C4C2ED /* Questionnaires.storyboard */; };
+		DE94C520220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C51F220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift */; };
+		DE94C523220F7C1B00C4C2ED /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C522220F7C1B00C4C2ED /* UIViewController+.swift */; };
+		DE94C526220F7CD400C4C2ED /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C525220F7CD400C4C2ED /* Enums.swift */; };
+		DE94C528220F801900C4C2ED /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C527220F801900C4C2ED /* UIImage+.swift */; };
+		DE94C52A220F833D00C4C2ED /* EUQuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C529220F833D00C4C2ED /* EUQuestionnaireViewController.swift */; };
+		DE94C531220F951300C4C2ED /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C530220F951300C4C2ED /* String+.swift */; };
+		DE94C56D220FA4E300C4C2ED /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C56C220FA4E300C4C2ED /* UITextField+.swift */; };
+		DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C56E220FA50600C4C2ED /* UIColor+.swift */; };
+		DE94C5B1220FC00700C4C2ED /* Euphoria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE94C5AF220FC00700C4C2ED /* Euphoria.xcdatamodeld */; };
+		DE94C60A220FD09800C4C2ED /* Questionnaire1.json in Resources */ = {isa = PBXBuildFile; fileRef = DE94C609220FD09800C4C2ED /* Questionnaire1.json */; };
+		DEA8322122107AB30000BD43 /* Questionnaire3.json in Resources */ = {isa = PBXBuildFile; fileRef = DEA8322022107AB30000BD43 /* Questionnaire3.json */; };
+		DEA83223221133930000BD43 /* Questionnaire4.json in Resources */ = {isa = PBXBuildFile; fileRef = DEA83222221133930000BD43 /* Questionnaire4.json */; };
+		DEA83225221134C30000BD43 /* Questionnaire5.json in Resources */ = {isa = PBXBuildFile; fileRef = DEA83224221134C30000BD43 /* Questionnaire5.json */; };
+		DEA83228221139440000BD43 /* EUConcentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA83227221139440000BD43 /* EUConcentViewController.swift */; };
+		DEA8322B221139750000BD43 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA83229221139750000BD43 /* Login.storyboard */; };
+		DEA8322D22113A750000BD43 /* Concent.html in Resources */ = {isa = PBXBuildFile; fileRef = DEA8322C22113A750000BD43 /* Concent.html */; };
+		DEA8323122113D090000BD43 /* EULoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8323022113D090000BD43 /* EULoginViewController.swift */; };
+		DED5D5B2220FD37900CDE1AD /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5D5B1220FD37900CDE1AD /* CoreData.swift */; };
+		DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5D5B3220FD52400CDE1AD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DE7D5774209E226100BBE056 /* PBXContainerItemProxy */ = {
+		DE94C4F4220F74F200C4C2ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DE7D5757209E226000BBE056 /* Project object */;
+			containerPortal = DE94C4D7220F74F200C4C2ED /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DE7D575E209E226000BBE056;
+			remoteGlobalIDString = DE94C4DE220F74F200C4C2ED;
 			remoteInfo = Euphoria;
 		};
-		DE7D577F209E226100BBE056 /* PBXContainerItemProxy */ = {
+		DE94C4FF220F74F200C4C2ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DE7D5757209E226000BBE056 /* Project object */;
+			containerPortal = DE94C4D7220F74F200C4C2ED /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DE7D575E209E226000BBE056;
+			remoteGlobalIDString = DE94C4DE220F74F200C4C2ED;
 			remoteInfo = Euphoria;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		520A50C120D788A700F57D3E /* Concent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Concent.html; sourceTree = "<group>"; };
-		520A50C320D793BC00F57D3E /* Privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Privacy.html; sourceTree = "<group>"; };
-		521E474520D714CC00EB47CC /* EUConcentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUConcentViewController.swift; sourceTree = "<group>"; };
-		521E474720D7186400EB47CC /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
-		522F1FCF20F28F6C0099D55F /* EUVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideoViewController.swift; sourceTree = "<group>"; };
-		522F1FD120F29CCC0099D55F /* EUIndexListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUIndexListViewController.swift; sourceTree = "<group>"; };
-		522F1FD320F29FF00099D55F /* EUIndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUIndexModel.swift; sourceTree = "<group>"; };
-		522F1FD620F2B2620099D55F /* EUAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUAccountViewController.swift; sourceTree = "<group>"; };
-		522F1FD820F2B27B0099D55F /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		522F1FDA20F2C3500099D55F /* EUSignInOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSignInOptionsViewController.swift; sourceTree = "<group>"; };
-		522F1FDC20F316910099D55F /* EUSyncSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSyncSettingsViewController.swift; sourceTree = "<group>"; };
-		523B4F7120FC92FA004A96D1 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
-		523B4F7420FC93A8004A96D1 /* EUImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUImageViewController.swift; sourceTree = "<group>"; };
-		523B4F7620FC998C004A96D1 /* EUTakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTakePhotoViewController.swift; sourceTree = "<group>"; };
-		523B4F7920FCA0C6004A96D1 /* Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
-		523B4F7B20FCA43C004A96D1 /* EUSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSessionsViewController.swift; sourceTree = "<group>"; };
-		523CDEA720E01F6100704B1F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHomeTableViewController.swift; sourceTree = "<group>"; };
-		523CDEAD20E028B600704B1F /* EUNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUNavigationController.swift; sourceTree = "<group>"; };
-		523CDEB720E0396100704B1F /* Questionnaires.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Questionnaires.storyboard; sourceTree = "<group>"; };
-		523CDEF320E0A1D400704B1F /* EUQuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireViewController.swift; sourceTree = "<group>"; };
-		523CDEF720E0AB2600704B1F /* EUQuestionnaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaire.swift; sourceTree = "<group>"; };
-		5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EURegistrationViewController.swift; sourceTree = "<group>"; };
-		526EF7DF20F1B8A5001BDE62 /* EUItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUItem.swift; sourceTree = "<group>"; };
-		526EF7ED20F1C5FA001BDE62 /* EUListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUListViewController.swift; sourceTree = "<group>"; };
-		526EF7F120F1CAC6001BDE62 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
-		526EF7F820F1D140001BDE62 /* EULayoutSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EULayoutSettings.swift; sourceTree = "<group>"; };
-		526EF7FC20F1D14F001BDE62 /* EUViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUViewModel.swift; sourceTree = "<group>"; };
-		528E2C3020F1E6D900651A24 /* EUDietModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUDietModel.swift; sourceTree = "<group>"; };
-		528E2C3120F1E6D900651A24 /* EUQuestionnairesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUQuestionnairesModel.swift; sourceTree = "<group>"; };
-		528E2C3420F1E6F500651A24 /* EUExercisesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExercisesModel.swift; sourceTree = "<group>"; };
-		528E2C3620F1E70500651A24 /* EUActivitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUActivitiesModel.swift; sourceTree = "<group>"; };
-		528E2C3820F1E71300651A24 /* EUHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryModel.swift; sourceTree = "<group>"; };
-		528E2C3A20F1E72200651A24 /* EUGalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUGalleryModel.swift; sourceTree = "<group>"; };
-		528E2C3C20F1E73000651A24 /* EUSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSettingsModel.swift; sourceTree = "<group>"; };
-		528E2C3E20F1E73F00651A24 /* EUVideosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosModel.swift; sourceTree = "<group>"; };
-		528E2C4020F1E75B00651A24 /* EUTimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerModel.swift; sourceTree = "<group>"; };
-		528E2C4220F1E77200651A24 /* EUOtherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUOtherModel.swift; sourceTree = "<group>"; };
-		528E2C4420F1F5C100651A24 /* EUVideosCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosCollectionModel.swift; sourceTree = "<group>"; };
-		528E2C4620F1FD2C00651A24 /* EUVideosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosListViewController.swift; sourceTree = "<group>"; };
-		528E2C4820F2008400651A24 /* EUVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideoViewModel.swift; sourceTree = "<group>"; };
-		52C37BD121055C6100AD7C42 /* EUSetTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSetTimerViewController.swift; sourceTree = "<group>"; };
-		52C37BD5210565D900AD7C42 /* EUSessionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSessionDetailsViewController.swift; sourceTree = "<group>"; };
-		52C37BD72105664400AD7C42 /* EUSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSession.swift; sourceTree = "<group>"; };
-		52C37BDD210588CD00AD7C42 /* EUTimerCountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerCountDownViewController.swift; sourceTree = "<group>"; };
-		52C5D6E420F16735003F0A92 /* EUExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExercise.swift; sourceTree = "<group>"; };
-		52C6753520ED6BEA009EBD6E /* EUDiet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDiet.swift; sourceTree = "<group>"; };
-		52EF3A1A21853EC900E0DF62 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		52EF3A1C21853EDD00E0DF62 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		52EF3A1E2185466700E0DF62 /* URLRequest+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+.swift"; sourceTree = "<group>"; };
-		52EF3A20218546E500E0DF62 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		52FE636020CDD3F700A532DE /* UITextField+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
-		97D08EEA31554B8C75D58A3E /* Pods-Euphoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.debug.xcconfig"; sourceTree = "<group>"; };
-		CD1428CD891CD330BC37549A /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
-		DE7D575F209E226000BBE056 /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE7D5762209E226000BBE056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE7D5767209E226000BBE056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DE7D5769209E226100BBE056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DE7D576C209E226100BBE056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DE7D576E209E226100BBE056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE7D5773209E226100BBE056 /* EuphoriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuphoriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE7D5777209E226100BBE056 /* EuphoriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuphoriaTests.swift; sourceTree = "<group>"; };
-		DE7D5779209E226100BBE056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE7D577E209E226100BBE056 /* EuphoriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuphoriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE7D5782209E226100BBE056 /* EuphoriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuphoriaUITests.swift; sourceTree = "<group>"; };
-		DE7D5784209E226100BBE056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE7D5791209E257B00BBE056 /* EUUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUUser.swift; sourceTree = "<group>"; };
-		DE7D5794209E25E900BBE056 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		DE7D5796209E268900BBE056 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		DE7D5799209E28DA00BBE056 /* FacebookHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookHelper.swift; sourceTree = "<group>"; };
-		DE7D57A1209E32A900BBE056 /* EULoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EULoginViewController.swift; sourceTree = "<group>"; };
-		DE7D57A4209E32E100BBE056 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
-		DE7D57A6209E33F100BBE056 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
-		DE7D57EA209E36C200BBE056 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Main.strings; sourceTree = "<group>"; };
-		DE7D57EB209E36C200BBE056 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		DE7D57EF209E36E600BBE056 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/euphoria.strings; sourceTree = "<group>"; };
-		DE7D57F1209E36EB00BBE056 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/euphoria.strings; sourceTree = "<group>"; };
-		FA54DC2C0621B75775B7B1ED /* Pods_Euphoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euphoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B5286AB675DFFB5E761486 /* Pods-Euphoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.debug.xcconfig"; sourceTree = "<group>"; };
+		35A05858C8C3D56EA48D0900 /* Pods_Euphoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Euphoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE52ACBEF78299081CC944F8 /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
+		DE5F6DA622103625008B4D12 /* Questionnaire2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire2.json; sourceTree = "<group>"; };
+		DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE5F6DB522103C66008B4D12 /* Questionnaires+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE5F6DB622103C66008B4D12 /* Option+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Option+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE5F6DB722103C66008B4D12 /* Option+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Option+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE5F6DB822103C66008B4D12 /* Questionnaire+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE5F6DB922103C66008B4D12 /* Questionnaire+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE94C4DF220F74F200C4C2ED /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE94C4E7220F74F200C4C2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE94C4E9220F74F200C4C2ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE94C4EC220F74F200C4C2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE94C4EE220F74F200C4C2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE94C4F3220F74F200C4C2ED /* EuphoriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuphoriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE94C4F7220F74F200C4C2ED /* EuphoriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuphoriaTests.swift; sourceTree = "<group>"; };
+		DE94C4F9220F74F200C4C2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE94C4FE220F74F200C4C2ED /* EuphoriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuphoriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE94C502220F74F200C4C2ED /* EuphoriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuphoriaUITests.swift; sourceTree = "<group>"; };
+		DE94C504220F74F200C4C2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE94C511220F764A00C4C2ED /* EUHomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHomeTableViewController.swift; sourceTree = "<group>"; };
+		DE94C51C220F7AB000C4C2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Questionnaires.storyboard; sourceTree = "<group>"; };
+		DE94C51F220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireIndexTableViewController.swift; sourceTree = "<group>"; };
+		DE94C522220F7C1B00C4C2ED /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		DE94C525220F7CD400C4C2ED /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		DE94C527220F801900C4C2ED /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		DE94C529220F833D00C4C2ED /* EUQuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireViewController.swift; sourceTree = "<group>"; };
+		DE94C530220F951300C4C2ED /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		DE94C56C220FA4E300C4C2ED /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		DE94C56E220FA50600C4C2ED /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		DE94C5B0220FC00700C4C2ED /* Euphoria.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Euphoria.xcdatamodel; sourceTree = "<group>"; };
+		DE94C609220FD09800C4C2ED /* Questionnaire1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire1.json; sourceTree = "<group>"; };
+		DEA8322022107AB30000BD43 /* Questionnaire3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire3.json; sourceTree = "<group>"; };
+		DEA83222221133930000BD43 /* Questionnaire4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire4.json; sourceTree = "<group>"; };
+		DEA83224221134C30000BD43 /* Questionnaire5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire5.json; sourceTree = "<group>"; };
+		DEA83227221139440000BD43 /* EUConcentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUConcentViewController.swift; sourceTree = "<group>"; };
+		DEA8322A221139750000BD43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		DEA8322C22113A750000BD43 /* Concent.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Concent.html; sourceTree = "<group>"; };
+		DEA8323022113D090000BD43 /* EULoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EULoginViewController.swift; sourceTree = "<group>"; };
+		DED5D5B1220FD37900CDE1AD /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		DED5D5B3220FD52400CDE1AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DE7D575C209E226000BBE056 /* Frameworks */ = {
+		DE94C4DC220F74F200C4C2ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B695D871A6B1995479E6CD4 /* Pods_Euphoria.framework in Frameworks */,
+				2CC0580927CBF46B65BA3114 /* Pods_Euphoria.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE7D5770209E226100BBE056 /* Frameworks */ = {
+		DE94C4F0220F74F200C4C2ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE7D577B209E226100BBE056 /* Frameworks */ = {
+		DE94C4FB220F74F200C4C2ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,275 +133,187 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		521E474420D714B100EB47CC /* Concent */ = {
+		4BC26AC93E898F93F55FD63C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				521E474520D714CC00EB47CC /* EUConcentViewController.swift */,
-			);
-			path = Concent;
-			sourceTree = "<group>";
-		};
-		522F1FD520F2B2220099D55F /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				522F1FD620F2B2620099D55F /* EUAccountViewController.swift */,
-				522F1FDA20F2C3500099D55F /* EUSignInOptionsViewController.swift */,
-				522F1FDC20F316910099D55F /* EUSyncSettingsViewController.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		523B4F7320FC9367004A96D1 /* History */ = {
-			isa = PBXGroup;
-			children = (
-				523B4F7620FC998C004A96D1 /* EUTakePhotoViewController.swift */,
-				523B4F7420FC93A8004A96D1 /* EUImageViewController.swift */,
-			);
-			path = History;
-			sourceTree = "<group>";
-		};
-		523B4F7820FCA0BB004A96D1 /* Timer */ = {
-			isa = PBXGroup;
-			children = (
-				523B4F7B20FCA43C004A96D1 /* EUSessionsViewController.swift */,
-				52C37BD121055C6100AD7C42 /* EUSetTimerViewController.swift */,
-				52C37BD5210565D900AD7C42 /* EUSessionDetailsViewController.swift */,
-				52C37BDD210588CD00AD7C42 /* EUTimerCountDownViewController.swift */,
-			);
-			path = Timer;
-			sourceTree = "<group>";
-		};
-		523CDEAA20E0288200704B1F /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				523CDEAD20E028B600704B1F /* EUNavigationController.swift */,
-				523CDEAB20E0289C00704B1F /* EUHomeTableViewController.swift */,
-				526EF7ED20F1C5FA001BDE62 /* EUListViewController.swift */,
-				528E2C4620F1FD2C00651A24 /* EUVideosListViewController.swift */,
-				522F1FCF20F28F6C0099D55F /* EUVideoViewController.swift */,
-				522F1FD120F29CCC0099D55F /* EUIndexListViewController.swift */,
-				523CDEB420E0392800704B1F /* Questionnaires */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		523CDEB420E0392800704B1F /* Questionnaires */ = {
-			isa = PBXGroup;
-			children = (
-				523CDEF320E0A1D400704B1F /* EUQuestionnaireViewController.swift */,
-			);
-			path = Questionnaires;
-			sourceTree = "<group>";
-		};
-		5248B85020CE38A600BF4C16 /* Registration */ = {
-			isa = PBXGroup;
-			children = (
-				5248B85120CE38CE00BF4C16 /* EURegistrationViewController.swift */,
-			);
-			path = Registration;
-			sourceTree = "<group>";
-		};
-		526EF7F320F1D113001BDE62 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				526EF7F820F1D140001BDE62 /* EULayoutSettings.swift */,
-				526EF7FC20F1D14F001BDE62 /* EUViewModel.swift */,
-				528E2C2F20F1E6C600651A24 /* Experiences */,
-				528E2C4420F1F5C100651A24 /* EUVideosCollectionModel.swift */,
-				528E2C4820F2008400651A24 /* EUVideoViewModel.swift */,
-				522F1FD320F29FF00099D55F /* EUIndexModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		528E2C2F20F1E6C600651A24 /* Experiences */ = {
-			isa = PBXGroup;
-			children = (
-				528E2C3120F1E6D900651A24 /* EUQuestionnairesModel.swift */,
-				528E2C3020F1E6D900651A24 /* EUDietModel.swift */,
-				528E2C3420F1E6F500651A24 /* EUExercisesModel.swift */,
-				528E2C3620F1E70500651A24 /* EUActivitiesModel.swift */,
-				528E2C3820F1E71300651A24 /* EUHistoryModel.swift */,
-				528E2C3A20F1E72200651A24 /* EUGalleryModel.swift */,
-				528E2C4020F1E75B00651A24 /* EUTimerModel.swift */,
-				528E2C3C20F1E73000651A24 /* EUSettingsModel.swift */,
-				528E2C3E20F1E73F00651A24 /* EUVideosModel.swift */,
-				528E2C4220F1E77200651A24 /* EUOtherModel.swift */,
-			);
-			path = Experiences;
-			sourceTree = "<group>";
-		};
-		52EF3A1921853EB700E0DF62 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				52EF3A1A21853EC900E0DF62 /* APIManager.swift */,
-				52EF3A1C21853EDD00E0DF62 /* Router.swift */,
-				52EF3A20218546E500E0DF62 /* Response.swift */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		87A03178957465622370F27B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FA54DC2C0621B75775B7B1ED /* Pods_Euphoria.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8EAE524FFADDB081FE2A55FC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				97D08EEA31554B8C75D58A3E /* Pods-Euphoria.debug.xcconfig */,
-				CD1428CD891CD330BC37549A /* Pods-Euphoria.release.xcconfig */,
+				00B5286AB675DFFB5E761486 /* Pods-Euphoria.debug.xcconfig */,
+				BE52ACBEF78299081CC944F8 /* Pods-Euphoria.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DE7D5756209E226000BBE056 = {
+		756CF421B9F5B7374298A6AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DE7D5761209E226000BBE056 /* Euphoria */,
-				DE7D5776209E226100BBE056 /* EuphoriaTests */,
-				DE7D5781209E226100BBE056 /* EuphoriaUITests */,
-				DE7D5760209E226000BBE056 /* Products */,
-				8EAE524FFADDB081FE2A55FC /* Pods */,
-				87A03178957465622370F27B /* Frameworks */,
+				35A05858C8C3D56EA48D0900 /* Pods_Euphoria.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE94C4D6220F74F200C4C2ED = {
+			isa = PBXGroup;
+			children = (
+				DE94C4E1220F74F200C4C2ED /* Euphoria */,
+				DE94C4F6220F74F200C4C2ED /* EuphoriaTests */,
+				DE94C501220F74F200C4C2ED /* EuphoriaUITests */,
+				DE94C4E0220F74F200C4C2ED /* Products */,
+				4BC26AC93E898F93F55FD63C /* Pods */,
+				756CF421B9F5B7374298A6AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		DE7D5760209E226000BBE056 /* Products */ = {
+		DE94C4E0220F74F200C4C2ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE7D575F209E226000BBE056 /* Euphoria.app */,
-				DE7D5773209E226100BBE056 /* EuphoriaTests.xctest */,
-				DE7D577E209E226100BBE056 /* EuphoriaUITests.xctest */,
+				DE94C4DF220F74F200C4C2ED /* Euphoria.app */,
+				DE94C4F3220F74F200C4C2ED /* EuphoriaTests.xctest */,
+				DE94C4FE220F74F200C4C2ED /* EuphoriaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE7D5761209E226000BBE056 /* Euphoria */ = {
+		DE94C4E1220F74F200C4C2ED /* Euphoria */ = {
 			isa = PBXGroup;
 			children = (
-				DE7D5762209E226000BBE056 /* AppDelegate.swift */,
-				52EF3A1921853EB700E0DF62 /* Networking */,
-				DE7D57A3209E32C100BBE056 /* Extensions */,
-				DE7D5798209E28BD00BBE056 /* Helper */,
-				DE7D5790209E256100BBE056 /* Models */,
-				526EF7F320F1D113001BDE62 /* ViewModels */,
-				DE7D5793209E25D400BBE056 /* Constants */,
-				DE7D579B209E2D1100BBE056 /* ViewController */,
-				523CDEA720E01F6100704B1F /* Login.storyboard */,
-				DE7D5766209E226000BBE056 /* Main.storyboard */,
-				523CDEB720E0396100704B1F /* Questionnaires.storyboard */,
-				522F1FD820F2B27B0099D55F /* Settings.storyboard */,
-				523B4F7120FC92FA004A96D1 /* History.storyboard */,
-				523B4F7920FCA0C6004A96D1 /* Timer.storyboard */,
-				DE7D5769209E226100BBE056 /* Assets.xcassets */,
-				DE7D576B209E226100BBE056 /* LaunchScreen.storyboard */,
-				DE7D576E209E226100BBE056 /* Info.plist */,
-				520A50C120D788A700F57D3E /* Concent.html */,
-				520A50C320D793BC00F57D3E /* Privacy.html */,
-				DE7D57F0209E36E600BBE056 /* euphoria.strings */,
+				DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */,
+				DED5D5B0220FD36800CDE1AD /* Helper */,
+				DE94C5B2220FC06C00C4C2ED /* CoreData */,
+				DE94C52D220F87AF00C4C2ED /* Questionnaires */,
+				DE94C524220F7CC300C4C2ED /* Constants */,
+				DE94C521220F7C0A00C4C2ED /* Extensions */,
+				DE94C510220F762900C4C2ED /* ViewController */,
+				DEA83229221139750000BD43 /* Login.storyboard */,
+				DE94C4E6220F74F200C4C2ED /* Main.storyboard */,
+				DE94C51B220F7AB000C4C2ED /* Questionnaires.storyboard */,
+				DE94C4E9220F74F200C4C2ED /* Assets.xcassets */,
+				DE94C4EB220F74F200C4C2ED /* LaunchScreen.storyboard */,
+				DE94C4EE220F74F200C4C2ED /* Info.plist */,
+				DE94C5AF220FC00700C4C2ED /* Euphoria.xcdatamodeld */,
+				DE94C609220FD09800C4C2ED /* Questionnaire1.json */,
+				DE5F6DA622103625008B4D12 /* Questionnaire2.json */,
+				DEA8322022107AB30000BD43 /* Questionnaire3.json */,
+				DEA83222221133930000BD43 /* Questionnaire4.json */,
+				DEA83224221134C30000BD43 /* Questionnaire5.json */,
+				DEA8322C22113A750000BD43 /* Concent.html */,
 			);
 			path = Euphoria;
 			sourceTree = "<group>";
 		};
-		DE7D5776209E226100BBE056 /* EuphoriaTests */ = {
+		DE94C4F6220F74F200C4C2ED /* EuphoriaTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE7D5777209E226100BBE056 /* EuphoriaTests.swift */,
-				DE7D5779209E226100BBE056 /* Info.plist */,
+				DE94C4F7220F74F200C4C2ED /* EuphoriaTests.swift */,
+				DE94C4F9220F74F200C4C2ED /* Info.plist */,
 			);
 			path = EuphoriaTests;
 			sourceTree = "<group>";
 		};
-		DE7D5781209E226100BBE056 /* EuphoriaUITests */ = {
+		DE94C501220F74F200C4C2ED /* EuphoriaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DE7D5782209E226100BBE056 /* EuphoriaUITests.swift */,
-				DE7D5784209E226100BBE056 /* Info.plist */,
+				DE94C502220F74F200C4C2ED /* EuphoriaUITests.swift */,
+				DE94C504220F74F200C4C2ED /* Info.plist */,
 			);
 			path = EuphoriaUITests;
 			sourceTree = "<group>";
 		};
-		DE7D5790209E256100BBE056 /* Models */ = {
+		DE94C510220F762900C4C2ED /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DE7D5791209E257B00BBE056 /* EUUser.swift */,
-				523CDEF720E0AB2600704B1F /* EUQuestionnaire.swift */,
-				52C6753520ED6BEA009EBD6E /* EUDiet.swift */,
-				52C5D6E420F16735003F0A92 /* EUExercise.swift */,
-				526EF7DF20F1B8A5001BDE62 /* EUItem.swift */,
-				52C37BD72105664400AD7C42 /* EUSession.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		DE7D5793209E25D400BBE056 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				DE7D5794209E25E900BBE056 /* Enums.swift */,
-				DE7D5796209E268900BBE056 /* Constants.swift */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		DE7D5798209E28BD00BBE056 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				DE7D5799209E28DA00BBE056 /* FacebookHelper.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		DE7D579B209E2D1100BBE056 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				521E474420D714B100EB47CC /* Concent */,
-				DE7D57A0209E329B00BBE056 /* Login */,
-				5248B85020CE38A600BF4C16 /* Registration */,
-				523CDEAA20E0288200704B1F /* Home */,
-				523B4F7320FC9367004A96D1 /* History */,
-				523B4F7820FCA0BB004A96D1 /* Timer */,
-				522F1FD520F2B2220099D55F /* Settings */,
+				DEA832262211391D0000BD43 /* Concent */,
+				DEA8322F22113CF50000BD43 /* Login */,
+				DE94C511220F764A00C4C2ED /* EUHomeTableViewController.swift */,
+				DE94C51E220F7AEC00C4C2ED /* Questionnaires */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		DE7D57A0209E329B00BBE056 /* Login */ = {
+		DE94C51E220F7AEC00C4C2ED /* Questionnaires */ = {
 			isa = PBXGroup;
 			children = (
-				DE7D57A1209E32A900BBE056 /* EULoginViewController.swift */,
+				DE94C51F220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift */,
+				DE94C529220F833D00C4C2ED /* EUQuestionnaireViewController.swift */,
+			);
+			path = Questionnaires;
+			sourceTree = "<group>";
+		};
+		DE94C521220F7C0A00C4C2ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE94C522220F7C1B00C4C2ED /* UIViewController+.swift */,
+				DE94C527220F801900C4C2ED /* UIImage+.swift */,
+				DE94C530220F951300C4C2ED /* String+.swift */,
+				DE94C56C220FA4E300C4C2ED /* UITextField+.swift */,
+				DE94C56E220FA50600C4C2ED /* UIColor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DE94C524220F7CC300C4C2ED /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DE94C525220F7CD400C4C2ED /* Enums.swift */,
+				DED5D5B3220FD52400CDE1AD /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DE94C52D220F87AF00C4C2ED /* Questionnaires */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Questionnaires;
+			sourceTree = "<group>";
+		};
+		DE94C5B2220FC06C00C4C2ED /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */,
+				DE5F6DB522103C66008B4D12 /* Questionnaires+CoreDataProperties.swift */,
+				DE5F6DB622103C66008B4D12 /* Option+CoreDataClass.swift */,
+				DE5F6DB722103C66008B4D12 /* Option+CoreDataProperties.swift */,
+				DE5F6DB822103C66008B4D12 /* Questionnaire+CoreDataClass.swift */,
+				DE5F6DB922103C66008B4D12 /* Questionnaire+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		DEA832262211391D0000BD43 /* Concent */ = {
+			isa = PBXGroup;
+			children = (
+				DEA83227221139440000BD43 /* EUConcentViewController.swift */,
+			);
+			path = Concent;
+			sourceTree = "<group>";
+		};
+		DEA8322F22113CF50000BD43 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DEA8323022113D090000BD43 /* EULoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		DE7D57A3209E32C100BBE056 /* Extensions */ = {
+		DED5D5B0220FD36800CDE1AD /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				DE7D57A4209E32E100BBE056 /* UIViewController+.swift */,
-				DE7D57A6209E33F100BBE056 /* String+.swift */,
-				52FE636020CDD3F700A532DE /* UITextField+.swift */,
-				521E474720D7186400EB47CC /* UIColor+.swift */,
-				526EF7F120F1CAC6001BDE62 /* UIImage+.swift */,
-				52EF3A1E2185466700E0DF62 /* URLRequest+.swift */,
+				DED5D5B1220FD37900CDE1AD /* CoreData.swift */,
 			);
-			path = Extensions;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE7D575E209E226000BBE056 /* Euphoria */ = {
+		DE94C4DE220F74F200C4C2ED /* Euphoria */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE7D5787209E226100BBE056 /* Build configuration list for PBXNativeTarget "Euphoria" */;
+			buildConfigurationList = DE94C507220F74F200C4C2ED /* Build configuration list for PBXNativeTarget "Euphoria" */;
 			buildPhases = (
-				CBAFEBD91186B5058BAFC040 /* [CP] Check Pods Manifest.lock */,
-				DE7D575B209E226000BBE056 /* Sources */,
-				DE7D575C209E226000BBE056 /* Frameworks */,
-				DE7D575D209E226000BBE056 /* Resources */,
-				3F8005659ADD0CB8BF0A2D93 /* [CP] Embed Pods Frameworks */,
+				FD96D9B6BA07DDD9C02AD8C6 /* [CP] Check Pods Manifest.lock */,
+				DE94C4DB220F74F200C4C2ED /* Sources */,
+				DE94C4DC220F74F200C4C2ED /* Frameworks */,
+				DE94C4DD220F74F200C4C2ED /* Resources */,
+				9552D2C857A0A365354CBC89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -476,116 +321,115 @@
 			);
 			name = Euphoria;
 			productName = Euphoria;
-			productReference = DE7D575F209E226000BBE056 /* Euphoria.app */;
+			productReference = DE94C4DF220F74F200C4C2ED /* Euphoria.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DE7D5772209E226100BBE056 /* EuphoriaTests */ = {
+		DE94C4F2220F74F200C4C2ED /* EuphoriaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE7D578A209E226100BBE056 /* Build configuration list for PBXNativeTarget "EuphoriaTests" */;
+			buildConfigurationList = DE94C50A220F74F200C4C2ED /* Build configuration list for PBXNativeTarget "EuphoriaTests" */;
 			buildPhases = (
-				DE7D576F209E226100BBE056 /* Sources */,
-				DE7D5770209E226100BBE056 /* Frameworks */,
-				DE7D5771209E226100BBE056 /* Resources */,
+				DE94C4EF220F74F200C4C2ED /* Sources */,
+				DE94C4F0220F74F200C4C2ED /* Frameworks */,
+				DE94C4F1220F74F200C4C2ED /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE7D5775209E226100BBE056 /* PBXTargetDependency */,
+				DE94C4F5220F74F200C4C2ED /* PBXTargetDependency */,
 			);
 			name = EuphoriaTests;
 			productName = EuphoriaTests;
-			productReference = DE7D5773209E226100BBE056 /* EuphoriaTests.xctest */;
+			productReference = DE94C4F3220F74F200C4C2ED /* EuphoriaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DE7D577D209E226100BBE056 /* EuphoriaUITests */ = {
+		DE94C4FD220F74F200C4C2ED /* EuphoriaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE7D578D209E226100BBE056 /* Build configuration list for PBXNativeTarget "EuphoriaUITests" */;
+			buildConfigurationList = DE94C50D220F74F200C4C2ED /* Build configuration list for PBXNativeTarget "EuphoriaUITests" */;
 			buildPhases = (
-				DE7D577A209E226100BBE056 /* Sources */,
-				DE7D577B209E226100BBE056 /* Frameworks */,
-				DE7D577C209E226100BBE056 /* Resources */,
+				DE94C4FA220F74F200C4C2ED /* Sources */,
+				DE94C4FB220F74F200C4C2ED /* Frameworks */,
+				DE94C4FC220F74F200C4C2ED /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE7D5780209E226100BBE056 /* PBXTargetDependency */,
+				DE94C500220F74F200C4C2ED /* PBXTargetDependency */,
 			);
 			name = EuphoriaUITests;
 			productName = EuphoriaUITests;
-			productReference = DE7D577E209E226100BBE056 /* EuphoriaUITests.xctest */;
+			productReference = DE94C4FE220F74F200C4C2ED /* EuphoriaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DE7D5757209E226000BBE056 /* Project object */ = {
+		DE94C4D7220F74F200C4C2ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Guduru, Pradeep(AWF)";
 				TargetAttributes = {
-					DE7D575E209E226000BBE056 = {
-						CreatedOnToolsVersion = 9.3;
+					DE94C4DE220F74F200C4C2ED = {
+						CreatedOnToolsVersion = 10.1;
 					};
-					DE7D5772209E226100BBE056 = {
-						CreatedOnToolsVersion = 9.3;
-						TestTargetID = DE7D575E209E226000BBE056;
+					DE94C4F2220F74F200C4C2ED = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DE94C4DE220F74F200C4C2ED;
 					};
-					DE7D577D209E226100BBE056 = {
-						CreatedOnToolsVersion = 9.3;
-						TestTargetID = DE7D575E209E226000BBE056;
+					DE94C4FD220F74F200C4C2ED = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DE94C4DE220F74F200C4C2ED;
 					};
 				};
 			};
-			buildConfigurationList = DE7D575A209E226000BBE056 /* Build configuration list for PBXProject "Euphoria" */;
+			buildConfigurationList = DE94C4DA220F74F200C4C2ED /* Build configuration list for PBXProject "Euphoria" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
-				el,
 			);
-			mainGroup = DE7D5756209E226000BBE056;
-			productRefGroup = DE7D5760209E226000BBE056 /* Products */;
+			mainGroup = DE94C4D6220F74F200C4C2ED;
+			productRefGroup = DE94C4E0220F74F200C4C2ED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE7D575E209E226000BBE056 /* Euphoria */,
-				DE7D5772209E226100BBE056 /* EuphoriaTests */,
-				DE7D577D209E226100BBE056 /* EuphoriaUITests */,
+				DE94C4DE220F74F200C4C2ED /* Euphoria */,
+				DE94C4F2220F74F200C4C2ED /* EuphoriaTests */,
+				DE94C4FD220F74F200C4C2ED /* EuphoriaUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DE7D575D209E226000BBE056 /* Resources */ = {
+		DE94C4DD220F74F200C4C2ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE7D576D209E226100BBE056 /* LaunchScreen.storyboard in Resources */,
-				520A50C220D788A800F57D3E /* Concent.html in Resources */,
-				523CDEA820E01F6100704B1F /* Login.storyboard in Resources */,
-				523B4F7220FC92FA004A96D1 /* History.storyboard in Resources */,
-				DE7D57EE209E36E600BBE056 /* euphoria.strings in Resources */,
-				520A50C420D793BC00F57D3E /* Privacy.html in Resources */,
-				DE7D576A209E226100BBE056 /* Assets.xcassets in Resources */,
-				523B4F7A20FCA0C6004A96D1 /* Timer.storyboard in Resources */,
-				522F1FD920F2B27B0099D55F /* Settings.storyboard in Resources */,
-				DE7D5768209E226000BBE056 /* Main.storyboard in Resources */,
-				523CDEB820E0396100704B1F /* Questionnaires.storyboard in Resources */,
+				DE94C60A220FD09800C4C2ED /* Questionnaire1.json in Resources */,
+				DEA8322D22113A750000BD43 /* Concent.html in Resources */,
+				DE94C4ED220F74F200C4C2ED /* LaunchScreen.storyboard in Resources */,
+				DEA83225221134C30000BD43 /* Questionnaire5.json in Resources */,
+				DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */,
+				DE94C4EA220F74F200C4C2ED /* Assets.xcassets in Resources */,
+				DEA8322122107AB30000BD43 /* Questionnaire3.json in Resources */,
+				DE94C51D220F7AB000C4C2ED /* Questionnaires.storyboard in Resources */,
+				DEA83223221133930000BD43 /* Questionnaire4.json in Resources */,
+				DEA8322B221139750000BD43 /* Login.storyboard in Resources */,
+				DE94C4E8220F74F200C4C2ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE7D5771209E226100BBE056 /* Resources */ = {
+		DE94C4F1220F74F200C4C2ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE7D577C209E226100BBE056 /* Resources */ = {
+		DE94C4FC220F74F200C4C2ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -595,10 +439,12 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3F8005659ADD0CB8BF0A2D93 /* [CP] Embed Pods Frameworks */ = {
+		9552D2C857A0A365354CBC89 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks.sh",
@@ -606,35 +452,35 @@
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CBAFEBD91186B5058BAFC040 /* [CP] Check Pods Manifest.lock */ = {
+		FD96D9B6BA07DDD9C02AD8C6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Euphoria-checkManifestLockResult.txt",
 			);
@@ -646,133 +492,105 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DE7D575B209E226000BBE056 /* Sources */ = {
+		DE94C4DB220F74F200C4C2ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE7D57A5209E32E100BBE056 /* UIViewController+.swift in Sources */,
-				DE7D579A209E28DA00BBE056 /* FacebookHelper.swift in Sources */,
-				DE7D57A7209E33F100BBE056 /* String+.swift in Sources */,
-				52EF3A1F2185466700E0DF62 /* URLRequest+.swift in Sources */,
-				DE7D5792209E257B00BBE056 /* EUUser.swift in Sources */,
-				DE7D5795209E25E900BBE056 /* Enums.swift in Sources */,
-				528E2C4520F1F5C100651A24 /* EUVideosCollectionModel.swift in Sources */,
-				528E2C3520F1E6F500651A24 /* EUExercisesModel.swift in Sources */,
-				521E474820D7186400EB47CC /* UIColor+.swift in Sources */,
-				52C37BD82105664400AD7C42 /* EUSession.swift in Sources */,
-				528E2C3F20F1E73F00651A24 /* EUVideosModel.swift in Sources */,
-				52EF3A1D21853EDD00E0DF62 /* Router.swift in Sources */,
-				526EF7EE20F1C5FA001BDE62 /* EUListViewController.swift in Sources */,
-				DE7D5763209E226000BBE056 /* AppDelegate.swift in Sources */,
-				528E2C4920F2008400651A24 /* EUVideoViewModel.swift in Sources */,
-				528E2C4320F1E77200651A24 /* EUOtherModel.swift in Sources */,
-				522F1FD220F29CCC0099D55F /* EUIndexListViewController.swift in Sources */,
-				523CDEAE20E028B600704B1F /* EUNavigationController.swift in Sources */,
-				52C37BD221055C6100AD7C42 /* EUSetTimerViewController.swift in Sources */,
-				522F1FDB20F2C3500099D55F /* EUSignInOptionsViewController.swift in Sources */,
-				522F1FD020F28F6C0099D55F /* EUVideoViewController.swift in Sources */,
-				52FE636120CDD3F700A532DE /* UITextField+.swift in Sources */,
-				523CDEAC20E0289C00704B1F /* EUHomeTableViewController.swift in Sources */,
-				DE7D57A2209E32A900BBE056 /* EULoginViewController.swift in Sources */,
-				52EF3A1B21853EC900E0DF62 /* APIManager.swift in Sources */,
-				526EF7FA20F1D141001BDE62 /* EULayoutSettings.swift in Sources */,
-				526EF7FD20F1D14F001BDE62 /* EUViewModel.swift in Sources */,
-				522F1FDD20F316910099D55F /* EUSyncSettingsViewController.swift in Sources */,
-				DE7D5797209E268900BBE056 /* Constants.swift in Sources */,
-				528E2C3D20F1E73000651A24 /* EUSettingsModel.swift in Sources */,
-				521E474620D714CC00EB47CC /* EUConcentViewController.swift in Sources */,
-				523B4F7C20FCA43C004A96D1 /* EUSessionsViewController.swift in Sources */,
-				523B4F7720FC998C004A96D1 /* EUTakePhotoViewController.swift in Sources */,
-				52EF3A21218546E500E0DF62 /* Response.swift in Sources */,
-				528E2C4720F1FD2C00651A24 /* EUVideosListViewController.swift in Sources */,
-				528E2C3B20F1E72200651A24 /* EUGalleryModel.swift in Sources */,
-				523CDEF820E0AB2600704B1F /* EUQuestionnaire.swift in Sources */,
-				528E2C3220F1E6DA00651A24 /* EUDietModel.swift in Sources */,
-				52C5D6E520F16735003F0A92 /* EUExercise.swift in Sources */,
-				522F1FD420F29FF00099D55F /* EUIndexModel.swift in Sources */,
-				522F1FD720F2B2620099D55F /* EUAccountViewController.swift in Sources */,
-				526EF7E020F1B8A5001BDE62 /* EUItem.swift in Sources */,
-				528E2C3720F1E70500651A24 /* EUActivitiesModel.swift in Sources */,
-				52C37BDE210588CD00AD7C42 /* EUTimerCountDownViewController.swift in Sources */,
-				5248B85220CE38CE00BF4C16 /* EURegistrationViewController.swift in Sources */,
-				528E2C3920F1E71300651A24 /* EUHistoryModel.swift in Sources */,
-				523CDEF420E0A1D400704B1F /* EUQuestionnaireViewController.swift in Sources */,
-				528E2C3320F1E6DA00651A24 /* EUQuestionnairesModel.swift in Sources */,
-				52C37BD6210565D900AD7C42 /* EUSessionDetailsViewController.swift in Sources */,
-				523B4F7520FC93A8004A96D1 /* EUImageViewController.swift in Sources */,
-				526EF7F220F1CAC6001BDE62 /* UIImage+.swift in Sources */,
-				52C6753620ED6BEA009EBD6E /* EUDiet.swift in Sources */,
-				528E2C4120F1E75B00651A24 /* EUTimerModel.swift in Sources */,
+				DED5D5B2220FD37900CDE1AD /* CoreData.swift in Sources */,
+				DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */,
+				DE94C523220F7C1B00C4C2ED /* UIViewController+.swift in Sources */,
+				DE5F6DBD22103C66008B4D12 /* Option+CoreDataProperties.swift in Sources */,
+				DEA8323122113D090000BD43 /* EULoginViewController.swift in Sources */,
+				DE94C531220F951300C4C2ED /* String+.swift in Sources */,
+				DE94C520220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift in Sources */,
+				DE94C512220F764A00C4C2ED /* EUHomeTableViewController.swift in Sources */,
+				DE5F6DBB22103C66008B4D12 /* Questionnaires+CoreDataProperties.swift in Sources */,
+				DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */,
+				DE94C52A220F833D00C4C2ED /* EUQuestionnaireViewController.swift in Sources */,
+				DE94C528220F801900C4C2ED /* UIImage+.swift in Sources */,
+				DE94C5B1220FC00700C4C2ED /* Euphoria.xcdatamodeld in Sources */,
+				DE5F6DBA22103C66008B4D12 /* Questionnaires+CoreDataClass.swift in Sources */,
+				DE94C526220F7CD400C4C2ED /* Enums.swift in Sources */,
+				DE5F6DBC22103C66008B4D12 /* Option+CoreDataClass.swift in Sources */,
+				DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */,
+				DE94C56D220FA4E300C4C2ED /* UITextField+.swift in Sources */,
+				DE5F6DBE22103C66008B4D12 /* Questionnaire+CoreDataClass.swift in Sources */,
+				DE5F6DBF22103C66008B4D12 /* Questionnaire+CoreDataProperties.swift in Sources */,
+				DEA83228221139440000BD43 /* EUConcentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE7D576F209E226100BBE056 /* Sources */ = {
+		DE94C4EF220F74F200C4C2ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE7D5778209E226100BBE056 /* EuphoriaTests.swift in Sources */,
+				DE94C4F8220F74F200C4C2ED /* EuphoriaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE7D577A209E226100BBE056 /* Sources */ = {
+		DE94C4FA220F74F200C4C2ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE7D5783209E226100BBE056 /* EuphoriaUITests.swift in Sources */,
+				DE94C503220F74F200C4C2ED /* EuphoriaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DE7D5775209E226100BBE056 /* PBXTargetDependency */ = {
+		DE94C4F5220F74F200C4C2ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE7D575E209E226000BBE056 /* Euphoria */;
-			targetProxy = DE7D5774209E226100BBE056 /* PBXContainerItemProxy */;
+			target = DE94C4DE220F74F200C4C2ED /* Euphoria */;
+			targetProxy = DE94C4F4220F74F200C4C2ED /* PBXContainerItemProxy */;
 		};
-		DE7D5780209E226100BBE056 /* PBXTargetDependency */ = {
+		DE94C500220F74F200C4C2ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE7D575E209E226000BBE056 /* Euphoria */;
-			targetProxy = DE7D577F209E226100BBE056 /* PBXContainerItemProxy */;
+			target = DE94C4DE220F74F200C4C2ED /* Euphoria */;
+			targetProxy = DE94C4FF220F74F200C4C2ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DE7D5766209E226000BBE056 /* Main.storyboard */ = {
+		DE94C4E6220F74F200C4C2ED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DE7D5767209E226000BBE056 /* Base */,
-				DE7D57EA209E36C200BBE056 /* el */,
+				DE94C4E7220F74F200C4C2ED /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DE7D576B209E226100BBE056 /* LaunchScreen.storyboard */ = {
+		DE94C4EB220F74F200C4C2ED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DE7D576C209E226100BBE056 /* Base */,
-				DE7D57EB209E36C200BBE056 /* el */,
+				DE94C4EC220F74F200C4C2ED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		DE7D57F0209E36E600BBE056 /* euphoria.strings */ = {
+		DE94C51B220F7AB000C4C2ED /* Questionnaires.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DE7D57EF209E36E600BBE056 /* en */,
-				DE7D57F1209E36EB00BBE056 /* el */,
+				DE94C51C220F7AB000C4C2ED /* Base */,
 			);
-			name = euphoria.strings;
+			name = Questionnaires.storyboard;
+			sourceTree = "<group>";
+		};
+		DEA83229221139750000BD43 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEA8322A221139750000BD43 /* Base */,
+			);
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DE7D5785209E226100BBE056 /* Debug */ = {
+		DE94C505220F74F200C4C2ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -820,8 +638,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -829,11 +648,10 @@
 			};
 			name = Debug;
 		};
-		DE7D5786209E226100BBE056 /* Release */ = {
+		DE94C506220F74F200C4C2ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -875,8 +693,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -884,45 +703,43 @@
 			};
 			name = Release;
 		};
-		DE7D5788209E226100BBE056 /* Debug */ = {
+		DE94C508220F74F200C4C2ED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97D08EEA31554B8C75D58A3E /* Pods-Euphoria.debug.xcconfig */;
+			baseConfigurationReference = 00B5286AB675DFFB5E761486 /* Pods-Euphoria.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Euphoria/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.euphoria.alpha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradeep.Euphoria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DE7D5789209E226100BBE056 /* Release */ = {
+		DE94C509220F74F200C4C2ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD1428CD891CD330BC37549A /* Pods-Euphoria.release.xcconfig */;
+			baseConfigurationReference = BE52ACBEF78299081CC944F8 /* Pods-Euphoria.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Euphoria/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.euphoria.alpha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradeep.Euphoria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		DE7D578B209E226100BBE056 /* Debug */ = {
+		DE94C50B220F74F200C4C2ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -934,15 +751,15 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Pradeep.EuphoriaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradeep.EuphoriaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Euphoria.app/Euphoria";
 			};
 			name = Debug;
 		};
-		DE7D578C209E226100BBE056 /* Release */ = {
+		DE94C50C220F74F200C4C2ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -954,15 +771,15 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Pradeep.EuphoriaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradeep.EuphoriaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Euphoria.app/Euphoria";
 			};
 			name = Release;
 		};
-		DE7D578E209E226100BBE056 /* Debug */ = {
+		DE94C50E220F74F200C4C2ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -973,15 +790,15 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Pradeep.EuphoriaUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradeep.EuphoriaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Euphoria;
 			};
 			name = Debug;
 		};
-		DE7D578F209E226100BBE056 /* Release */ = {
+		DE94C50F220F74F200C4C2ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -992,9 +809,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Pradeep.EuphoriaUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pradeep.EuphoriaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Euphoria;
 			};
@@ -1003,43 +820,56 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE7D575A209E226000BBE056 /* Build configuration list for PBXProject "Euphoria" */ = {
+		DE94C4DA220F74F200C4C2ED /* Build configuration list for PBXProject "Euphoria" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE7D5785209E226100BBE056 /* Debug */,
-				DE7D5786209E226100BBE056 /* Release */,
+				DE94C505220F74F200C4C2ED /* Debug */,
+				DE94C506220F74F200C4C2ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE7D5787209E226100BBE056 /* Build configuration list for PBXNativeTarget "Euphoria" */ = {
+		DE94C507220F74F200C4C2ED /* Build configuration list for PBXNativeTarget "Euphoria" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE7D5788209E226100BBE056 /* Debug */,
-				DE7D5789209E226100BBE056 /* Release */,
+				DE94C508220F74F200C4C2ED /* Debug */,
+				DE94C509220F74F200C4C2ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE7D578A209E226100BBE056 /* Build configuration list for PBXNativeTarget "EuphoriaTests" */ = {
+		DE94C50A220F74F200C4C2ED /* Build configuration list for PBXNativeTarget "EuphoriaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE7D578B209E226100BBE056 /* Debug */,
-				DE7D578C209E226100BBE056 /* Release */,
+				DE94C50B220F74F200C4C2ED /* Debug */,
+				DE94C50C220F74F200C4C2ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE7D578D209E226100BBE056 /* Build configuration list for PBXNativeTarget "EuphoriaUITests" */ = {
+		DE94C50D220F74F200C4C2ED /* Build configuration list for PBXNativeTarget "EuphoriaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE7D578E209E226100BBE056 /* Debug */,
-				DE7D578F209E226100BBE056 /* Release */,
+				DE94C50E220F74F200C4C2ED /* Debug */,
+				DE94C50F220F74F200C4C2ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DE94C5AF220FC00700C4C2ED /* Euphoria.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DE94C5B0220FC00700C4C2ED /* Euphoria.xcdatamodel */,
+			);
+			currentVersion = DE94C5B0220FC00700C4C2ED /* Euphoria.xcdatamodel */;
+			path = Euphoria.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = DE7D5757209E226000BBE056 /* Project object */;
+	rootObject = DE94C4D7220F74F200C4C2ED /* Project object */;
 }

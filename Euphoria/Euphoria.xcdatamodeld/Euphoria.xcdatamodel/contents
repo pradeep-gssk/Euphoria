@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Option" representedClassName="Option" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="option" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questionnaireOption" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="options" inverseEntity="Questionnaire" syncable="YES"/>
+        <relationship name="questionnaireSubOption" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="subOptions" inverseEntity="Questionnaire" syncable="YES"/>
+    </entity>
+    <entity name="Questionnaire" representedClassName="Questionnaire" syncable="YES">
+        <attribute name="answer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="optionType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subOptionType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="options" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Option" inverseName="questionnaireOption" inverseEntity="Option" syncable="YES"/>
+        <relationship name="questionnaires" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaires" inverseName="questionnaire" inverseEntity="Questionnaires" syncable="YES"/>
+        <relationship name="subOptions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Option" inverseName="questionnaireSubOption" inverseEntity="Option" syncable="YES"/>
+    </entity>
+    <entity name="Questionnaires" representedClassName="Questionnaires" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="questionnaire" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="questionnaires" inverseEntity="Questionnaire" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Option" positionX="611.33203125" positionY="-124.90625" width="128" height="105"/>
+        <element name="Questionnaire" positionX="234.3671875" positionY="-206.6875" width="128" height="180"/>
+        <element name="Questionnaires" positionX="-20.4296875" positionY="-217.74609375" width="128" height="120"/>
+    </elements>
+</model>

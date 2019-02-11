@@ -2,17 +2,15 @@
 //  EUConcentViewController.swift
 //  Euphoria
 //
-//  Created by Krishna Pradeep on 6/17/18.
-//  Copyright © 2018 Guduru, Pradeep(AWF). All rights reserved.
+//  Created by Guduru, Pradeep(AWF) on 2/10/19.
+//  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
 import WebKit
 
 class EUConcentViewController: UIViewController {
-    
+
     static func loadConcentView() -> UIViewController {
         self.htmlViewType = .Concent
         return self.viewControllerForConcentView("ConcentNavViewController")
@@ -22,36 +20,22 @@ class EUConcentViewController: UIViewController {
         self.htmlViewType = .Privacy
         return self.viewControllerForConcentView("ConcentViewController")
     }
-
+    
     private static func viewControllerForConcentView(_ identifier: String) -> UIViewController {
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: identifier)
     }
-    
+
     @IBOutlet weak var policyView: UIView!
     @IBOutlet weak var iagreeButton: UIButton!
     @IBOutlet weak var webView: UIWebView!
     
     private static var htmlViewType: HtmlViewType = .Concent
     
-    private let disposeBag = DisposeBag()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.designViews()
         self.loadWebView()
-        
-        self.iagreeButton.rx.tap.subscribe({[weak self] state in
-            guard let strongSelf = self else { return }
-            
-            switch EUConcentViewController.htmlViewType {
-            case .Concent:
-                UserDefaults.standard.set(true, forKey: I_AGREE)
-                strongSelf.performSegue(withIdentifier: "ShowLoginView", sender: self)
-            case .Privacy:
-                strongSelf.navigationController?.popViewController(animated: true)
-            }
-        }).disposed(by: self.disposeBag)
     }
     
     func designViews() {
@@ -78,6 +62,16 @@ class EUConcentViewController: UIViewController {
         }
         catch {
             print("error")
+        }
+    }
+    
+    @IBAction func didTapIAgree(_ sender: Any) {
+        switch EUConcentViewController.htmlViewType {
+        case .Concent:
+            UserDefaults.standard.set(true, forKey: I_AGREE)
+            self.performSegue(withIdentifier: "ShowLoginView", sender: self)
+        case .Privacy: break
+            //strongSelf.navigationController?.popViewController(animated: true)
         }
     }
 }

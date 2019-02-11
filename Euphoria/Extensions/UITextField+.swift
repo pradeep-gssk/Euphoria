@@ -2,8 +2,8 @@
 //  UITextField+.swift
 //  Euphoria
 //
-//  Created by Krishna Pradeep on 6/10/18.
-//  Copyright © 2018 Guduru, Pradeep(AWF). All rights reserved.
+//  Created by Guduru, Pradeep(AWF) on 2/9/19.
+//  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 
 import UIKit
@@ -31,7 +31,7 @@ extension UITextField {
         self.setPaddingPointsOnLeft(left, andRight: right)
         self.layer.masksToBounds = false
         self.layer.cornerRadius = 5.0
-        self.layer.shadowColor = UIColor.color(red: 74, green: 74, blue: 74, alpha: 1).cgColor
+        self.layer.shadowColor = UIColor.singleColor(value: 74, alpha: 1).cgColor
         self.layer.shadowOffset = CGSize(width: -1, height: 2)
         self.layer.shadowRadius = 2.0
         self.layer.shouldRasterize = true
@@ -39,3 +39,4 @@ extension UITextField {
         self.layer.sublayerTransform = CATransform3DMakeTranslation(0, 7, 0)
     }
 }
+
