@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Do it",
+        "resource": "do-it",
+        "type": "wav"
+    },
+    {
+        "name": "Got it 1",
+        "resource": "got-it-1",
+        "type": "wav"
+    },
+    {
+        "name": "Got it 2",
+        "resource": "got-it-2",
+        "type": "wav"
+    },
+    {
+        "name": "Grow up",
+        "resource": "grow-up",
+        "type": "wav"
+    },
+    {
+        "name": "Too",
+        "resource": "too",
+        "type": "wav"
+    },
+    {
+        "name": "Yes 1",
+        "resource": "yes-1",
+        "type": "wav"
+    },
+    {
+        "name": "Yes 2",
+        "resource": "yes-2",
+        "type": "wav"
+    }
+]

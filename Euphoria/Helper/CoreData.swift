@@ -151,3 +151,51 @@ extension CoreData {
         }
     }
 }
+
+//MARK: Sound
+extension CoreData {
+    func saveSound(_ json: [[String: String]]) {
+        for dictionary in json {
+            let sound = NSEntityDescription.insertNewObject(forEntityName: "Sound", into: context) as? Sound
+            sound?.name = dictionary["name"]
+            sound?.resource = dictionary["resource"]
+            sound?.type = dictionary["type"]
+            sound?.path = Bundle.main.path(forResource: dictionary["resource"], ofType: dictionary["type"])
+        }
+        
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+    
+    func fetchSounds() -> [Sound] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Sound.self))
+        do {
+            let data = try context.fetch(fetchRequest) as? [Sound]
+            return data ?? []
+            
+        } catch {
+            return []
+        }
+    }
+}
+
+//MARK: Session
+extension CoreData {
+    func fetchSessions() -> [Session] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Session.self))
+        do {
+            let data = try context.fetch(fetchRequest) as? [Session]
+            return data ?? []
+            
+        } catch {
+            return []
+        }
+    }
+    
+    func saveSession() {
+//        let sound = NSEntityDescription.insertNewObject(forEntityName: "Session", into: context) as? Session
+    }
+}

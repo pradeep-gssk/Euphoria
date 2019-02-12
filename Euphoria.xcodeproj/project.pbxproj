@@ -10,6 +10,31 @@
 		2CC0580927CBF46B65BA3114 /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A05858C8C3D56EA48D0900 /* Pods_Euphoria.framework */; };
 		DE0088262212305F00129D81 /* EUExerciseVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0088252212305F00129D81 /* EUExerciseVideoViewController.swift */; };
 		DE00882C2212350200129D81 /* Exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = DE00882B2212350200129D81 /* Exercises.json */; };
+		DE4D60A9221265D900D6904C /* EUAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60A8221265D900D6904C /* EUAccountViewController.swift */; };
+		DE4D60AC221268CB00D6904C /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60AA221268CB00D6904C /* Timer.storyboard */; };
+		DE4D60AF22126D5000D6904C /* EUSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60AE22126D5000D6904C /* EUSessionsViewController.swift */; };
+		DE4D60D02212815A00D6904C /* yes-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60C92212815800D6904C /* yes-1.wav */; };
+		DE4D60D12212815A00D6904C /* grow-up.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CA2212815800D6904C /* grow-up.wav */; };
+		DE4D60D22212815A00D6904C /* got-it-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CB2212815900D6904C /* got-it-1.wav */; };
+		DE4D60D32212815A00D6904C /* do-it.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CC2212815900D6904C /* do-it.wav */; };
+		DE4D60D42212815A00D6904C /* too.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CD2212815900D6904C /* too.wav */; };
+		DE4D60D52212815A00D6904C /* got-it-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CE2212815900D6904C /* got-it-2.wav */; };
+		DE4D60D62212815A00D6904C /* yes-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CF2212815900D6904C /* yes-2.wav */; };
+		DE4D60D9221282CD00D6904C /* Activities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60D7221282CD00D6904C /* Activities.storyboard */; };
+		DE4D60DC221282E900D6904C /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60DA221282E900D6904C /* History.storyboard */; };
+		DE4D60DF221282FB00D6904C /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60DD221282FB00D6904C /* Gallery.storyboard */; };
+		DE4D60E4221283C200D6904C /* EUActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60E3221283C200D6904C /* EUActivitiesTableViewController.swift */; };
+		DE4D60E62212857600D6904C /* EUHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60E52212857600D6904C /* EUHistoryTableViewController.swift */; };
+		DE4D60E8221285B600D6904C /* EUGalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60E7221285B600D6904C /* EUGalleryTableViewController.swift */; };
+		DE4D60EA22128AED00D6904C /* Sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60E922128AED00D6904C /* Sounds.json */; };
+		DE4D60F122128DF800D6904C /* Sound+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60EF22128DF800D6904C /* Sound+CoreDataClass.swift */; };
+		DE4D60F222128DF800D6904C /* Sound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F022128DF800D6904C /* Sound+CoreDataProperties.swift */; };
+		DE4D60F72212928200D6904C /* Stop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F32212928200D6904C /* Stop+CoreDataClass.swift */; };
+		DE4D60F82212928200D6904C /* Stop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F42212928200D6904C /* Stop+CoreDataProperties.swift */; };
+		DE4D60F92212928200D6904C /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F52212928200D6904C /* Session+CoreDataClass.swift */; };
+		DE4D60FA2212928200D6904C /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F62212928200D6904C /* Session+CoreDataProperties.swift */; };
+		DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */; };
+		DE4D60FE2212994200D6904C /* EUSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FD2212994200D6904C /* EUSessionViewController.swift */; };
 		DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6DA622103625008B4D12 /* Questionnaire2.json */; };
 		DE5F6DBA22103C66008B4D12 /* Questionnaires+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */; };
 		DE5F6DBB22103C66008B4D12 /* Questionnaires+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB522103C66008B4D12 /* Questionnaires+CoreDataProperties.swift */; };
@@ -54,6 +79,7 @@
 		DECD976B221240D4001B47F0 /* Exercises+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD9767221240D3001B47F0 /* Exercises+CoreDataProperties.swift */; };
 		DED5D5B2220FD37900CDE1AD /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5D5B1220FD37900CDE1AD /* CoreData.swift */; };
 		DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5D5B3220FD52400CDE1AD /* Constants.swift */; };
+		DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB2CAA2212AB6600F2188C /* EUSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +105,31 @@
 		BE52ACBEF78299081CC944F8 /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
 		DE0088252212305F00129D81 /* EUExerciseVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExerciseVideoViewController.swift; sourceTree = "<group>"; };
 		DE00882B2212350200129D81 /* Exercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Exercises.json; sourceTree = "<group>"; };
+		DE4D60A8221265D900D6904C /* EUAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUAccountViewController.swift; sourceTree = "<group>"; };
+		DE4D60AB221268CB00D6904C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Timer.storyboard; sourceTree = "<group>"; };
+		DE4D60AE22126D5000D6904C /* EUSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSessionsViewController.swift; sourceTree = "<group>"; };
+		DE4D60C92212815800D6904C /* yes-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "yes-1.wav"; sourceTree = "<group>"; };
+		DE4D60CA2212815800D6904C /* grow-up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "grow-up.wav"; sourceTree = "<group>"; };
+		DE4D60CB2212815900D6904C /* got-it-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "got-it-1.wav"; sourceTree = "<group>"; };
+		DE4D60CC2212815900D6904C /* do-it.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "do-it.wav"; sourceTree = "<group>"; };
+		DE4D60CD2212815900D6904C /* too.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = too.wav; sourceTree = "<group>"; };
+		DE4D60CE2212815900D6904C /* got-it-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "got-it-2.wav"; sourceTree = "<group>"; };
+		DE4D60CF2212815900D6904C /* yes-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "yes-2.wav"; sourceTree = "<group>"; };
+		DE4D60D8221282CD00D6904C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Activities.storyboard; sourceTree = "<group>"; };
+		DE4D60DB221282E900D6904C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/History.storyboard; sourceTree = "<group>"; };
+		DE4D60DE221282FB00D6904C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gallery.storyboard; sourceTree = "<group>"; };
+		DE4D60E3221283C200D6904C /* EUActivitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUActivitiesTableViewController.swift; sourceTree = "<group>"; };
+		DE4D60E52212857600D6904C /* EUHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryTableViewController.swift; sourceTree = "<group>"; };
+		DE4D60E7221285B600D6904C /* EUGalleryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUGalleryTableViewController.swift; sourceTree = "<group>"; };
+		DE4D60E922128AED00D6904C /* Sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sounds.json; sourceTree = "<group>"; };
+		DE4D60EF22128DF800D6904C /* Sound+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE4D60F022128DF800D6904C /* Sound+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE4D60F32212928200D6904C /* Stop+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE4D60F42212928200D6904C /* Stop+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE4D60F52212928200D6904C /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE4D60F62212928200D6904C /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerSetupViewController.swift; sourceTree = "<group>"; };
+		DE4D60FD2212994200D6904C /* EUSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSessionViewController.swift; sourceTree = "<group>"; };
 		DE5F6DA622103625008B4D12 /* Questionnaire2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire2.json; sourceTree = "<group>"; };
 		DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE5F6DB522103C66008B4D12 /* Questionnaires+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -129,6 +180,7 @@
 		DECD9767221240D3001B47F0 /* Exercises+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DED5D5B1220FD37900CDE1AD /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		DED5D5B3220FD52400CDE1AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DEFB2CAA2212AB6600F2188C /* EUSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +226,68 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE4D60AD22126B7500D6904C /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				DE4D60AE22126D5000D6904C /* EUSessionsViewController.swift */,
+				DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */,
+				DE4D60FD2212994200D6904C /* EUSessionViewController.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		DE4D60C72212811400D6904C /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				DE94C609220FD09800C4C2ED /* Questionnaire1.json */,
+				DE5F6DA622103625008B4D12 /* Questionnaire2.json */,
+				DEA8322022107AB30000BD43 /* Questionnaire3.json */,
+				DEA83222221133930000BD43 /* Questionnaire4.json */,
+				DEA83224221134C30000BD43 /* Questionnaire5.json */,
+				DE00882B2212350200129D81 /* Exercises.json */,
+				DE4D60E922128AED00D6904C /* Sounds.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		DE4D60C82212813100D6904C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				DE4D60CC2212815900D6904C /* do-it.wav */,
+				DE4D60CB2212815900D6904C /* got-it-1.wav */,
+				DE4D60CE2212815900D6904C /* got-it-2.wav */,
+				DE4D60CA2212815800D6904C /* grow-up.wav */,
+				DE4D60CD2212815900D6904C /* too.wav */,
+				DE4D60C92212815800D6904C /* yes-1.wav */,
+				DE4D60CF2212815900D6904C /* yes-2.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		DE4D60E02212835700D6904C /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				DE4D60E3221283C200D6904C /* EUActivitiesTableViewController.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		DE4D60E12212837200D6904C /* History */ = {
+			isa = PBXGroup;
+			children = (
+				DE4D60E52212857600D6904C /* EUHistoryTableViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		DE4D60E22212837F00D6904C /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				DE4D60E7221285B600D6904C /* EUGalleryTableViewController.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
 		DE94C4D6220F74F200C4C2ED = {
 			isa = PBXGroup;
 			children = (
@@ -212,16 +326,16 @@
 				DE94C51B220F7AB000C4C2ED /* Questionnaires.storyboard */,
 				DEA83232221142B80000BD43 /* Diet.storyboard */,
 				DEA83239221154740000BD43 /* Exercises.storyboard */,
+				DE4D60D7221282CD00D6904C /* Activities.storyboard */,
+				DE4D60DA221282E900D6904C /* History.storyboard */,
+				DE4D60DD221282FB00D6904C /* Gallery.storyboard */,
+				DE4D60AA221268CB00D6904C /* Timer.storyboard */,
 				DE94C4E9220F74F200C4C2ED /* Assets.xcassets */,
 				DE94C4EB220F74F200C4C2ED /* LaunchScreen.storyboard */,
 				DE94C4EE220F74F200C4C2ED /* Info.plist */,
 				DE94C5AF220FC00700C4C2ED /* Euphoria.xcdatamodeld */,
-				DE94C609220FD09800C4C2ED /* Questionnaire1.json */,
-				DE5F6DA622103625008B4D12 /* Questionnaire2.json */,
-				DEA8322022107AB30000BD43 /* Questionnaire3.json */,
-				DEA83222221133930000BD43 /* Questionnaire4.json */,
-				DEA83224221134C30000BD43 /* Questionnaire5.json */,
-				DE00882B2212350200129D81 /* Exercises.json */,
+				DE4D60C72212811400D6904C /* Json */,
+				DE4D60C82212813100D6904C /* Sounds */,
 				DEA8322C22113A750000BD43 /* Concent.html */,
 			);
 			path = Euphoria;
@@ -251,9 +365,14 @@
 				DEA832262211391D0000BD43 /* Concent */,
 				DEA8322F22113CF50000BD43 /* Login */,
 				DE94C511220F764A00C4C2ED /* EUHomeTableViewController.swift */,
+				DE4D60A8221265D900D6904C /* EUAccountViewController.swift */,
 				DE94C51E220F7AEC00C4C2ED /* Questionnaires */,
 				DEA83236221146560000BD43 /* Diet */,
 				DEA8323C221154D20000BD43 /* Exercises */,
+				DE4D60E02212835700D6904C /* Activities */,
+				DE4D60E12212837200D6904C /* History */,
+				DE4D60E22212837F00D6904C /* Gallery */,
+				DE4D60AD22126B7500D6904C /* Timer */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -291,6 +410,7 @@
 		DE94C52D220F87AF00C4C2ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DEFB2CAA2212AB6600F2188C /* EUSession.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,6 +418,12 @@
 		DE94C5B2220FC06C00C4C2ED /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				DE4D60F32212928200D6904C /* Stop+CoreDataClass.swift */,
+				DE4D60F42212928200D6904C /* Stop+CoreDataProperties.swift */,
+				DE4D60F52212928200D6904C /* Session+CoreDataClass.swift */,
+				DE4D60F62212928200D6904C /* Session+CoreDataProperties.swift */,
+				DE4D60EF22128DF800D6904C /* Sound+CoreDataClass.swift */,
+				DE4D60F022128DF800D6904C /* Sound+CoreDataProperties.swift */,
 				DECD9766221240D3001B47F0 /* Exercises+CoreDataClass.swift */,
 				DECD9767221240D3001B47F0 /* Exercises+CoreDataProperties.swift */,
 				DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */,
@@ -470,18 +596,30 @@
 			files = (
 				DE94C60A220FD09800C4C2ED /* Questionnaire1.json in Resources */,
 				DEA8322D22113A750000BD43 /* Concent.html in Resources */,
+				DE4D60D22212815A00D6904C /* got-it-1.wav in Resources */,
 				DE94C4ED220F74F200C4C2ED /* LaunchScreen.storyboard in Resources */,
+				DE4D60D12212815A00D6904C /* grow-up.wav in Resources */,
 				DEA83225221134C30000BD43 /* Questionnaire5.json in Resources */,
+				DE4D60D9221282CD00D6904C /* Activities.storyboard in Resources */,
+				DE4D60EA22128AED00D6904C /* Sounds.json in Resources */,
 				DEA8323B221154740000BD43 /* Exercises.storyboard in Resources */,
+				DE4D60D32212815A00D6904C /* do-it.wav in Resources */,
 				DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */,
 				DE94C4EA220F74F200C4C2ED /* Assets.xcassets in Resources */,
+				DE4D60DC221282E900D6904C /* History.storyboard in Resources */,
+				DE4D60D02212815A00D6904C /* yes-1.wav in Resources */,
 				DE00882C2212350200129D81 /* Exercises.json in Resources */,
 				DEA8322122107AB30000BD43 /* Questionnaire3.json in Resources */,
 				DE94C51D220F7AB000C4C2ED /* Questionnaires.storyboard in Resources */,
+				DE4D60AC221268CB00D6904C /* Timer.storyboard in Resources */,
 				DEA83234221142B80000BD43 /* Diet.storyboard in Resources */,
 				DEA83223221133930000BD43 /* Questionnaire4.json in Resources */,
+				DE4D60D62212815A00D6904C /* yes-2.wav in Resources */,
+				DE4D60D42212815A00D6904C /* too.wav in Resources */,
+				DE4D60DF221282FB00D6904C /* Gallery.storyboard in Resources */,
 				DEA8322B221139750000BD43 /* Login.storyboard in Resources */,
 				DE94C4E8220F74F200C4C2ED /* Main.storyboard in Resources */,
+				DE4D60D52212815A00D6904C /* got-it-2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,27 +697,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4D60F82212928200D6904C /* Stop+CoreDataProperties.swift in Sources */,
+				DE4D60E62212857600D6904C /* EUHistoryTableViewController.swift in Sources */,
+				DE4D60F72212928200D6904C /* Stop+CoreDataClass.swift in Sources */,
 				DED5D5B2220FD37900CDE1AD /* CoreData.swift in Sources */,
 				DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */,
 				DEA8323E221154F50000BD43 /* EUExercisesIndexTableViewController.swift in Sources */,
+				DE4D60FA2212928200D6904C /* Session+CoreDataProperties.swift in Sources */,
 				DE94C523220F7C1B00C4C2ED /* UIViewController+.swift in Sources */,
 				DEA8324322115E3F0000BD43 /* EUVideosListCell.swift in Sources */,
+				DE4D60A9221265D900D6904C /* EUAccountViewController.swift in Sources */,
 				DE5F6DBD22103C66008B4D12 /* Option+CoreDataProperties.swift in Sources */,
 				DECD976A221240D4001B47F0 /* Exercises+CoreDataClass.swift in Sources */,
+				DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */,
 				DECD976B221240D4001B47F0 /* Exercises+CoreDataProperties.swift in Sources */,
+				DE4D60AF22126D5000D6904C /* EUSessionsViewController.swift in Sources */,
 				DEA8323122113D090000BD43 /* EULoginViewController.swift in Sources */,
 				DEA83240221159A30000BD43 /* EUExercisesViewController.swift in Sources */,
 				DE94C531220F951300C4C2ED /* String+.swift in Sources */,
 				DE94C520220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift in Sources */,
 				DECD9768221240D4001B47F0 /* Video+CoreDataClass.swift in Sources */,
 				DE94C512220F764A00C4C2ED /* EUHomeTableViewController.swift in Sources */,
+				DE4D60FE2212994200D6904C /* EUSessionViewController.swift in Sources */,
 				DE5F6DBB22103C66008B4D12 /* Questionnaires+CoreDataProperties.swift in Sources */,
 				DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */,
+				DE4D60E8221285B600D6904C /* EUGalleryTableViewController.swift in Sources */,
 				DE94C52A220F833D00C4C2ED /* EUQuestionnaireViewController.swift in Sources */,
 				DECD9769221240D4001B47F0 /* Video+CoreDataProperties.swift in Sources */,
 				DE94C528220F801900C4C2ED /* UIImage+.swift in Sources */,
+				DE4D60F222128DF800D6904C /* Sound+CoreDataProperties.swift in Sources */,
+				DE4D60F122128DF800D6904C /* Sound+CoreDataClass.swift in Sources */,
 				DE94C5B1220FC00700C4C2ED /* Euphoria.xcdatamodeld in Sources */,
 				DE5F6DBA22103C66008B4D12 /* Questionnaires+CoreDataClass.swift in Sources */,
+				DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */,
 				DE94C526220F7CD400C4C2ED /* Enums.swift in Sources */,
 				DE5F6DBC22103C66008B4D12 /* Option+CoreDataClass.swift in Sources */,
 				DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */,
@@ -587,7 +737,9 @@
 				DE94C56D220FA4E300C4C2ED /* UITextField+.swift in Sources */,
 				DE5F6DBE22103C66008B4D12 /* Questionnaire+CoreDataClass.swift in Sources */,
 				DE5F6DBF22103C66008B4D12 /* Questionnaire+CoreDataProperties.swift in Sources */,
+				DE4D60E4221283C200D6904C /* EUActivitiesTableViewController.swift in Sources */,
 				DEA83238221146E30000BD43 /* EUDietIndexTableViewController.swift in Sources */,
+				DE4D60F92212928200D6904C /* Session+CoreDataClass.swift in Sources */,
 				DEA83228221139440000BD43 /* EUConcentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,6 +776,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DE4D60AA221268CB00D6904C /* Timer.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE4D60AB221268CB00D6904C /* Base */,
+			);
+			name = Timer.storyboard;
+			sourceTree = "<group>";
+		};
+		DE4D60D7221282CD00D6904C /* Activities.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE4D60D8221282CD00D6904C /* Base */,
+			);
+			name = Activities.storyboard;
+			sourceTree = "<group>";
+		};
+		DE4D60DA221282E900D6904C /* History.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE4D60DB221282E900D6904C /* Base */,
+			);
+			name = History.storyboard;
+			sourceTree = "<group>";
+		};
+		DE4D60DD221282FB00D6904C /* Gallery.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE4D60DE221282FB00D6904C /* Base */,
+			);
+			name = Gallery.storyboard;
+			sourceTree = "<group>";
+		};
 		DE94C4E6220F74F200C4C2ED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

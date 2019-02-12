@@ -605,6 +605,7 @@
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titleRed" translatesAutoresizingMaskIntoConstraints="NO" id="Usj-Qk-WaL">
                                     <rect key="frame" x="0.0" y="0.0" width="93" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="0Du-x7-IjO"/>
                                         <constraint firstAttribute="width" constant="93" id="Qb7-fB-OTh"/>
@@ -612,12 +613,13 @@
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXERCISES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glc-ND-bfU">
                                     <rect key="frame" x="0.0" y="0.0" width="93" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="Usj-Qk-WaL" firstAttribute="leading" secondItem="Pvg-uN-VM5" secondAttribute="leading" id="0ly-F7-VOF"/>
                                 <constraint firstAttribute="bottom" secondItem="Usj-Qk-WaL" secondAttribute="bottom" id="5p4-VJ-aFd"/>
@@ -799,6 +801,7 @@ Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titleRed" translatesAutoresizingMaskIntoConstraints="NO" id="TKM-KD-jtx">
                                     <rect key="frame" x="0.0" y="0.0" width="93" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="2NU-mb-kZO"/>
                                         <constraint firstAttribute="width" constant="93" id="Afa-BP-vwR"/>
@@ -806,12 +809,13 @@ Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXERCISES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbn-UQ-ECT">
                                     <rect key="frame" x="0.0" y="0.0" width="93" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="Zbn-UQ-ECT" firstAttribute="leading" secondItem="wKf-ZT-VFG" secondAttribute="leading" id="19k-KQ-DV0"/>
                                 <constraint firstItem="TKM-KD-jtx" firstAttribute="leading" secondItem="wKf-ZT-VFG" secondAttribute="leading" id="7xG-ix-LeG"/>

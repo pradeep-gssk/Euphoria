@@ -19,20 +19,20 @@ extension UIViewController {
         return storyboard.instantiateViewController(withIdentifier: identifier)
     }
     
-    static func getQuestionnaireViewController() -> EUQuestionnaireIndexTableViewController {
-        let viewController = self.getViewController(name: "Questionnaires", identifier: "QuestionnaireListView") as! EUQuestionnaireIndexTableViewController
-        return viewController
-    }
-    
-    static func getDietViewController() -> EUDietIndexTableViewController {
-        let viewController = self.getViewController(name: "Diet", identifier: "DietListView") as! EUDietIndexTableViewController
-        return viewController
-    }
-    
-    static func getExercisesViewController() -> EUExercisesIndexTableViewController {
-        let viewController = self.getViewController(name: "Exercises", identifier: "ExercisesListView") as! EUExercisesIndexTableViewController
-        return viewController
-    }
+//    static func getQuestionnaireViewController() -> EUQuestionnaireIndexTableViewController {
+//        let viewController = self.getViewController(name: "Questionnaires", identifier: "QuestionnaireListView") as! EUQuestionnaireIndexTableViewController
+//        return viewController
+//    }
+//
+//    static func getDietViewController() -> EUDietIndexTableViewController {
+//        let viewController = self.getViewController(name: "Diet", identifier: "DietListView") as! EUDietIndexTableViewController
+//        return viewController
+//    }
+//
+//    static func getExercisesViewController() -> EUExercisesIndexTableViewController {
+//        let viewController = self.getViewController(name: "Exercises", identifier: "ExercisesListView") as! EUExercisesIndexTableViewController
+//        return viewController
+//    }
     
     var collectionViewFlowLayout: UICollectionViewFlowLayout {
         let flowLayout = UICollectionViewFlowLayout()

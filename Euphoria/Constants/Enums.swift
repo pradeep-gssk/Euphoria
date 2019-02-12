@@ -32,16 +32,49 @@ enum HomeType: Int {
     case questionnaires
     case diet
     case exercises
+    case activities
+    case history
+    case gallery
+    case timer
+    
+    var storyboard: String {
+        switch self {
+        case .questionnaires:
+            return "Questionnaires"
+        case .diet:
+            return "Diet"
+        case .exercises:
+            return "Exercises"
+        case .activities:
+            return "Activities"
+        case .history:
+            return "History"
+        case .gallery:
+            return "Gallery"
+        case .timer:
+            return "Timer"
+        }
+    }
+    
+    var identifier: String {
+        switch self {
+        case .questionnaires:
+            return "QuestionnaireListView"
+        case .diet:
+            return "DietListView"
+        case .exercises:
+            return "ExercisesListView"
+        case .activities:
+            return "ActivitiesListView"
+        case .history:
+            return "HistoryListView"
+        case .gallery:
+            return "GalleryListView"
+        case .timer:
+            return "TimerListView"
+        }
+    }
 }
-
-//enum ExercisesType: Int {
-//    case yoga
-//    case pilates
-//    case running
-//    case climbing
-//    case qiGong
-//    case stretching
-//}
 
 enum OptionType: Int {
     case never = 0

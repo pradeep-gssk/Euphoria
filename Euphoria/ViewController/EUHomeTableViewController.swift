@@ -15,10 +15,6 @@ class EUHomeTableViewController: UITableViewController {
         self.tableView.tableFooterView = UIView()
     }
 
-    @IBAction func didTapSettings(_ sender: Any) {
-        
-    }
-    
     @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
         self.navigationController?.isToolbarHidden = true
     }
@@ -26,20 +22,8 @@ class EUHomeTableViewController: UITableViewController {
     // MARK: - Table view delegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let viewController = self.getViewController(atIndexPath: indexPath) else { return }
+        guard let homeType = HomeType(rawValue: indexPath.row) else { return }
+        let viewController = UIViewController.getViewController(name: homeType.storyboard, identifier: homeType.identifier)
         self.navigationController?.show(viewController, sender: self)
-    }
-    
-    private func getViewController(atIndexPath indexPath: IndexPath) -> UIViewController? {
-        switch HomeType(rawValue: indexPath.row) {
-        case .questionnaires?:
-            return UIViewController.getQuestionnaireViewController()
-        case .diet?:
-            return UIViewController.getDietViewController()
-        case .exercises?:
-            return UIViewController.getExercisesViewController()
-        case .none:
-            return nil
-        }
     }
 }

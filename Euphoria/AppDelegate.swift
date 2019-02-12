@@ -22,10 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.standard.set(true, forKey: IS_PRELOADED)
         }
         
-        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
-            self.showLoginView()
-            return true
-        }
+//        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
+//            self.showLoginView()
+//            return true
+//        }
         self.showHomeView()
         return true
     }
@@ -105,6 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.loadQuestionnaire(withResource: "Questionnaire4", forIndex: 4, withTotal: 10)
         self.loadQuestionnaire(withResource: "Questionnaire5", forIndex: 5, withTotal: 4)
         self.loadExercises(withResource: "Exercises")
+        self.loadSounds(withResource: "Sounds")
     }
     
     func loadQuestionnaire(withResource resource: String, forIndex index: Int16, withTotal total: Int16) {
@@ -128,6 +129,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 if let jsonResult = jsonResult as? [[String: AnyObject]] {
                     CoreData.sharedInstance.saveExercises(jsonResult)
+                }
+            } catch {
+                print(error)
+                // handle error
+            }
+        }
+    }
+    
+    func loadSounds(withResource resource: String) {
+        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? [[String: String]] {
+                    CoreData.sharedInstance.saveSound(jsonResult)
                 }
             } catch {
                 print(error)
