@@ -11,9 +11,11 @@ import CoreData
 
 class CoreData: NSObject {
     static let sharedInstance = CoreData()
-    
     let context = appDelegate.persistentContainer.viewContext
-    
+}
+
+//MARK: Questionnaires
+extension CoreData {
     func saveQuestionnaire(_ json: [String: AnyObject], forIndex index: Int16, withTotal total: Int16) {
         let questionnaires = NSEntityDescription.insertNewObject(forEntityName: "Questionnaires", into: context) as? Questionnaires
         questionnaires?.title = json["title"] as? String
@@ -98,6 +100,54 @@ class CoreData: NSObject {
             try context.save()
         } catch {
             print("Failed saving")
+        }
+    }
+}
+
+//MARK: Exercises
+extension CoreData {
+    func saveExercises(_ json: [[String: AnyObject]]) {
+        for dictionary in json {
+            let exercises = NSEntityDescription.insertNewObject(forEntityName: "Exercises", into: context) as? Exercises
+            exercises?.title = dictionary["title"] as? String
+            exercises?.index = dictionary["index"] as? Int16 ?? 0
+            if let videos = dictionary["videos"] as? [[String: AnyObject]] {
+                for video in videos {
+                    if let response = self.setVideo(video) {
+                        exercises?.addToExerciseVideo(response)
+                    }
+                }
+            }
+        }
+        
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+    
+    func setVideo(_ json: [String: AnyObject]) -> Video? {
+        let exerciseVideo = NSEntityDescription.insertNewObject(forEntityName: "Video", into: context) as? Video
+        exerciseVideo?.title = json["title"] as? String
+        exerciseVideo?.videoDescription = json["video_description"] as? String
+        exerciseVideo?.videoName = json["video_name"] as? String
+        if let string = json["video_url"] as? String {
+            exerciseVideo?.videoUrl = URL(string: string)
+        }
+        return exerciseVideo
+    }
+    
+    func fetchExercises() -> [Exercises] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Exercises.self))
+        let sortDescriptor = NSSortDescriptor(key: "index", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        do {
+            let data = try context.fetch(fetchRequest) as? [Exercises]
+            return data ?? []
+            
+        } catch {
+            return []
         }
     }
 }

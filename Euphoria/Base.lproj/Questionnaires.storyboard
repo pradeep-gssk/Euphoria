@@ -407,7 +407,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="titleImageView" destination="gVt-Th-2RL" id="L4q-iK-z7k"/>
-                        <outlet property="titleView" destination="avY-1a-EFc" id="1mp-fr-eb6"/>
                         <segue destination="ZQp-B2-GyP" kind="show" identifier="QuestionnaireView" id="xB7-YS-S3J"/>
                     </connections>
                 </tableViewController>
@@ -627,7 +626,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfI-CK-F1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="a3W-8h-6Ra" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1498" y="162"/>
+            <point key="canvasLocation" x="1622" y="163"/>
         </scene>
     </scenes>
     <resources>

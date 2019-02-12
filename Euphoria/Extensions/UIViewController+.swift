@@ -23,4 +23,25 @@ extension UIViewController {
         let viewController = self.getViewController(name: "Questionnaires", identifier: "QuestionnaireListView") as! EUQuestionnaireIndexTableViewController
         return viewController
     }
+    
+    static func getDietViewController() -> EUDietIndexTableViewController {
+        let viewController = self.getViewController(name: "Diet", identifier: "DietListView") as! EUDietIndexTableViewController
+        return viewController
+    }
+    
+    static func getExercisesViewController() -> EUExercisesIndexTableViewController {
+        let viewController = self.getViewController(name: "Exercises", identifier: "ExercisesListView") as! EUExercisesIndexTableViewController
+        return viewController
+    }
+    
+    var collectionViewFlowLayout: UICollectionViewFlowLayout {
+        let flowLayout = UICollectionViewFlowLayout()
+        let width = (UIScreen.main.bounds.width-100)/3
+        flowLayout.itemSize = CGSize(width: width, height: width + 35)
+        flowLayout.minimumLineSpacing = 25
+        flowLayout.sectionInset = UIEdgeInsets(top: 25, left: 25, bottom: 25, right: 25)
+        return flowLayout
+    }
+    
+    
 }

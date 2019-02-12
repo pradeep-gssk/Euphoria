@@ -10,7 +10,6 @@ import UIKit
 
 class EUQuestionnaireIndexTableViewController: UITableViewController {
 
-    @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var titleImageView: UIImageView!
     
     override func viewDidLoad() {

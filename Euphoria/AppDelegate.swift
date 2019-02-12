@@ -104,6 +104,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.loadQuestionnaire(withResource: "Questionnaire3", forIndex: 3, withTotal: 35)
         self.loadQuestionnaire(withResource: "Questionnaire4", forIndex: 4, withTotal: 10)
         self.loadQuestionnaire(withResource: "Questionnaire5", forIndex: 5, withTotal: 4)
+        self.loadExercises(withResource: "Exercises")
     }
     
     func loadQuestionnaire(withResource resource: String, forIndex index: Int16, withTotal total: Int16) {
@@ -111,10 +112,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                if let jsonResult = jsonResult as? Dictionary<String, AnyObject> {
+                if let jsonResult = jsonResult as? [String: AnyObject] {
                     CoreData.sharedInstance.saveQuestionnaire(jsonResult, forIndex: index, withTotal: total)
                 }
             } catch {
+                // handle error
+            }
+        }
+    }
+    
+    func loadExercises(withResource resource: String) {
+        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? [[String: AnyObject]] {
+                    CoreData.sharedInstance.saveExercises(jsonResult)
+                }
+            } catch {
+                print(error)
                 // handle error
             }
         }

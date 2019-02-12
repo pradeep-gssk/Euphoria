@@ -8,17 +8,17 @@
 
 import Foundation
 
-enum HtmlViewType : String {
+enum HtmlViewType: String {
     case Concent = "Concent"
     case Privacy = "Privacy"
     
-    var description : String {
+    var description: String {
         get {
             return self.rawValue
         }
     }
     
-    var title : String {
+    var title: String {
         switch self {
         case .Concent:
             return "I AGREE"
@@ -29,8 +29,19 @@ enum HtmlViewType : String {
 }
 
 enum HomeType: Int {
-    case Questionnaires
+    case questionnaires
+    case diet
+    case exercises
 }
+
+//enum ExercisesType: Int {
+//    case yoga
+//    case pilates
+//    case running
+//    case climbing
+//    case qiGong
+//    case stretching
+//}
 
 enum OptionType: Int {
     case never = 0

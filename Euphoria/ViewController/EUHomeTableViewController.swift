@@ -32,8 +32,12 @@ class EUHomeTableViewController: UITableViewController {
     
     private func getViewController(atIndexPath indexPath: IndexPath) -> UIViewController? {
         switch HomeType(rawValue: indexPath.row) {
-        case .Questionnaires?:
+        case .questionnaires?:
             return UIViewController.getQuestionnaireViewController()
+        case .diet?:
+            return UIViewController.getDietViewController()
+        case .exercises?:
+            return UIViewController.getExercisesViewController()
         case .none:
             return nil
         }

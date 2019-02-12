@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Exercises" representedClassName="Exercises" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="exerciseVideo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Video" inverseName="exercises" inverseEntity="Video" syncable="YES"/>
+    </entity>
     <entity name="Option" representedClassName="Option" syncable="YES">
         <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="option" optional="YES" attributeType="String" syncable="YES"/>
@@ -24,7 +29,16 @@
         <attribute name="total" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="questionnaire" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="questionnaires" inverseEntity="Questionnaire" syncable="YES"/>
     </entity>
+    <entity name="Video" representedClassName="Video" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoUrl" optional="YES" attributeType="URI" syncable="YES"/>
+        <relationship name="exercises" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercises" inverseName="exerciseVideo" inverseEntity="Exercises" syncable="YES"/>
+    </entity>
     <elements>
+        <element name="Exercises" positionX="189" positionY="-135" width="128" height="90"/>
+        <element name="Video" positionX="198" positionY="-126" width="128" height="120"/>
         <element name="Option" positionX="611.33203125" positionY="-124.90625" width="128" height="105"/>
         <element name="Questionnaire" positionX="234.3671875" positionY="-206.6875" width="128" height="180"/>
         <element name="Questionnaires" positionX="-20.4296875" positionY="-217.74609375" width="128" height="120"/>
