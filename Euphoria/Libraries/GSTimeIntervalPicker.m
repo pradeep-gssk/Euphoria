@@ -203,6 +203,10 @@
     return _step;
 }
 
+- (void)reset {
+    [self selectRow:0 inComponent:kComponentHours animated:NO];
+    [self selectRow:0 inComponent:kComponentMinutes animated:NO];
+}
 
 #pragma mark - UIPickerView Datasource
 

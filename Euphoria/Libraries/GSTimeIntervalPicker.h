@@ -25,4 +25,6 @@
 
 @property (copy) void (^onTimeIntervalChanged)(NSTimeInterval newTimeInterval);
 
+- (void)reset;
+
 @end

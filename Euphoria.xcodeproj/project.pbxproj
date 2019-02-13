@@ -10,6 +10,13 @@
 		2CC0580927CBF46B65BA3114 /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A05858C8C3D56EA48D0900 /* Pods_Euphoria.framework */; };
 		DE0088262212305F00129D81 /* EUExerciseVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0088252212305F00129D81 /* EUExerciseVideoViewController.swift */; };
 		DE00882C2212350200129D81 /* Exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = DE00882B2212350200129D81 /* Exercises.json */; };
+		DE4B9D622213C8CF0036664A /* EUTimerCountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D612213C8CF0036664A /* EUTimerCountDownViewController.swift */; };
+		DE4B9D752213E10F0036664A /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D6F2213E10F0036664A /* Session+CoreDataClass.swift */; };
+		DE4B9D762213E10F0036664A /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D702213E10F0036664A /* Session+CoreDataProperties.swift */; };
+		DE4B9D772213E10F0036664A /* Stop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D712213E10F0036664A /* Stop+CoreDataClass.swift */; };
+		DE4B9D782213E10F0036664A /* Stop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D722213E10F0036664A /* Stop+CoreDataProperties.swift */; };
+		DE4B9D792213E10F0036664A /* Sound+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D732213E10F0036664A /* Sound+CoreDataClass.swift */; };
+		DE4B9D7A2213E10F0036664A /* Sound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D742213E10F0036664A /* Sound+CoreDataProperties.swift */; };
 		DE4D60A9221265D900D6904C /* EUAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60A8221265D900D6904C /* EUAccountViewController.swift */; };
 		DE4D60AC221268CB00D6904C /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60AA221268CB00D6904C /* Timer.storyboard */; };
 		DE4D60AF22126D5000D6904C /* EUSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60AE22126D5000D6904C /* EUSessionsViewController.swift */; };
@@ -27,12 +34,6 @@
 		DE4D60E62212857600D6904C /* EUHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60E52212857600D6904C /* EUHistoryTableViewController.swift */; };
 		DE4D60E8221285B600D6904C /* EUGalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60E7221285B600D6904C /* EUGalleryTableViewController.swift */; };
 		DE4D60EA22128AED00D6904C /* Sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60E922128AED00D6904C /* Sounds.json */; };
-		DE4D60F122128DF800D6904C /* Sound+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60EF22128DF800D6904C /* Sound+CoreDataClass.swift */; };
-		DE4D60F222128DF800D6904C /* Sound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F022128DF800D6904C /* Sound+CoreDataProperties.swift */; };
-		DE4D60F72212928200D6904C /* Stop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F32212928200D6904C /* Stop+CoreDataClass.swift */; };
-		DE4D60F82212928200D6904C /* Stop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F42212928200D6904C /* Stop+CoreDataProperties.swift */; };
-		DE4D60F92212928200D6904C /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F52212928200D6904C /* Session+CoreDataClass.swift */; };
-		DE4D60FA2212928200D6904C /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F62212928200D6904C /* Session+CoreDataProperties.swift */; };
 		DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */; };
 		DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */; };
 		DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6DA622103625008B4D12 /* Questionnaire2.json */; };
@@ -109,6 +110,13 @@
 		BE52ACBEF78299081CC944F8 /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
 		DE0088252212305F00129D81 /* EUExerciseVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExerciseVideoViewController.swift; sourceTree = "<group>"; };
 		DE00882B2212350200129D81 /* Exercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Exercises.json; sourceTree = "<group>"; };
+		DE4B9D612213C8CF0036664A /* EUTimerCountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerCountDownViewController.swift; sourceTree = "<group>"; };
+		DE4B9D6F2213E10F0036664A /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE4B9D702213E10F0036664A /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE4B9D712213E10F0036664A /* Stop+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE4B9D722213E10F0036664A /* Stop+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE4B9D732213E10F0036664A /* Sound+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE4B9D742213E10F0036664A /* Sound+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE4D60A8221265D900D6904C /* EUAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUAccountViewController.swift; sourceTree = "<group>"; };
 		DE4D60AB221268CB00D6904C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Timer.storyboard; sourceTree = "<group>"; };
 		DE4D60AE22126D5000D6904C /* EUSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSessionsViewController.swift; sourceTree = "<group>"; };
@@ -126,12 +134,6 @@
 		DE4D60E52212857600D6904C /* EUHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryTableViewController.swift; sourceTree = "<group>"; };
 		DE4D60E7221285B600D6904C /* EUGalleryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUGalleryTableViewController.swift; sourceTree = "<group>"; };
 		DE4D60E922128AED00D6904C /* Sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sounds.json; sourceTree = "<group>"; };
-		DE4D60EF22128DF800D6904C /* Sound+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE4D60F022128DF800D6904C /* Sound+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DE4D60F32212928200D6904C /* Stop+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE4D60F42212928200D6904C /* Stop+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DE4D60F52212928200D6904C /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE4D60F62212928200D6904C /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerSetupViewController.swift; sourceTree = "<group>"; };
 		DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUAddSessionViewController.swift; sourceTree = "<group>"; };
 		DE5F6DA622103625008B4D12 /* Questionnaire2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire2.json; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */,
 				DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */,
 				DEA1521E221389A10035F7D5 /* EUSoundsViewController.swift */,
+				DE4B9D612213C8CF0036664A /* EUTimerCountDownViewController.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -431,12 +434,12 @@
 		DE94C5B2220FC06C00C4C2ED /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				DE4D60F32212928200D6904C /* Stop+CoreDataClass.swift */,
-				DE4D60F42212928200D6904C /* Stop+CoreDataProperties.swift */,
-				DE4D60F52212928200D6904C /* Session+CoreDataClass.swift */,
-				DE4D60F62212928200D6904C /* Session+CoreDataProperties.swift */,
-				DE4D60EF22128DF800D6904C /* Sound+CoreDataClass.swift */,
-				DE4D60F022128DF800D6904C /* Sound+CoreDataProperties.swift */,
+				DE4B9D6F2213E10F0036664A /* Session+CoreDataClass.swift */,
+				DE4B9D702213E10F0036664A /* Session+CoreDataProperties.swift */,
+				DE4B9D712213E10F0036664A /* Stop+CoreDataClass.swift */,
+				DE4B9D722213E10F0036664A /* Stop+CoreDataProperties.swift */,
+				DE4B9D732213E10F0036664A /* Sound+CoreDataClass.swift */,
+				DE4B9D742213E10F0036664A /* Sound+CoreDataProperties.swift */,
 				DECD9766221240D3001B47F0 /* Exercises+CoreDataClass.swift */,
 				DECD9767221240D3001B47F0 /* Exercises+CoreDataProperties.swift */,
 				DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */,
@@ -722,45 +725,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE4D60F82212928200D6904C /* Stop+CoreDataProperties.swift in Sources */,
 				DE4D60E62212857600D6904C /* EUHistoryTableViewController.swift in Sources */,
-				DE4D60F72212928200D6904C /* Stop+CoreDataClass.swift in Sources */,
 				DED5D5B2220FD37900CDE1AD /* CoreData.swift in Sources */,
 				DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */,
 				DEA8323E221154F50000BD43 /* EUExercisesIndexTableViewController.swift in Sources */,
-				DE4D60FA2212928200D6904C /* Session+CoreDataProperties.swift in Sources */,
 				DE94C523220F7C1B00C4C2ED /* UIViewController+.swift in Sources */,
 				DEA8324322115E3F0000BD43 /* EUVideosListCell.swift in Sources */,
 				DE4D60A9221265D900D6904C /* EUAccountViewController.swift in Sources */,
 				DE5F6DBD22103C66008B4D12 /* Option+CoreDataProperties.swift in Sources */,
 				DEA1521F221389A10035F7D5 /* EUSoundsViewController.swift in Sources */,
 				DECD976A221240D4001B47F0 /* Exercises+CoreDataClass.swift in Sources */,
+				DE4B9D752213E10F0036664A /* Session+CoreDataClass.swift in Sources */,
 				DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */,
+				DE4B9D7A2213E10F0036664A /* Sound+CoreDataProperties.swift in Sources */,
 				DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */,
 				DECD976B221240D4001B47F0 /* Exercises+CoreDataProperties.swift in Sources */,
 				DEA1520022137E3C0035F7D5 /* ResponderTableViewCell.swift in Sources */,
 				DE4D60AF22126D5000D6904C /* EUSessionsViewController.swift in Sources */,
 				DEA8323122113D090000BD43 /* EULoginViewController.swift in Sources */,
+				DE4B9D792213E10F0036664A /* Sound+CoreDataClass.swift in Sources */,
 				DEA83240221159A30000BD43 /* EUExercisesViewController.swift in Sources */,
+				DE4B9D762213E10F0036664A /* Session+CoreDataProperties.swift in Sources */,
 				DE94C531220F951300C4C2ED /* String+.swift in Sources */,
 				DE94C520220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift in Sources */,
 				DECD9768221240D4001B47F0 /* Video+CoreDataClass.swift in Sources */,
 				DE94C512220F764A00C4C2ED /* EUHomeTableViewController.swift in Sources */,
 				DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */,
 				DE5F6DBB22103C66008B4D12 /* Questionnaires+CoreDataProperties.swift in Sources */,
+				DE4B9D772213E10F0036664A /* Stop+CoreDataClass.swift in Sources */,
 				DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */,
 				DE4D60E8221285B600D6904C /* EUGalleryTableViewController.swift in Sources */,
 				DE94C52A220F833D00C4C2ED /* EUQuestionnaireViewController.swift in Sources */,
 				DECD9769221240D4001B47F0 /* Video+CoreDataProperties.swift in Sources */,
 				DE94C528220F801900C4C2ED /* UIImage+.swift in Sources */,
-				DE4D60F222128DF800D6904C /* Sound+CoreDataProperties.swift in Sources */,
-				DE4D60F122128DF800D6904C /* Sound+CoreDataClass.swift in Sources */,
 				DE94C5B1220FC00700C4C2ED /* Euphoria.xcdatamodeld in Sources */,
 				DE5F6DBA22103C66008B4D12 /* Questionnaires+CoreDataClass.swift in Sources */,
 				DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */,
 				DE94C526220F7CD400C4C2ED /* Enums.swift in Sources */,
 				DEA151FA221367CE0035F7D5 /* GSTimeIntervalPicker.m in Sources */,
+				DE4B9D782213E10F0036664A /* Stop+CoreDataProperties.swift in Sources */,
 				DE5F6DBC22103C66008B4D12 /* Option+CoreDataClass.swift in Sources */,
+				DE4B9D622213C8CF0036664A /* EUTimerCountDownViewController.swift in Sources */,
 				DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */,
 				DE0088262212305F00129D81 /* EUExerciseVideoViewController.swift in Sources */,
 				DE94C56D220FA4E300C4C2ED /* UITextField+.swift in Sources */,
@@ -768,7 +773,6 @@
 				DE5F6DBF22103C66008B4D12 /* Questionnaire+CoreDataProperties.swift in Sources */,
 				DE4D60E4221283C200D6904C /* EUActivitiesTableViewController.swift in Sources */,
 				DEA83238221146E30000BD43 /* EUDietIndexTableViewController.swift in Sources */,
-				DE4D60F92212928200D6904C /* Session+CoreDataClass.swift in Sources */,
 				DEA83228221139440000BD43 /* EUConcentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

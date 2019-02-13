@@ -54,7 +54,6 @@ class ResponderTableViewCell: UITableViewCell {
     
     func setUp() {
         self.timePicker.allowZeroTimeInterval = true
-        self.timePicker.timeInterval = 0
         self.timePicker.backgroundColor = UIColor.color(red: 150, green: 138, blue: 135, alpha: 1)
         self.inputAccView.backgroundColor = UIColor.color(red: 150, green: 138, blue: 135, alpha: 1)
         

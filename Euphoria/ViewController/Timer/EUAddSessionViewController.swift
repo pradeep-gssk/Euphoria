@@ -16,6 +16,7 @@ class EUAddSessionViewController: UIViewController {
     @IBOutlet weak var sessionTime: UILabel!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var transparentView: UIView!
     
     var session: EUSession!
     var numberOfSections = 0
@@ -31,6 +32,7 @@ class EUAddSessionViewController: UIViewController {
         self.sessionTableView.tableFooterView = UIView()
         self.remainingSelectedInterval = self.session.time
         self.saveButton.isHidden = true
+        self.transparentView.isHidden = true
     }
     
     @IBAction func didTapBack(_ sender: Any) {
@@ -54,7 +56,6 @@ class EUAddSessionViewController: UIViewController {
     }
     
     // MARK: - Navigation
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? EUSoundsViewController,
             let indexPath = sender as? IndexPath {
@@ -122,6 +123,18 @@ extension EUAddSessionViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             let cell = tableView.cellForRow(at: indexPath) as! EUSessionStopTableViewCell
+            let filter = self.session.stops.filter { (stop) -> Bool in
+                return stop.index == indexPath.section
+            }
+            
+            if filter.count > 0, let stop = filter.first {
+                cell.timePicker.timeInterval = stop.time + 60
+                self.remainingSelectedInterval += stop.time
+            }
+            else {
+                cell.timePicker.timeInterval = 0
+            }
+            
             cell.timePicker.maxTimeInterval = self.remainingSelectedInterval
             cell.timePicker.onTimeIntervalChanged = {( _ newTimeInterval: TimeInterval) -> Void in
                 cell.time.text = newTimeInterval.duration
@@ -131,6 +144,7 @@ extension EUAddSessionViewController: UITableViewDelegate {
                 self.saveStop(cell)
             }
             _ = cell.becomeFirstResponder()
+            self.transparentView.isHidden = false
             return
         }
         
@@ -144,9 +158,20 @@ extension EUAddSessionViewController: UITableViewDelegate {
         }
         self.remainingSelectedInterval = self.remainingSelectedInterval - self.currentSelectedInterval
         let stop = EUStop(index: Int16(cell.index), time: self.currentSelectedInterval)
-        self.session.stops.append(stop)
-        _ = cell.resignFirstResponder()
         
+        let filter = self.session.stops.filter { (stop) -> Bool in
+            return stop.index == cell.index
+        }
+        
+        if filter.count > 0 {
+            self.session.stops[cell.index] = stop
+        }
+        else {
+            self.session.stops.append(stop)
+        }
+        self.transparentView.isHidden = true
+        _ = cell.resignFirstResponder()
+        cell.timePicker.reset()
         if self.remainingSelectedInterval > 0,
             self.session.sounds.indices.contains(cell.index) {
             self.addButton.isEnabled = true

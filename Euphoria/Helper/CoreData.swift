@@ -160,7 +160,6 @@ extension CoreData {
             sound?.name = dictionary["name"]
             sound?.resource = dictionary["resource"]
             sound?.type = dictionary["type"]
-            sound?.path = Bundle.main.path(forResource: dictionary["resource"], ofType: dictionary["type"])
         }
         
         do {
@@ -223,7 +222,8 @@ extension CoreData {
         stop?.index = stopObject.index
         stop?.time = stopObject.time
         stop?.sound = sound.name
-        stop?.path = sound.path
+        stop?.resource = sound.resource
+        stop?.type = sound.type
         return stop
     }
 }

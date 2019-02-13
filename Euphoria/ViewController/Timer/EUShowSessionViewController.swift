@@ -35,6 +35,17 @@ class EUShowSessionViewController: UIViewController {
     @IBAction func didTapBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func didTapGesture(_ sender: Any) {
+        self.performSegue(withIdentifier: "ShowTimerCountDown", sender: self)
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? EUTimerCountDownViewController {
+            viewController.session = session
+        }
+    }
 }
 
 extension EUShowSessionViewController: UITableViewDataSource {

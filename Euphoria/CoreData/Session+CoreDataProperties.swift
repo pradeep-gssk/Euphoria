@@ -2,7 +2,7 @@
 //  Session+CoreDataProperties.swift
 //  Euphoria
 //
-//  Created by Guduru, Pradeep(AWF) on 2/11/19.
+//  Created by Guduru, Pradeep(AWF) on 2/12/19.
 //  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 //
@@ -17,8 +17,8 @@ extension Session {
         return NSFetchRequest<Session>(entityName: "Session")
     }
 
-    @NSManaged public var name: String?
     @NSManaged public var index: Int16
+    @NSManaged public var name: String?
     @NSManaged public var time: Double
     @NSManaged public var stops: NSSet?
 
