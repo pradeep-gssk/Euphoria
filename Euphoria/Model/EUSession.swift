@@ -13,6 +13,7 @@ class EUSession: NSObject {
     let index: Int16
     let time: Double
     var stops: [EUStop] = []
+    var sounds: [Sound] = []
     
     init(name: String, index: Int16, time: Double) {
         self.name = name
@@ -22,5 +23,11 @@ class EUSession: NSObject {
 }
 
 struct EUStop {
+    let index: Int16
+    let time: Double
     
+    init(index: Int16, time: Double) {
+        self.index = index
+        self.time = time
+    }
 }

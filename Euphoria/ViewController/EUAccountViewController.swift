@@ -20,9 +20,9 @@ class EUAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.headerView.layer.borderColor = UIColor(red: (197.0/255.0), green: (196.0/255.0), blue: (192.0/255.0), alpha: 1).cgColor
+        self.headerView.layer.borderColor = UIColor.color(red: 197.0, green: 196.0, blue: 192.0, alpha: 1).cgColor
         self.headerView.layer.borderWidth = 1
-        self.bottomView.layer.borderColor = UIColor(red: (151.0/255.0), green: (151.0/255.0), blue: (151.0/255.0), alpha: 1).cgColor
+        self.bottomView.layer.borderColor = UIColor.singleColor(value: 151.0, alpha: 1).cgColor
         self.bottomView.layer.borderWidth = 1
     }
     

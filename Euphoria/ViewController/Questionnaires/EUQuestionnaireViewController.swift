@@ -26,7 +26,7 @@ class EUQuestionnaireViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isToolbarHidden = false
-        self.navigationController?.toolbar.barTintColor = UIColor(red: (243.0/255.0), green: (239.0/255.0), blue: (234.0/255.0), alpha: 1.0)
+        self.navigationController?.toolbar.barTintColor = UIColor.color(red: 243.0, green: 239.0, blue: 234.0, alpha: 1)
 
         self.titleLabel.text = self.questionnaires.title
         self.titleImageView.image = UIImage(named: "titleBlue")?.stretch()

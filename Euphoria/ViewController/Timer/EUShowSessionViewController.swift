@@ -1,47 +1,45 @@
 //
-//  EUSessionViewController.swift
+//  EUShowSessionViewController.swift
 //  Euphoria
 //
-//  Created by Guduru, Pradeep(AWF) on 2/11/19.
+//  Created by Guduru, Pradeep(AWF) on 2/12/19.
 //  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 
 import UIKit
 
-class EUSessionViewController: UIViewController {
+class EUShowSessionViewController: UIViewController {
 
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var sessionTableView: UITableView!
     @IBOutlet weak var sessionName: UILabel!
     @IBOutlet weak var sessionTime: UILabel!
     
-    var session: EUSession!
-    var numberOfSections = 0
+    var session: Session!
+    var stops: [Stop] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.headerView.layer.borderColor = UIColor(red: (197.0/255.0), green: (196.0/255.0), blue: (192.0/255.0), alpha: 1).cgColor
+
+        self.headerView.layer.borderColor = UIColor.color(red: 197.0, green: 196.0, blue: 192.0, alpha: 1).cgColor
         self.headerView.layer.borderWidth = 1
         self.sessionName.text = session.name
         self.sessionTime.text = session.time.duration
         self.sessionTableView.tableFooterView = UIView()
+        self.stops = self.session.stops?.allObjects as? [Stop] ?? []
+        self.stops.sort { (stop1, stop2) -> Bool in
+            return stop1.index < stop2.index
+        }
     }
-    
+
     @IBAction func didTapBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
-    
-    @IBAction func didTapAddButton(_ sender: Any) {
-        //Check for conditions
-        
-        self.numberOfSections += 1
-        self.sessionTableView.reloadData()
-    }
 }
 
-extension EUSessionViewController: UITableViewDataSource {
+extension EUShowSessionViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return self.numberOfSections
+        return self.stops.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,31 +47,15 @@ extension EUSessionViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        let stop = self.stops[indexPath.section]
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "StopCell", for: indexPath) as! EUSessionStopTableViewCell
+            cell.time.text = stop.time.duration
+            cell.title.text = "Session \(indexPath.section + 1)"
             return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "SoundCell", for: indexPath) as! EUSessionSoundTableViewCell
+        cell.sound.text = stop.sound
         return cell
     }
-}
-
-extension EUSessionViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            
-            return
-        }
-    }
-}
-
-class EUSessionStopTableViewCell: UITableViewCell {
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var time: UILabel!
-}
-
-class EUSessionSoundTableViewCell: UITableViewCell {
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var sound: UILabel!
 }

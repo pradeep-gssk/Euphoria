@@ -18,9 +18,10 @@ class EUSessionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.headerView.layer.borderColor = UIColor(red: (197.0/255.0), green: (196.0/255.0), blue: (192.0/255.0), alpha: 1).cgColor
+        self.headerView.layer.borderColor = UIColor.color(red: 197.0, green: 196.0, blue: 192.0, alpha: 1).cgColor
         self.headerView.layer.borderWidth = 1
         self.sessionsTableView.tableFooterView = UIView()
+        self.sessions = CoreData.sharedInstance.fetchSessions()
     }
     
     @IBAction func didTapBack(_ sender: Any) {
@@ -33,6 +34,15 @@ class EUSessionsViewController: UIViewController {
         if let viewController = segue.destination as? EUTimerSetupViewController {
             viewController.index = Int16(self.sessions.count)
         }
+        else if let viewController = segue.destination as? EUShowSessionViewController,
+            let session = sender as? Session {
+            viewController.session = session
+        }
+    }
+    
+    @IBAction func unwindToSessions(_ sender: UIStoryboardSegue) {
+        self.sessions = CoreData.sharedInstance.fetchSessions()
+        self.sessionsTableView.reloadData()
     }
 }
 
@@ -56,7 +66,8 @@ extension EUSessionsViewController: UITableViewDataSource {
 
 extension EUSessionsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let session = self.sessions[indexPath.row]
+        self.performSegue(withIdentifier: "ShowSessionDetail", sender: session)
     }
 }
 

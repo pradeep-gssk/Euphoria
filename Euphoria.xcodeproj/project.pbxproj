@@ -34,7 +34,7 @@
 		DE4D60F92212928200D6904C /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F52212928200D6904C /* Session+CoreDataClass.swift */; };
 		DE4D60FA2212928200D6904C /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60F62212928200D6904C /* Session+CoreDataProperties.swift */; };
 		DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */; };
-		DE4D60FE2212994200D6904C /* EUSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FD2212994200D6904C /* EUSessionViewController.swift */; };
+		DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */; };
 		DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6DA622103625008B4D12 /* Questionnaire2.json */; };
 		DE5F6DBA22103C66008B4D12 /* Questionnaires+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */; };
 		DE5F6DBB22103C66008B4D12 /* Questionnaires+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB522103C66008B4D12 /* Questionnaires+CoreDataProperties.swift */; };
@@ -42,6 +42,7 @@
 		DE5F6DBD22103C66008B4D12 /* Option+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB722103C66008B4D12 /* Option+CoreDataProperties.swift */; };
 		DE5F6DBE22103C66008B4D12 /* Questionnaire+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB822103C66008B4D12 /* Questionnaire+CoreDataClass.swift */; };
 		DE5F6DBF22103C66008B4D12 /* Questionnaire+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB922103C66008B4D12 /* Questionnaire+CoreDataProperties.swift */; };
+		DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */; };
 		DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */; };
 		DE94C4E8220F74F200C4C2ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE94C4E6220F74F200C4C2ED /* Main.storyboard */; };
 		DE94C4EA220F74F200C4C2ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE94C4E9220F74F200C4C2ED /* Assets.xcassets */; };
@@ -60,6 +61,9 @@
 		DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C56E220FA50600C4C2ED /* UIColor+.swift */; };
 		DE94C5B1220FC00700C4C2ED /* Euphoria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE94C5AF220FC00700C4C2ED /* Euphoria.xcdatamodeld */; };
 		DE94C60A220FD09800C4C2ED /* Questionnaire1.json in Resources */ = {isa = PBXBuildFile; fileRef = DE94C609220FD09800C4C2ED /* Questionnaire1.json */; };
+		DEA151FA221367CE0035F7D5 /* GSTimeIntervalPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA151F8221367CE0035F7D5 /* GSTimeIntervalPicker.m */; };
+		DEA1520022137E3C0035F7D5 /* ResponderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA151FF22137E3C0035F7D5 /* ResponderTableViewCell.swift */; };
+		DEA1521F221389A10035F7D5 /* EUSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1521E221389A10035F7D5 /* EUSoundsViewController.swift */; };
 		DEA8322122107AB30000BD43 /* Questionnaire3.json in Resources */ = {isa = PBXBuildFile; fileRef = DEA8322022107AB30000BD43 /* Questionnaire3.json */; };
 		DEA83223221133930000BD43 /* Questionnaire4.json in Resources */ = {isa = PBXBuildFile; fileRef = DEA83222221133930000BD43 /* Questionnaire4.json */; };
 		DEA83225221134C30000BD43 /* Questionnaire5.json in Resources */ = {isa = PBXBuildFile; fileRef = DEA83224221134C30000BD43 /* Questionnaire5.json */; };
@@ -129,7 +133,7 @@
 		DE4D60F52212928200D6904C /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE4D60F62212928200D6904C /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerSetupViewController.swift; sourceTree = "<group>"; };
-		DE4D60FD2212994200D6904C /* EUSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSessionViewController.swift; sourceTree = "<group>"; };
+		DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUAddSessionViewController.swift; sourceTree = "<group>"; };
 		DE5F6DA622103625008B4D12 /* Questionnaire2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire2.json; sourceTree = "<group>"; };
 		DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE5F6DB522103C66008B4D12 /* Questionnaires+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 		DE5F6DB722103C66008B4D12 /* Option+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Option+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE5F6DB822103C66008B4D12 /* Questionnaire+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE5F6DB922103C66008B4D12 /* Questionnaire+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUShowSessionViewController.swift; sourceTree = "<group>"; };
 		DE94C4DF220F74F200C4C2ED /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE94C4E7220F74F200C4C2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,6 +166,11 @@
 		DE94C56E220FA50600C4C2ED /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		DE94C5B0220FC00700C4C2ED /* Euphoria.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Euphoria.xcdatamodel; sourceTree = "<group>"; };
 		DE94C609220FD09800C4C2ED /* Questionnaire1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire1.json; sourceTree = "<group>"; };
+		DEA151F4221367B70035F7D5 /* Euphoria-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Euphoria-Bridging-Header.h"; sourceTree = "<group>"; };
+		DEA151F8221367CE0035F7D5 /* GSTimeIntervalPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTimeIntervalPicker.m; sourceTree = "<group>"; };
+		DEA151F9221367CE0035F7D5 /* GSTimeIntervalPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTimeIntervalPicker.h; sourceTree = "<group>"; };
+		DEA151FF22137E3C0035F7D5 /* ResponderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderTableViewCell.swift; sourceTree = "<group>"; };
+		DEA1521E221389A10035F7D5 /* EUSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSoundsViewController.swift; sourceTree = "<group>"; };
 		DEA8322022107AB30000BD43 /* Questionnaire3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire3.json; sourceTree = "<group>"; };
 		DEA83222221133930000BD43 /* Questionnaire4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire4.json; sourceTree = "<group>"; };
 		DEA83224221134C30000BD43 /* Questionnaire5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire5.json; sourceTree = "<group>"; };
@@ -230,8 +240,10 @@
 			isa = PBXGroup;
 			children = (
 				DE4D60AE22126D5000D6904C /* EUSessionsViewController.swift */,
+				DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */,
 				DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */,
-				DE4D60FD2212994200D6904C /* EUSessionViewController.swift */,
+				DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */,
+				DEA1521E221389A10035F7D5 /* EUSoundsViewController.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -314,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */,
+				DEA151F32213679C0035F7D5 /* Libraries */,
 				DEA8324122115E220000BD43 /* Views */,
 				DED5D5B0220FD36800CDE1AD /* Helper */,
 				DE94C5B2220FC06C00C4C2ED /* CoreData */,
@@ -438,6 +451,16 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		DEA151F32213679C0035F7D5 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DEA151F9221367CE0035F7D5 /* GSTimeIntervalPicker.h */,
+				DEA151F8221367CE0035F7D5 /* GSTimeIntervalPicker.m */,
+				DEA151F4221367B70035F7D5 /* Euphoria-Bridging-Header.h */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 		DEA832262211391D0000BD43 /* Concent */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +499,7 @@
 			isa = PBXGroup;
 			children = (
 				DEA8324222115E3F0000BD43 /* EUVideosListCell.swift */,
+				DEA151FF22137E3C0035F7D5 /* ResponderTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -558,6 +582,7 @@
 				TargetAttributes = {
 					DE94C4DE220F74F200C4C2ED = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					DE94C4F2220F74F200C4C2ED = {
 						CreatedOnToolsVersion = 10.1;
@@ -708,9 +733,12 @@
 				DEA8324322115E3F0000BD43 /* EUVideosListCell.swift in Sources */,
 				DE4D60A9221265D900D6904C /* EUAccountViewController.swift in Sources */,
 				DE5F6DBD22103C66008B4D12 /* Option+CoreDataProperties.swift in Sources */,
+				DEA1521F221389A10035F7D5 /* EUSoundsViewController.swift in Sources */,
 				DECD976A221240D4001B47F0 /* Exercises+CoreDataClass.swift in Sources */,
 				DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */,
+				DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */,
 				DECD976B221240D4001B47F0 /* Exercises+CoreDataProperties.swift in Sources */,
+				DEA1520022137E3C0035F7D5 /* ResponderTableViewCell.swift in Sources */,
 				DE4D60AF22126D5000D6904C /* EUSessionsViewController.swift in Sources */,
 				DEA8323122113D090000BD43 /* EULoginViewController.swift in Sources */,
 				DEA83240221159A30000BD43 /* EUExercisesViewController.swift in Sources */,
@@ -718,7 +746,7 @@
 				DE94C520220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift in Sources */,
 				DECD9768221240D4001B47F0 /* Video+CoreDataClass.swift in Sources */,
 				DE94C512220F764A00C4C2ED /* EUHomeTableViewController.swift in Sources */,
-				DE4D60FE2212994200D6904C /* EUSessionViewController.swift in Sources */,
+				DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */,
 				DE5F6DBB22103C66008B4D12 /* Questionnaires+CoreDataProperties.swift in Sources */,
 				DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */,
 				DE4D60E8221285B600D6904C /* EUGalleryTableViewController.swift in Sources */,
@@ -731,6 +759,7 @@
 				DE5F6DBA22103C66008B4D12 /* Questionnaires+CoreDataClass.swift in Sources */,
 				DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */,
 				DE94C526220F7CD400C4C2ED /* Enums.swift in Sources */,
+				DEA151FA221367CE0035F7D5 /* GSTimeIntervalPicker.m in Sources */,
 				DE5F6DBC22103C66008B4D12 /* Option+CoreDataClass.swift in Sources */,
 				DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */,
 				DE0088262212305F00129D81 /* EUExerciseVideoViewController.swift in Sources */,
@@ -980,6 +1009,7 @@
 			baseConfigurationReference = 00B5286AB675DFFB5E761486 /* Pods-Euphoria.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Euphoria/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -988,6 +1018,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pradeep.Euphoria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Euphoria/Libraries/Euphoria-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -998,6 +1030,7 @@
 			baseConfigurationReference = BE52ACBEF78299081CC944F8 /* Pods-Euphoria.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Euphoria/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1006,6 +1039,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pradeep.Euphoria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Euphoria/Libraries/Euphoria-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

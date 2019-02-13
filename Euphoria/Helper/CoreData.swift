@@ -186,6 +186,8 @@ extension CoreData {
 extension CoreData {
     func fetchSessions() -> [Session] {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Session.self))
+        let sortDescriptor = NSSortDescriptor(key: "index", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
         do {
             let data = try context.fetch(fetchRequest) as? [Session]
             return data ?? []
@@ -195,7 +197,33 @@ extension CoreData {
         }
     }
     
-    func saveSession() {
-//        let sound = NSEntityDescription.insertNewObject(forEntityName: "Session", into: context) as? Session
+    func saveSession(_ sessionObject: EUSession) {
+        let session = NSEntityDescription.insertNewObject(forEntityName: "Session", into: context) as? Session
+        session?.name = sessionObject.name
+        session?.index = sessionObject.index
+        session?.time = sessionObject.time
+        
+        for i in 0..<sessionObject.stops.count {
+            let stop = sessionObject.stops[i]
+            let sound = sessionObject.sounds[i]
+            if let response = self.saveStop(stop, sound: sound) {
+                session?.addToStops(response)
+            }
+        }
+        
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+    
+    func saveStop(_ stopObject: EUStop, sound: Sound) -> Stop? {
+        let stop = NSEntityDescription.insertNewObject(forEntityName: "Stop", into: context) as? Stop
+        stop?.index = stopObject.index
+        stop?.time = stopObject.time
+        stop?.sound = sound.name
+        stop?.path = sound.path
+        return stop
     }
 }

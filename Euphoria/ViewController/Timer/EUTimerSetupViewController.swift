@@ -13,13 +13,32 @@ class EUTimerSetupViewController: UIViewController {
     var index: Int16 = 0
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var datePicker: UIDatePicker!
-
+    @IBOutlet weak var okButton: UIButton!
+    
+    var interval: TimeInterval = 86400
+    let timePicker = GSTimeIntervalPicker(frame: .zero)
+    
+    var selectedTimeInterval: TimeInterval = 86400
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.headerView.layer.borderColor = UIColor(red: (197.0/255.0), green: (196.0/255.0), blue: (192.0/255.0), alpha: 1).cgColor
+        self.headerView.layer.borderColor = UIColor.color(red: 197.0, green: 196.0, blue: 192.0, alpha: 1).cgColor
         self.headerView.layer.borderWidth = 1
-        self.datePicker.countDownDuration = 0
+        
+        self.view.addSubview(self.timePicker)
+        NSLayoutConstraint.activate([
+            self.timePicker.topAnchor.constraint(equalTo: self.textField.bottomAnchor, constant: 10),
+            self.timePicker.bottomAnchor.constraint(equalTo: self.okButton.topAnchor, constant: 10),
+            self.timePicker.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0),
+            self.timePicker.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0)
+            ])
+        self.timePicker.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.timePicker.maxTimeInterval = self.interval
+        self.timePicker.timeInterval = 0
+        self.timePicker.onTimeIntervalChanged = {(_ newTimeInterval: TimeInterval) -> Void in
+            self.selectedTimeInterval = newTimeInterval
+        }
     }
     
     @IBAction func didTapBack(_ sender: Any) {
@@ -28,19 +47,19 @@ class EUTimerSetupViewController: UIViewController {
    
     @IBAction func didTapOkButton(_ sender: Any) {
         guard let text = self.textField.text, text.count > 0,
-            self.datePicker.countDownDuration > 0 else {
+            self.selectedTimeInterval > 0 else {
                 //TODO: Show error
             return
         }
-        
-        let session = EUSession(name: text, index: self.index, time: self.datePicker.countDownDuration)
+
+        let session = EUSession(name: text, index: self.index, time: self.selectedTimeInterval)
         self.performSegue(withIdentifier: "AddSessionView", sender: session)
     }
     
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewController = segue.destination as? EUSessionViewController,
+        if let viewController = segue.destination as? EUAddSessionViewController,
             let session = sender as? EUSession {
             viewController.session = session
         }
