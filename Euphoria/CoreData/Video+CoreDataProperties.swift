@@ -2,7 +2,7 @@
 //  Video+CoreDataProperties.swift
 //  Euphoria
 //
-//  Created by Guduru, Pradeep(AWF) on 2/11/19.
+//  Created by Guduru, Pradeep(AWF) on 2/12/19.
 //  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 //
@@ -22,5 +22,6 @@ extension Video {
     @NSManaged public var videoName: String?
     @NSManaged public var videoUrl: URL?
     @NSManaged public var exercises: Exercises?
+    @NSManaged public var videos: Videos?
 
 }

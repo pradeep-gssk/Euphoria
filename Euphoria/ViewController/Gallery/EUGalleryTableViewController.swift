@@ -18,4 +18,10 @@ class EUGalleryTableViewController: UITableViewController {
     @IBAction func didTapBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            self.performSegue(withIdentifier: "ShowGalleryIndexView", sender: self)
+        }
+    }
 }

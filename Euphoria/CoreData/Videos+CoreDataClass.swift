@@ -1,5 +1,5 @@
 //
-//  Exercises+CoreDataClass.swift
+//  Videos+CoreDataClass.swift
 //  Euphoria
 //
 //  Created by Guduru, Pradeep(AWF) on 2/12/19.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(Exercises)
-public class Exercises: NSManagedObject {
+@objc(Videos)
+public class Videos: NSManagedObject {
 
 }

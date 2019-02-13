@@ -11,12 +11,6 @@
 		DE0088262212305F00129D81 /* EUExerciseVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0088252212305F00129D81 /* EUExerciseVideoViewController.swift */; };
 		DE00882C2212350200129D81 /* Exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = DE00882B2212350200129D81 /* Exercises.json */; };
 		DE4B9D622213C8CF0036664A /* EUTimerCountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D612213C8CF0036664A /* EUTimerCountDownViewController.swift */; };
-		DE4B9D752213E10F0036664A /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D6F2213E10F0036664A /* Session+CoreDataClass.swift */; };
-		DE4B9D762213E10F0036664A /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D702213E10F0036664A /* Session+CoreDataProperties.swift */; };
-		DE4B9D772213E10F0036664A /* Stop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D712213E10F0036664A /* Stop+CoreDataClass.swift */; };
-		DE4B9D782213E10F0036664A /* Stop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D722213E10F0036664A /* Stop+CoreDataProperties.swift */; };
-		DE4B9D792213E10F0036664A /* Sound+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D732213E10F0036664A /* Sound+CoreDataClass.swift */; };
-		DE4B9D7A2213E10F0036664A /* Sound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D742213E10F0036664A /* Sound+CoreDataProperties.swift */; };
 		DE4D60A9221265D900D6904C /* EUAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60A8221265D900D6904C /* EUAccountViewController.swift */; };
 		DE4D60AC221268CB00D6904C /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60AA221268CB00D6904C /* Timer.storyboard */; };
 		DE4D60AF22126D5000D6904C /* EUSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60AE22126D5000D6904C /* EUSessionsViewController.swift */; };
@@ -37,12 +31,6 @@
 		DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */; };
 		DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */; };
 		DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6DA622103625008B4D12 /* Questionnaire2.json */; };
-		DE5F6DBA22103C66008B4D12 /* Questionnaires+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */; };
-		DE5F6DBB22103C66008B4D12 /* Questionnaires+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB522103C66008B4D12 /* Questionnaires+CoreDataProperties.swift */; };
-		DE5F6DBC22103C66008B4D12 /* Option+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB622103C66008B4D12 /* Option+CoreDataClass.swift */; };
-		DE5F6DBD22103C66008B4D12 /* Option+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB722103C66008B4D12 /* Option+CoreDataProperties.swift */; };
-		DE5F6DBE22103C66008B4D12 /* Questionnaire+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB822103C66008B4D12 /* Questionnaire+CoreDataClass.swift */; };
-		DE5F6DBF22103C66008B4D12 /* Questionnaire+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F6DB922103C66008B4D12 /* Questionnaire+CoreDataProperties.swift */; };
 		DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */; };
 		DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */; };
 		DE94C4E8220F74F200C4C2ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE94C4E6220F74F200C4C2ED /* Main.storyboard */; };
@@ -62,6 +50,29 @@
 		DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C56E220FA50600C4C2ED /* UIColor+.swift */; };
 		DE94C5B1220FC00700C4C2ED /* Euphoria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE94C5AF220FC00700C4C2ED /* Euphoria.xcdatamodeld */; };
 		DE94C60A220FD09800C4C2ED /* Questionnaire1.json in Resources */ = {isa = PBXBuildFile; fileRef = DE94C609220FD09800C4C2ED /* Questionnaire1.json */; };
+		DE9B730E2213EF2E00E82CFD /* EUVideosIndexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B730D2213EF2E00E82CFD /* EUVideosIndexTableViewController.swift */; };
+		DE9B73102213F03900E82CFD /* Videos.json in Resources */ = {isa = PBXBuildFile; fileRef = DE9B730F2213F03900E82CFD /* Videos.json */; };
+		DE9B73122213F0EF00E82CFD /* EUVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73112213F0EF00E82CFD /* EUVideosViewController.swift */; };
+		DE9B73142213F10F00E82CFD /* EUVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73132213F10F00E82CFD /* EUVideoViewController.swift */; };
+		DE9B73272213F23B00E82CFD /* Video+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73152213F23B00E82CFD /* Video+CoreDataClass.swift */; };
+		DE9B73282213F23B00E82CFD /* Video+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73162213F23B00E82CFD /* Video+CoreDataProperties.swift */; };
+		DE9B73292213F23B00E82CFD /* Sound+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73172213F23B00E82CFD /* Sound+CoreDataClass.swift */; };
+		DE9B732A2213F23B00E82CFD /* Sound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73182213F23B00E82CFD /* Sound+CoreDataProperties.swift */; };
+		DE9B732D2213F23B00E82CFD /* Questionnaire+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B731B2213F23B00E82CFD /* Questionnaire+CoreDataClass.swift */; };
+		DE9B732E2213F23B00E82CFD /* Questionnaire+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B731C2213F23B00E82CFD /* Questionnaire+CoreDataProperties.swift */; };
+		DE9B732F2213F23B00E82CFD /* Option+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B731D2213F23B00E82CFD /* Option+CoreDataClass.swift */; };
+		DE9B73302213F23B00E82CFD /* Option+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B731E2213F23B00E82CFD /* Option+CoreDataProperties.swift */; };
+		DE9B73312213F23B00E82CFD /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B731F2213F23B00E82CFD /* Session+CoreDataClass.swift */; };
+		DE9B73322213F23B00E82CFD /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73202213F23B00E82CFD /* Session+CoreDataProperties.swift */; };
+		DE9B73332213F23B00E82CFD /* Stop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73212213F23B00E82CFD /* Stop+CoreDataClass.swift */; };
+		DE9B73342213F23B00E82CFD /* Stop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73222213F23B00E82CFD /* Stop+CoreDataProperties.swift */; };
+		DE9B73352213F23B00E82CFD /* Exercises+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73232213F23B00E82CFD /* Exercises+CoreDataClass.swift */; };
+		DE9B73362213F23B00E82CFD /* Exercises+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73242213F23B00E82CFD /* Exercises+CoreDataProperties.swift */; };
+		DE9B73372213F23B00E82CFD /* Questionnaires+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73252213F23B00E82CFD /* Questionnaires+CoreDataClass.swift */; };
+		DE9B73382213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73262213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift */; };
+		DE9B733B2213F2D200E82CFD /* Videos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */; };
+		DE9B733C2213F2D200E82CFD /* Videos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B733A2213F2D200E82CFD /* Videos+CoreDataProperties.swift */; };
+		DE9B733E2213F66000E82CFD /* VideoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B733D2213F66000E82CFD /* VideoContainer.swift */; };
 		DEA151FA221367CE0035F7D5 /* GSTimeIntervalPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA151F8221367CE0035F7D5 /* GSTimeIntervalPicker.m */; };
 		DEA1520022137E3C0035F7D5 /* ResponderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA151FF22137E3C0035F7D5 /* ResponderTableViewCell.swift */; };
 		DEA1521F221389A10035F7D5 /* EUSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1521E221389A10035F7D5 /* EUSoundsViewController.swift */; };
@@ -78,10 +89,6 @@
 		DEA8323E221154F50000BD43 /* EUExercisesIndexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8323D221154F50000BD43 /* EUExercisesIndexTableViewController.swift */; };
 		DEA83240221159A30000BD43 /* EUExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8323F221159A30000BD43 /* EUExercisesViewController.swift */; };
 		DEA8324322115E3F0000BD43 /* EUVideosListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8324222115E3F0000BD43 /* EUVideosListCell.swift */; };
-		DECD9768221240D4001B47F0 /* Video+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD9764221240D3001B47F0 /* Video+CoreDataClass.swift */; };
-		DECD9769221240D4001B47F0 /* Video+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD9765221240D3001B47F0 /* Video+CoreDataProperties.swift */; };
-		DECD976A221240D4001B47F0 /* Exercises+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD9766221240D3001B47F0 /* Exercises+CoreDataClass.swift */; };
-		DECD976B221240D4001B47F0 /* Exercises+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD9767221240D3001B47F0 /* Exercises+CoreDataProperties.swift */; };
 		DED5D5B2220FD37900CDE1AD /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5D5B1220FD37900CDE1AD /* CoreData.swift */; };
 		DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5D5B3220FD52400CDE1AD /* Constants.swift */; };
 		DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB2CAA2212AB6600F2188C /* EUSession.swift */; };
@@ -111,12 +118,6 @@
 		DE0088252212305F00129D81 /* EUExerciseVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExerciseVideoViewController.swift; sourceTree = "<group>"; };
 		DE00882B2212350200129D81 /* Exercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Exercises.json; sourceTree = "<group>"; };
 		DE4B9D612213C8CF0036664A /* EUTimerCountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerCountDownViewController.swift; sourceTree = "<group>"; };
-		DE4B9D6F2213E10F0036664A /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE4B9D702213E10F0036664A /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DE4B9D712213E10F0036664A /* Stop+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE4B9D722213E10F0036664A /* Stop+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DE4B9D732213E10F0036664A /* Sound+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE4B9D742213E10F0036664A /* Sound+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE4D60A8221265D900D6904C /* EUAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUAccountViewController.swift; sourceTree = "<group>"; };
 		DE4D60AB221268CB00D6904C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Timer.storyboard; sourceTree = "<group>"; };
 		DE4D60AE22126D5000D6904C /* EUSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSessionsViewController.swift; sourceTree = "<group>"; };
@@ -137,12 +138,6 @@
 		DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerSetupViewController.swift; sourceTree = "<group>"; };
 		DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUAddSessionViewController.swift; sourceTree = "<group>"; };
 		DE5F6DA622103625008B4D12 /* Questionnaire2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire2.json; sourceTree = "<group>"; };
-		DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE5F6DB522103C66008B4D12 /* Questionnaires+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DE5F6DB622103C66008B4D12 /* Option+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Option+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE5F6DB722103C66008B4D12 /* Option+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Option+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DE5F6DB822103C66008B4D12 /* Questionnaire+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE5F6DB922103C66008B4D12 /* Questionnaire+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUShowSessionViewController.swift; sourceTree = "<group>"; };
 		DE94C4DF220F74F200C4C2ED /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +163,29 @@
 		DE94C56E220FA50600C4C2ED /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		DE94C5B0220FC00700C4C2ED /* Euphoria.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Euphoria.xcdatamodel; sourceTree = "<group>"; };
 		DE94C609220FD09800C4C2ED /* Questionnaire1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire1.json; sourceTree = "<group>"; };
+		DE9B730D2213EF2E00E82CFD /* EUVideosIndexTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosIndexTableViewController.swift; sourceTree = "<group>"; };
+		DE9B730F2213F03900E82CFD /* Videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Videos.json; sourceTree = "<group>"; };
+		DE9B73112213F0EF00E82CFD /* EUVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosViewController.swift; sourceTree = "<group>"; };
+		DE9B73132213F10F00E82CFD /* EUVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideoViewController.swift; sourceTree = "<group>"; };
+		DE9B73152213F23B00E82CFD /* Video+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE9B73162213F23B00E82CFD /* Video+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE9B73172213F23B00E82CFD /* Sound+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE9B73182213F23B00E82CFD /* Sound+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE9B731B2213F23B00E82CFD /* Questionnaire+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE9B731C2213F23B00E82CFD /* Questionnaire+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE9B731D2213F23B00E82CFD /* Option+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Option+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE9B731E2213F23B00E82CFD /* Option+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Option+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE9B731F2213F23B00E82CFD /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE9B73202213F23B00E82CFD /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE9B73212213F23B00E82CFD /* Stop+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE9B73222213F23B00E82CFD /* Stop+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE9B73232213F23B00E82CFD /* Exercises+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE9B73242213F23B00E82CFD /* Exercises+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE9B73252213F23B00E82CFD /* Questionnaires+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE9B73262213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE9B733A2213F2D200E82CFD /* Videos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE9B733D2213F66000E82CFD /* VideoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContainer.swift; sourceTree = "<group>"; };
 		DEA151F4221367B70035F7D5 /* Euphoria-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Euphoria-Bridging-Header.h"; sourceTree = "<group>"; };
 		DEA151F8221367CE0035F7D5 /* GSTimeIntervalPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTimeIntervalPicker.m; sourceTree = "<group>"; };
 		DEA151F9221367CE0035F7D5 /* GSTimeIntervalPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTimeIntervalPicker.h; sourceTree = "<group>"; };
@@ -186,10 +204,6 @@
 		DEA8323D221154F50000BD43 /* EUExercisesIndexTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExercisesIndexTableViewController.swift; sourceTree = "<group>"; };
 		DEA8323F221159A30000BD43 /* EUExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExercisesViewController.swift; sourceTree = "<group>"; };
 		DEA8324222115E3F0000BD43 /* EUVideosListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosListCell.swift; sourceTree = "<group>"; };
-		DECD9764221240D3001B47F0 /* Video+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DECD9765221240D3001B47F0 /* Video+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DECD9766221240D3001B47F0 /* Exercises+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DECD9767221240D3001B47F0 /* Exercises+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DED5D5B1220FD37900CDE1AD /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		DED5D5B3220FD52400CDE1AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DEFB2CAA2212AB6600F2188C /* EUSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSession.swift; sourceTree = "<group>"; };
@@ -261,6 +275,7 @@
 				DEA83224221134C30000BD43 /* Questionnaire5.json */,
 				DE00882B2212350200129D81 /* Exercises.json */,
 				DE4D60E922128AED00D6904C /* Sounds.json */,
+				DE9B730F2213F03900E82CFD /* Videos.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -299,6 +314,9 @@
 			isa = PBXGroup;
 			children = (
 				DE4D60E7221285B600D6904C /* EUGalleryTableViewController.swift */,
+				DE9B730D2213EF2E00E82CFD /* EUVideosIndexTableViewController.swift */,
+				DE9B73112213F0EF00E82CFD /* EUVideosViewController.swift */,
+				DE9B73132213F10F00E82CFD /* EUVideoViewController.swift */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -434,22 +452,24 @@
 		DE94C5B2220FC06C00C4C2ED /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				DE4B9D6F2213E10F0036664A /* Session+CoreDataClass.swift */,
-				DE4B9D702213E10F0036664A /* Session+CoreDataProperties.swift */,
-				DE4B9D712213E10F0036664A /* Stop+CoreDataClass.swift */,
-				DE4B9D722213E10F0036664A /* Stop+CoreDataProperties.swift */,
-				DE4B9D732213E10F0036664A /* Sound+CoreDataClass.swift */,
-				DE4B9D742213E10F0036664A /* Sound+CoreDataProperties.swift */,
-				DECD9766221240D3001B47F0 /* Exercises+CoreDataClass.swift */,
-				DECD9767221240D3001B47F0 /* Exercises+CoreDataProperties.swift */,
-				DE5F6DB422103C66008B4D12 /* Questionnaires+CoreDataClass.swift */,
-				DE5F6DB522103C66008B4D12 /* Questionnaires+CoreDataProperties.swift */,
-				DE5F6DB622103C66008B4D12 /* Option+CoreDataClass.swift */,
-				DE5F6DB722103C66008B4D12 /* Option+CoreDataProperties.swift */,
-				DE5F6DB822103C66008B4D12 /* Questionnaire+CoreDataClass.swift */,
-				DE5F6DB922103C66008B4D12 /* Questionnaire+CoreDataProperties.swift */,
-				DECD9764221240D3001B47F0 /* Video+CoreDataClass.swift */,
-				DECD9765221240D3001B47F0 /* Video+CoreDataProperties.swift */,
+				DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */,
+				DE9B733A2213F2D200E82CFD /* Videos+CoreDataProperties.swift */,
+				DE9B73152213F23B00E82CFD /* Video+CoreDataClass.swift */,
+				DE9B73162213F23B00E82CFD /* Video+CoreDataProperties.swift */,
+				DE9B73172213F23B00E82CFD /* Sound+CoreDataClass.swift */,
+				DE9B73182213F23B00E82CFD /* Sound+CoreDataProperties.swift */,
+				DE9B731B2213F23B00E82CFD /* Questionnaire+CoreDataClass.swift */,
+				DE9B731C2213F23B00E82CFD /* Questionnaire+CoreDataProperties.swift */,
+				DE9B731D2213F23B00E82CFD /* Option+CoreDataClass.swift */,
+				DE9B731E2213F23B00E82CFD /* Option+CoreDataProperties.swift */,
+				DE9B731F2213F23B00E82CFD /* Session+CoreDataClass.swift */,
+				DE9B73202213F23B00E82CFD /* Session+CoreDataProperties.swift */,
+				DE9B73212213F23B00E82CFD /* Stop+CoreDataClass.swift */,
+				DE9B73222213F23B00E82CFD /* Stop+CoreDataProperties.swift */,
+				DE9B73232213F23B00E82CFD /* Exercises+CoreDataClass.swift */,
+				DE9B73242213F23B00E82CFD /* Exercises+CoreDataProperties.swift */,
+				DE9B73252213F23B00E82CFD /* Questionnaires+CoreDataClass.swift */,
+				DE9B73262213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -503,6 +523,7 @@
 			children = (
 				DEA8324222115E3F0000BD43 /* EUVideosListCell.swift */,
 				DEA151FF22137E3C0035F7D5 /* ResponderTableViewCell.swift */,
+				DE9B733D2213F66000E82CFD /* VideoContainer.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -647,6 +668,7 @@
 				DE4D60DF221282FB00D6904C /* Gallery.storyboard in Resources */,
 				DEA8322B221139750000BD43 /* Login.storyboard in Resources */,
 				DE94C4E8220F74F200C4C2ED /* Main.storyboard in Resources */,
+				DE9B73102213F03900E82CFD /* Videos.json in Resources */,
 				DE4D60D52212815A00D6904C /* got-it-2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -726,54 +748,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4D60E62212857600D6904C /* EUHistoryTableViewController.swift in Sources */,
+				DE9B73382213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift in Sources */,
 				DED5D5B2220FD37900CDE1AD /* CoreData.swift in Sources */,
+				DE9B732F2213F23B00E82CFD /* Option+CoreDataClass.swift in Sources */,
 				DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */,
 				DEA8323E221154F50000BD43 /* EUExercisesIndexTableViewController.swift in Sources */,
 				DE94C523220F7C1B00C4C2ED /* UIViewController+.swift in Sources */,
+				DE9B73302213F23B00E82CFD /* Option+CoreDataProperties.swift in Sources */,
+				DE9B732A2213F23B00E82CFD /* Sound+CoreDataProperties.swift in Sources */,
 				DEA8324322115E3F0000BD43 /* EUVideosListCell.swift in Sources */,
+				DE9B73342213F23B00E82CFD /* Stop+CoreDataProperties.swift in Sources */,
 				DE4D60A9221265D900D6904C /* EUAccountViewController.swift in Sources */,
-				DE5F6DBD22103C66008B4D12 /* Option+CoreDataProperties.swift in Sources */,
 				DEA1521F221389A10035F7D5 /* EUSoundsViewController.swift in Sources */,
-				DECD976A221240D4001B47F0 /* Exercises+CoreDataClass.swift in Sources */,
-				DE4B9D752213E10F0036664A /* Session+CoreDataClass.swift in Sources */,
 				DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */,
-				DE4B9D7A2213E10F0036664A /* Sound+CoreDataProperties.swift in Sources */,
 				DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */,
-				DECD976B221240D4001B47F0 /* Exercises+CoreDataProperties.swift in Sources */,
 				DEA1520022137E3C0035F7D5 /* ResponderTableViewCell.swift in Sources */,
 				DE4D60AF22126D5000D6904C /* EUSessionsViewController.swift in Sources */,
 				DEA8323122113D090000BD43 /* EULoginViewController.swift in Sources */,
-				DE4B9D792213E10F0036664A /* Sound+CoreDataClass.swift in Sources */,
 				DEA83240221159A30000BD43 /* EUExercisesViewController.swift in Sources */,
-				DE4B9D762213E10F0036664A /* Session+CoreDataProperties.swift in Sources */,
+				DE9B73332213F23B00E82CFD /* Stop+CoreDataClass.swift in Sources */,
+				DE9B733B2213F2D200E82CFD /* Videos+CoreDataClass.swift in Sources */,
 				DE94C531220F951300C4C2ED /* String+.swift in Sources */,
 				DE94C520220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift in Sources */,
-				DECD9768221240D4001B47F0 /* Video+CoreDataClass.swift in Sources */,
 				DE94C512220F764A00C4C2ED /* EUHomeTableViewController.swift in Sources */,
 				DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */,
-				DE5F6DBB22103C66008B4D12 /* Questionnaires+CoreDataProperties.swift in Sources */,
-				DE4B9D772213E10F0036664A /* Stop+CoreDataClass.swift in Sources */,
 				DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */,
 				DE4D60E8221285B600D6904C /* EUGalleryTableViewController.swift in Sources */,
 				DE94C52A220F833D00C4C2ED /* EUQuestionnaireViewController.swift in Sources */,
-				DECD9769221240D4001B47F0 /* Video+CoreDataProperties.swift in Sources */,
+				DE9B73272213F23B00E82CFD /* Video+CoreDataClass.swift in Sources */,
 				DE94C528220F801900C4C2ED /* UIImage+.swift in Sources */,
 				DE94C5B1220FC00700C4C2ED /* Euphoria.xcdatamodeld in Sources */,
-				DE5F6DBA22103C66008B4D12 /* Questionnaires+CoreDataClass.swift in Sources */,
+				DE9B73362213F23B00E82CFD /* Exercises+CoreDataProperties.swift in Sources */,
+				DE9B730E2213EF2E00E82CFD /* EUVideosIndexTableViewController.swift in Sources */,
+				DE9B733C2213F2D200E82CFD /* Videos+CoreDataProperties.swift in Sources */,
 				DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */,
+				DE9B73352213F23B00E82CFD /* Exercises+CoreDataClass.swift in Sources */,
+				DE9B732D2213F23B00E82CFD /* Questionnaire+CoreDataClass.swift in Sources */,
 				DE94C526220F7CD400C4C2ED /* Enums.swift in Sources */,
+				DE9B73312213F23B00E82CFD /* Session+CoreDataClass.swift in Sources */,
+				DE9B732E2213F23B00E82CFD /* Questionnaire+CoreDataProperties.swift in Sources */,
+				DE9B73372213F23B00E82CFD /* Questionnaires+CoreDataClass.swift in Sources */,
+				DE9B73142213F10F00E82CFD /* EUVideoViewController.swift in Sources */,
+				DE9B73322213F23B00E82CFD /* Session+CoreDataProperties.swift in Sources */,
 				DEA151FA221367CE0035F7D5 /* GSTimeIntervalPicker.m in Sources */,
-				DE4B9D782213E10F0036664A /* Stop+CoreDataProperties.swift in Sources */,
-				DE5F6DBC22103C66008B4D12 /* Option+CoreDataClass.swift in Sources */,
 				DE4B9D622213C8CF0036664A /* EUTimerCountDownViewController.swift in Sources */,
+				DE9B733E2213F66000E82CFD /* VideoContainer.swift in Sources */,
 				DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */,
+				DE9B73122213F0EF00E82CFD /* EUVideosViewController.swift in Sources */,
 				DE0088262212305F00129D81 /* EUExerciseVideoViewController.swift in Sources */,
 				DE94C56D220FA4E300C4C2ED /* UITextField+.swift in Sources */,
-				DE5F6DBE22103C66008B4D12 /* Questionnaire+CoreDataClass.swift in Sources */,
-				DE5F6DBF22103C66008B4D12 /* Questionnaire+CoreDataProperties.swift in Sources */,
 				DE4D60E4221283C200D6904C /* EUActivitiesTableViewController.swift in Sources */,
+				DE9B73282213F23B00E82CFD /* Video+CoreDataProperties.swift in Sources */,
 				DEA83238221146E30000BD43 /* EUDietIndexTableViewController.swift in Sources */,
 				DEA83228221139440000BD43 /* EUConcentViewController.swift in Sources */,
+				DE9B73292213F23B00E82CFD /* Sound+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,9 +18,9 @@ extension Stop {
     }
 
     @NSManaged public var index: Int16
+    @NSManaged public var resource: String?
     @NSManaged public var sound: String?
     @NSManaged public var time: Double
-    @NSManaged public var resource: String?
     @NSManaged public var type: String?
     @NSManaged public var session: Session?
 

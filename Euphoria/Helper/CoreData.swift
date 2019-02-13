@@ -12,6 +12,17 @@ import CoreData
 class CoreData: NSObject {
     static let sharedInstance = CoreData()
     let context = appDelegate.persistentContainer.viewContext
+    
+    func setVideo(_ json: [String: AnyObject]) -> Video? {
+        let video = NSEntityDescription.insertNewObject(forEntityName: "Video", into: context) as? Video
+        video?.title = json["title"] as? String
+        video?.videoDescription = json["video_description"] as? String
+        video?.videoName = json["video_name"] as? String
+        if let string = json["video_url"] as? String {
+            video?.videoUrl = URL(string: string)
+        }
+        return video
+    }
 }
 
 //MARK: Questionnaires
@@ -127,23 +138,49 @@ extension CoreData {
         }
     }
     
-    func setVideo(_ json: [String: AnyObject]) -> Video? {
-        let exerciseVideo = NSEntityDescription.insertNewObject(forEntityName: "Video", into: context) as? Video
-        exerciseVideo?.title = json["title"] as? String
-        exerciseVideo?.videoDescription = json["video_description"] as? String
-        exerciseVideo?.videoName = json["video_name"] as? String
-        if let string = json["video_url"] as? String {
-            exerciseVideo?.videoUrl = URL(string: string)
-        }
-        return exerciseVideo
-    }
-    
     func fetchExercises() -> [Exercises] {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Exercises.self))
         let sortDescriptor = NSSortDescriptor(key: "index", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
         do {
             let data = try context.fetch(fetchRequest) as? [Exercises]
+            return data ?? []
+            
+        } catch {
+            return []
+        }
+    }
+}
+
+//MARK: Videos
+extension CoreData {
+    func saveVideos(_ json: [[String: AnyObject]]) {
+        for dictionary in json {
+            let videoObject = NSEntityDescription.insertNewObject(forEntityName: "Videos", into: context) as? Videos
+            videoObject?.title = dictionary["title"] as? String
+            videoObject?.index = dictionary["index"] as? Int16 ?? 0
+            if let videos = dictionary["videos"] as? [[String: AnyObject]] {
+                for video in videos {
+                    if let response = self.setVideo(video) {
+                        videoObject?.addToVideo(response)
+                    }
+                }
+            }
+        }
+        
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+    
+    func fetchVideos() -> [Videos] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Videos.self))
+        let sortDescriptor = NSSortDescriptor(key: "index", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        do {
+            let data = try context.fetch(fetchRequest) as? [Videos]
             return data ?? []
             
         } catch {

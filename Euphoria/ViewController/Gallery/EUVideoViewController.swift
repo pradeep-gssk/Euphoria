@@ -1,16 +1,16 @@
 //
-//  EUExerciseVideoViewController.swift
+//  EUVideoViewController.swift
 //  Euphoria
 //
-//  Created by Guduru, Pradeep(AWF) on 2/11/19.
+//  Created by Guduru, Pradeep(AWF) on 2/12/19.
 //  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 
 import UIKit
 import AVKit
 
-class EUExerciseVideoViewController: UIViewController {
-
+class EUVideoViewController: UIViewController {
+    
     var video: Video?
     var player: AVPlayer?
     var playerItem: AVPlayerItem?
@@ -21,7 +21,7 @@ class EUExerciseVideoViewController: UIViewController {
     @IBOutlet weak var videDescriptionLabel: UITextView!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var videoContainer: VideoContainer!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

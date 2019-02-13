@@ -54,6 +54,12 @@
         <attribute name="videoName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="videoUrl" optional="YES" attributeType="URI" syncable="YES"/>
         <relationship name="exercises" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercises" inverseName="exerciseVideo" inverseEntity="Exercises" syncable="YES"/>
+        <relationship name="videos" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Videos" inverseName="video" inverseEntity="Videos" syncable="YES"/>
+    </entity>
+    <entity name="Videos" representedClassName="Videos" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="video" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Video" inverseName="videos" inverseEntity="Video" syncable="YES"/>
     </entity>
     <elements>
         <element name="Exercises" positionX="189" positionY="-135" width="128" height="90"/>
@@ -63,6 +69,7 @@
         <element name="Session" positionX="189" positionY="-126" width="128" height="105"/>
         <element name="Sound" positionX="207" positionY="-108" width="128" height="90"/>
         <element name="Stop" positionX="198" positionY="-117" width="128" height="135"/>
-        <element name="Video" positionX="198" positionY="-126" width="128" height="120"/>
+        <element name="Video" positionX="198" positionY="-126" width="128" height="135"/>
+        <element name="Videos" positionX="189" positionY="-117" width="128" height="90"/>
     </elements>
 </model>

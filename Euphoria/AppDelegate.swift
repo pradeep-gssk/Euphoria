@@ -106,6 +106,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.loadQuestionnaire(withResource: "Questionnaire5", forIndex: 5, withTotal: 4)
         self.loadExercises(withResource: "Exercises")
         self.loadSounds(withResource: "Sounds")
+        self.loadVideos(withResource: "Videos")
     }
     
     func loadQuestionnaire(withResource resource: String, forIndex index: Int16, withTotal total: Int16) {
@@ -144,6 +145,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 if let jsonResult = jsonResult as? [[String: String]] {
                     CoreData.sharedInstance.saveSound(jsonResult)
+                }
+            } catch {
+                print(error)
+                // handle error
+            }
+        }
+    }
+    
+    func loadVideos(withResource resource: String) {
+        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? [[String: AnyObject]] {
+                    CoreData.sharedInstance.saveVideos(jsonResult)
                 }
             } catch {
                 print(error)
