@@ -8,6 +8,16 @@
 
 import Foundation
 
+enum UserType : String {
+    case Doctor = "doctor"
+    case Patient = "patient"
+}
+
+enum LoginType : String {
+    case GENERAL = "general"
+    case FACEBOOK = "facebook"
+}
+
 enum HtmlViewType: String {
     case Concent = "Concent"
     case Privacy = "Privacy"
@@ -80,4 +90,54 @@ enum OptionType: Int {
     case never = 0
     case toggle = 1
     case always = 2
+}
+
+enum HistoryType: Int {
+    case face = 0
+    case tongue = 1
+    
+    var title: String {
+        switch self {
+        case .face:
+            return "my Face"
+        case .tongue:
+            return "my Tongue"
+        }
+    }
+    
+    var image: String {
+        switch self {
+        case .face:
+            return "myFace"
+        case .tongue:
+            return "myTongue"
+        }
+    }
+    
+    var placeholder: String {
+        switch self {
+        case .face:
+            return "facePlaceholder"
+        case .tongue:
+            return "tonguePlaceholder"
+        }
+    }
+    
+    var emailSubject: String {
+        switch self {
+        case .face:
+            return "Face Image"
+        case .tongue:
+            return "Tongue Image"
+        }
+    }
+    
+    var emailMessage: String {
+        switch self {
+        case .face:
+            return "<html><body><p>This is Face Image</p></body></html>"
+        case .tongue:
+            return "<html><body><p>This is Tongue Image</p></body></html>"
+        }
+    }
 }

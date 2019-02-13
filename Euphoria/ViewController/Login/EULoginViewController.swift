@@ -35,7 +35,17 @@ class EULoginViewController: UIViewController {
     
     //TODO: show errors
     @IBAction func didTapSignInButton(_ sender: Any) {
-        appDelegate.showHomeView()
+        guard let email = self.emailTextField.text else { return }
+        guard let password = self.passwordTextField.text else { return }
+        self.showLoadingScreen()
+        let router = Router(endpoint: .Login(email: email, password: password))
+        APIManager.shared.requestJSON(router: router, success: { (response) in
+            self.hideLoadingScreen()
+            appDelegate.showHomeView()
+        }, failure: { (error) in
+            self.hideLoadingScreen()
+            print(error)
+        })
     }
     
     @IBAction func didTapFacebookButton(_ sender: Any) {
@@ -43,5 +53,18 @@ class EULoginViewController: UIViewController {
     }
     
     func loginWithFacebook() {
+        self.showLoadingScreen()
+        FacebookHelper.shared.logInToFacebook(viewController: self, successWithUserExist: { (user) in
+            self.hideLoadingScreen()
+            appDelegate.showHomeView()
+        }, successWithUserDoesNotExist: { (user) in
+            self.hideLoadingScreen()
+        }, cancelled: {
+            self.hideLoadingScreen()
+//            self.showAlertWithMessage("FB_Cancel_Error".localized)
+        }, failure:  { (error : Error?) in
+            self.hideLoadingScreen()
+            self.showAlertWithMessage((error?.localizedDescription)!)
+        })
     }
 }

@@ -59,7 +59,7 @@ class EUQuestionnaireViewController: UIViewController {
     @IBAction func didTapBack(_ sender: Any) {
         let state = questionnaires.state - 1
         if state >= 0 {
-            CoreData.sharedInstance.updateState(self.questionnaires, state: state)
+            CoreDataHelper.shared.updateState(self.questionnaires, state: state)
         }
         
         self.navigationController?.popViewController(animated: true)
@@ -68,7 +68,7 @@ class EUQuestionnaireViewController: UIViewController {
     @IBAction func didTapPrevious(_ sender: Any) {
         let state = questionnaires.state - 1
         if state >= 0 {
-            CoreData.sharedInstance.updateState(self.questionnaires, state: state)
+            CoreDataHelper.shared.updateState(self.questionnaires, state: state)
             self.loadQuestionnaire()
             self.optionsTableView.reloadData()
         }
@@ -76,11 +76,11 @@ class EUQuestionnaireViewController: UIViewController {
     
     @IBAction func didTapNext(_ sender: Any) {
         if let value = self.questionObject.answer?.boolValue, value == false {
-            CoreData.sharedInstance.updateDetails(questionObject, details: nil)
+            CoreDataHelper.shared.updateDetails(questionObject, details: nil)
         }
 
         let state = questionnaires.state + 1
-        CoreData.sharedInstance.updateState(self.questionnaires, state: state)
+        CoreDataHelper.shared.updateState(self.questionnaires, state: state)
         self.loadQuestionnaire()
         self.optionsTableView.reloadData()
     }
@@ -128,7 +128,7 @@ extension EUQuestionnaireViewController: UITableViewDataSource {
 extension EUQuestionnaireViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let answer = self.options[indexPath.row].option
-        CoreData.sharedInstance.updateAnswer(self.questionObject, string: answer)
+        CoreDataHelper.shared.updateAnswer(self.questionObject, string: answer)
         
         if let optionType = OptionType(rawValue: Int(self.questionObject.optionType)) {
             switch optionType {
@@ -146,10 +146,10 @@ extension EUQuestionnaireViewController: UITableViewDelegate {
 extension EUQuestionnaireViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         guard let text = textField.text, text.trimmingCharacters(in: .whitespaces).count > 0 else {
-            CoreData.sharedInstance.updateDetails(questionObject, details: nil)
+            CoreDataHelper.shared.updateDetails(questionObject, details: nil)
             return
         }
-        CoreData.sharedInstance.updateDetails(questionObject, details: text)
+        CoreDataHelper.shared.updateDetails(questionObject, details: text)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

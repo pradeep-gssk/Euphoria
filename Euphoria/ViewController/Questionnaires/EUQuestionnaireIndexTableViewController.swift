@@ -31,7 +31,7 @@ class EUQuestionnaireIndexTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? EUQuestionnaireViewController,
             let questionnaires = sender as? Questionnaires {
-            CoreData.sharedInstance.updateState(questionnaires, state: 0)
+            CoreDataHelper.shared.updateState(questionnaires, state: 0)
             var questions = questionnaires.questionnaire?.allObjects as? [Questionnaire] ?? []
             questions.sort { (question1, question2) -> Bool in
                 return question1.index < question2.index
@@ -44,7 +44,7 @@ class EUQuestionnaireIndexTableViewController: UITableViewController {
     // MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let questionnaire = CoreData.sharedInstance.fetchQuestionnaire(forIndex: (Int16(indexPath.row.advanced(by: 1))))
+        let questionnaire = CoreDataHelper.shared.fetchQuestionnaire(forIndex: (Int16(indexPath.row.advanced(by: 1))))
         self.performSegue(withIdentifier: "QuestionnaireView", sender: questionnaire)
     }
 }

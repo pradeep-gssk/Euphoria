@@ -28,7 +28,7 @@ class EUSoundsViewController: UIViewController {
         self.headerView.layer.borderColor = UIColor.color(red: 197.0, green: 196.0, blue: 192.0, alpha: 1).cgColor
         self.headerView.layer.borderWidth = 1
         self.soundsTableView.tableFooterView = UIView()
-        self.sounds = CoreData.sharedInstance.fetchSounds()
+        self.sounds = CoreDataHelper.shared.fetchSounds()
     }
     
     @IBAction func didTapBack(_ sender: Any) {

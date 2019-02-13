@@ -9,8 +9,8 @@
 import UIKit
 import CoreData
 
-class CoreData: NSObject {
-    static let sharedInstance = CoreData()
+class CoreDataHelper: NSObject {
+    static let shared = CoreDataHelper()
     let context = appDelegate.persistentContainer.viewContext
     
     func setVideo(_ json: [String: AnyObject]) -> Video? {
@@ -26,7 +26,7 @@ class CoreData: NSObject {
 }
 
 //MARK: Questionnaires
-extension CoreData {
+extension CoreDataHelper {
     func saveQuestionnaire(_ json: [String: AnyObject], forIndex index: Int16, withTotal total: Int16) {
         let questionnaires = NSEntityDescription.insertNewObject(forEntityName: "Questionnaires", into: context) as? Questionnaires
         questionnaires?.title = json["title"] as? String
@@ -116,7 +116,7 @@ extension CoreData {
 }
 
 //MARK: Exercises
-extension CoreData {
+extension CoreDataHelper {
     func saveExercises(_ json: [[String: AnyObject]]) {
         for dictionary in json {
             let exercises = NSEntityDescription.insertNewObject(forEntityName: "Exercises", into: context) as? Exercises
@@ -153,7 +153,7 @@ extension CoreData {
 }
 
 //MARK: Videos
-extension CoreData {
+extension CoreDataHelper {
     func saveVideos(_ json: [[String: AnyObject]]) {
         for dictionary in json {
             let videoObject = NSEntityDescription.insertNewObject(forEntityName: "Videos", into: context) as? Videos
@@ -190,7 +190,7 @@ extension CoreData {
 }
 
 //MARK: Sound
-extension CoreData {
+extension CoreDataHelper {
     func saveSound(_ json: [[String: String]]) {
         for dictionary in json {
             let sound = NSEntityDescription.insertNewObject(forEntityName: "Sound", into: context) as? Sound
@@ -219,7 +219,7 @@ extension CoreData {
 }
 
 //MARK: Session
-extension CoreData {
+extension CoreDataHelper {
     func fetchSessions() -> [Session] {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Session.self))
         let sortDescriptor = NSSortDescriptor(key: "index", ascending: true)

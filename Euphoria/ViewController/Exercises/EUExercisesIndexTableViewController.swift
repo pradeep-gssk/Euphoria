@@ -14,7 +14,7 @@ class EUExercisesIndexTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView()
-        self.exercises = CoreData.sharedInstance.fetchExercises()
+        self.exercises = CoreDataHelper.shared.fetchExercises()
     }
     
     @IBAction func didTapBack(_ sender: Any) {

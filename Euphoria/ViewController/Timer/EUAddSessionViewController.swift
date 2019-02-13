@@ -51,7 +51,7 @@ class EUAddSessionViewController: UIViewController {
     }
     
     @IBAction func didTapSave(_ sender: Any) {
-        CoreData.sharedInstance.saveSession(self.session)
+        CoreDataHelper.shared.saveSession(self.session)
         self.performSegue(withIdentifier: "GoToSessionsView", sender: self)
     }
     

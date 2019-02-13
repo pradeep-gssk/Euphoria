@@ -22,10 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.standard.set(true, forKey: IS_PRELOADED)
         }
         
-//        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
-//            self.showLoginView()
-//            return true
-//        }
+        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
+            self.showLoginView()
+            return true
+        }
         self.showHomeView()
         return true
     }
@@ -115,7 +115,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 if let jsonResult = jsonResult as? [String: AnyObject] {
-                    CoreData.sharedInstance.saveQuestionnaire(jsonResult, forIndex: index, withTotal: total)
+                    CoreDataHelper.shared.saveQuestionnaire(jsonResult, forIndex: index, withTotal: total)
                 }
             } catch {
                 // handle error
@@ -129,7 +129,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 if let jsonResult = jsonResult as? [[String: AnyObject]] {
-                    CoreData.sharedInstance.saveExercises(jsonResult)
+                    CoreDataHelper.shared.saveExercises(jsonResult)
                 }
             } catch {
                 print(error)
@@ -144,7 +144,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 if let jsonResult = jsonResult as? [[String: String]] {
-                    CoreData.sharedInstance.saveSound(jsonResult)
+                    CoreDataHelper.shared.saveSound(jsonResult)
                 }
             } catch {
                 print(error)
@@ -159,7 +159,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 if let jsonResult = jsonResult as? [[String: AnyObject]] {
-                    CoreData.sharedInstance.saveVideos(jsonResult)
+                    CoreDataHelper.shared.saveVideos(jsonResult)
                 }
             } catch {
                 print(error)

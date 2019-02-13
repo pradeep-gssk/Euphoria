@@ -14,7 +14,7 @@ class EUVideosIndexTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView()
-        self.videos = CoreData.sharedInstance.fetchVideos()
+        self.videos = CoreDataHelper.shared.fetchVideos()
     }
     
     @IBAction func didTapBack(_ sender: Any) {
