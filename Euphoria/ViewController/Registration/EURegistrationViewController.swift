@@ -25,7 +25,7 @@ class EURegistrationTableViewController: UITableViewController {
     @IBOutlet weak var genderTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var checkBox: UIButton!
+    @IBOutlet weak var privacyPolicyLabel: UILabel!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var pickerView: UIPickerView!
@@ -48,12 +48,7 @@ class EURegistrationTableViewController: UITableViewController {
     @IBAction func didChangeDatePickerValue(_ sender: Any) {
         
     }
-    
-    @IBAction func didTapCheckBox(_ sender: Any) {
-        let viewController = EUConcentViewController.loadPrivacyView()
-        self.navigationController?.show(viewController, sender: self)
-    }
-    
+        
     @IBAction func didTapSubmitButton(_ sender: Any) {
         self.registerUser()
     }
@@ -69,6 +64,11 @@ class EURegistrationTableViewController: UITableViewController {
         }, failure: { (error: Error) in
             print(error)
         })
+    }
+    
+    @IBAction func didTapPolicyLabel(_ sender: Any) {
+        let viewController = EUConcentViewController.loadPrivacyView()
+        self.navigationController?.show(viewController, sender: self)
     }
 }
 

@@ -61,7 +61,7 @@ class EULoginViewController: UIViewController {
             self.hideLoadingScreen()
         }, cancelled: {
             self.hideLoadingScreen()
-//            self.showAlertWithMessage("FB_Cancel_Error".localized)
+            self.showAlertWithMessage("User cancelled Facebook Login")
         }, failure:  { (error : Error?) in
             self.hideLoadingScreen()
             self.showAlertWithMessage((error?.localizedDescription)!)

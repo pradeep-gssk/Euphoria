@@ -70,8 +70,8 @@ class EUConcentViewController: UIViewController {
         case .Concent:
             UserDefaults.standard.set(true, forKey: I_AGREE)
             self.performSegue(withIdentifier: "ShowLoginView", sender: self)
-        case .Privacy: break
-            //strongSelf.navigationController?.popViewController(animated: true)
+        case .Privacy:
+            self.navigationController?.popViewController(animated: true)
         }
     }
 }

@@ -101,6 +101,7 @@
 		DEE7F7412214D07300098F21 /* FacebookHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F7402214D07300098F21 /* FacebookHelper.swift */; };
 		DEE7F7432214D09100098F21 /* EUUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F7422214D09100098F21 /* EUUser.swift */; };
 		DEE7F7462214D3E300098F21 /* EURegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F7452214D3E300098F21 /* EURegistrationViewController.swift */; };
+		DEE7F7842214E38D00098F21 /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = DEE7F7832214E38D00098F21 /* Privacy.html */; };
 		DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB2CAA2212AB6600F2188C /* EUSession.swift */; };
 /* End PBXBuildFile section */
 
@@ -226,6 +227,7 @@
 		DEE7F7402214D07300098F21 /* FacebookHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookHelper.swift; sourceTree = "<group>"; };
 		DEE7F7422214D09100098F21 /* EUUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUUser.swift; sourceTree = "<group>"; };
 		DEE7F7452214D3E300098F21 /* EURegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EURegistrationViewController.swift; sourceTree = "<group>"; };
+		DEE7F7832214E38D00098F21 /* Privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Privacy.html; sourceTree = "<group>"; };
 		DEFB2CAA2212AB6600F2188C /* EUSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -394,6 +396,7 @@
 				DE4D60C72212811400D6904C /* Json */,
 				DE4D60C82212813100D6904C /* Sounds */,
 				DEA8322C22113A750000BD43 /* Concent.html */,
+				DEE7F7832214E38D00098F21 /* Privacy.html */,
 			);
 			path = Euphoria;
 			sourceTree = "<group>";
@@ -706,6 +709,7 @@
 				DE00882C2212350200129D81 /* Exercises.json in Resources */,
 				DEA8322122107AB30000BD43 /* Questionnaire3.json in Resources */,
 				DE94C51D220F7AB000C4C2ED /* Questionnaires.storyboard in Resources */,
+				DEE7F7842214E38D00098F21 /* Privacy.html in Resources */,
 				DE4D60AC221268CB00D6904C /* Timer.storyboard in Resources */,
 				DEA83234221142B80000BD43 /* Diet.storyboard in Resources */,
 				DEA83223221133930000BD43 /* Questionnaire4.json in Resources */,
