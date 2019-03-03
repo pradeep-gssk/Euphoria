@@ -7,24 +7,25 @@
 //
 
 import UIKit
-import MessageUI
 
 class EUHistoryPhotoViewController: UIViewController {
 
     var historyType: HistoryType!
-    var history: EUHistory!
     
+    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var buttonStackView: UIStackView!
+    @IBOutlet weak var buttonsStack: UIStackView!
     @IBOutlet weak var takePhotoButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.titleLabel.text = history.title
+        self.headerView.layer.borderColor = UIColor.color(red: 197.0, green: 196.0, blue: 192.0, alpha: 1).cgColor
+        self.headerView.layer.borderWidth = 1
+        self.titleLabel.text = historyType.title
         self.imageView.image = UIImage(named: historyType.placeholder)
-        self.buttonStackView.isHidden = true
+        self.buttonsStack.isHidden = true
     }
     
     @IBAction func didTapBack(_ sender: Any) {
@@ -53,15 +54,15 @@ class EUHistoryPhotoViewController: UIViewController {
         self.present(vc, animated: true)
     }
     
-    @IBAction func didTapCancel(_ sender: Any) {
+    @IBAction func didTapTrash(_ sender: Any) {
         self.takePhotoButton.isHidden = false
-        self.buttonStackView.isHidden = true
+        self.buttonsStack.isHidden = true
         self.imageView.image = UIImage(named: historyType.placeholder)
     }
     
-    @IBAction func didTapSend(_ sender: Any) {
+    @IBAction func didTapSave(_ sender: Any) {
         self.saveToDocuments()
-        self.sendEmail()
+        self.navigationController?.popViewController(animated: true)
     }
     
     func saveToDocuments() {
@@ -71,33 +72,16 @@ class EUHistoryPhotoViewController: UIViewController {
                 return
         }
         
-        let fileName = self.historyType.image
+        let fileName = self.historyType.image + "-" + Date().dateString
         let fileURL = documentsDirectory.appendingPathComponent(fileName)
         if let data = image.pngData() {
             do {
                 try data.write(to: fileURL)
+                CoreDataHelper.shared.saveHistory(NSDate(), name: fileName, imageType: self.historyType.image)
             } catch {
                 //TODO: Show error
                 print("error saving file:", error)
             }
-        }
-    }
-    
-    func sendEmail() {
-        guard MFMailComposeViewController.canSendMail(),
-            let image = self.imageView.image,
-            let data = image.pngData() else {
-            //TODO: show failure alert
-            return
-        }
-        
-        let mail = MFMailComposeViewController()
-        mail.addAttachmentData(data, mimeType: "image/png", fileName: self.historyType.image)
-        mail.setToRecipients(["eenadu18@gmail.com"])
-        mail.setSubject(self.historyType.emailSubject)
-        mail.setMessageBody(self.historyType.emailMessage, isHTML: true)
-        self.present(mail, animated: true) {
-            
         }
     }
 }
@@ -107,17 +91,6 @@ extension EUHistoryPhotoViewController: UINavigationControllerDelegate, UIImageP
         picker.dismiss(animated: true, completion: nil)
         self.imageView.image = info[.editedImage] as? UIImage
         self.takePhotoButton.isHidden = true
-        self.buttonStackView.isHidden = false
-    }
-}
-
-extension EUHistoryPhotoViewController: MFMailComposeViewControllerDelegate {
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        
-        if let error = error {
-            //TODO: Show error
-        }
-        
-        controller.dismiss(animated: true, completion: nil)
+        self.buttonsStack.isHidden = false
     }
 }

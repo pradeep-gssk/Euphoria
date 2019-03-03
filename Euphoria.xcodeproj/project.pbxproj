@@ -10,8 +10,6 @@
 		2CC0580927CBF46B65BA3114 /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A05858C8C3D56EA48D0900 /* Pods_Euphoria.framework */; };
 		DE0088262212305F00129D81 /* EUExerciseVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0088252212305F00129D81 /* EUExerciseVideoViewController.swift */; };
 		DE00882C2212350200129D81 /* Exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = DE00882B2212350200129D81 /* Exercises.json */; };
-		DE0A839C222B427B00FC25B1 /* Questionnaire+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0A839A222B427B00FC25B1 /* Questionnaire+CoreDataClass.swift */; };
-		DE0A839D222B427B00FC25B1 /* Questionnaire+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0A839B222B427B00FC25B1 /* Questionnaire+CoreDataProperties.swift */; };
 		DE0A83A3222B8C5500FC25B1 /* Diet.json in Resources */ = {isa = PBXBuildFile; fileRef = DE0A83A2222B8C5500FC25B1 /* Diet.json */; };
 		DE30674E222BD25F00AAD2E6 /* EUDietIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE30674D222BD25F00AAD2E6 /* EUDietIndexViewController.swift */; };
 		DE306750222BD50F00AAD2E6 /* EUDietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE30674F222BD50F00AAD2E6 /* EUDietViewController.swift */; };
@@ -40,8 +38,6 @@
 		DE713CB02214026200010CBE /* EUHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713CAF2214026200010CBE /* EUHistory.swift */; };
 		DE713CB2221404B100010CBE /* EUHistoryIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */; };
 		DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */; };
-		DE83335B222BDC1E007A10F7 /* Diet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE833359222BDC1E007A10F7 /* Diet+CoreDataClass.swift */; };
-		DE83335C222BDC1E007A10F7 /* Diet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83335A222BDC1E007A10F7 /* Diet+CoreDataProperties.swift */; };
 		DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */; };
 		DE94C4E8220F74F200C4C2ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE94C4E6220F74F200C4C2ED /* Main.storyboard */; };
 		DE94C4EA220F74F200C4C2ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE94C4E9220F74F200C4C2ED /* Assets.xcassets */; };
@@ -96,6 +92,15 @@
 		DEA8323E221154F50000BD43 /* EUExercisesIndexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8323D221154F50000BD43 /* EUExercisesIndexTableViewController.swift */; };
 		DEA83240221159A30000BD43 /* EUExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8323F221159A30000BD43 /* EUExercisesViewController.swift */; };
 		DEA8324322115E3F0000BD43 /* EUVideosListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8324222115E3F0000BD43 /* EUVideosListCell.swift */; };
+		DEAF7F6A222C600D00FF001A /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F69222C600D00FF001A /* Date+.swift */; };
+		DEAF7F6C222C61E600FF001A /* EUHistoryShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F6B222C61E600FF001A /* EUHistoryShowViewController.swift */; };
+		DEAF7F6E222C698D00FF001A /* Operand+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F6D222C698D00FF001A /* Operand+.swift */; };
+		DECA07F3222C5A8F00CC4601 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA07F1222C5A8F00CC4601 /* History+CoreDataClass.swift */; };
+		DECA07F4222C5A8F00CC4601 /* History+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA07F2222C5A8F00CC4601 /* History+CoreDataProperties.swift */; };
+		DECCD729222BDEA000BAC698 /* Diet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECCD725222BDEA000BAC698 /* Diet+CoreDataClass.swift */; };
+		DECCD72A222BDEA000BAC698 /* Diet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECCD726222BDEA000BAC698 /* Diet+CoreDataProperties.swift */; };
+		DECCD72B222BDEA000BAC698 /* Questionnaire+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECCD727222BDEA000BAC698 /* Questionnaire+CoreDataClass.swift */; };
+		DECCD72C222BDEA000BAC698 /* Questionnaire+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECCD728222BDEA000BAC698 /* Questionnaire+CoreDataProperties.swift */; };
 		DED5D5B2220FD37900CDE1AD /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5D5B1220FD37900CDE1AD /* CoreDataHelper.swift */; };
 		DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5D5B3220FD52400CDE1AD /* Constants.swift */; };
 		DEE7F73B2214CE7900098F21 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F7382214CE7900098F21 /* Response.swift */; };
@@ -131,8 +136,6 @@
 		BE52ACBEF78299081CC944F8 /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
 		DE0088252212305F00129D81 /* EUExerciseVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExerciseVideoViewController.swift; sourceTree = "<group>"; };
 		DE00882B2212350200129D81 /* Exercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Exercises.json; sourceTree = "<group>"; };
-		DE0A839A222B427B00FC25B1 /* Questionnaire+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE0A839B222B427B00FC25B1 /* Questionnaire+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE0A83A2222B8C5500FC25B1 /* Diet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Diet.json; sourceTree = "<group>"; };
 		DE30674D222BD25F00AAD2E6 /* EUDietIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDietIndexViewController.swift; sourceTree = "<group>"; };
 		DE30674F222BD50F00AAD2E6 /* EUDietViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDietViewController.swift; sourceTree = "<group>"; };
@@ -161,8 +164,6 @@
 		DE713CAF2214026200010CBE /* EUHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistory.swift; sourceTree = "<group>"; };
 		DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryIndexViewController.swift; sourceTree = "<group>"; };
 		DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUShowSessionViewController.swift; sourceTree = "<group>"; };
-		DE833359222BDC1E007A10F7 /* Diet+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diet+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE83335A222BDC1E007A10F7 /* Diet+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diet+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE94C4DF220F74F200C4C2ED /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE94C4E7220F74F200C4C2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -225,6 +226,15 @@
 		DEA8323D221154F50000BD43 /* EUExercisesIndexTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExercisesIndexTableViewController.swift; sourceTree = "<group>"; };
 		DEA8323F221159A30000BD43 /* EUExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExercisesViewController.swift; sourceTree = "<group>"; };
 		DEA8324222115E3F0000BD43 /* EUVideosListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosListCell.swift; sourceTree = "<group>"; };
+		DEAF7F69222C600D00FF001A /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		DEAF7F6B222C61E600FF001A /* EUHistoryShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryShowViewController.swift; sourceTree = "<group>"; };
+		DEAF7F6D222C698D00FF001A /* Operand+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operand+.swift"; sourceTree = "<group>"; };
+		DECA07F1222C5A8F00CC4601 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DECA07F2222C5A8F00CC4601 /* History+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DECCD725222BDEA000BAC698 /* Diet+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DECCD726222BDEA000BAC698 /* Diet+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DECCD727222BDEA000BAC698 /* Questionnaire+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DECCD728222BDEA000BAC698 /* Questionnaire+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DED5D5B1220FD37900CDE1AD /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		DED5D5B3220FD52400CDE1AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DEE7F7382214CE7900098F21 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -337,6 +347,7 @@
 				DE4D60E52212857600D6904C /* EUHistoryTableViewController.swift */,
 				DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */,
 				DE3A3ACB2214ACBD003538F9 /* EUHistoryPhotoViewController.swift */,
+				DEAF7F6B222C61E600FF001A /* EUHistoryShowViewController.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -460,8 +471,10 @@
 				DE94C522220F7C1B00C4C2ED /* UIViewController+.swift */,
 				DE94C527220F801900C4C2ED /* UIImage+.swift */,
 				DE94C530220F951300C4C2ED /* String+.swift */,
+				DEAF7F69222C600D00FF001A /* Date+.swift */,
 				DE94C56C220FA4E300C4C2ED /* UITextField+.swift */,
 				DE94C56E220FA50600C4C2ED /* UIColor+.swift */,
+				DEAF7F6D222C698D00FF001A /* Operand+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -488,10 +501,12 @@
 		DE94C5B2220FC06C00C4C2ED /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				DE833359222BDC1E007A10F7 /* Diet+CoreDataClass.swift */,
-				DE83335A222BDC1E007A10F7 /* Diet+CoreDataProperties.swift */,
-				DE0A839A222B427B00FC25B1 /* Questionnaire+CoreDataClass.swift */,
-				DE0A839B222B427B00FC25B1 /* Questionnaire+CoreDataProperties.swift */,
+				DECA07F1222C5A8F00CC4601 /* History+CoreDataClass.swift */,
+				DECA07F2222C5A8F00CC4601 /* History+CoreDataProperties.swift */,
+				DECCD725222BDEA000BAC698 /* Diet+CoreDataClass.swift */,
+				DECCD726222BDEA000BAC698 /* Diet+CoreDataProperties.swift */,
+				DECCD727222BDEA000BAC698 /* Questionnaire+CoreDataClass.swift */,
+				DECCD728222BDEA000BAC698 /* Questionnaire+CoreDataProperties.swift */,
 				DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */,
 				DE9B733A2213F2D200E82CFD /* Videos+CoreDataProperties.swift */,
 				DE9B73152213F23B00E82CFD /* Video+CoreDataClass.swift */,
@@ -794,23 +809,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4D60E62212857600D6904C /* EUHistoryTableViewController.swift in Sources */,
+				DECCD72A222BDEA000BAC698 /* Diet+CoreDataProperties.swift in Sources */,
 				DE9B73382213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift in Sources */,
 				DED5D5B2220FD37900CDE1AD /* CoreDataHelper.swift in Sources */,
 				DE9B732F2213F23B00E82CFD /* Option+CoreDataClass.swift in Sources */,
 				DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */,
 				DEA8323E221154F50000BD43 /* EUExercisesIndexTableViewController.swift in Sources */,
+				DEAF7F6A222C600D00FF001A /* Date+.swift in Sources */,
 				DE94C523220F7C1B00C4C2ED /* UIViewController+.swift in Sources */,
 				DE9B73302213F23B00E82CFD /* Option+CoreDataProperties.swift in Sources */,
 				DE9B732A2213F23B00E82CFD /* Sound+CoreDataProperties.swift in Sources */,
-				DE83335B222BDC1E007A10F7 /* Diet+CoreDataClass.swift in Sources */,
 				DEA8324322115E3F0000BD43 /* EUVideosListCell.swift in Sources */,
 				DE9B73342213F23B00E82CFD /* Stop+CoreDataProperties.swift in Sources */,
-				DE0A839D222B427B00FC25B1 /* Questionnaire+CoreDataProperties.swift in Sources */,
+				DEAF7F6E222C698D00FF001A /* Operand+.swift in Sources */,
 				DE4D60A9221265D900D6904C /* EUAccountViewController.swift in Sources */,
 				DEA1521F221389A10035F7D5 /* EUSoundsViewController.swift in Sources */,
 				DEE7F73B2214CE7900098F21 /* Response.swift in Sources */,
 				DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */,
-				DE83335C222BDC1E007A10F7 /* Diet+CoreDataProperties.swift in Sources */,
 				DE30674E222BD25F00AAD2E6 /* EUDietIndexViewController.swift in Sources */,
 				DEE7F73D2214CE7900098F21 /* APIManager.swift in Sources */,
 				DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */,
@@ -818,7 +833,6 @@
 				DE4D60AF22126D5000D6904C /* EUSessionsViewController.swift in Sources */,
 				DEA8323122113D090000BD43 /* EULoginViewController.swift in Sources */,
 				DEA83240221159A30000BD43 /* EUExercisesViewController.swift in Sources */,
-				DE0A839C222B427B00FC25B1 /* Questionnaire+CoreDataClass.swift in Sources */,
 				DE9B73332213F23B00E82CFD /* Stop+CoreDataClass.swift in Sources */,
 				DE9B733B2213F2D200E82CFD /* Videos+CoreDataClass.swift in Sources */,
 				DE94C531220F951300C4C2ED /* String+.swift in Sources */,
@@ -826,10 +840,13 @@
 				DE94C512220F764A00C4C2ED /* EUHomeTableViewController.swift in Sources */,
 				DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */,
 				DE713CB2221404B100010CBE /* EUHistoryIndexViewController.swift in Sources */,
+				DECCD729222BDEA000BAC698 /* Diet+CoreDataClass.swift in Sources */,
 				DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */,
 				DE4D60E8221285B600D6904C /* EUGalleryTableViewController.swift in Sources */,
 				DE94C52A220F833D00C4C2ED /* EUQuestionnaireViewController.swift in Sources */,
 				DE9B73272213F23B00E82CFD /* Video+CoreDataClass.swift in Sources */,
+				DECA07F4222C5A8F00CC4601 /* History+CoreDataProperties.swift in Sources */,
+				DECCD72C222BDEA000BAC698 /* Questionnaire+CoreDataProperties.swift in Sources */,
 				DEE7F7432214D09100098F21 /* EUUser.swift in Sources */,
 				DE94C528220F801900C4C2ED /* UIImage+.swift in Sources */,
 				DE94C5B1220FC00700C4C2ED /* Euphoria.xcdatamodeld in Sources */,
@@ -845,17 +862,20 @@
 				DE94C526220F7CD400C4C2ED /* Enums.swift in Sources */,
 				DE713CB02214026200010CBE /* EUHistory.swift in Sources */,
 				DE9B73312213F23B00E82CFD /* Session+CoreDataClass.swift in Sources */,
+				DEAF7F6C222C61E600FF001A /* EUHistoryShowViewController.swift in Sources */,
 				DE9B73372213F23B00E82CFD /* Questionnaires+CoreDataClass.swift in Sources */,
 				DE9B73142213F10F00E82CFD /* EUVideoViewController.swift in Sources */,
 				DE9B73322213F23B00E82CFD /* Session+CoreDataProperties.swift in Sources */,
 				DEA151FA221367CE0035F7D5 /* GSTimeIntervalPicker.m in Sources */,
 				DE4B9D622213C8CF0036664A /* EUTimerCountDownViewController.swift in Sources */,
+				DECA07F3222C5A8F00CC4601 /* History+CoreDataClass.swift in Sources */,
 				DE9B733E2213F66000E82CFD /* VideoContainer.swift in Sources */,
 				DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */,
 				DE9B73122213F0EF00E82CFD /* EUVideosViewController.swift in Sources */,
 				DEE7F73C2214CE7900098F21 /* Router.swift in Sources */,
 				DE0088262212305F00129D81 /* EUExerciseVideoViewController.swift in Sources */,
 				DE94C56D220FA4E300C4C2ED /* UITextField+.swift in Sources */,
+				DECCD72B222BDEA000BAC698 /* Questionnaire+CoreDataClass.swift in Sources */,
 				DE4D60E4221283C200D6904C /* EUActivitiesTableViewController.swift in Sources */,
 				DE9B73282213F23B00E82CFD /* Video+CoreDataProperties.swift in Sources */,
 				DEA83228221139440000BD43 /* EUConcentViewController.swift in Sources */,

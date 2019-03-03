@@ -52,7 +52,7 @@ extension CoreDataHelper {
         let questionnaire = NSEntityDescription.insertNewObject(forEntityName: "Questionnaire", into: context) as? Questionnaire
         questionnaire?.answer = nil
         questionnaire?.details = nil
-        questionnaire?.taoist = json["taoist"] as? String
+        questionnaire?.element = json["element"] as? String
         questionnaire?.index = json["index"] as? Int16 ?? 0
         questionnaire?.optionType = json["optionType"] as? Int16 ?? 0
         questionnaire?.subOptionType = json["subOptionType"] as? Int16 ?? 0
@@ -100,9 +100,9 @@ extension CoreDataHelper {
         return false
     }
     
-    func getTaoistCount(forString taoist: String) -> Int {
+    func getElementCount(forString element: String) -> Int {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
-        fetchRequest.predicate = NSPredicate(format: "(answer = %@) AND (taoist = %@)", "Yes", taoist)
+        fetchRequest.predicate = NSPredicate(format: "(answer = %@) AND (element = %@)", "Yes", element)
         
         do {
             if let data = try context.fetch(fetchRequest) as? [Questionnaire] {
@@ -303,7 +303,7 @@ extension CoreDataHelper {
             dietObject?.effect = dictionary["effect"] as? String
             dietObject?.flavour = dictionary["flavour"] as? String
             dietObject?.nature = dictionary["nature"] as? String
-            dietObject?.taoist = dictionary["taoist"] as? String
+            dietObject?.element = dictionary["element"] as? String
             dietObject?.diet = dictionary["diet"] as? String
         }
         
@@ -314,11 +314,11 @@ extension CoreDataHelper {
         }
     }
     
-    func fetchDietforTaoist(_ taoist: String, diet: String) -> [Diet] {
+    func fetchDietforElement(_ element: String, diet: String) -> [Diet] {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Diet.self))
         let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
-        fetchRequest.predicate = NSPredicate(format: "(taoist = %@) AND (diet = %@)", taoist, diet)
+        fetchRequest.predicate = NSPredicate(format: "(element = %@) AND (diet = %@)", element, diet)
 
         do {
             let data = try context.fetch(fetchRequest) as? [Diet]
@@ -329,9 +329,9 @@ extension CoreDataHelper {
         }
     }
     
-    func fetchUniqueDiets(_ taoist: String) -> [String] {
+    func fetchUniqueDiets(_ element: String) -> [String] {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Diet.self))
-        fetchRequest.predicate = NSPredicate(format: "taoist = %@", taoist)
+        fetchRequest.predicate = NSPredicate(format: "element = %@", element)
         fetchRequest.propertiesToFetch = ["diet"]
         fetchRequest.resultType = .dictionaryResultType
         fetchRequest.returnsDistinctResults = true
@@ -348,5 +348,37 @@ extension CoreDataHelper {
         } catch {
         }
         return []
+    }
+}
+
+//MARK: History
+extension CoreDataHelper {
+    
+    func fetchHistory(_ imageType: String) -> [History] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: History.self))
+        fetchRequest.predicate = NSPredicate(format: "imageType = %@", imageType)
+        let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        do {
+            let data = try context.fetch(fetchRequest) as? [History]
+            return data ?? []
+            
+        } catch {
+            return []
+        }
+    }
+    
+    func saveHistory(_ date: NSDate, name: String, imageType: String) {
+        let history = NSEntityDescription.insertNewObject(forEntityName: "History", into: context) as? History
+        history?.date = date
+        history?.fileName = name
+        history?.imageType = imageType
+        
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
     }
 }

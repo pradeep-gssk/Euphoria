@@ -6,7 +6,7 @@
         "effect": "Tonifies Lung and Spleen qi, nourishes Jing, transforms phlegm",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -16,7 +16,7 @@
         "effect": "Removes damp, clears stomach and intestinal heat",
         "flavour": "Bitter",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -26,7 +26,7 @@
         "effect": "Disperses dampness, detoxifies",
         "flavour": "Sweet, bitter",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Grains"
     },
     {
@@ -36,7 +36,7 @@
         "effect": "Tonifies qi and yang, warms Stomach",
         "flavour": "Salty, sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Meat-Fish"
     },
     {
@@ -46,7 +46,7 @@
         "effect": "Tonifies qi and yang, drains damp, promotes qi",
         "flavour": "Sweet, pungent",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Herbs-Spices"
     },
     {
@@ -56,7 +56,7 @@
         "effect": "Clears heat, creates fluids, tonifies Liver blood, expels Lung heat and moistens Lungs",
         "flavour": "Sweet, sour",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Fruits"
     },
     {
@@ -66,7 +66,7 @@
         "effect": "Nourish yin and blood, creates fluids, moistens lungs, warms",
         "flavour": "Sour, sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Fruits"
     },
     {
@@ -76,7 +76,7 @@
         "effect": "Nurish yin and blood",
         "flavour": "Sweet",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Fruits"
     },
     {
@@ -86,7 +86,7 @@
         "effect": "Expels dump, clears heat, treats food stagnation, promotes diuresis",
         "flavour": "Sweet, salty",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Grains"
     },
     {
@@ -96,7 +96,7 @@
         "effect": "Tonifies qi, blood, strengthens Kidney yin ",
         "flavour": "Salty, sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Meat-Fish"
     },
     {
@@ -106,7 +106,7 @@
         "effect": "Strengthens Spleen, Stomach, yang, nourishes yin and blood",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Meat-Fish"
     },
     {
@@ -116,7 +116,7 @@
         "effect": "Tonifies Spleen, moves qi, reduces heat, detoxifies",
         "flavour": "Sweet, bitter, pungent",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -126,7 +126,7 @@
         "effect": "Tonifies Kidneys, Spleen, yin and blood, promotes diuresis",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -136,7 +136,7 @@
         "effect": "Tonifies Spleen, expels dump, promotes diuresis",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -146,7 +146,7 @@
         "effect": "Promotes blood flow. Stops bleading. Cools blood.",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -156,7 +156,7 @@
         "effect": "Tonifies Spleen and Lung.",
         "flavour": "Sweet, bitter",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -166,7 +166,7 @@
         "effect": "Tonifies Spleen, expels dump, promotes qi",
         "flavour": "Sweet",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Grains"
     },
     {
@@ -176,7 +176,7 @@
         "effect": "Tonifies qi, blood, yin, moistens",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Dairy-Other"
     },
     {
@@ -186,7 +186,7 @@
         "effect": "Supplements spleen and stomach, tonify qi",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -196,7 +196,7 @@
         "effect": "Promotes digestion and defecation, clears heat",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -206,7 +206,7 @@
         "effect": "Promotes digestions, warms the Stomach",
         "flavour": "Sour, sweet, pungent",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Herbs-Spices"
     },
     {
@@ -216,7 +216,7 @@
         "effect": "Tonifies qi and blood",
         "flavour": "Sweet, salty",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Meat-Fish"
     },
     {
@@ -226,7 +226,7 @@
         "effect": "Tonifies Spleen, qi, promotes qi",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -236,7 +236,7 @@
         "effect": "Tonifies Liver and cools heat from Stomach",
         "flavour": "Sweet, bitter",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -246,7 +246,7 @@
         "effect": "Balances digestion, promotes qi, reduces heat and inflammation",
         "flavour": "Sweet, bitter",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Herbs-Spices"
     },
     {
@@ -256,7 +256,7 @@
         "effect": "Tonifies qi, yin, blood",
         "flavour": "Sweet, sour, salty",
         "nature": "Neutral cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Dairy-Other"
     },
     {
@@ -266,7 +266,7 @@
         "effect": "Tonifies Spleen and Stomach yang, tonifies qi and yin",
         "flavour": "Sweet, sour, salty",
         "nature": "Neutral warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Dairy-Other"
     },
     {
@@ -276,7 +276,7 @@
         "effect": "Tonifies blood, qi and fluids",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Fruits"
     },
     {
@@ -286,7 +286,7 @@
         "effect": "Tonifies Kidneys, qi, blood and yang, promotes qi",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -296,7 +296,7 @@
         "effect": "Tonifies Speen, Kidneys, qi",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -306,7 +306,7 @@
         "effect": "Tonifies qi, blood, body fluids, yang, Kidney yin and essence",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Meat-Fish"
     },
     {
@@ -316,7 +316,7 @@
         "effect": "Promotes qi and blood, warms yang, dries damp, warms the Stomach",
         "flavour": "Bitter, sweet, pungent",
         "nature": "Hot",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -326,7 +326,7 @@
         "effect": "Reduces heat, tonifies qi and blood",
         "flavour": "Sweet",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -336,7 +336,7 @@
         "effect": "Tonifies qi and blood, expels damp",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Grains"
     },
     {
@@ -346,7 +346,7 @@
         "effect": "Expels damp, heat",
         "flavour": "Sweet, sour",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Fruits"
     },
     {
@@ -356,7 +356,7 @@
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Meat-Fish"
     },
     {
@@ -366,7 +366,7 @@
         "effect": "Tonifies qi, blood, yin, moistens",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Dairy-Other"
     },
     {
@@ -376,7 +376,7 @@
         "effect": "Expels heat and toxins, moistens, promotes diuresis",
         "flavour": "Sweet",
         "nature": "Cold",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -386,7 +386,7 @@
         "effect": "Tonifies blood, qi and fluids",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Fruits"
     },
     {
@@ -396,7 +396,7 @@
         "effect": "Tonifies blood, qi, expels damp",
         "flavour": "Sweet, salty",
         "nature": "Neutral-Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Meat-Fish"
     },
     {
@@ -406,7 +406,7 @@
         "effect": "Tonifies blood, yin, jing. Egg white expels heat.",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Meat-Fish"
     },
     {
@@ -416,7 +416,7 @@
         "effect": "Promotes blood flow, expels heat",
         "flavour": "Sweet",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -426,7 +426,7 @@
         "effect": "Expels damp and heat",
         "flavour": "Sweet, bitter",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -436,7 +436,7 @@
         "effect": "Promotes Spleen’s function and expels dump",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -446,7 +446,7 @@
         "effect": "Tonifies yang, promotes qi, balances the middle jiao",
         "flavour": "Sweet, acrid",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -456,7 +456,7 @@
         "effect": "Promotes digestion, harmonises the middle jiao, tonifies yang and qi",
         "flavour": "Sweet, acrid",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Herbs-Spices"
     },
     {
@@ -466,7 +466,7 @@
         "effect": "Tony qi, fluids and blood, expels heat, promotes defecation",
         "flavour": "Sweet",
         "nature": "Neutral to warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Fruits"
     },
     {
@@ -476,7 +476,7 @@
         "effect": "Tonifies qi and Spleen",
         "flavour": "Sweet",
         "nature": "Neutral to warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Fruits"
     },
     {
@@ -486,7 +486,7 @@
         "effect": "Promotes appetite, clears the eyes, harmonises the middle jiao",
         "flavour": "Sweet, bitter",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -496,7 +496,7 @@
         "effect": "Tonifies yin and jing",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Dairy-Other"
     },
     {
@@ -506,7 +506,7 @@
         "effect": "Tonifies Spleen qi",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Meat-Fish"
     },
     {
@@ -516,7 +516,7 @@
         "effect": "Tonifies qi an blood",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Fruits"
     },
     {
@@ -526,7 +526,7 @@
         "effect": "Harmonises middle jiao Tonifies qi and blood",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -536,7 +536,7 @@
         "effect": "Promotes Large Intestine function, nourish yin",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -546,7 +546,7 @@
         "effect": "Moistens, tonifies qi, expels toxins",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Dairy-Other"
     },
     {
@@ -556,7 +556,7 @@
         "effect": "Harmonises middle jiao, nourish blood",
         "flavour": "Acrid, sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -566,7 +566,7 @@
         "effect": "Tonifies qi and blood",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -576,7 +576,7 @@
         "effect": "Reduces heat, expels dump",
         "flavour": "Bitter, sweet",
         "nature": "Cool",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -586,7 +586,7 @@
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Meat-Fish"
     },
     {
@@ -596,7 +596,7 @@
         "effect": "Tonifies qi and yin",
         "flavour": "Sweet, salty",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Grains"
     },
     {
@@ -606,7 +606,7 @@
         "effect": "Tonifies qi, blood, yin, promotes qi",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Grains"
     },
     {
@@ -616,7 +616,7 @@
         "effect": "Clears heat, removes toxins",
         "flavour": "Sweet, sour",
         "nature": "Neutral",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Vegetables"
     },
     {
@@ -626,7 +626,7 @@
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Earth",
+        "element": "Earth",
         "diet": "Meat-Fish"
     },
     {
@@ -636,7 +636,7 @@
         "effect": "Tonifies Lung and Spleen qi, nourishes Jing, transforms phlegm",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -646,7 +646,7 @@
         "effect": "Increases appetite, treats apoplexy and heat syndromes",
         "flavour": "Bitter, acrid, pungent",
         "nature": "Cool",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Vegetables"
     },
     {
@@ -656,7 +656,7 @@
         "effect": "Clears heat, nourishes yin, removes damp, diuretic",
         "flavour": "Sweet, bitter",
         "nature": "Cool",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Vegetables"
     },
     {
@@ -666,7 +666,7 @@
         "effect": "Clears heat, supplement yin, moistens stomach and the intestines",
         "flavour": "Sweet",
         "nature": "Cold",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Fruits"
     },
     {
@@ -676,7 +676,7 @@
         "effect": "Tonifies yin, moistens, expels heat",
         "flavour": "Sweet, salty, bitter",
         "nature": "Cold",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Herbs-Spices"
     },
     {
@@ -686,7 +686,7 @@
         "effect": "Tonifies Spleen and Lung.",
         "flavour": "Sweet, bitter",
         "nature": "Neutral",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -696,7 +696,7 @@
         "effect": "Cools heat in Lungs and Stomach",
         "flavour": "Sweet, bitter",
         "nature": "Cool",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Vegetables"
     },
     {
@@ -706,7 +706,7 @@
         "effect": "Expels damp, tonifies yang, qi",
         "flavour": "Pungent, sweet",
         "nature": "Warm",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Herbs-Spices"
     },
     {
@@ -716,7 +716,7 @@
         "effect": "Tonifies Stomach yang, promotes qi and digestion",
         "flavour": "Acrid",
         "nature": "Warm",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Herbs-Spices"
     },
     {
@@ -726,7 +726,7 @@
         "effect": "Detoxifies, treats common cold, reduces high blood pressure",
         "flavour": "Pungent",
         "nature": "Warm",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Fruits"
     },
     {
@@ -736,7 +736,7 @@
         "effect": "Promotes qi, expels damp and phlegm",
         "flavour": "Sweet, acrid",
         "nature": "Cool",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Vegetables"
     },
     {
@@ -746,7 +746,7 @@
         "effect": "Promotes digestion, harmonises the middle jiao, tonifies yang and qi",
         "flavour": "Sweet, acrid",
         "nature": "Warm",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Herbs-Spices"
     },
     {
@@ -756,7 +756,7 @@
         "effect": "Expels cold and damp, tonifies yang, antitoxic, promotes qi and blood",
         "flavour": "Acrid, pungent, sweet",
         "nature": "Hot",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Herbs-Spices"
     },
     {
@@ -766,7 +766,7 @@
         "effect": "Promotes qi, opens the pores, warms cold",
         "flavour": "Pungent, sweet",
         "nature": "Hot",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Herbs-Spices"
     },
     {
@@ -776,7 +776,7 @@
         "effect": "Promotes qi, opens orifices and expels cold",
         "flavour": "Acrid",
         "nature": "Warm",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Vegetables"
     },
     {
@@ -786,7 +786,7 @@
         "effect": "Promotes qi and blood, promotes Large Intestine, expels toxins",
         "flavour": "Acrid, sweet",
         "nature": "Neutral",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Vegetables"
     },
     {
@@ -796,7 +796,7 @@
         "effect": "Warms middle jiao, promotes qi and blood",
         "flavour": "Acrid, sweet",
         "nature": "Warm",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Vegetables"
     },
     {
@@ -806,7 +806,7 @@
         "effect": "Promotes qi, expels damp and phlegm",
         "flavour": "Sweet, acrid",
         "nature": "Cool",
-        "taoist": "Metal",
+        "element": "Metal",
         "diet": "Vegetables"
     },
     {
@@ -816,7 +816,7 @@
         "effect": "Tonifies qi and yang, moistens",
         "flavour": "Salty, sweet",
         "nature": "Neutral",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Meat-Fish"
     },
     {
@@ -826,7 +826,7 @@
         "effect": "Clears heat, nourishes yin, removes damp, diuretic",
         "flavour": "Sweet, bitter",
         "nature": "Cool",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Vegetables"
     },
     {
@@ -836,7 +836,7 @@
         "effect": "Strengthens Spleen, Stomach, yang, nourishes yin and blood",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Meat-Fish"
     },
     {
@@ -846,7 +846,7 @@
         "effect": "Tonifies Kidneys, Spleen, yin and blood, promotes diuresis",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -856,7 +856,7 @@
         "effect": "Tonifies blood, tonifies Kidneys",
         "flavour": "Sweet, sour",
         "nature": "Warm",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Fruits"
     },
     {
@@ -866,7 +866,7 @@
         "effect": "Tonifies yin, moistens, expels heat",
         "flavour": "Sweet, salty, bitter",
         "nature": "Cold",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Herbs-Spices"
     },
     {
@@ -876,7 +876,7 @@
         "effect": "Tonifies Spleen and Kidneys, promotes urination, longevity",
         "flavour": "Sweet",
         "nature": "Neutral",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -886,7 +886,7 @@
         "effect": "Tonifies Kidney yin",
         "flavour": "Salty",
         "nature": "Cold",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Meat-Fish"
     },
     {
@@ -896,7 +896,7 @@
         "effect": "Tonifies Kidneys, qi, blood and yang, promotes qi",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -906,7 +906,7 @@
         "effect": "Tonifies Kidney yang, dredges the channels",
         "flavour": "Pungent, sweet",
         "nature": "Hot",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Herbs-Spices"
     },
     {
@@ -916,7 +916,7 @@
         "effect": "Expels heat, damp, promotes blood, tonifies yin",
         "flavour": "Sweet, salty",
         "nature": "Cool",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Meat-Fish"
     },
     {
@@ -926,7 +926,7 @@
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Meat-Fish"
     },
     {
@@ -936,7 +936,7 @@
         "effect": "Tonifies blood, qi, expels damp",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Meat-Fish"
     },
     {
@@ -946,7 +946,7 @@
         "effect": "Tonifies Kidney and Spleen yang, qi and blood",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Meat-Fish"
     },
     {
@@ -956,7 +956,7 @@
         "effect": "Tonifies qi, blood, yang",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Meat-Fish"
     },
     {
@@ -966,7 +966,7 @@
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Meat-Fish"
     },
     {
@@ -976,7 +976,7 @@
         "effect": "Tonifies qi and yin",
         "flavour": "Sweet, salty",
         "nature": "Neutral",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Grains"
     },
     {
@@ -986,7 +986,7 @@
         "effect": "Tonifies qi, blood, yin, expels heat",
         "flavour": "Sweet, salty",
         "nature": "Neutral to cool",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Meat-Fish"
     },
     {
@@ -996,7 +996,7 @@
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Water",
+        "element": "Water",
         "diet": "Meat-Fish"
     },
     {
@@ -1006,7 +1006,7 @@
         "effect": "Tonifies qi and yang, moistens",
         "flavour": "Salty, sweet",
         "nature": "Neutral",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Meat-Fish"
     },
     {
@@ -1016,7 +1016,7 @@
         "effect": "Clears liver heat, promotes defecation",
         "flavour": "Bitter",
         "nature": "Cold",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Herbs-Spices"
     },
     {
@@ -1026,7 +1026,7 @@
         "effect": "Nourish yin and blood, creates fluids, moistens lungs, warms",
         "flavour": "Sour, sweet",
         "nature": "Warm",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Fruits"
     },
     {
@@ -1036,7 +1036,7 @@
         "effect": "Cools liver, promotes qi, nourishes yin and blood",
         "flavour": "Bitter, salty, sweet",
         "nature": "Neutral",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Vegetables"
     },
     {
@@ -1046,7 +1046,7 @@
         "effect": "Detoxifies, clears heat, expels dump, stops diarrhoea",
         "flavour": "Sour",
         "nature": "Cool",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Fruits"
     },
     {
@@ -1056,7 +1056,7 @@
         "effect": "Cools, promotes qi, diuretic",
         "flavour": "Sweet, bitter",
         "nature": "Cool",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Vegetables"
     },
     {
@@ -1066,7 +1066,7 @@
         "effect": "Promotes Liver qi, reduces heat, promotes urination, reduces high blood pressure",
         "flavour": "Sweet, bitter",
         "nature": "Cool",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Vegetables"
     },
     {
@@ -1076,7 +1076,7 @@
         "effect": "Tonifies qi, yin, blood",
         "flavour": "Sweet, sour, salty",
         "nature": "Neutral cool",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Dairy-Other"
     },
     {
@@ -1086,7 +1086,7 @@
         "effect": "Tonifies Spleen and Stomach yang, tonifies qi and yin",
         "flavour": "Sweet, sour, salty",
         "nature": "Neutral warm",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Dairy-Other"
     },
     {
@@ -1096,7 +1096,7 @@
         "effect": "Promotes liver and gall bladder function",
         "flavour": "Bitter",
         "nature": "Neutral",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Vegetables"
     },
     {
@@ -1106,7 +1106,7 @@
         "effect": "Promotes blood flow, expels heat",
         "flavour": "Sweet",
         "nature": "Cool",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Vegetables"
     },
     {
@@ -1116,7 +1116,7 @@
         "effect": "Moves qi, clears heat",
         "flavour": "Sour",
         "nature": "Cool",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Fruits"
     },
     {
@@ -1126,7 +1126,7 @@
         "effect": "Removes heat, promotes Large Intestine function",
         "flavour": "Sweet, sour",
         "nature": "Cool",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Fruits"
     },
     {
@@ -1136,7 +1136,7 @@
         "effect": "Expels heat and toxins, promotes viand blood",
         "flavour": "Sour",
         "nature": "Cold",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Fruits"
     },
     {
@@ -1146,7 +1146,7 @@
         "effect": "Promotes qi and blood, tonifies blood",
         "flavour": "Sweet, sour",
         "nature": "Warm",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Fruits"
     },
     {
@@ -1156,7 +1156,7 @@
         "effect": "Expels heat, promotes urination, transforms dump and phlegmm",
         "flavour": "Sour, sweet",
         "nature": "Cool",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Fruits"
     },
     {
@@ -1166,7 +1166,7 @@
         "effect": "Clears stomach heat, promotes qi",
         "flavour": "Pungent, sweet",
         "nature": "Cool",
-        "taoist": "Wood",
+        "element": "Wood",
         "diet": "Herbs-Spices"
     },
     {
@@ -1176,7 +1176,7 @@
         "effect": "Expels dump, clears heat and toxins, promotes and nourishes blood, reduces abdominal pain",
         "flavour": "Sour, sweet",
         "nature": "Neutral",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -1186,7 +1186,7 @@
         "effect": "Tonifies Kidneys and Spleen, tonifies yang, promotes digestion",
         "flavour": "Bitter, acrid, sweet",
         "nature": "Warm",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Herbs-Spices"
     },
     {
@@ -1196,7 +1196,7 @@
         "effect": "Promotes digestion, expels damp and phlegm",
         "flavour": "Acrid, bitter",
         "nature": "Warm",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Herbs-Spices"
     },
     {
@@ -1206,7 +1206,7 @@
         "effect": "Expels cold from the body, promotes and nourish blood",
         "flavour": "Acrid",
         "nature": "Hot",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Herbs-Spices"
     },
     {
@@ -1216,7 +1216,7 @@
         "effect": "Promotes qi and blood, warms yang, dries damp, warms the Stomach",
         "flavour": "Bitter, sweet, pungent",
         "nature": "Hot",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Vegetables"
     },
     {
@@ -1226,7 +1226,7 @@
         "effect": "Tonifies Kidney yang, dredges the channels",
         "flavour": "Pungent, sweet",
         "nature": "Hot",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Herbs-Spices"
     },
     {
@@ -1236,7 +1236,7 @@
         "effect": "Tonifies the Heart and Kidneys",
         "flavour": "Bitter, sweet",
         "nature": "Neutral",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Herbs-Spices"
     },
     {
@@ -1246,7 +1246,7 @@
         "effect": "Promotes heart function, tonifies yang",
         "flavour": "Bitter",
         "nature": "Warm",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -1256,7 +1256,7 @@
         "effect": "Promotes digestion, tonifies Stomach yang",
         "flavour": "Pungent, bitter",
         "nature": "Hot",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Herbs-Spices"
     },
     {
@@ -1266,7 +1266,7 @@
         "effect": "Expels heat from Heart, Liver, promotes diuresis",
         "flavour": "Bitter",
         "nature": "Cool",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Vegetables"
     },
     {
@@ -1276,7 +1276,7 @@
         "effect": "Expels damp and heat",
         "flavour": "Sweet, bitter",
         "nature": "Cool",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Vegetables"
     },
     {
@@ -1286,7 +1286,7 @@
         "effect": "Promotes defecation",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Nuts-Seeds-Beans"
     },
     {
@@ -1296,7 +1296,7 @@
         "effect": "Tonifies qi, blood, yin, promotes qi",
         "flavour": "Sweet",
         "nature": "Warm",
-        "taoist": "Fire",
+        "element": "Fire",
         "diet": "Grains"
     }
 ]

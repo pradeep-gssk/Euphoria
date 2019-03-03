@@ -9,14 +9,13 @@
 import UIKit
 
 class EUDietsTableViewController: UITableViewController {
-    var selectedTaoist: Taoist = .Earth
+    var selectedElement: Element = .Earth
     var diets: [String] = []
     var selectedDiet: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.diets = CoreDataHelper.shared.fetchUniqueDiets(self.selectedTaoist.rawValue)
-
+        self.diets = CoreDataHelper.shared.fetchUniqueDiets(self.selectedElement.rawValue)
         self.tableView.tableFooterView = UIView()
     }
     
@@ -56,7 +55,7 @@ class EUDietsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedDiet = DietType(rawValue: self.diets[indexPath.row])?.dietString ?? ""
-        let diets = CoreDataHelper.shared.fetchDietforTaoist(self.selectedTaoist.rawValue, diet: self.diets[indexPath.row])
+        let diets = CoreDataHelper.shared.fetchDietforElement(self.selectedElement.rawValue, diet: self.diets[indexPath.row])
         self.performSegue(withIdentifier: "ShowDietsIndexView", sender: diets)
     }
 }

@@ -132,7 +132,7 @@ enum HistoryType: Int {
     }
 }
 
-enum Taoist: String {
+enum Element: String {
     case Earth = "Earth"
     case Water = "Water"
     case Wood = "Wood"

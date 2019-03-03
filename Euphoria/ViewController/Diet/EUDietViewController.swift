@@ -21,7 +21,7 @@ class EUDietViewController: UIViewController {
     @IBOutlet weak var effectField: UILabel!
     @IBOutlet weak var flavourField: UILabel!
     @IBOutlet weak var natureField: UILabel!
-    @IBOutlet weak var taoistField: UILabel!
+    @IBOutlet weak var elementField: UILabel!
     
     
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ class EUDietViewController: UIViewController {
         self.effectField.text = self.diet?.effect
         self.flavourField.text = self.diet?.flavour
         self.natureField.text = self.diet?.nature
-        self.taoistField.text = self.diet?.taoist
+        self.elementField.text = self.diet?.element
     }
     
     @IBAction func didTapBack(_ sender: Any) {

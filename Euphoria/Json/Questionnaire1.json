@@ -4,7 +4,7 @@
         {
             "index": 0,
             "optionType": 1,
-            "taoist": "Fire",
+            "element": "Fire",
             "subOptionType": 0,
             "question": "Do you feel restlessness?",
             "options": [
@@ -21,7 +21,7 @@
         {
             "index": 1,
             "optionType": 1,
-            "taoist": "Fire",
+            "element": "Fire",
             "subOptionType": 0,
             "question": "Do you wake up at night?",
             "options": [
@@ -38,7 +38,7 @@
         {
             "index": 2,
             "optionType": 1,
-            "taoist": "Fire",
+            "element": "Fire",
             "subOptionType": 0,
             "question": "Do you have mood swings?",
             "options": [
@@ -55,7 +55,7 @@
         {
             "index": 3,
             "optionType": 1,
-            "taoist": "Fire",
+            "element": "Fire",
             "subOptionType": 0,
             "question": "Do you have heart palpitations?",
             "options": [
@@ -72,7 +72,7 @@
         {
             "index": 4,
             "optionType": 1,
-            "taoist": "Earth",
+            "element": "Earth",
             "subOptionType": 0,
             "question": "Do you feel heavy headed?",
             "options": [
@@ -89,7 +89,7 @@
         {
             "index": 5,
             "optionType": 1,
-            "taoist": "Earth",
+            "element": "Earth",
             "subOptionType": 0,
             "question": "Do you have lack of energy?",
             "options": [
@@ -106,7 +106,7 @@
         {
             "index": 6,
             "optionType": 1,
-            "taoist": "Earth",
+            "element": "Earth",
             "subOptionType": 0,
             "question": "Do you have abdominal distention?",
             "options": [
@@ -123,7 +123,7 @@
         {
             "index": 7,
             "optionType": 1,
-            "taoist": "Earth",
+            "element": "Earth",
             "subOptionType": 0,
             "question": "Do you get bruises easily?",
             "options": [
@@ -140,7 +140,7 @@
         {
             "index": 8,
             "optionType": 1,
-            "taoist": "Metal",
+            "element": "Metal",
             "subOptionType": 0,
             "question": "Do you have shortness of breath?",
             "options": [
@@ -157,7 +157,7 @@
         {
             "index": 9,
             "optionType": 1,
-            "taoist": "Metal",
+            "element": "Metal",
             "subOptionType": 0,
             "question": "Do you cough or have asthma?",
             "options": [
@@ -174,7 +174,7 @@
         {
             "index": 10,
             "optionType": 1,
-            "taoist": "Metal",
+            "element": "Metal",
             "subOptionType": 0,
             "question": "Do you have constipation?",
             "options": [
@@ -191,7 +191,7 @@
         {
             "index": 11,
             "optionType": 1,
-            "taoist": "Metal",
+            "element": "Metal",
             "subOptionType": 0,
             "question": "Do you have nasal symptoms?",
             "options": [
@@ -208,7 +208,7 @@
         {
             "index": 12,
             "optionType": 1,
-            "taoist": "Water",
+            "element": "Water",
             "subOptionType": 0,
             "question": "Do you frequently feel fear?",
             "options": [
@@ -225,7 +225,7 @@
         {
             "index": 13,
             "optionType": 1,
-            "taoist": "Water",
+            "element": "Water",
             "subOptionType": 0,
             "question": "Are you chronically tired?",
             "options": [
@@ -242,7 +242,7 @@
         {
             "index": 14,
             "optionType": 1,
-            "taoist": "Water",
+            "element": "Water",
             "subOptionType": 0,
             "question": "Do you have osteopenia or osteoporosis?",
             "options": [
@@ -259,7 +259,7 @@
         {
             "index": 15,
             "optionType": 1,
-            "taoist": "Water",
+            "element": "Water",
             "subOptionType": 0,
             "question": "Do you feel your knees and low back are weak?",
             "options": [
@@ -276,7 +276,7 @@
         {
             "index": 16,
             "optionType": 1,
-            "taoist": "Wood",
+            "element": "Wood",
             "subOptionType": 0,
             "question": "Do you feel anger easily?",
             "options": [
@@ -293,7 +293,7 @@
         {
             "index": 17,
             "optionType": 1,
-            "taoist": "Wood",
+            "element": "Wood",
             "subOptionType": 0,
             "question": "Do you have problems falling into sleep?",
             "options": [
@@ -310,7 +310,7 @@
         {
             "index": 18,
             "optionType": 1,
-            "taoist": "Wood",
+            "element": "Wood",
             "subOptionType": 0,
             "question": "Do you feel you are aggressive or passive aggressive?",
             "options": [
@@ -327,7 +327,7 @@
         {
             "index": 19,
             "optionType": 1,
-            "taoist": "Wood",
+            "element": "Wood",
             "subOptionType": 0,
             "question": "Do you feel your chest blocked and heavy?",
             "options": [

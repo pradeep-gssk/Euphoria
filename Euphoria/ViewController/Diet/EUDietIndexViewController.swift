@@ -103,7 +103,7 @@ extension EUDietIndexViewController: UITableViewDelegate {
         let indexItem = self.dietSectionTitles[section]
         let view = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 80, height: 40))
         view.backgroundColor = UIColor(red: (151.0/255.0), green: (151.0/255.0), blue: (151.0/255.0), alpha: 1.0)
-        let label = UILabel(frame: CGRect(x: 30, y: 0, width: UIScreen.main.bounds.width - 110, height: 40))
+        let label = UILabel(frame: CGRect(x: 20, y: 0, width: UIScreen.main.bounds.width - 110, height: 40))
         label.font = UIFont(name: "GillSans-SemiBold", size: 18)
         label.textColor = UIColor.white
         label.text = indexItem

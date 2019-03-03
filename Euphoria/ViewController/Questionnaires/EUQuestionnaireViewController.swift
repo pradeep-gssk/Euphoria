@@ -10,9 +10,9 @@ import UIKit
 
 class EUQuestionnaireViewController: UIViewController {
     
-    var questionnaires: Questionnaires!// = Questionnaires()
+    var questionnaires: Questionnaires!
     var questions: [Questionnaire] = []
-    var questionObject: Questionnaire!// = Questionnaire()
+    var questionObject: Questionnaire!
     var options: [Option] = []
     var numberOfSections = 2
     

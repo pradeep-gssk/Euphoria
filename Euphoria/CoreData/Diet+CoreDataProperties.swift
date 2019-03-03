@@ -24,6 +24,6 @@ extension Diet {
     @NSManaged public var name: String?
     @NSManaged public var nature: String?
     @NSManaged public var organ: String?
-    @NSManaged public var taoist: String?
+    @NSManaged public var element: String?
 
 }

@@ -11,7 +11,7 @@ import UIKit
 class EUHomeTableViewController: UITableViewController {
     
     var questionnaire1Answered = false
-    var selectedTaoist: Taoist = .Earth
+    var selectedElement: Element = .Earth
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,17 +22,17 @@ class EUHomeTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         self.questionnaire1Answered = CoreDataHelper.shared.checkIfAllAnswered(forIndex: 1)
         self.tableView.reloadData()
-        self.findTaoist()
+        self.findElement()
     }
     
-    func findTaoist() {
+    func findElement() {
         var previousValue = 0
-        Taoist.allValues.forEach { (type) in
-            let value = CoreDataHelper.shared.getTaoistCount(forString: type.rawValue)
+        Element.allValues.forEach { (type) in
+            let value = CoreDataHelper.shared.getElementCount(forString: type.rawValue)
             
             if previousValue < value {
                 previousValue = value
-                self.selectedTaoist = type
+                self.selectedElement = type
             }
         }
     }
@@ -41,7 +41,7 @@ class EUHomeTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.destination {
         case let viewController as EUDietsTableViewController:
-            viewController.selectedTaoist = self.selectedTaoist
+            viewController.selectedElement = self.selectedElement
         default:
             break
         }
