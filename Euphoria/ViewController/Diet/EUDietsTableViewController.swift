@@ -11,6 +11,7 @@ import UIKit
 class EUDietsTableViewController: UITableViewController {
     var selectedTaoist: Taoist = .Earth
     var diets: [String] = []
+    var selectedDiet: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,17 @@ class EUDietsTableViewController: UITableViewController {
     
     @IBAction func didTapBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.destination {
+        case let viewController as EUDietIndexViewController:
+            viewController.diets = sender as? [Diet] ?? []
+            viewController.selectedDiet = self.selectedDiet
+        default:
+            break
+        }
     }
 
     // MARK: - Table view data source
@@ -43,8 +55,9 @@ class EUDietsTableViewController: UITableViewController {
     // MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedDiet = DietType(rawValue: self.diets[indexPath.row])?.dietString ?? ""
         let diets = CoreDataHelper.shared.fetchDietforTaoist(self.selectedTaoist.rawValue, diet: self.diets[indexPath.row])
-        print(diets)
+        self.performSegue(withIdentifier: "ShowDietsIndexView", sender: diets)
     }
 }
 

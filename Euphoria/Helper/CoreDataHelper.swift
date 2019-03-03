@@ -298,7 +298,7 @@ extension CoreDataHelper {
         for dictionary in json {
             let dietObject = NSEntityDescription.insertNewObject(forEntityName: "Diet", into: context) as? Diet
             dietObject?.name = dictionary["name"] as? String
-            dietObject?.part = dictionary["part"] as? String
+            dietObject?.organ = dictionary["organ"] as? String
             dietObject?.channels = dictionary["channels"] as? String
             dietObject?.effect = dictionary["effect"] as? String
             dietObject?.flavour = dictionary["flavour"] as? String

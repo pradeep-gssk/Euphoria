@@ -1,7 +1,7 @@
 [
     {
         "name": "Almond",
-        "part": "LUNG/SPLEEN",
+        "organ": "LUNG/SPLEEN",
         "channels": "Lung, Large Intestine, Spleen",
         "effect": "Tonifies Lung and Spleen qi, nourishes Jing, transforms phlegm",
         "flavour": "Sweet",
@@ -11,7 +11,7 @@
     },
     {
         "name": "Alphaalpha sprouts",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach, Large Intestine",
         "effect": "Removes damp, clears stomach and intestinal heat",
         "flavour": "Bitter",
@@ -21,7 +21,7 @@
     },
     {
         "name": "Amaranth",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Stomach, Large Intestine",
         "effect": "Disperses dampness, detoxifies",
         "flavour": "Sweet, bitter",
@@ -31,7 +31,7 @@
     },
     {
         "name": "Anchovies",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Tonifies qi and yang, warms Stomach",
         "flavour": "Salty, sweet",
@@ -41,7 +41,7 @@
     },
     {
         "name": "Aniseed",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach, Heart",
         "effect": "Tonifies qi and yang, drains damp, promotes qi",
         "flavour": "Sweet, pungent",
@@ -51,7 +51,7 @@
     },
     {
         "name": "Apple",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach, Lung, Large Intestine",
         "effect": "Clears heat, creates fluids, tonifies Liver blood, expels Lung heat and moistens Lungs",
         "flavour": "Sweet, sour",
@@ -61,7 +61,7 @@
     },
     {
         "name": "Apricot",
-        "part": "SPLEEN/LIVER",
+        "organ": "SPLEEN/LIVER",
         "channels": "Stomach, Lung",
         "effect": "Nourish yin and blood, creates fluids, moistens lungs, warms",
         "flavour": "Sour, sweet",
@@ -71,7 +71,7 @@
     },
     {
         "name": "Avocado",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Liver, Lung, Large intestine",
         "effect": "Nurish yin and blood",
         "flavour": "Sweet",
@@ -81,7 +81,7 @@
     },
     {
         "name": "Barley",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Expels dump, clears heat, treats food stagnation, promotes diuresis",
         "flavour": "Sweet, salty",
@@ -91,7 +91,7 @@
     },
     {
         "name": "Bass",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Kidney, Urinary Bladder",
         "effect": "Tonifies qi, blood, strengthens Kidney yin ",
         "flavour": "Salty, sweet",
@@ -101,7 +101,7 @@
     },
     {
         "name": "Beef",
-        "part": "SPLEEN/KIDNEY",
+        "organ": "SPLEEN/KIDNEY",
         "channels": "Spleen, Stomach, Large Intestine",
         "effect": "Strengthens Spleen, Stomach, yang, nourishes yin and blood",
         "flavour": "Sweet",
@@ -111,7 +111,7 @@
     },
     {
         "name": "Beet root",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Tonifies Spleen, moves qi, reduces heat, detoxifies",
         "flavour": "Sweet, bitter, pungent",
@@ -121,7 +121,7 @@
     },
     {
         "name": "Black Beans",
-        "part": "KIDNEYS/SPLEEN",
+        "organ": "KIDNEYS/SPLEEN",
         "channels": "Kidney, Spleen",
         "effect": "Tonifies Kidneys, Spleen, yin and blood, promotes diuresis",
         "flavour": "Sweet",
@@ -131,7 +131,7 @@
     },
     {
         "name": "Black-eyed Pea",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Tonifies Spleen, expels dump, promotes diuresis",
         "flavour": "Sweet",
@@ -141,7 +141,7 @@
     },
     {
         "name": "Black fungus",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Stomach, Large intestine",
         "effect": "Promotes blood flow. Stops bleading. Cools blood.",
         "flavour": "Sweet",
@@ -151,7 +151,7 @@
     },
     {
         "name": "Brazil Nuts",
-        "part": "LUNG/SPLEEN",
+        "organ": "LUNG/SPLEEN",
         "channels": "Spleen, Lung, Large Intestine",
         "effect": "Tonifies Spleen and Lung.",
         "flavour": "Sweet, bitter",
@@ -161,7 +161,7 @@
     },
     {
         "name": "Buckwheat",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Tonifies Spleen, expels dump, promotes qi",
         "flavour": "Sweet",
@@ -171,7 +171,7 @@
     },
     {
         "name": "Butter",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Tonifies qi, blood, yin, moistens",
         "flavour": "Sweet",
@@ -181,7 +181,7 @@
     },
     {
         "name": "Cabbage (green)",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Supplements spleen and stomach, tonify qi",
         "flavour": "Sweet",
@@ -191,7 +191,7 @@
     },
     {
         "name": "Cabbage (Chinese)",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Stomach, Large intestine",
         "effect": "Promotes digestion and defecation, clears heat",
         "flavour": "Sweet",
@@ -201,7 +201,7 @@
     },
     {
         "name": "Caraway Seeds",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach, Urinary Bladder",
         "effect": "Promotes digestions, warms the Stomach",
         "flavour": "Sour, sweet, pungent",
@@ -211,7 +211,7 @@
     },
     {
         "name": "Carb",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Kidney, Stomach",
         "effect": "Tonifies qi and blood",
         "flavour": "Sweet, salty",
@@ -221,7 +221,7 @@
     },
     {
         "name": "Carrot",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Lung",
         "effect": "Tonifies Spleen, qi, promotes qi",
         "flavour": "Sweet",
@@ -231,7 +231,7 @@
     },
     {
         "name": "Celery Root",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Tonifies Liver and cools heat from Stomach",
         "flavour": "Sweet, bitter",
@@ -241,7 +241,7 @@
     },
     {
         "name": "Chamomile",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Lung, Liver, Stomach",
         "effect": "Balances digestion, promotes qi, reduces heat and inflammation",
         "flavour": "Sweet, bitter",
@@ -251,7 +251,7 @@
     },
     {
         "name": "Cheese (cow)",
-        "part": "SPLEEN/LIVER",
+        "organ": "SPLEEN/LIVER",
         "channels": "Spleen, Liver, Lung, Stomach",
         "effect": "Tonifies qi, yin, blood",
         "flavour": "Sweet, sour, salty",
@@ -261,7 +261,7 @@
     },
     {
         "name": "Cheese (goat-sheep)",
-        "part": "SPLEEN/LIVER",
+        "organ": "SPLEEN/LIVER",
         "channels": "Spleen, Liver, Lung, Kidneys, Stomach",
         "effect": "Tonifies Spleen and Stomach yang, tonifies qi and yin",
         "flavour": "Sweet, sour, salty",
@@ -271,7 +271,7 @@
     },
     {
         "name": "Cherry",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Tonifies blood, qi and fluids",
         "flavour": "Sweet",
@@ -281,7 +281,7 @@
     },
     {
         "name": "Chestnut",
-        "part": "KIDNEYS/SPLEEN",
+        "organ": "KIDNEYS/SPLEEN",
         "channels": "Kidney, Spleen, Urinary Bladder, Stomach",
         "effect": "Tonifies Kidneys, qi, blood and yang, promotes qi",
         "flavour": "Sweet",
@@ -291,7 +291,7 @@
     },
     {
         "name": "Chickpeas",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Heart, Stomach",
         "effect": "Tonifies Speen, Kidneys, qi",
         "flavour": "Sweet",
@@ -301,7 +301,7 @@
     },
     {
         "name": "Chicken",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Kidney, Stomach",
         "effect": "Tonifies qi, blood, body fluids, yang, Kidney yin and essence",
         "flavour": "Sweet",
@@ -311,7 +311,7 @@
     },
     {
         "name": "Chili Pepper",
-        "part": "HEART/SPLEEN",
+        "organ": "HEART/SPLEEN",
         "channels": "Heart, Spleen, Stomach",
         "effect": "Promotes qi and blood, warms yang, dries damp, warms the Stomach",
         "flavour": "Bitter, sweet, pungent",
@@ -321,7 +321,7 @@
     },
     {
         "name": "Coconut",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Heart, Spleen, Stomach",
         "effect": "Reduces heat, tonifies qi and blood",
         "flavour": "Sweet",
@@ -331,7 +331,7 @@
     },
     {
         "name": "Corn",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach, Large Intestine",
         "effect": "Tonifies qi and blood, expels damp",
         "flavour": "Sweet",
@@ -341,7 +341,7 @@
     },
     {
         "name": "Cranberry",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Kidney, Urinary Bladder, Large Intestine ",
         "effect": "Expels damp, heat",
         "flavour": "Sweet, sour",
@@ -351,7 +351,7 @@
     },
     {
         "name": "Crayfish",
-        "part": "KIDNEY/SPLEEN",
+        "organ": "KIDNEY/SPLEEN",
         "channels": "Kidney, Liver",
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
@@ -361,7 +361,7 @@
     },
     {
         "name": "Cream",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Tonifies qi, blood, yin, moistens",
         "flavour": "Sweet",
@@ -371,7 +371,7 @@
     },
     {
         "name": "Cucumber",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach, Urinary Bladder",
         "effect": "Expels heat and toxins, moistens, promotes diuresis",
         "flavour": "Sweet",
@@ -381,7 +381,7 @@
     },
     {
         "name": "Dates",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Lung, Liver",
         "effect": "Tonifies blood, qi and fluids",
         "flavour": "Sweet",
@@ -391,7 +391,7 @@
     },
     {
         "name": "Duck",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Kidney, Lung, Stomach",
         "effect": "Tonifies blood, qi, expels damp",
         "flavour": "Sweet, salty",
@@ -401,7 +401,7 @@
     },
     {
         "name": "Egg (chicken)",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Kidney, Lung",
         "effect": "Tonifies blood, yin, jing. Egg white expels heat.",
         "flavour": "Sweet",
@@ -411,7 +411,7 @@
     },
     {
         "name": "Eggplant",
-        "part": "LIVER/SPLEEN",
+        "organ": "LIVER/SPLEEN",
         "channels": "Spleen, Liver, Large Intestine",
         "effect": "Promotes blood flow, expels heat",
         "flavour": "Sweet",
@@ -421,7 +421,7 @@
     },
     {
         "name": "Endive Lettuce",
-        "part": "HEART/SPLEEN",
+        "organ": "HEART/SPLEEN",
         "channels": "Heart, Large Intestine",
         "effect": "Expels damp and heat",
         "flavour": "Sweet, bitter",
@@ -431,7 +431,7 @@
     },
     {
         "name": "Fava Bean",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Kidney, Stomach",
         "effect": "Promotes Spleen’s function and expels dump",
         "flavour": "Sweet",
@@ -441,7 +441,7 @@
     },
     {
         "name": "Fennel",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Liver, Kidney",
         "effect": "Tonifies yang, promotes qi, balances the middle jiao",
         "flavour": "Sweet, acrid",
@@ -451,7 +451,7 @@
     },
     {
         "name": "Fennel Seeds",
-        "part": "SPLEEN/LUNG",
+        "organ": "SPLEEN/LUNG",
         "channels": "Spleen, Lung, Large Intestine, Urinary Bladder, Stomach",
         "effect": "Promotes digestion, harmonises the middle jiao, tonifies yang and qi",
         "flavour": "Sweet, acrid",
@@ -461,7 +461,7 @@
     },
     {
         "name": "Figs (fresh)",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Lung, Spleen, Large Intestine, Stomach",
         "effect": "Tony qi, fluids and blood, expels heat, promotes defecation",
         "flavour": "Sweet",
@@ -471,7 +471,7 @@
     },
     {
         "name": "Figs (dried)",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Tonifies qi and Spleen",
         "flavour": "Sweet",
@@ -481,7 +481,7 @@
     },
     {
         "name": "Filberts",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Promotes appetite, clears the eyes, harmonises the middle jiao",
         "flavour": "Sweet, bitter",
@@ -491,7 +491,7 @@
     },
     {
         "name": "Ghee",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Tonifies yin and jing",
         "flavour": "Sweet",
@@ -501,7 +501,7 @@
     },
     {
         "name": "Goose meat",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Lung, Stomach",
         "effect": "Tonifies Spleen qi",
         "flavour": "Sweet",
@@ -511,7 +511,7 @@
     },
     {
         "name": "Grape",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen,  Kidney, Liver",
         "effect": "Tonifies qi an blood",
         "flavour": "Sweet",
@@ -521,7 +521,7 @@
     },
     {
         "name": "Hazelnut",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Harmonises middle jiao Tonifies qi and blood",
         "flavour": "Sweet",
@@ -531,7 +531,7 @@
     },
     {
         "name": "Hemp Seed",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Large Intestine",
         "effect": "Promotes Large Intestine function, nourish yin",
         "flavour": "Sweet",
@@ -541,7 +541,7 @@
     },
     {
         "name": "Honey",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Lung, Large Intestine",
         "effect": "Moistens, tonifies qi, expels toxins",
         "flavour": "Sweet",
@@ -551,7 +551,7 @@
     },
     {
         "name": "Kale",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Lung, Stomach",
         "effect": "Harmonises middle jiao, nourish blood",
         "flavour": "Acrid, sweet",
@@ -561,7 +561,7 @@
     },
     {
         "name": "Lentil (green)",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Spleen, Stomach",
         "effect": "Tonifies qi and blood",
         "flavour": "Sweet",
@@ -571,7 +571,7 @@
     },
     {
         "name": "Lettuce",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Large Intestine, Stomach",
         "effect": "Reduces heat, expels dump",
         "flavour": "Bitter, sweet",
@@ -581,7 +581,7 @@
     },
     {
         "name": "Lobster",
-        "part": "KIDNEY/SPLEEN",
+        "organ": "KIDNEY/SPLEEN",
         "channels": "Kidney, Liver",
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
@@ -591,7 +591,7 @@
     },
     {
         "name": "Millet",
-        "part": "SPLEEN/KIDNEY",
+        "organ": "SPLEEN/KIDNEY",
         "channels": "Kidney, Spleen, Stomach",
         "effect": "Tonifies qi and yin",
         "flavour": "Sweet, salty",
@@ -601,7 +601,7 @@
     },
     {
         "name": "Oats",
-        "part": "HEART/SPLEEN",
+        "organ": "HEART/SPLEEN",
         "channels": "Kidney, Spleen, Heart, Large Intestine",
         "effect": "Tonifies qi, blood, yin, promotes qi",
         "flavour": "Sweet",
@@ -611,7 +611,7 @@
     },
     {
         "name": "Olive",
-        "part": "SPLEEN",
+        "organ": "SPLEEN",
         "channels": "Lung, Stomach",
         "effect": "Clears heat, removes toxins",
         "flavour": "Sweet, sour",
@@ -621,7 +621,7 @@
     },
     {
         "name": "Prawns",
-        "part": "KIDNEY/SPLEEN",
+        "organ": "KIDNEY/SPLEEN",
         "channels": "Kidney, Liver",
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
@@ -631,7 +631,7 @@
     },
     {
         "name": "Almond",
-        "part": "LUNG/SPLEEN",
+        "organ": "LUNG/SPLEEN",
         "channels": "Lung, Large Intestine, Spleen",
         "effect": "Tonifies Lung and Spleen qi, nourishes Jing, transforms phlegm",
         "flavour": "Sweet",
@@ -641,7 +641,7 @@
     },
     {
         "name": "Arugula",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Lung, Large Intestine, Urinary Bladder",
         "effect": "Increases appetite, treats apoplexy and heat syndromes",
         "flavour": "Bitter, acrid, pungent",
@@ -651,7 +651,7 @@
     },
     {
         "name": "Asparagus",
-        "part": "LUNG/KIDNEY",
+        "organ": "LUNG/KIDNEY",
         "channels": "Kideny, Lung, Spleen",
         "effect": "Clears heat, nourishes yin, removes damp, diuretic",
         "flavour": "Sweet, bitter",
@@ -661,7 +661,7 @@
     },
     {
         "name": "Banana",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Large Intestine, Lung, Stomach, Spleen",
         "effect": "Clears heat, supplement yin, moistens stomach and the intestines",
         "flavour": "Sweet",
@@ -671,7 +671,7 @@
     },
     {
         "name": "Borage",
-        "part": "LUNG/KIDNEY",
+        "organ": "LUNG/KIDNEY",
         "channels": "Lung, Kidney, Large Intestine, Urinary Bladder",
         "effect": "Tonifies yin, moistens, expels heat",
         "flavour": "Sweet, salty, bitter",
@@ -681,7 +681,7 @@
     },
     {
         "name": "Brazil Nuts",
-        "part": "LUNG/SPLEEN",
+        "organ": "LUNG/SPLEEN",
         "channels": "Spleen, Lung, Large Intestine",
         "effect": "Tonifies Spleen and Lung.",
         "flavour": "Sweet, bitter",
@@ -691,7 +691,7 @@
     },
     {
         "name": "Cauliflower",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Spleen, Stomach, Lung",
         "effect": "Cools heat in Lungs and Stomach",
         "flavour": "Sweet, bitter",
@@ -701,7 +701,7 @@
     },
     {
         "name": "Clove",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Kidney, Spleen, Lung, Large Intestine",
         "effect": "Expels damp, tonifies yang, qi",
         "flavour": "Pungent, sweet",
@@ -711,7 +711,7 @@
     },
     {
         "name": "Coriander",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Lung, Spleen",
         "effect": "Tonifies Stomach yang, promotes qi and digestion",
         "flavour": "Acrid",
@@ -721,7 +721,7 @@
     },
     {
         "name": "Currant",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Spleen, Lung, Liver, Stomach",
         "effect": "Detoxifies, treats common cold, reduces high blood pressure",
         "flavour": "Pungent",
@@ -731,7 +731,7 @@
     },
     {
         "name": "Daikon Radish",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Lung, Large Intestine",
         "effect": "Promotes qi, expels damp and phlegm",
         "flavour": "Sweet, acrid",
@@ -741,7 +741,7 @@
     },
     {
         "name": "Fennel Seeds",
-        "part": "SPLEEN/LUNG",
+        "organ": "SPLEEN/LUNG",
         "channels": "Spleen, Lung, Large Intestine, Urinary Bladder, Stomach",
         "effect": "Promotes digestion, harmonises the middle jiao, tonifies yang and qi",
         "flavour": "Sweet, acrid",
@@ -751,7 +751,7 @@
     },
     {
         "name": "Garlic",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Spleen, Lung, Heart, Liver, Stomach",
         "effect": "Expels cold and damp, tonifies yang, antitoxic, promotes qi and blood",
         "flavour": "Acrid, pungent, sweet",
@@ -761,7 +761,7 @@
     },
     {
         "name": "Ginger",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Lung, Spleen, Heart, Large Intestine",
         "effect": "Promotes qi, opens the pores, warms cold",
         "flavour": "Pungent, sweet",
@@ -771,7 +771,7 @@
     },
     {
         "name": "Green Onion",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Lung, Large Intestine",
         "effect": "Promotes qi, opens orifices and expels cold",
         "flavour": "Acrid",
@@ -781,7 +781,7 @@
     },
     {
         "name": "Kohlrabi",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Lung, Spleen, Large Intestine",
         "effect": "Promotes qi and blood, promotes Large Intestine, expels toxins",
         "flavour": "Acrid, sweet",
@@ -791,7 +791,7 @@
     },
     {
         "name": "Leek",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Lung, Spleen, Liver, Stomach",
         "effect": "Warms middle jiao, promotes qi and blood",
         "flavour": "Acrid, sweet",
@@ -801,7 +801,7 @@
     },
     {
         "name": "Radish",
-        "part": "LUNG",
+        "organ": "LUNG",
         "channels": "Lung, Large Intestine",
         "effect": "Promotes qi, expels damp and phlegm",
         "flavour": "Sweet, acrid",
@@ -811,7 +811,7 @@
     },
     {
         "name": "Abalone",
-        "part": "LIVER/KIDNEY",
+        "organ": "LIVER/KIDNEY",
         "channels": "Liver, Kidney",
         "effect": "Tonifies qi and yang, moistens",
         "flavour": "Salty, sweet",
@@ -821,7 +821,7 @@
     },
     {
         "name": "Asparagus",
-        "part": "LUNG/KIDNEY",
+        "organ": "LUNG/KIDNEY",
         "channels": "Kideny, Lung, Spleen",
         "effect": "Clears heat, nourishes yin, removes damp, diuretic",
         "flavour": "Sweet, bitter",
@@ -831,7 +831,7 @@
     },
     {
         "name": "Beef",
-        "part": "SPLEEN/KIDNEY",
+        "organ": "SPLEEN/KIDNEY",
         "channels": "Spleen, Stomach, Large Intestine",
         "effect": "Strengthens Spleen, Stomach, yang, nourishes yin and blood",
         "flavour": "Sweet",
@@ -841,7 +841,7 @@
     },
     {
         "name": "Black Beans",
-        "part": "KIDNEYS/SPLEEN",
+        "organ": "KIDNEYS/SPLEEN",
         "channels": "Kidney, Spleen",
         "effect": "Tonifies Kidneys, Spleen, yin and blood, promotes diuresis",
         "flavour": "Sweet",
@@ -851,7 +851,7 @@
     },
     {
         "name": "Blackberry",
-        "part": "KIDNEY",
+        "organ": "KIDNEY",
         "channels": "Liver, Kidney",
         "effect": "Tonifies blood, tonifies Kidneys",
         "flavour": "Sweet, sour",
@@ -861,7 +861,7 @@
     },
     {
         "name": "Borage",
-        "part": "LUNG/KIDNEY",
+        "organ": "LUNG/KIDNEY",
         "channels": "Lung, Kidney, Large Intestine, Urinary Bladder",
         "effect": "Tonifies yin, moistens, expels heat",
         "flavour": "Sweet, salty, bitter",
@@ -871,7 +871,7 @@
     },
     {
         "name": "Cashew",
-        "part": "KIDNEYS",
+        "organ": "KIDNEYS",
         "channels": "Spleen, Kidney",
         "effect": "Tonifies Spleen and Kidneys, promotes urination, longevity",
         "flavour": "Sweet",
@@ -881,7 +881,7 @@
     },
     {
         "name": "Caviar",
-        "part": "KIDNEY",
+        "organ": "KIDNEY",
         "channels": "Kidney, Urinary Bladder",
         "effect": "Tonifies Kidney yin",
         "flavour": "Salty",
@@ -891,7 +891,7 @@
     },
     {
         "name": "Chestnut",
-        "part": "KIDNEYS/SPLEEN",
+        "organ": "KIDNEYS/SPLEEN",
         "channels": "Kidney, Spleen, Urinary Bladder, Stomach",
         "effect": "Tonifies Kidneys, qi, blood and yang, promotes qi",
         "flavour": "Sweet",
@@ -901,7 +901,7 @@
     },
     {
         "name": "Cinnamon Bark",
-        "part": "KIDNEY/HEART",
+        "organ": "KIDNEY/HEART",
         "channels": "Spleen, Kidney, Heart, Liver",
         "effect": "Tonifies Kidney yang, dredges the channels",
         "flavour": "Pungent, sweet",
@@ -911,7 +911,7 @@
     },
     {
         "name": "Crab",
-        "part": "KIDNEY",
+        "organ": "KIDNEY",
         "channels": "Kidney, Urinary Bladder, Stomach",
         "effect": "Expels heat, damp, promotes blood, tonifies yin",
         "flavour": "Sweet, salty",
@@ -921,7 +921,7 @@
     },
     {
         "name": "Crayfish",
-        "part": "KIDNEY/SPLEEN",
+        "organ": "KIDNEY/SPLEEN",
         "channels": "Kidney, Liver",
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
@@ -931,7 +931,7 @@
     },
     {
         "name": "Eel",
-        "part": "KIDNEY",
+        "organ": "KIDNEY",
         "channels": "Spleen, Kidney, Liver",
         "effect": "Tonifies blood, qi, expels damp",
         "flavour": "Sweet",
@@ -941,7 +941,7 @@
     },
     {
         "name": "Goat meat",
-        "part": "KIDNEY",
+        "organ": "KIDNEY",
         "channels": "Kidney, Spleen, Urinary Bladder",
         "effect": "Tonifies Kidney and Spleen yang, qi and blood",
         "flavour": "Sweet",
@@ -951,7 +951,7 @@
     },
     {
         "name": "Lamb meat",
-        "part": "KIDNEY",
+        "organ": "KIDNEY",
         "channels": "Kidney, Spleen, Urinary Bladder",
         "effect": "Tonifies qi, blood, yang",
         "flavour": "Sweet",
@@ -961,7 +961,7 @@
     },
     {
         "name": "Lobster",
-        "part": "KIDNEY/SPLEEN",
+        "organ": "KIDNEY/SPLEEN",
         "channels": "Kidney, Liver",
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
@@ -971,7 +971,7 @@
     },
     {
         "name": "Millet",
-        "part": "SPLEEN/KIDNEY",
+        "organ": "SPLEEN/KIDNEY",
         "channels": "Kidney, Spleen, Stomach",
         "effect": "Tonifies qi and yin",
         "flavour": "Sweet, salty",
@@ -981,7 +981,7 @@
     },
     {
         "name": "Octopus",
-        "part": "KIDNEY",
+        "organ": "KIDNEY",
         "channels": "Kidney, Urinary Bladder",
         "effect": "Tonifies qi, blood, yin, expels heat",
         "flavour": "Sweet, salty",
@@ -991,7 +991,7 @@
     },
     {
         "name": "Prawns",
-        "part": "KIDNEY/SPLEEN",
+        "organ": "KIDNEY/SPLEEN",
         "channels": "Kidney, Liver",
         "effect": "Tonifies Kidney yang, qi and blood, expels cold, promotes blood",
         "flavour": "Sweet",
@@ -1001,7 +1001,7 @@
     },
     {
         "name": "Abalone",
-        "part": "LIVER/KIDNEY",
+        "organ": "LIVER/KIDNEY",
         "channels": "Liver, Kidney",
         "effect": "Tonifies qi and yang, moistens",
         "flavour": "Salty, sweet",
@@ -1011,7 +1011,7 @@
     },
     {
         "name": "Aloe Vera",
-        "part": "LIVER",
+        "organ": "LIVER",
         "channels": "Liver, Large Intestine, Stomach",
         "effect": "Clears liver heat, promotes defecation",
         "flavour": "Bitter",
@@ -1021,7 +1021,7 @@
     },
     {
         "name": "Apricot",
-        "part": "SPLEEN/LIVER",
+        "organ": "SPLEEN/LIVER",
         "channels": "Stomach, Lung",
         "effect": "Nourish yin and blood, creates fluids, moistens lungs, warms",
         "flavour": "Sour, sweet",
@@ -1031,7 +1031,7 @@
     },
     {
         "name": "Artichoke",
-        "part": "LIVER",
+        "organ": "LIVER",
         "channels": "Liver, Gall bladder",
         "effect": "Cools liver, promotes qi, nourishes yin and blood",
         "flavour": "Bitter, salty, sweet",
@@ -1041,7 +1041,7 @@
     },
     {
         "name": "Blueberry",
-        "part": "LIVER",
+        "organ": "LIVER",
         "channels": "Spleen, Lung, Stomach",
         "effect": "Detoxifies, clears heat, expels dump, stops diarrhoea",
         "flavour": "Sour",
@@ -1051,7 +1051,7 @@
     },
     {
         "name": "Broccoli",
-        "part": "LIVER",
+        "organ": "LIVER",
         "channels": "Liver, Spleen, Stomach, Urinary Bladder",
         "effect": "Cools, promotes qi, diuretic",
         "flavour": "Sweet, bitter",
@@ -1061,7 +1061,7 @@
     },
     {
         "name": "Celery (stalk)",
-        "part": "LIVER",
+        "organ": "LIVER",
         "channels": "Kidney, Liver, Urinary Bladder",
         "effect": "Promotes Liver qi, reduces heat, promotes urination, reduces high blood pressure",
         "flavour": "Sweet, bitter",
@@ -1071,7 +1071,7 @@
     },
     {
         "name": "Cheese (cow)",
-        "part": "SPLEEN/LIVER",
+        "organ": "SPLEEN/LIVER",
         "channels": "Spleen, Liver, Lung, Stomach",
         "effect": "Tonifies qi, yin, blood",
         "flavour": "Sweet, sour, salty",
@@ -1081,7 +1081,7 @@
     },
     {
         "name": "Cheese (goat-sheep)",
-        "part": "SPLEEN/LIVER",
+        "organ": "SPLEEN/LIVER",
         "channels": "Spleen, Liver, Lung, Kidneys, Stomach",
         "effect": "Tonifies Spleen and Stomach yang, tonifies qi and yin",
         "flavour": "Sweet, sour, salty",
@@ -1091,7 +1091,7 @@
     },
     {
         "name": "Chicory",
-        "part": "LIVER",
+        "organ": "LIVER",
         "channels": "Liver, Gall bladder",
         "effect": "Promotes liver and gall bladder function",
         "flavour": "Bitter",
@@ -1101,7 +1101,7 @@
     },
     {
         "name": "Eggplant",
-        "part": "LIVER/ SPLEEN",
+        "organ": "LIVER/ SPLEEN",
         "channels": "Spleen, Liver, Large Intestine",
         "effect": "Promotes blood flow, expels heat",
         "flavour": "Sweet",
@@ -1111,7 +1111,7 @@
     },
     {
         "name": "Grapefruit",
-        "part": "LIVER",
+        "organ": "LIVER",
         "channels": "Spleen, Lung, Stomach",
         "effect": "Moves qi, clears heat",
         "flavour": "Sour",
@@ -1121,7 +1121,7 @@
     },
     {
         "name": "Kiwi",
-        "part": "LIVER",
+        "organ": "LIVER",
         "channels": "Spleen, Liver, Stomach",
         "effect": "Removes heat, promotes Large Intestine function",
         "flavour": "Sweet, sour",
@@ -1131,7 +1131,7 @@
     },
     {
         "name": "Lemon",
-        "part": "LIVER",
+        "organ": "LIVER",
         "channels": "Liver, Kidney, Gallbladder",
         "effect": "Expels heat and toxins, promotes viand blood",
         "flavour": "Sour",
@@ -1141,7 +1141,7 @@
     },
     {
         "name": "Lychee",
-        "part": "Liver, Spleen, Stomach",
+        "organ": "Liver, Spleen, Stomach",
         "channels": "LIVER",
         "effect": "Promotes qi and blood, tonifies blood",
         "flavour": "Sweet, sour",
@@ -1151,7 +1151,7 @@
     },
     {
         "name": "Mandarin",
-        "part": "LIVER",
+        "organ": "LIVER",
         "channels": "Liver, Lung, Spleen",
         "effect": "Expels heat, promotes urination, transforms dump and phlegmm",
         "flavour": "Sour, sweet",
@@ -1161,7 +1161,7 @@
     },
     {
         "name": "Mint",
-        "part": "LIVER",
+        "organ": "LIVER",
         "channels": "Lung, Liver, Stomach",
         "effect": "Clears stomach heat, promotes qi",
         "flavour": "Pungent, sweet",
@@ -1171,7 +1171,7 @@
     },
     {
         "name": "Adzuki Beans",
-        "part": "HEART",
+        "organ": "HEART",
         "channels": "Heart, Small Intestine, Kidney",
         "effect": "Expels dump, clears heat and toxins, promotes and nourishes blood, reduces abdominal pain",
         "flavour": "Sour, sweet",
@@ -1181,7 +1181,7 @@
     },
     {
         "name": "Basil",
-        "part": "HEART",
+        "organ": "HEART",
         "channels": "Kidney, Spleen",
         "effect": "Tonifies Kidneys and Spleen, tonifies yang, promotes digestion",
         "flavour": "Bitter, acrid, sweet",
@@ -1191,7 +1191,7 @@
     },
     {
         "name": "Cardamom",
-        "part": "HEART",
+        "organ": "HEART",
         "channels": "Spleen, Lung, Stomach, Large Intestine",
         "effect": "Promotes digestion, expels damp and phlegm",
         "flavour": "Acrid, bitter",
@@ -1201,7 +1201,7 @@
     },
     {
         "name": "Cayenne Pepper",
-        "part": "HEART",
+        "organ": "HEART",
         "channels": "Heart, Lung, Spleen",
         "effect": "Expels cold from the body, promotes and nourish blood",
         "flavour": "Acrid",
@@ -1211,7 +1211,7 @@
     },
     {
         "name": "Chili Pepper",
-        "part": "HEART/SPLEEN",
+        "organ": "HEART/SPLEEN",
         "channels": "Heart, Spleen, Stomach",
         "effect": "Promotes qi and blood, warms yang, dries damp, warms the Stomach",
         "flavour": "Bitter, sweet, pungent",
@@ -1221,7 +1221,7 @@
     },
     {
         "name": "Cinnamon Bark",
-        "part": "KIDNEY/HEART",
+        "organ": "KIDNEY/HEART",
         "channels": "Spleen, Kidney, Heart, Liver",
         "effect": "Tonifies Kidney yang, dredges the channels",
         "flavour": "Pungent, sweet",
@@ -1231,7 +1231,7 @@
     },
     {
         "name": "Cocoa",
-        "part": "HEART",
+        "organ": "HEART",
         "channels": "Heart, Small Intestine",
         "effect": "Tonifies the Heart and Kidneys",
         "flavour": "Bitter, sweet",
@@ -1241,7 +1241,7 @@
     },
     {
         "name": "Coffee",
-        "part": "HEART",
+        "organ": "HEART",
         "channels": "Heart, Kidney, Liver, Small Intestine",
         "effect": "Promotes heart function, tonifies yang",
         "flavour": "Bitter",
@@ -1251,7 +1251,7 @@
     },
     {
         "name": "Curry",
-        "part": "HEART",
+        "organ": "HEART",
         "channels": "Spleen, Stomach",
         "effect": "Promotes digestion, tonifies Stomach yang",
         "flavour": "Pungent, bitter",
@@ -1261,7 +1261,7 @@
     },
     {
         "name": "Dandelion",
-        "part": "HEART",
+        "organ": "HEART",
         "channels": "Heart, Spleen, Gall Bladder Small Intestine",
         "effect": "Expels heat from Heart, Liver, promotes diuresis",
         "flavour": "Bitter",
@@ -1271,7 +1271,7 @@
     },
     {
         "name": "Endive Lettuce",
-        "part": "HEART/SPLEEN",
+        "organ": "HEART/SPLEEN",
         "channels": "Heart, Large Intestine",
         "effect": "Expels damp and heat",
         "flavour": "Sweet, bitter",
@@ -1281,7 +1281,7 @@
     },
     {
         "name": "Flax Seed",
-        "part": "HEART",
+        "organ": "HEART",
         "channels": "Large Intestine, Liver",
         "effect": "Promotes defecation",
         "flavour": "Sweet",
@@ -1291,7 +1291,7 @@
     },
     {
         "name": "Oats",
-        "part": "HEART/SPLEEN",
+        "organ": "HEART/SPLEEN",
         "channels": "Kidney, Spleen, Heart, Large Intestine",
         "effect": "Tonifies qi, blood, yin, promotes qi",
         "flavour": "Sweet",

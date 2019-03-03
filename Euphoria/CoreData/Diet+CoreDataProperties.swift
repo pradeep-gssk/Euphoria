@@ -2,7 +2,7 @@
 //  Diet+CoreDataProperties.swift
 //  Euphoria
 //
-//  Created by Guduru, Pradeep(AWF) on 3/2/19.
+//  Created by Guduru, Pradeep(AWF) on 3/3/19.
 //  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 //
@@ -17,13 +17,13 @@ extension Diet {
         return NSFetchRequest<Diet>(entityName: "Diet")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var part: String?
     @NSManaged public var channels: String?
+    @NSManaged public var diet: String?
     @NSManaged public var effect: String?
     @NSManaged public var flavour: String?
+    @NSManaged public var name: String?
     @NSManaged public var nature: String?
+    @NSManaged public var organ: String?
     @NSManaged public var taoist: String?
-    @NSManaged public var diet: String?
 
 }

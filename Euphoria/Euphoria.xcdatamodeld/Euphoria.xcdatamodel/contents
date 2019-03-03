@@ -7,7 +7,7 @@
         <attribute name="flavour" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nature" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="part" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="organ" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="taoist" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Exercises" representedClassName="Exercises" syncable="YES">
