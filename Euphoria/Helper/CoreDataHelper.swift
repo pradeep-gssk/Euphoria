@@ -140,6 +140,24 @@ extension CoreDataHelper {
             print("Failed saving")
         }
     }
+    
+    func fetchAllQuestionnaires() -> [Questionnaires] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaires.self))
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "index", ascending: true)]
+        
+        
+        
+//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
+//        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "questionnaires.index", ascending: true),
+//                                        NSSortDescriptor(key: "index", ascending: true)]
+        do {
+            let data = try context.fetch(fetchRequest) as? [Questionnaires]
+            return data ?? []
+        } catch {
+        }
+
+        return []
+    }
 }
 
 //MARK: Exercises
@@ -375,6 +393,15 @@ extension CoreDataHelper {
         history?.fileName = name
         history?.imageType = imageType
         
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+    
+    func deleteHistory(_ history: History) {
+        context.delete(history)
         do {
             try context.save()
         } catch {

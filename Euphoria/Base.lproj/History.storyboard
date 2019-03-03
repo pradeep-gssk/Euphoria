@@ -584,19 +584,29 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="zL0-MN-VO2">
-                                        <rect key="frame" x="48" y="0.0" width="243" height="40"/>
-                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="18"/>
+                                        <rect key="frame" x="48" y="0.0" width="200" height="40"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
                                         <color key="textColor" red="0.34509803919999998" green="0.25098039220000001" blue="0.25098039220000001" alpha="0.89766725349999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhP-it-agT">
-                                        <rect key="frame" x="299" y="0.0" width="44" height="40"/>
+                                        <rect key="frame" x="256" y="0.0" width="44" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="pra-6s-ogx"/>
                                         </constraints>
                                         <state key="normal" image="envelopeBlue"/>
                                         <connections>
                                             <action selector="didTapEmail:" destination="efV-jR-SGh" eventType="touchUpInside" id="FA9-iT-BcG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wC-24-MOw">
+                                        <rect key="frame" x="308" y="0.0" width="35" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="3wt-YD-D9b"/>
+                                        </constraints>
+                                        <state key="normal" image="trash"/>
+                                        <connections>
+                                            <action selector="didTapTrash:" destination="efV-jR-SGh" eventType="touchUpInside" id="g1t-dH-Weg"/>
                                         </connections>
                                     </button>
                                 </subviews>

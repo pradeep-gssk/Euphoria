@@ -37,6 +37,7 @@
 		DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6DA622103625008B4D12 /* Questionnaire2.json */; };
 		DE713CB02214026200010CBE /* EUHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713CAF2214026200010CBE /* EUHistory.swift */; };
 		DE713CB2221404B100010CBE /* EUHistoryIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */; };
+		DE7A96EC222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A96EB222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift */; };
 		DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */; };
 		DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */; };
 		DE94C4E8220F74F200C4C2ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE94C4E6220F74F200C4C2ED /* Main.storyboard */; };
@@ -163,6 +164,7 @@
 		DE5F6DA622103625008B4D12 /* Questionnaire2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire2.json; sourceTree = "<group>"; };
 		DE713CAF2214026200010CBE /* EUHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistory.swift; sourceTree = "<group>"; };
 		DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryIndexViewController.swift; sourceTree = "<group>"; };
+		DE7A96EB222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireIndexViewController.swift; sourceTree = "<group>"; };
 		DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUShowSessionViewController.swift; sourceTree = "<group>"; };
 		DE94C4DF220F74F200C4C2ED /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -458,6 +460,7 @@
 		DE94C51E220F7AEC00C4C2ED /* Questionnaires */ = {
 			isa = PBXGroup;
 			children = (
+				DE7A96EB222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift */,
 				DE94C51F220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift */,
 				DE94C529220F833D00C4C2ED /* EUQuestionnaireViewController.swift */,
 			);
@@ -818,6 +821,7 @@
 				DEAF7F6A222C600D00FF001A /* Date+.swift in Sources */,
 				DE94C523220F7C1B00C4C2ED /* UIViewController+.swift in Sources */,
 				DE9B73302213F23B00E82CFD /* Option+CoreDataProperties.swift in Sources */,
+				DE7A96EC222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift in Sources */,
 				DE9B732A2213F23B00E82CFD /* Sound+CoreDataProperties.swift in Sources */,
 				DEA8324322115E3F0000BD43 /* EUVideosListCell.swift in Sources */,
 				DE9B73342213F23B00E82CFD /* Stop+CoreDataProperties.swift in Sources */,

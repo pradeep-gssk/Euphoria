@@ -42,6 +42,24 @@ class EUHistoryShowViewController: UIViewController {
         self.sendEmail()
     }
     
+    @IBAction func didTapTrash(_ sender: Any) {
+        guard let history = self.history,
+            let fileName = history.fileName,
+            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+                return
+        }
+        
+        let fileUrl = documentsDirectory.appendingPathComponent(fileName)
+        do {
+            try FileManager.default.removeItem(at: fileUrl)
+            CoreDataHelper.shared.deleteHistory(history)
+            self.navigationController?.popViewController(animated: true)
+        }
+        catch {
+            print("Error deleting file")
+        }
+    }
+    
     func sendEmail() {
         guard MFMailComposeViewController.canSendMail(),
             let image = self.imageView.image,

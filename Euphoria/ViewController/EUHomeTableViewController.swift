@@ -22,19 +22,7 @@ class EUHomeTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         self.questionnaire1Answered = CoreDataHelper.shared.checkIfAllAnswered(forIndex: 1)
         self.tableView.reloadData()
-        self.findElement()
-    }
-    
-    func findElement() {
-        var previousValue = 0
-        Element.allValues.forEach { (type) in
-            let value = CoreDataHelper.shared.getElementCount(forString: type.rawValue)
-            
-            if previousValue < value {
-                previousValue = value
-                self.selectedElement = type
-            }
-        }
+        self.selectedElement = self.findElement()
     }
     
     // MARK: - Navigation

@@ -49,12 +49,26 @@ extension UIViewController {
         }
     }
     
-    func showAlertWithMessage(_ message: String) {
-        let alert = UIAlertController(title: "Euphoria", message: message, preferredStyle: .alert)
+    func showAlertWithMessage(_ message: String, title: String = "Euphoria") {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
             
         }))
         self.navigationController?.present(alert, animated: true, completion: {
         })
+    }
+    
+    func findElement() -> Element {
+        var selectedElement: Element = .Earth
+        var previousValue = 0
+        Element.allValues.forEach { (type) in
+            let value = CoreDataHelper.shared.getElementCount(forString: type.rawValue)
+            
+            if previousValue < value {
+                previousValue = value
+                selectedElement = type
+            }
+        }
+        return selectedElement
     }
 }

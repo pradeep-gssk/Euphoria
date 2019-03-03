@@ -83,6 +83,18 @@ class EUQuestionnaireViewController: UIViewController {
         self.loadQuestionnaire()
         self.optionsTableView.reloadData()
     }
+    
+    func checkIfAllAnswered() {
+        if CoreDataHelper.shared.checkIfAllAnswered(forIndex: self.questionnaires.index) {
+            switch self.questionnaires.index {
+            case 1:
+                let selectedElement = self.findElement()
+                self.showAlertWithMessage("You are \(selectedElement.rawValue) element. Please check Diet and Exercises", title: "Congrats")
+            default:
+                self.showAlertWithMessage("Thank you for completing Questionnaire \(self.questionnaires.index)")
+            }
+        }
+    }
 }
 
 extension EUQuestionnaireViewController: UITableViewDataSource {
@@ -137,8 +149,8 @@ extension EUQuestionnaireViewController: UITableViewDelegate {
                 break
             }
         }
-        
         tableView.reloadData()
+        self.checkIfAllAnswered()
     }
 }
 

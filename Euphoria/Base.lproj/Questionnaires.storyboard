@@ -19,19 +19,19 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="drR-36-IUm" kind="relationship" relationship="rootViewController" id="HCw-R6-PdU"/>
+                        <segue destination="NTk-Py-rB1" kind="relationship" relationship="rootViewController" id="Ux9-r3-TzO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dxZ-js-RMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-489" y="164"/>
+            <point key="canvasLocation" x="-1100" y="162"/>
         </scene>
         <!--Questionnaire Index Table View Controller-->
         <scene sceneID="JI2-lw-LnW">
             <objects>
-                <tableViewController storyboardIdentifier="QuestionnaireListView" id="drR-36-IUm" customClass="EUQuestionnaireIndexTableViewController" customModule="Euphoria" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="drR-36-IUm" customClass="EUQuestionnaireIndexTableViewController" customModule="Euphoria" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LDS-rN-mmn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
@@ -350,75 +350,15 @@
                             <outlet property="delegate" destination="drR-36-IUm" id="eNs-vF-bbT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="2sv-GA-7dt">
-                        <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" id="UNq-KK-KZ2">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dRW-EC-JVW">
-                                <rect key="frame" x="16" y="7" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="backBlue"/>
-                                <connections>
-                                    <action selector="didTapBack:" destination="drR-36-IUm" eventType="touchUpInside" id="9Ou-SM-L4l"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                        <view key="titleView" contentMode="scaleToFill" id="avY-1a-EFc">
-                            <rect key="frame" x="115" y="9.5" width="145" height="25"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gVt-Th-2RL">
-                                    <rect key="frame" x="0.0" y="0.0" width="145" height="25"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="25" id="9je-pt-uIn"/>
-                                        <constraint firstAttribute="width" constant="145" id="tWC-d9-sr3"/>
-                                    </constraints>
-                                </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTIONNAIRES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcI-fd-xeb">
-                                    <rect key="frame" x="0.0" y="0.0" width="145" height="25"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstItem="dcI-fd-xeb" firstAttribute="leading" secondItem="avY-1a-EFc" secondAttribute="leading" id="QoU-vE-QCY"/>
-                                <constraint firstAttribute="bottom" secondItem="gVt-Th-2RL" secondAttribute="bottom" id="Y4c-rN-zA1"/>
-                                <constraint firstItem="gVt-Th-2RL" firstAttribute="top" secondItem="avY-1a-EFc" secondAttribute="top" id="aYo-bk-1b4"/>
-                                <constraint firstAttribute="trailing" secondItem="gVt-Th-2RL" secondAttribute="trailing" id="awP-5D-QDN"/>
-                                <constraint firstItem="dcI-fd-xeb" firstAttribute="top" secondItem="avY-1a-EFc" secondAttribute="top" id="dfM-S8-gN2"/>
-                                <constraint firstAttribute="bottom" secondItem="dcI-fd-xeb" secondAttribute="bottom" id="sHy-n2-CdS"/>
-                                <constraint firstItem="gVt-Th-2RL" firstAttribute="leading" secondItem="avY-1a-EFc" secondAttribute="leading" id="wpa-dL-0hN"/>
-                                <constraint firstAttribute="trailing" secondItem="dcI-fd-xeb" secondAttribute="trailing" id="zlL-Tl-aF1"/>
-                            </constraints>
-                        </view>
-                        <barButtonItem key="rightBarButtonItem" id="zZC-EV-G0t">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zna-vp-uNq">
-                                <rect key="frame" x="319" y="7" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home"/>
-                                <connections>
-                                    <segue destination="k0C-jZ-sJA" kind="unwind" identifier="" unwindAction="unwindToHome:" id="pC2-Ku-3yv"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="titleImageView" destination="gVt-Th-2RL" id="L4q-iK-z7k"/>
-                        <segue destination="ZQp-B2-GyP" kind="show" identifier="QuestionnaireView" id="xB7-YS-S3J"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dau-EM-KWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="k0C-jZ-sJA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="594" y="163"/>
+            <point key="canvasLocation" x="-124" y="967"/>
         </scene>
         <!--Questionnaire View Controller-->
         <scene sceneID="hr2-N3-DWi">
             <objects>
-                <viewController storyboardIdentifier="QuestionnaireView" id="ZQp-B2-GyP" customClass="EUQuestionnaireViewController" customModule="Euphoria" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZQp-B2-GyP" customClass="EUQuestionnaireViewController" customModule="Euphoria" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lYr-Dy-rYf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -626,11 +566,116 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lfI-CK-F1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="a3W-8h-6Ra" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1622" y="163"/>
+            <point key="canvasLocation" x="910" y="161"/>
+        </scene>
+        <!--Questionnaire Index View Controller-->
+        <scene sceneID="Uft-uQ-MOk">
+            <objects>
+                <viewController storyboardIdentifier="QuestionnaireListView" id="NTk-Py-rB1" customClass="EUQuestionnaireIndexViewController" customModule="Euphoria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lN9-U2-Cse">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEg-ud-mKa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <segue destination="drR-36-IUm" kind="embed" id="zgD-zj-fuY"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WJ-Pa-6vR">
+                                <rect key="frame" x="270" y="562" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="IJL-9j-etO"/>
+                                    <constraint firstAttribute="width" constant="55" id="rGB-DH-8kR"/>
+                                </constraints>
+                                <state key="normal" image="envelopeBlue"/>
+                                <connections>
+                                    <action selector="didTapEmail:" destination="NTk-Py-rB1" eventType="touchUpInside" id="GBp-3Y-CxF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Iy-UA-UdZ" firstAttribute="trailing" secondItem="9WJ-Pa-6vR" secondAttribute="trailing" constant="50" id="1Lu-31-9v9"/>
+                            <constraint firstItem="0Iy-UA-UdZ" firstAttribute="bottom" secondItem="9WJ-Pa-6vR" secondAttribute="bottom" constant="50" id="7Du-GE-uyO"/>
+                            <constraint firstItem="UEg-ud-mKa" firstAttribute="top" secondItem="0Iy-UA-UdZ" secondAttribute="top" id="7uz-Gh-NQa"/>
+                            <constraint firstItem="0Iy-UA-UdZ" firstAttribute="bottom" secondItem="UEg-ud-mKa" secondAttribute="bottom" id="8t1-U1-cSm"/>
+                            <constraint firstItem="UEg-ud-mKa" firstAttribute="leading" secondItem="0Iy-UA-UdZ" secondAttribute="leading" id="Grg-zP-IF5"/>
+                            <constraint firstItem="0Iy-UA-UdZ" firstAttribute="trailing" secondItem="UEg-ud-mKa" secondAttribute="trailing" id="bTh-59-96L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Iy-UA-UdZ"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="tFw-vW-FgF">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" id="JOj-RA-cVx">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TT6-Gc-SXo">
+                                <rect key="frame" x="16" y="11" width="24" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backBlue"/>
+                                <connections>
+                                    <action selector="didTapBack:" destination="NTk-Py-rB1" eventType="touchUpInside" id="MTI-3f-AG7"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <view key="titleView" contentMode="scaleToFill" id="WBz-4p-QHB">
+                            <rect key="frame" x="115" y="9.5" width="145" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gIU-TU-sBe">
+                                    <rect key="frame" x="0.0" y="0.0" width="145" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="gu0-j6-gUa"/>
+                                        <constraint firstAttribute="width" constant="145" id="sTc-rm-F9s"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTIONNAIRES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9I1-r6-3sf">
+                                    <rect key="frame" x="0.0" y="0.0" width="145" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="gIU-TU-sBe" firstAttribute="leading" secondItem="WBz-4p-QHB" secondAttribute="leading" id="0Da-zH-hwC"/>
+                                <constraint firstItem="gIU-TU-sBe" firstAttribute="top" secondItem="WBz-4p-QHB" secondAttribute="top" id="DAR-9R-bLD"/>
+                                <constraint firstAttribute="trailing" secondItem="9I1-r6-3sf" secondAttribute="trailing" id="bqE-WG-W9H"/>
+                                <constraint firstItem="9I1-r6-3sf" firstAttribute="top" secondItem="WBz-4p-QHB" secondAttribute="top" id="hDc-Hw-RMK"/>
+                                <constraint firstAttribute="bottom" secondItem="gIU-TU-sBe" secondAttribute="bottom" id="r05-6p-bRF"/>
+                                <constraint firstAttribute="trailing" secondItem="gIU-TU-sBe" secondAttribute="trailing" id="wX1-w4-zkt"/>
+                                <constraint firstItem="9I1-r6-3sf" firstAttribute="leading" secondItem="WBz-4p-QHB" secondAttribute="leading" id="xpv-cL-m2b"/>
+                                <constraint firstAttribute="bottom" secondItem="9I1-r6-3sf" secondAttribute="bottom" id="znB-Zg-K77"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" id="55P-zP-tCT">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="er0-t4-pRw">
+                                <rect key="frame" x="319" y="7" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="home"/>
+                                <connections>
+                                    <segue destination="agt-0F-KfW" kind="unwind" unwindAction="unwindToHome:" id="vkT-LB-eIT"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailButton" destination="9WJ-Pa-6vR" id="aWH-EG-5UR"/>
+                        <outlet property="titleImageView" destination="gIU-TU-sBe" id="R5Z-PP-sjP"/>
+                        <segue destination="ZQp-B2-GyP" kind="show" identifier="QuestionnaireView" id="Eni-Pv-L5j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUX-K7-s5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="agt-0F-KfW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-124" y="161"/>
         </scene>
     </scenes>
     <resources>
         <image name="backBlue" width="24" height="20"/>
+        <image name="envelopeBlue" width="25" height="17"/>
         <image name="home" width="25" height="23"/>
         <image name="logoCircle" width="171" height="171"/>
         <image name="nextBlue" width="24" height="20"/>
