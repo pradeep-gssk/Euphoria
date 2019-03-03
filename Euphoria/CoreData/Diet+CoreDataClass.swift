@@ -1,5 +1,5 @@
 //
-//  Questionnaire+CoreDataClass.swift
+//  Diet+CoreDataClass.swift
 //  Euphoria
 //
 //  Created by Guduru, Pradeep(AWF) on 3/2/19.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(Questionnaire)
-public class Questionnaire: NSManagedObject {
+@objc(Diet)
+public class Diet: NSManagedObject {
 
 }

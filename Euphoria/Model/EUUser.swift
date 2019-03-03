@@ -13,8 +13,6 @@ class EUUser: NSObject, NSCoding {
     var email: String?
     var userId: String?
     var userProfileImage: String?
-    var userLoginType: LoginType?
-    var userType : UserType?
     
     static let shared = EUUser.getUser()
     
@@ -42,8 +40,6 @@ class EUUser: NSObject, NSCoding {
         aCoder.encode(self.email, forKey: "accessToken")
         aCoder.encode(self.userId, forKey: "userId")
         aCoder.encode(self.userProfileImage, forKey: "userProfileImage")
-        aCoder.encode(self.userLoginType!.rawValue, forKey: "userLoginType")
-        aCoder.encode(self.userType!.rawValue, forKey: "userType")
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -51,14 +47,5 @@ class EUUser: NSObject, NSCoding {
         self.email = aDecoder.decodeObject(forKey: "email") as? String
         self.userId = aDecoder.decodeObject(forKey: "userId") as? String
         self.userProfileImage = aDecoder.decodeObject(forKey: "userProfileImage") as? String
-        if let string = aDecoder.decodeObject(forKey: "userLoginType") as? String
-        {
-            self.userLoginType = LoginType(rawValue: string)
-        }
-        
-        if let string = aDecoder.decodeObject(forKey: "userType") as? String
-        {
-            self.userType = UserType(rawValue: string)
-        }
     }
 }

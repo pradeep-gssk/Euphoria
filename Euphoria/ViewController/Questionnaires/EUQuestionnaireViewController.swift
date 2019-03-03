@@ -10,9 +10,9 @@ import UIKit
 
 class EUQuestionnaireViewController: UIViewController {
     
-    var questionnaires: Questionnaires = Questionnaires()
+    var questionnaires: Questionnaires!// = Questionnaires()
     var questions: [Questionnaire] = []
-    var questionObject: Questionnaire = Questionnaire()
+    var questionObject: Questionnaire!// = Questionnaire()
     var options: [Option] = []
     var numberOfSections = 2
     
@@ -27,7 +27,6 @@ class EUQuestionnaireViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.isToolbarHidden = false
         self.navigationController?.toolbar.barTintColor = UIColor.color(red: 243.0, green: 239.0, blue: 234.0, alpha: 1)
-
         self.titleLabel.text = self.questionnaires.title
         self.titleImageView.image = UIImage(named: "titleBlue")?.stretch()
         self.loadQuestionnaire()

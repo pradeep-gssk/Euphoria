@@ -10,6 +10,11 @@
 		2CC0580927CBF46B65BA3114 /* Pods_Euphoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A05858C8C3D56EA48D0900 /* Pods_Euphoria.framework */; };
 		DE0088262212305F00129D81 /* EUExerciseVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0088252212305F00129D81 /* EUExerciseVideoViewController.swift */; };
 		DE00882C2212350200129D81 /* Exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = DE00882B2212350200129D81 /* Exercises.json */; };
+		DE0A839C222B427B00FC25B1 /* Questionnaire+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0A839A222B427B00FC25B1 /* Questionnaire+CoreDataClass.swift */; };
+		DE0A839D222B427B00FC25B1 /* Questionnaire+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0A839B222B427B00FC25B1 /* Questionnaire+CoreDataProperties.swift */; };
+		DE0A83A3222B8C5500FC25B1 /* Diet.json in Resources */ = {isa = PBXBuildFile; fileRef = DE0A83A2222B8C5500FC25B1 /* Diet.json */; };
+		DE0A83A6222BB28700FC25B1 /* Diet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0A83A4222BB28700FC25B1 /* Diet+CoreDataClass.swift */; };
+		DE0A83A7222BB28700FC25B1 /* Diet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0A83A5222BB28700FC25B1 /* Diet+CoreDataProperties.swift */; };
 		DE3A3ACC2214ACBD003538F9 /* EUHistoryPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3A3ACB2214ACBD003538F9 /* EUHistoryPhotoViewController.swift */; };
 		DE4B9D622213C8CF0036664A /* EUTimerCountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4B9D612213C8CF0036664A /* EUTimerCountDownViewController.swift */; };
 		DE4D60A9221265D900D6904C /* EUAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60A8221265D900D6904C /* EUAccountViewController.swift */; };
@@ -61,8 +66,6 @@
 		DE9B73282213F23B00E82CFD /* Video+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73162213F23B00E82CFD /* Video+CoreDataProperties.swift */; };
 		DE9B73292213F23B00E82CFD /* Sound+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73172213F23B00E82CFD /* Sound+CoreDataClass.swift */; };
 		DE9B732A2213F23B00E82CFD /* Sound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73182213F23B00E82CFD /* Sound+CoreDataProperties.swift */; };
-		DE9B732D2213F23B00E82CFD /* Questionnaire+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B731B2213F23B00E82CFD /* Questionnaire+CoreDataClass.swift */; };
-		DE9B732E2213F23B00E82CFD /* Questionnaire+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B731C2213F23B00E82CFD /* Questionnaire+CoreDataProperties.swift */; };
 		DE9B732F2213F23B00E82CFD /* Option+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B731D2213F23B00E82CFD /* Option+CoreDataClass.swift */; };
 		DE9B73302213F23B00E82CFD /* Option+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B731E2213F23B00E82CFD /* Option+CoreDataProperties.swift */; };
 		DE9B73312213F23B00E82CFD /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B731F2213F23B00E82CFD /* Session+CoreDataClass.swift */; };
@@ -98,11 +101,10 @@
 		DEE7F73C2214CE7900098F21 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F7392214CE7900098F21 /* Router.swift */; };
 		DEE7F73D2214CE7900098F21 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F73A2214CE7900098F21 /* APIManager.swift */; };
 		DEE7F73F2214CEA000098F21 /* URLRequest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F73E2214CEA000098F21 /* URLRequest+.swift */; };
-		DEE7F7412214D07300098F21 /* FacebookHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F7402214D07300098F21 /* FacebookHelper.swift */; };
 		DEE7F7432214D09100098F21 /* EUUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F7422214D09100098F21 /* EUUser.swift */; };
-		DEE7F7462214D3E300098F21 /* EURegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F7452214D3E300098F21 /* EURegistrationViewController.swift */; };
 		DEE7F7842214E38D00098F21 /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = DEE7F7832214E38D00098F21 /* Privacy.html */; };
 		DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB2CAA2212AB6600F2188C /* EUSession.swift */; };
+		DEFBD5D6222BBD55006186D9 /* EUDietsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFBD5D5222BBD55006186D9 /* EUDietsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +130,11 @@
 		BE52ACBEF78299081CC944F8 /* Pods-Euphoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Euphoria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria.release.xcconfig"; sourceTree = "<group>"; };
 		DE0088252212305F00129D81 /* EUExerciseVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExerciseVideoViewController.swift; sourceTree = "<group>"; };
 		DE00882B2212350200129D81 /* Exercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Exercises.json; sourceTree = "<group>"; };
+		DE0A839A222B427B00FC25B1 /* Questionnaire+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE0A839B222B427B00FC25B1 /* Questionnaire+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DE0A83A2222B8C5500FC25B1 /* Diet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Diet.json; sourceTree = "<group>"; };
+		DE0A83A4222BB28700FC25B1 /* Diet+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DE0A83A5222BB28700FC25B1 /* Diet+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diet+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE3A3ACB2214ACBD003538F9 /* EUHistoryPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryPhotoViewController.swift; sourceTree = "<group>"; };
 		DE4B9D612213C8CF0036664A /* EUTimerCountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerCountDownViewController.swift; sourceTree = "<group>"; };
 		DE4D60A8221265D900D6904C /* EUAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUAccountViewController.swift; sourceTree = "<group>"; };
@@ -185,8 +192,6 @@
 		DE9B73162213F23B00E82CFD /* Video+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE9B73172213F23B00E82CFD /* Sound+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE9B73182213F23B00E82CFD /* Sound+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DE9B731B2213F23B00E82CFD /* Questionnaire+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE9B731C2213F23B00E82CFD /* Questionnaire+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaire+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE9B731D2213F23B00E82CFD /* Option+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Option+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE9B731E2213F23B00E82CFD /* Option+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Option+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE9B731F2213F23B00E82CFD /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -224,11 +229,10 @@
 		DEE7F7392214CE7900098F21 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		DEE7F73A2214CE7900098F21 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		DEE7F73E2214CEA000098F21 /* URLRequest+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+.swift"; sourceTree = "<group>"; };
-		DEE7F7402214D07300098F21 /* FacebookHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookHelper.swift; sourceTree = "<group>"; };
 		DEE7F7422214D09100098F21 /* EUUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUUser.swift; sourceTree = "<group>"; };
-		DEE7F7452214D3E300098F21 /* EURegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EURegistrationViewController.swift; sourceTree = "<group>"; };
 		DEE7F7832214E38D00098F21 /* Privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Privacy.html; sourceTree = "<group>"; };
 		DEFB2CAA2212AB6600F2188C /* EUSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSession.swift; sourceTree = "<group>"; };
+		DEFBD5D5222BBD55006186D9 /* EUDietsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDietsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +302,7 @@
 				DE00882B2212350200129D81 /* Exercises.json */,
 				DE4D60E922128AED00D6904C /* Sounds.json */,
 				DE9B730F2213F03900E82CFD /* Videos.json */,
+				DE0A83A2222B8C5500FC25B1 /* Diet.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -424,7 +429,6 @@
 			children = (
 				DEA832262211391D0000BD43 /* Concent */,
 				DEA8322F22113CF50000BD43 /* Login */,
-				DEE7F7442214D3CB00098F21 /* Registration */,
 				DE94C511220F764A00C4C2ED /* EUHomeTableViewController.swift */,
 				DE4D60A8221265D900D6904C /* EUAccountViewController.swift */,
 				DE94C51E220F7AEC00C4C2ED /* Questionnaires */,
@@ -482,14 +486,16 @@
 		DE94C5B2220FC06C00C4C2ED /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				DE0A83A4222BB28700FC25B1 /* Diet+CoreDataClass.swift */,
+				DE0A83A5222BB28700FC25B1 /* Diet+CoreDataProperties.swift */,
+				DE0A839A222B427B00FC25B1 /* Questionnaire+CoreDataClass.swift */,
+				DE0A839B222B427B00FC25B1 /* Questionnaire+CoreDataProperties.swift */,
 				DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */,
 				DE9B733A2213F2D200E82CFD /* Videos+CoreDataProperties.swift */,
 				DE9B73152213F23B00E82CFD /* Video+CoreDataClass.swift */,
 				DE9B73162213F23B00E82CFD /* Video+CoreDataProperties.swift */,
 				DE9B73172213F23B00E82CFD /* Sound+CoreDataClass.swift */,
 				DE9B73182213F23B00E82CFD /* Sound+CoreDataProperties.swift */,
-				DE9B731B2213F23B00E82CFD /* Questionnaire+CoreDataClass.swift */,
-				DE9B731C2213F23B00E82CFD /* Questionnaire+CoreDataProperties.swift */,
 				DE9B731D2213F23B00E82CFD /* Option+CoreDataClass.swift */,
 				DE9B731E2213F23B00E82CFD /* Option+CoreDataProperties.swift */,
 				DE9B731F2213F23B00E82CFD /* Session+CoreDataClass.swift */,
@@ -533,6 +539,7 @@
 		DEA83236221146560000BD43 /* Diet */ = {
 			isa = PBXGroup;
 			children = (
+				DEFBD5D5222BBD55006186D9 /* EUDietsTableViewController.swift */,
 				DEA83237221146E30000BD43 /* EUDietIndexTableViewController.swift */,
 			);
 			path = Diet;
@@ -562,7 +569,6 @@
 			isa = PBXGroup;
 			children = (
 				DED5D5B1220FD37900CDE1AD /* CoreDataHelper.swift */,
-				DEE7F7402214D07300098F21 /* FacebookHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -575,14 +581,6 @@
 				DEE7F7392214CE7900098F21 /* Router.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		DEE7F7442214D3CB00098F21 /* Registration */ = {
-			isa = PBXGroup;
-			children = (
-				DEE7F7452214D3E300098F21 /* EURegistrationViewController.swift */,
-			);
-			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -710,6 +708,7 @@
 				DEA8322122107AB30000BD43 /* Questionnaire3.json in Resources */,
 				DE94C51D220F7AB000C4C2ED /* Questionnaires.storyboard in Resources */,
 				DEE7F7842214E38D00098F21 /* Privacy.html in Resources */,
+				DE0A83A3222B8C5500FC25B1 /* Diet.json in Resources */,
 				DE4D60AC221268CB00D6904C /* Timer.storyboard in Resources */,
 				DEA83234221142B80000BD43 /* Diet.storyboard in Resources */,
 				DEA83223221133930000BD43 /* Questionnaire4.json in Resources */,
@@ -749,18 +748,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -804,10 +797,12 @@
 				DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */,
 				DEA8323E221154F50000BD43 /* EUExercisesIndexTableViewController.swift in Sources */,
 				DE94C523220F7C1B00C4C2ED /* UIViewController+.swift in Sources */,
+				DE0A83A6222BB28700FC25B1 /* Diet+CoreDataClass.swift in Sources */,
 				DE9B73302213F23B00E82CFD /* Option+CoreDataProperties.swift in Sources */,
 				DE9B732A2213F23B00E82CFD /* Sound+CoreDataProperties.swift in Sources */,
 				DEA8324322115E3F0000BD43 /* EUVideosListCell.swift in Sources */,
 				DE9B73342213F23B00E82CFD /* Stop+CoreDataProperties.swift in Sources */,
+				DE0A839D222B427B00FC25B1 /* Questionnaire+CoreDataProperties.swift in Sources */,
 				DE4D60A9221265D900D6904C /* EUAccountViewController.swift in Sources */,
 				DEA1521F221389A10035F7D5 /* EUSoundsViewController.swift in Sources */,
 				DEE7F73B2214CE7900098F21 /* Response.swift in Sources */,
@@ -818,6 +813,7 @@
 				DE4D60AF22126D5000D6904C /* EUSessionsViewController.swift in Sources */,
 				DEA8323122113D090000BD43 /* EULoginViewController.swift in Sources */,
 				DEA83240221159A30000BD43 /* EUExercisesViewController.swift in Sources */,
+				DE0A839C222B427B00FC25B1 /* Questionnaire+CoreDataClass.swift in Sources */,
 				DE9B73332213F23B00E82CFD /* Stop+CoreDataClass.swift in Sources */,
 				DE9B733B2213F2D200E82CFD /* Videos+CoreDataClass.swift in Sources */,
 				DE94C531220F951300C4C2ED /* String+.swift in Sources */,
@@ -827,6 +823,7 @@
 				DE713CB2221404B100010CBE /* EUHistoryIndexViewController.swift in Sources */,
 				DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */,
 				DE4D60E8221285B600D6904C /* EUGalleryTableViewController.swift in Sources */,
+				DE0A83A7222BB28700FC25B1 /* Diet+CoreDataProperties.swift in Sources */,
 				DE94C52A220F833D00C4C2ED /* EUQuestionnaireViewController.swift in Sources */,
 				DE9B73272213F23B00E82CFD /* Video+CoreDataClass.swift in Sources */,
 				DEE7F7432214D09100098F21 /* EUUser.swift in Sources */,
@@ -836,22 +833,19 @@
 				DE9B73362213F23B00E82CFD /* Exercises+CoreDataProperties.swift in Sources */,
 				DE9B730E2213EF2E00E82CFD /* EUVideosIndexTableViewController.swift in Sources */,
 				DE9B733C2213F2D200E82CFD /* Videos+CoreDataProperties.swift in Sources */,
+				DEFBD5D6222BBD55006186D9 /* EUDietsTableViewController.swift in Sources */,
 				DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */,
-				DEE7F7412214D07300098F21 /* FacebookHelper.swift in Sources */,
 				DEE7F73F2214CEA000098F21 /* URLRequest+.swift in Sources */,
 				DE9B73352213F23B00E82CFD /* Exercises+CoreDataClass.swift in Sources */,
-				DE9B732D2213F23B00E82CFD /* Questionnaire+CoreDataClass.swift in Sources */,
 				DE94C526220F7CD400C4C2ED /* Enums.swift in Sources */,
 				DE713CB02214026200010CBE /* EUHistory.swift in Sources */,
 				DE9B73312213F23B00E82CFD /* Session+CoreDataClass.swift in Sources */,
-				DE9B732E2213F23B00E82CFD /* Questionnaire+CoreDataProperties.swift in Sources */,
 				DE9B73372213F23B00E82CFD /* Questionnaires+CoreDataClass.swift in Sources */,
 				DE9B73142213F10F00E82CFD /* EUVideoViewController.swift in Sources */,
 				DE9B73322213F23B00E82CFD /* Session+CoreDataProperties.swift in Sources */,
 				DEA151FA221367CE0035F7D5 /* GSTimeIntervalPicker.m in Sources */,
 				DE4B9D622213C8CF0036664A /* EUTimerCountDownViewController.swift in Sources */,
 				DE9B733E2213F66000E82CFD /* VideoContainer.swift in Sources */,
-				DEE7F7462214D3E300098F21 /* EURegistrationViewController.swift in Sources */,
 				DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */,
 				DE9B73122213F0EF00E82CFD /* EUVideosViewController.swift in Sources */,
 				DEE7F73C2214CE7900098F21 /* Router.swift in Sources */,

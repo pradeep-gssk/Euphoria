@@ -11,11 +11,10 @@ import UIKit
 class EUAccountViewController: UIViewController {
 
     @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var bottomView: UIView!
     
-    let titles = ["First name:", "Last Name:", "Date of birth:", "E-mail:", "Device:"]
-    let values = ["Blabla", "Blablabla", "10/10/1980", "blabla@gmail.com", "iPhone 8"]
+    let titles = ["First name:", "Last Name:", "Date of birth:", "E-mail:"]
+    let values = ["Blabla", "Blablabla", "10/10/1980", "blabla@gmail.com"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +36,7 @@ extension EUAccountViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.titles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

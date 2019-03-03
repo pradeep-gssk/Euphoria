@@ -575,7 +575,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ydo-xm-wYp">
-                                <rect key="frame" x="0.0" y="377" width="375" height="246"/>
+                                <rect key="frame" x="0.0" y="377" width="375" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountCell" id="8Rp-0v-Os3" customClass="EUAccountViewCell" customModule="Euphoria" customModuleProvider="target">
@@ -586,13 +586,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-vR-zES">
-                                                    <rect key="frame" x="15" y="12" width="136" height="20"/>
+                                                    <rect key="frame" x="15" y="12" width="163.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTP-7S-LE5">
-                                                    <rect key="frame" x="169" y="12" width="136" height="20"/>
+                                                    <rect key="frame" x="196.5" y="12" width="163.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="18"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -640,11 +640,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kwa-gX-6kS"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" image="backBlue" id="dIS-Pj-Kj0"/>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="kfG-4i-UaT"/>
-                        <barButtonItem image="nextBlue" id="B0o-ju-aQo"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="7R0-Oa-WmR">
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" id="1yB-7f-HIZ">
@@ -683,25 +679,13 @@
                                 <constraint firstAttribute="trailing" secondItem="Wjd-Sd-xsk" secondAttribute="trailing" id="qQ3-mC-xiU"/>
                             </constraints>
                         </view>
-                        <barButtonItem key="rightBarButtonItem" id="XEd-4F-tCV">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Oa-8V-64u">
-                                <rect key="frame" x="334" y="10.5" width="25" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home"/>
-                            </button>
-                            <connections>
-                                <segue destination="9z9-aU-uce" kind="unwind" unwindAction="unwindToHome:" id="1uP-31-vaV"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bottomView" destination="IXp-Hx-b52" id="rVC-QR-AJ7"/>
                         <outlet property="headerView" destination="CUz-l1-9PH" id="cNf-qG-SPe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIK-St-p3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="9z9-aU-uce" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1641" y="153"/>
         </scene>
@@ -709,9 +693,7 @@
     <resources>
         <image name="backBlue" width="24" height="20"/>
         <image name="flowerMask" width="375" height="253"/>
-        <image name="home" width="25" height="23"/>
         <image name="logoCircle" width="171" height="171"/>
-        <image name="nextBlue" width="24" height="20"/>
         <image name="ovalBlue" width="46" height="46"/>
         <image name="ovalBrown" width="46" height="46"/>
         <image name="ovalGreen" width="46" height="46"/>

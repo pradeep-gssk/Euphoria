@@ -37,34 +37,21 @@ class EULoginViewController: UIViewController {
     @IBAction func didTapSignInButton(_ sender: Any) {
         guard let email = self.emailTextField.text else { return }
         guard let password = self.passwordTextField.text else { return }
-        self.showLoadingScreen()
-        let router = Router(endpoint: .Login(email: email, password: password))
-        APIManager.shared.requestJSON(router: router, success: { (response) in
-            self.hideLoadingScreen()
-            appDelegate.showHomeView()
-        }, failure: { (error) in
-            self.hideLoadingScreen()
-            print(error)
-        })
+        self.showHomeView()
+//        self.showLoadingScreen()
+//        let router = Router(endpoint: .Login(email: email, password: password))
+//        APIManager.shared.requestJSON(router: router, success: { (response) in
+//            self.hideLoadingScreen()
+//            appDelegate.showHomeView()
+//        }, failure: { (error) in
+//            self.hideLoadingScreen()
+//            print(error)
+//        })
     }
     
-    @IBAction func didTapFacebookButton(_ sender: Any) {
-        self.loginWithFacebook()
-    }
-    
-    func loginWithFacebook() {
-        self.showLoadingScreen()
-        FacebookHelper.shared.logInToFacebook(viewController: self, successWithUserExist: { (user) in
-            self.hideLoadingScreen()
+    func showHomeView() {
+        UIView.animate(withDuration: 0.1) {
             appDelegate.showHomeView()
-        }, successWithUserDoesNotExist: { (user) in
-            self.hideLoadingScreen()
-        }, cancelled: {
-            self.hideLoadingScreen()
-            self.showAlertWithMessage("User cancelled Facebook Login")
-        }, failure:  { (error : Error?) in
-            self.hideLoadingScreen()
-            self.showAlertWithMessage((error?.localizedDescription)!)
-        })
+        }
     }
 }

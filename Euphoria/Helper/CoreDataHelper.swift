@@ -52,6 +52,7 @@ extension CoreDataHelper {
         let questionnaire = NSEntityDescription.insertNewObject(forEntityName: "Questionnaire", into: context) as? Questionnaire
         questionnaire?.answer = nil
         questionnaire?.details = nil
+        questionnaire?.taoist = json["taoist"] as? String
         questionnaire?.index = json["index"] as? Int16 ?? 0
         questionnaire?.optionType = json["optionType"] as? Int16 ?? 0
         questionnaire?.subOptionType = json["subOptionType"] as? Int16 ?? 0
@@ -85,6 +86,32 @@ extension CoreDataHelper {
         } catch {
             return nil
         }
+    }
+    
+    func checkIfAllAnswered(forIndex index: Int16) -> Bool {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
+        fetchRequest.predicate = NSPredicate(format: "(answer = nil) AND (questionnaires.index = \(NSNumber(value:index)))")
+        do {
+            if let data = try context.fetch(fetchRequest) as? [Questionnaire] {
+                return (data.count > 0) ? false : true
+            }
+        } catch {
+        }
+        return false
+    }
+    
+    func getTaoistCount(forString taoist: String) -> Int {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
+        fetchRequest.predicate = NSPredicate(format: "(answer = %@) AND (taoist = %@)", "Yes", taoist)
+        
+        do {
+            if let data = try context.fetch(fetchRequest) as? [Questionnaire] {
+                return data.count
+            }
+        } catch {
+        }
+        
+        return 0
     }
     
     func updateAnswer(_ object: Questionnaire, string: String?) {
@@ -262,5 +289,64 @@ extension CoreDataHelper {
         stop?.resource = sound.resource
         stop?.type = sound.type
         return stop
+    }
+}
+
+//MARK: Diet
+extension CoreDataHelper {
+    func saveDiet(_ json: [[String: AnyObject]]) {
+        for dictionary in json {
+            let dietObject = NSEntityDescription.insertNewObject(forEntityName: "Diet", into: context) as? Diet
+            dietObject?.name = dictionary["name"] as? String
+            dietObject?.part = dictionary["part"] as? String
+            dietObject?.channels = dictionary["channels"] as? String
+            dietObject?.effect = dictionary["effect"] as? String
+            dietObject?.flavour = dictionary["flavour"] as? String
+            dietObject?.nature = dictionary["nature"] as? String
+            dietObject?.taoist = dictionary["taoist"] as? String
+            dietObject?.diet = dictionary["diet"] as? String
+        }
+        
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+    
+    func fetchDietforTaoist(_ taoist: String, diet: String) -> [Diet] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Diet.self))
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        fetchRequest.predicate = NSPredicate(format: "(taoist = %@) AND (diet = %@)", taoist, diet)
+
+        do {
+            let data = try context.fetch(fetchRequest) as? [Diet]
+            return data ?? []
+            
+        } catch {
+            return []
+        }
+    }
+    
+    func fetchUniqueDiets(_ taoist: String) -> [String] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Diet.self))
+        fetchRequest.predicate = NSPredicate(format: "taoist = %@", taoist)
+        fetchRequest.propertiesToFetch = ["diet"]
+        fetchRequest.resultType = .dictionaryResultType
+        fetchRequest.returnsDistinctResults = true
+        
+        do {
+            if let data = try context.fetch(fetchRequest) as? [[String: String]] {
+                var array: [String] = []
+                for dict in data {
+                    array.append(contentsOf: dict.values)
+                }
+                return array
+            }
+            
+        } catch {
+        }
+        return []
     }
 }

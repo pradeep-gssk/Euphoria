@@ -2,7 +2,7 @@
 //  Questionnaire+CoreDataProperties.swift
 //  Euphoria
 //
-//  Created by Guduru, Pradeep(AWF) on 2/12/19.
+//  Created by Guduru, Pradeep(AWF) on 3/2/19.
 //  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 //
@@ -23,6 +23,7 @@ extension Questionnaire {
     @NSManaged public var optionType: Int16
     @NSManaged public var question: String?
     @NSManaged public var subOptionType: Int16
+    @NSManaged public var taoist: String?
     @NSManaged public var options: NSSet?
     @NSManaged public var questionnaires: Questionnaires?
     @NSManaged public var subOptions: NSSet?

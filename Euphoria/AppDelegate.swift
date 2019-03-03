@@ -22,10 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.standard.set(true, forKey: IS_PRELOADED)
         }
         
-        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
-            self.showLoginView()
-            return true
-        }
+//        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
+//            self.showLoginView()
+//            return true
+//        }
         self.showHomeView()
         return true
     }
@@ -107,6 +107,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.loadExercises(withResource: "Exercises")
         self.loadSounds(withResource: "Sounds")
         self.loadVideos(withResource: "Videos")
+        self.loadDiet(withResource: "Diet")
+        
     }
     
     func loadQuestionnaire(withResource resource: String, forIndex index: Int16, withTotal total: Int16) {
@@ -160,6 +162,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 if let jsonResult = jsonResult as? [[String: AnyObject]] {
                     CoreDataHelper.shared.saveVideos(jsonResult)
+                }
+            } catch {
+                print(error)
+                // handle error
+            }
+        }
+    }
+    
+    func loadDiet(withResource resource: String) {
+        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? [[String: AnyObject]] {
+                    CoreDataHelper.shared.saveDiet(jsonResult)
                 }
             } catch {
                 print(error)

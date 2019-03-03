@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Diet" representedClassName="Diet" syncable="YES">
+        <attribute name="channels" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="effect" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flavour" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="part" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taoist" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Exercises" representedClassName="Exercises" syncable="YES">
         <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
@@ -18,6 +28,7 @@
         <attribute name="optionType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="subOptionType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="taoist" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="options" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Option" inverseName="questionnaireOption" inverseEntity="Option" syncable="YES"/>
         <relationship name="questionnaires" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaires" inverseName="questionnaire" inverseEntity="Questionnaires" syncable="YES"/>
         <relationship name="subOptions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Option" inverseName="questionnaireSubOption" inverseEntity="Option" syncable="YES"/>
@@ -62,9 +73,10 @@
         <relationship name="video" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Video" inverseName="videos" inverseEntity="Video" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Diet" positionX="189" positionY="-117" width="128" height="165"/>
         <element name="Exercises" positionX="189" positionY="-135" width="128" height="90"/>
         <element name="Option" positionX="611.33203125" positionY="-124.90625" width="128" height="105"/>
-        <element name="Questionnaire" positionX="234.3671875" positionY="-206.6875" width="128" height="180"/>
+        <element name="Questionnaire" positionX="234.3671875" positionY="-206.6875" width="128" height="195"/>
         <element name="Questionnaires" positionX="-20.4296875" positionY="-217.74609375" width="128" height="120"/>
         <element name="Session" positionX="189" positionY="-126" width="128" height="105"/>
         <element name="Sound" positionX="207" positionY="-108" width="128" height="90"/>
