@@ -90,7 +90,10 @@ extension CoreDataHelper {
     
     func checkIfAllAnswered(forIndex index: Int16) -> Bool {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
-        fetchRequest.predicate = NSPredicate(format: "(answer = nil) AND (questionnaires.index = \(NSNumber(value:index)))")
+        let otherOptions = "(((optionType = \(NSNumber(value: 0))) OR (optionType = \(NSNumber(value: 1)))) AND (answer = nil))"
+        let option2 = "((optionType = \(NSNumber(value: 2))) AND (answer = nil) AND (details = nil))"
+        let predicateString = "(\(otherOptions) OR \(option2)) AND (questionnaires.index = \(NSNumber(value: index)))"
+        fetchRequest.predicate = NSPredicate(format: predicateString)
         do {
             if let data = try context.fetch(fetchRequest) as? [Questionnaire] {
                 return (data.count > 0) ? false : true
@@ -144,12 +147,6 @@ extension CoreDataHelper {
     func fetchAllQuestionnaires() -> [Questionnaires] {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaires.self))
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "index", ascending: true)]
-        
-        
-        
-//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
-//        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "questionnaires.index", ascending: true),
-//                                        NSSortDescriptor(key: "index", ascending: true)]
         do {
             let data = try context.fetch(fetchRequest) as? [Questionnaires]
             return data ?? []

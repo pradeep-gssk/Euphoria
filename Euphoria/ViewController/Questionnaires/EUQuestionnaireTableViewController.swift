@@ -14,6 +14,7 @@ class EUQuestionnaireTableViewController: UITableViewController {
     var options: [Option] = []
     var numberOfSections = 2
     var checkIfAllAnswered: (() -> Void)?
+    var clearTextField: Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +50,8 @@ class EUQuestionnaireTableViewController: UITableViewController {
             return self.options.count
         default:
             return 1
-        }    }
+        }
+    }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 1 {
@@ -78,37 +80,70 @@ class EUQuestionnaireTableViewController: UITableViewController {
     // MARK: - Table view delegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 {
+            return
+        }
+        
         let answer = self.options[indexPath.row].option
         CoreDataHelper.shared.updateAnswer(self.questionObject, string: answer)
-        
+
         if let optionType = OptionType(rawValue: Int(self.questionObject.optionType)) {
             switch optionType {
             case .toggle:
-                numberOfSections = (answer?.boolValue ?? false) ? 2 : 1
-            default:
+                switch answer?.boolValue {
+                case true:
+                    numberOfSections = 2
+                default:
+                    numberOfSections = 1
+                    self.clearDetails()
+                }
+            case .always:
+                self.clearDetails()
+            case .never:
                 break
             }
         }
         tableView.reloadData()
         self.checkIfAllAnswered?()
     }
+    
+    func clearDetails() {
+        CoreDataHelper.shared.updateDetails(questionObject, details: nil)
+        clearTextField = true
+    }
 }
 
 extension EUQuestionnaireTableViewController: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        clearTextField = false
+    }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
-        guard let text = textField.text, text.trimmingCharacters(in: .whitespaces).count > 0 else {
-            CoreDataHelper.shared.updateDetails(questionObject, details: nil)
+        guard let text = textField.text, text.trimmingCharacters(in: .whitespaces).count > 0,
+            clearTextField == false else {
+            textField.text = nil
+            self.clearDetails()
             return
         }
+        
         CoreDataHelper.shared.updateDetails(questionObject, details: text)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        guard let text = textField.text, text.trimmingCharacters(in: .whitespaces).count > 0,
+            let optionType = OptionType(rawValue: Int(self.questionObject.optionType)),
+            optionType == .always else {
+            return true
+        }
+        
+        CoreDataHelper.shared.updateAnswer(self.questionObject, string: nil)
+        CoreDataHelper.shared.updateDetails(questionObject, details: text)
+        self.tableView.reloadData()
         return true
     }
 }
-
 
 class EUQuestionnairesViewTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
