@@ -35,6 +35,7 @@
 		DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */; };
 		DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */; };
 		DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6DA622103625008B4D12 /* Questionnaire2.json */; };
+		DE677BEE222DA31800D51054 /* EUQuestionnaireTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE677BED222DA31800D51054 /* EUQuestionnaireTableViewController.swift */; };
 		DE713CB02214026200010CBE /* EUHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713CAF2214026200010CBE /* EUHistory.swift */; };
 		DE713CB2221404B100010CBE /* EUHistoryIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */; };
 		DE7A96EC222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A96EB222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift */; };
@@ -162,6 +163,7 @@
 		DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerSetupViewController.swift; sourceTree = "<group>"; };
 		DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUAddSessionViewController.swift; sourceTree = "<group>"; };
 		DE5F6DA622103625008B4D12 /* Questionnaire2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire2.json; sourceTree = "<group>"; };
+		DE677BED222DA31800D51054 /* EUQuestionnaireTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireTableViewController.swift; sourceTree = "<group>"; };
 		DE713CAF2214026200010CBE /* EUHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistory.swift; sourceTree = "<group>"; };
 		DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryIndexViewController.swift; sourceTree = "<group>"; };
 		DE7A96EB222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireIndexViewController.swift; sourceTree = "<group>"; };
@@ -463,6 +465,7 @@
 				DE7A96EB222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift */,
 				DE94C51F220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift */,
 				DE94C529220F833D00C4C2ED /* EUQuestionnaireViewController.swift */,
+				DE677BED222DA31800D51054 /* EUQuestionnaireTableViewController.swift */,
 			);
 			path = Questionnaires;
 			sourceTree = "<group>";
@@ -814,6 +817,7 @@
 				DE4D60E62212857600D6904C /* EUHistoryTableViewController.swift in Sources */,
 				DECCD72A222BDEA000BAC698 /* Diet+CoreDataProperties.swift in Sources */,
 				DE9B73382213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift in Sources */,
+				DE677BEE222DA31800D51054 /* EUQuestionnaireTableViewController.swift in Sources */,
 				DED5D5B2220FD37900CDE1AD /* CoreDataHelper.swift in Sources */,
 				DE9B732F2213F23B00E82CFD /* Option+CoreDataClass.swift in Sources */,
 				DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */,

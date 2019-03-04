@@ -145,75 +145,126 @@
                                     <constraint firstAttribute="height" constant="35" id="Zw7-EI-D55"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VaX-DE-3fV">
-                                <rect key="frame" x="67.5" y="346" width="240" height="215"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QDH-Zc-JV8">
+                                <rect key="frame" x="67.5" y="240" width="240" height="407"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-MAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88B-Dc-doa">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="d5u-PK-HU7"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.6588235294" green="0.094117647060000004" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NJ5-sH-VIj">
-                                        <rect key="frame" x="0.0" y="65" width="240" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="3Cd-6P-NAp"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.6588235294" green="0.094117647060000004" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="buv-QX-Oc6">
-                                        <rect key="frame" x="0.0" y="130" width="240" height="20"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VaX-DE-3fV">
+                                        <rect key="frame" x="0.0" y="96" width="240" height="215"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVa-Ni-V3E">
-                                                <rect key="frame" x="0.0" y="0.0" width="103" height="20"/>
-                                                <fontDescription key="fontDescription" name="GillSans-Italic" family="Gill Sans" pointSize="16"/>
-                                                <state key="normal" title="Forgot password?">
-                                                    <color key="titleColor" red="0.59607843140000005" green="0.60392156860000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-MAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88B-Dc-doa">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="d5u-PK-HU7"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.6588235294" green="0.094117647060000004" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NJ5-sH-VIj">
+                                                <rect key="frame" x="0.0" y="65" width="240" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="3Cd-6P-NAp"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.6588235294" green="0.094117647060000004" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="buv-QX-Oc6">
+                                                <rect key="frame" x="0.0" y="130" width="240" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVa-Ni-V3E">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="20"/>
+                                                        <fontDescription key="fontDescription" name="GillSans-Italic" family="Gill Sans" pointSize="16"/>
+                                                        <state key="normal" title="Forgot password?">
+                                                            <color key="titleColor" red="0.59607843140000005" green="0.60392156860000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="Hgz-XL-rRR"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJX-wC-LmS">
+                                                <rect key="frame" x="0.0" y="165" width="240" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="H8Z-XQ-eP0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
+                                                <state key="normal" title="SIGN IN" backgroundImage="rectGreenButton">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="didTapSignInButton:" destination="IYo-iN-IfE" eventType="touchUpInside" id="QFH-Ln-6bb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="Hgz-XL-rRR"/>
-                                        </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJX-wC-LmS">
-                                        <rect key="frame" x="0.0" y="165" width="240" height="50"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="H8Z-XQ-eP0"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
-                                        <state key="normal" title="SIGN IN" backgroundImage="rectGreenButton">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapSignInButton:" destination="IYo-iN-IfE" eventType="touchUpInside" id="QFH-Ln-6bb"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="3pT-hX-XSE"/>
+                                    <constraint firstAttribute="width" constant="240" id="w71-75-6Ko"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wK-kK-GNP">
+                                <rect key="frame" x="16" y="618" width="343" height="29"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="By logging in, you confirm you have read and agree to our">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-Italic"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" Privacy Policy">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-BoldItalic"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=".">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-Italic"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="12" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BGb-cq-3pb" appends="YES" id="g37-R6-7Ac"/>
+                                </connections>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="guG-ei-2hw" secondAttribute="trailing" id="0zE-rR-r1H"/>
-                            <constraint firstItem="VaX-DE-3fV" firstAttribute="centerY" secondItem="guG-ei-2hw" secondAttribute="centerY" id="1M7-7X-Naf"/>
+                            <constraint firstItem="QDH-Zc-JV8" firstAttribute="bottom" secondItem="1wK-kK-GNP" secondAttribute="bottom" id="2WO-kC-NXl"/>
+                            <constraint firstItem="QDH-Zc-JV8" firstAttribute="top" secondItem="guG-ei-2hw" secondAttribute="top" id="5Sh-JF-CiA"/>
                             <constraint firstItem="guG-ei-2hw" firstAttribute="top" secondItem="E5s-dD-Tak" secondAttribute="bottom" constant="20" id="5x2-Yy-ZL7"/>
                             <constraint firstItem="lDv-qi-RzU" firstAttribute="leading" secondItem="4OJ-Jj-p1i" secondAttribute="leading" id="8I4-sm-qjZ"/>
-                            <constraint firstItem="VaX-DE-3fV" firstAttribute="centerX" secondItem="guG-ei-2hw" secondAttribute="centerX" id="Mwd-FO-zdI"/>
+                            <constraint firstItem="QDH-Zc-JV8" firstAttribute="centerX" secondItem="EGd-iA-QCN" secondAttribute="centerX" id="AAk-Oo-OwM"/>
                             <constraint firstItem="E5s-dD-Tak" firstAttribute="top" secondItem="EGd-iA-QCN" secondAttribute="top" constant="35" id="PW6-Qi-5Kr"/>
                             <constraint firstItem="E5s-dD-Tak" firstAttribute="centerX" secondItem="4OJ-Jj-p1i" secondAttribute="centerX" id="Urc-VR-GFA"/>
+                            <constraint firstAttribute="trailing" secondItem="1wK-kK-GNP" secondAttribute="trailing" constant="16" id="VDZ-b1-khw"/>
                             <constraint firstItem="guG-ei-2hw" firstAttribute="leading" secondItem="EGd-iA-QCN" secondAttribute="leading" id="dxm-Ld-7RQ"/>
+                            <constraint firstItem="1wK-kK-GNP" firstAttribute="leading" secondItem="EGd-iA-QCN" secondAttribute="leading" constant="16" id="htk-sp-70V"/>
                             <constraint firstItem="lDv-qi-RzU" firstAttribute="top" secondItem="guG-ei-2hw" secondAttribute="bottom" id="iLX-Mb-cSb"/>
+                            <constraint firstItem="lDv-qi-RzU" firstAttribute="top" secondItem="1wK-kK-GNP" secondAttribute="bottom" constant="20" id="lqc-Iz-dCa"/>
                             <constraint firstItem="guG-ei-2hw" firstAttribute="bottom" secondItem="EGd-iA-QCN" secondAttribute="bottom" id="xNT-2M-LW8"/>
                             <constraint firstAttribute="trailing" secondItem="lDv-qi-RzU" secondAttribute="trailing" id="zSX-mI-lPc"/>
                         </constraints>
@@ -227,6 +278,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s3Q-OT-hDO" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BGb-cq-3pb">
+                    <connections>
+                        <action selector="didTapGesture:" destination="IYo-iN-IfE" id="opu-gy-tL2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2145" y="-567"/>
         </scene>
@@ -256,6 +312,6 @@
         <image name="rectGreenButton" width="248" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3N8-vh-040"/>
+        <segue reference="Q9s-fi-lWd"/>
     </inferredMetricsTieBreakers>
 </document>

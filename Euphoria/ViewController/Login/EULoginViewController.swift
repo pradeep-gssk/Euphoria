@@ -13,7 +13,6 @@ class EULoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
-    @IBOutlet weak var facebookButton: UIButton!
     
     func removeConcentViewIfExist() {
         guard let navigationController = self.navigationController, navigationController.viewControllers.first is EUConcentViewController else {
@@ -53,5 +52,10 @@ class EULoginViewController: UIViewController {
         UIView.animate(withDuration: 0.1) {
             appDelegate.showHomeView()
         }
+    }
+    
+    @IBAction func didTapGesture(_ sender: Any) {
+        let viewController = EUConcentViewController.loadPrivacyView()
+        self.navigationController?.show(viewController, sender: self)
     }
 }

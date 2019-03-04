@@ -22,10 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.standard.set(true, forKey: IS_PRELOADED)
         }
         
-//        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
-//            self.showLoginView()
-//            return true
-//        }
+        guard let _ = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) else {
+            self.showLoginView()
+            return true
+        }
         self.showHomeView()
         return true
     }
