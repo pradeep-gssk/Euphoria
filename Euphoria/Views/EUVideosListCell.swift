@@ -10,4 +10,5 @@ import UIKit
 
 class EUVideosListCell: UICollectionViewCell {
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var thumbnail: UIImageView!
 }

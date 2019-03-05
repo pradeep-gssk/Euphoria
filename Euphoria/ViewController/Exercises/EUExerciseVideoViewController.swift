@@ -11,7 +11,7 @@ import AVKit
 
 class EUExerciseVideoViewController: UIViewController {
 
-    var video: Video?
+    var exercise: Exercises?
     var player: AVPlayer?
     var playerItem: AVPlayerItem?
     
@@ -27,11 +27,11 @@ class EUExerciseVideoViewController: UIViewController {
         
         self.headerView.layer.borderColor = UIColor.color(red: 197.0, green: 196.0, blue: 192.0, alpha: 1).cgColor
         self.headerView.layer.borderWidth = 1
-        self.titleLabel.text = self.video?.title
-        self.videoTitleLabel.text = self.video?.videoName
-        self.videDescriptionLabel.text = self.video?.videoDescription
+        self.titleLabel.text = self.exercise?.exercise
+        self.videoTitleLabel.text = self.exercise?.videoName
+        self.videDescriptionLabel.text = self.exercise?.videoDescription
         
-        if let url = video?.videoUrl {
+        if let url = exercise?.videoUrl {
             let playerItem: AVPlayerItem = AVPlayerItem(url: url)
             self.player = AVPlayer(playerItem: playerItem)
             let playerLayer = AVPlayerLayer(player: player)

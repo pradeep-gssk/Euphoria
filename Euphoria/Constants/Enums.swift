@@ -189,3 +189,46 @@ enum DietType: String {
         }
     }
 }
+
+enum ExerciseType: String {
+    case yoga = "Yoga"
+    case pilates = "Pilates"
+    case running = "Running"
+    case climbing = "Climbing"
+    case qigong = "Qi-Gong"
+    case stretching = "Stretching"
+    
+    var exerciseString: String {
+        switch self {
+        case .yoga:
+            return "Yoga"
+        case .pilates:
+            return "Pilates"
+        case .running:
+            return "Running"
+        case .climbing:
+            return "Climbing"
+        case .qigong:
+            return "Qi Gong"
+        case .stretching:
+            return "Stretching"
+        }
+    }
+    
+    var firstCharacter: String {
+        switch self {
+        case .yoga:
+            return "Y"
+        case .pilates:
+            return "P"
+        case .running:
+            return "R"
+        case .climbing:
+            return "C"
+        case .qigong:
+            return "Q"
+        case .stretching:
+            return "S"
+        }
+    }
+}

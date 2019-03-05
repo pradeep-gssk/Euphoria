@@ -62,8 +62,6 @@
 		DE9B73102213F03900E82CFD /* Videos.json in Resources */ = {isa = PBXBuildFile; fileRef = DE9B730F2213F03900E82CFD /* Videos.json */; };
 		DE9B73122213F0EF00E82CFD /* EUVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73112213F0EF00E82CFD /* EUVideosViewController.swift */; };
 		DE9B73142213F10F00E82CFD /* EUVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73132213F10F00E82CFD /* EUVideoViewController.swift */; };
-		DE9B73272213F23B00E82CFD /* Video+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73152213F23B00E82CFD /* Video+CoreDataClass.swift */; };
-		DE9B73282213F23B00E82CFD /* Video+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73162213F23B00E82CFD /* Video+CoreDataProperties.swift */; };
 		DE9B73292213F23B00E82CFD /* Sound+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73172213F23B00E82CFD /* Sound+CoreDataClass.swift */; };
 		DE9B732A2213F23B00E82CFD /* Sound+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73182213F23B00E82CFD /* Sound+CoreDataProperties.swift */; };
 		DE9B732F2213F23B00E82CFD /* Option+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B731D2213F23B00E82CFD /* Option+CoreDataClass.swift */; };
@@ -72,8 +70,6 @@
 		DE9B73322213F23B00E82CFD /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73202213F23B00E82CFD /* Session+CoreDataProperties.swift */; };
 		DE9B73332213F23B00E82CFD /* Stop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73212213F23B00E82CFD /* Stop+CoreDataClass.swift */; };
 		DE9B73342213F23B00E82CFD /* Stop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73222213F23B00E82CFD /* Stop+CoreDataProperties.swift */; };
-		DE9B73352213F23B00E82CFD /* Exercises+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73232213F23B00E82CFD /* Exercises+CoreDataClass.swift */; };
-		DE9B73362213F23B00E82CFD /* Exercises+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73242213F23B00E82CFD /* Exercises+CoreDataProperties.swift */; };
 		DE9B73372213F23B00E82CFD /* Questionnaires+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73252213F23B00E82CFD /* Questionnaires+CoreDataClass.swift */; };
 		DE9B73382213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73262213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift */; };
 		DE9B733B2213F2D200E82CFD /* Videos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */; };
@@ -94,6 +90,10 @@
 		DEA8323E221154F50000BD43 /* EUExercisesIndexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8323D221154F50000BD43 /* EUExercisesIndexTableViewController.swift */; };
 		DEA83240221159A30000BD43 /* EUExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8323F221159A30000BD43 /* EUExercisesViewController.swift */; };
 		DEA8324322115E3F0000BD43 /* EUVideosListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8324222115E3F0000BD43 /* EUVideosListCell.swift */; };
+		DEA9568A222E48D700FD5E02 /* Exercises+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95686222E48D700FD5E02 /* Exercises+CoreDataClass.swift */; };
+		DEA9568B222E48D700FD5E02 /* Exercises+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95687222E48D700FD5E02 /* Exercises+CoreDataProperties.swift */; };
+		DEA9568C222E48D700FD5E02 /* Video+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95688222E48D700FD5E02 /* Video+CoreDataClass.swift */; };
+		DEA9568D222E48D700FD5E02 /* Video+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95689222E48D700FD5E02 /* Video+CoreDataProperties.swift */; };
 		DEAF7F6A222C600D00FF001A /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F69222C600D00FF001A /* Date+.swift */; };
 		DEAF7F6C222C61E600FF001A /* EUHistoryShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F6B222C61E600FF001A /* EUHistoryShowViewController.swift */; };
 		DEAF7F6E222C698D00FF001A /* Operand+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F6D222C698D00FF001A /* Operand+.swift */; };
@@ -196,8 +196,6 @@
 		DE9B730F2213F03900E82CFD /* Videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Videos.json; sourceTree = "<group>"; };
 		DE9B73112213F0EF00E82CFD /* EUVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosViewController.swift; sourceTree = "<group>"; };
 		DE9B73132213F10F00E82CFD /* EUVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideoViewController.swift; sourceTree = "<group>"; };
-		DE9B73152213F23B00E82CFD /* Video+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE9B73162213F23B00E82CFD /* Video+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE9B73172213F23B00E82CFD /* Sound+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE9B73182213F23B00E82CFD /* Sound+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sound+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE9B731D2213F23B00E82CFD /* Option+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Option+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -206,8 +204,6 @@
 		DE9B73202213F23B00E82CFD /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE9B73212213F23B00E82CFD /* Stop+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE9B73222213F23B00E82CFD /* Stop+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stop+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DE9B73232213F23B00E82CFD /* Exercises+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataClass.swift"; sourceTree = "<group>"; };
-		DE9B73242213F23B00E82CFD /* Exercises+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE9B73252213F23B00E82CFD /* Questionnaires+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE9B73262213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -230,6 +226,10 @@
 		DEA8323D221154F50000BD43 /* EUExercisesIndexTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExercisesIndexTableViewController.swift; sourceTree = "<group>"; };
 		DEA8323F221159A30000BD43 /* EUExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUExercisesViewController.swift; sourceTree = "<group>"; };
 		DEA8324222115E3F0000BD43 /* EUVideosListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUVideosListCell.swift; sourceTree = "<group>"; };
+		DEA95686222E48D700FD5E02 /* Exercises+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DEA95687222E48D700FD5E02 /* Exercises+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DEA95688222E48D700FD5E02 /* Video+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DEA95689222E48D700FD5E02 /* Video+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DEAF7F69222C600D00FF001A /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		DEAF7F6B222C61E600FF001A /* EUHistoryShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryShowViewController.swift; sourceTree = "<group>"; };
 		DEAF7F6D222C698D00FF001A /* Operand+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operand+.swift"; sourceTree = "<group>"; };
@@ -507,6 +507,10 @@
 		DE94C5B2220FC06C00C4C2ED /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				DEA95686222E48D700FD5E02 /* Exercises+CoreDataClass.swift */,
+				DEA95687222E48D700FD5E02 /* Exercises+CoreDataProperties.swift */,
+				DEA95688222E48D700FD5E02 /* Video+CoreDataClass.swift */,
+				DEA95689222E48D700FD5E02 /* Video+CoreDataProperties.swift */,
 				DECA07F1222C5A8F00CC4601 /* History+CoreDataClass.swift */,
 				DECA07F2222C5A8F00CC4601 /* History+CoreDataProperties.swift */,
 				DECCD725222BDEA000BAC698 /* Diet+CoreDataClass.swift */,
@@ -515,8 +519,6 @@
 				DECCD728222BDEA000BAC698 /* Questionnaire+CoreDataProperties.swift */,
 				DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */,
 				DE9B733A2213F2D200E82CFD /* Videos+CoreDataProperties.swift */,
-				DE9B73152213F23B00E82CFD /* Video+CoreDataClass.swift */,
-				DE9B73162213F23B00E82CFD /* Video+CoreDataProperties.swift */,
 				DE9B73172213F23B00E82CFD /* Sound+CoreDataClass.swift */,
 				DE9B73182213F23B00E82CFD /* Sound+CoreDataProperties.swift */,
 				DE9B731D2213F23B00E82CFD /* Option+CoreDataClass.swift */,
@@ -525,8 +527,6 @@
 				DE9B73202213F23B00E82CFD /* Session+CoreDataProperties.swift */,
 				DE9B73212213F23B00E82CFD /* Stop+CoreDataClass.swift */,
 				DE9B73222213F23B00E82CFD /* Stop+CoreDataProperties.swift */,
-				DE9B73232213F23B00E82CFD /* Exercises+CoreDataClass.swift */,
-				DE9B73242213F23B00E82CFD /* Exercises+CoreDataProperties.swift */,
 				DE9B73252213F23B00E82CFD /* Questionnaires+CoreDataClass.swift */,
 				DE9B73262213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift */,
 			);
@@ -821,6 +821,9 @@
 				DED5D5B2220FD37900CDE1AD /* CoreDataHelper.swift in Sources */,
 				DE9B732F2213F23B00E82CFD /* Option+CoreDataClass.swift in Sources */,
 				DED5D5B4220FD52400CDE1AD /* Constants.swift in Sources */,
+				DEA9568C222E48D700FD5E02 /* Video+CoreDataClass.swift in Sources */,
+				DEA9568B222E48D700FD5E02 /* Exercises+CoreDataProperties.swift in Sources */,
+				DEA9568D222E48D700FD5E02 /* Video+CoreDataProperties.swift in Sources */,
 				DEA8323E221154F50000BD43 /* EUExercisesIndexTableViewController.swift in Sources */,
 				DEAF7F6A222C600D00FF001A /* Date+.swift in Sources */,
 				DE94C523220F7C1B00C4C2ED /* UIViewController+.swift in Sources */,
@@ -852,21 +855,18 @@
 				DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */,
 				DE4D60E8221285B600D6904C /* EUGalleryTableViewController.swift in Sources */,
 				DE94C52A220F833D00C4C2ED /* EUQuestionnaireViewController.swift in Sources */,
-				DE9B73272213F23B00E82CFD /* Video+CoreDataClass.swift in Sources */,
 				DECA07F4222C5A8F00CC4601 /* History+CoreDataProperties.swift in Sources */,
 				DECCD72C222BDEA000BAC698 /* Questionnaire+CoreDataProperties.swift in Sources */,
 				DEE7F7432214D09100098F21 /* EUUser.swift in Sources */,
 				DE94C528220F801900C4C2ED /* UIImage+.swift in Sources */,
 				DE94C5B1220FC00700C4C2ED /* Euphoria.xcdatamodeld in Sources */,
 				DE3A3ACC2214ACBD003538F9 /* EUHistoryPhotoViewController.swift in Sources */,
-				DE9B73362213F23B00E82CFD /* Exercises+CoreDataProperties.swift in Sources */,
 				DE9B730E2213EF2E00E82CFD /* EUVideosIndexTableViewController.swift in Sources */,
 				DE306750222BD50F00AAD2E6 /* EUDietViewController.swift in Sources */,
 				DE9B733C2213F2D200E82CFD /* Videos+CoreDataProperties.swift in Sources */,
 				DEFBD5D6222BBD55006186D9 /* EUDietsTableViewController.swift in Sources */,
 				DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */,
 				DEE7F73F2214CEA000098F21 /* URLRequest+.swift in Sources */,
-				DE9B73352213F23B00E82CFD /* Exercises+CoreDataClass.swift in Sources */,
 				DE94C526220F7CD400C4C2ED /* Enums.swift in Sources */,
 				DE713CB02214026200010CBE /* EUHistory.swift in Sources */,
 				DE9B73312213F23B00E82CFD /* Session+CoreDataClass.swift in Sources */,
@@ -880,12 +880,12 @@
 				DE9B733E2213F66000E82CFD /* VideoContainer.swift in Sources */,
 				DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */,
 				DE9B73122213F0EF00E82CFD /* EUVideosViewController.swift in Sources */,
+				DEA9568A222E48D700FD5E02 /* Exercises+CoreDataClass.swift in Sources */,
 				DEE7F73C2214CE7900098F21 /* Router.swift in Sources */,
 				DE0088262212305F00129D81 /* EUExerciseVideoViewController.swift in Sources */,
 				DE94C56D220FA4E300C4C2ED /* UITextField+.swift in Sources */,
 				DECCD72B222BDEA000BAC698 /* Questionnaire+CoreDataClass.swift in Sources */,
 				DE4D60E4221283C200D6904C /* EUActivitiesTableViewController.swift in Sources */,
-				DE9B73282213F23B00E82CFD /* Video+CoreDataProperties.swift in Sources */,
 				DEA83228221139440000BD43 /* EUConcentViewController.swift in Sources */,
 				DE9B73292213F23B00E82CFD /* Sound+CoreDataClass.swift in Sources */,
 			);

@@ -52,6 +52,12 @@ extension EUVideosViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoCell", for: indexPath) as! EUVideosListCell
         cell.name.text = self.videos[indexPath.row].videoName
+        if let image =  self.videos[indexPath.row].thumbnail {
+            cell.thumbnail.image = UIImage(named: image)
+        }
+        else {
+            cell.thumbnail.image = nil
+        }
         return cell
     }
 }

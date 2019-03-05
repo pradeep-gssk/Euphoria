@@ -24,16 +24,6 @@ class EUHomeTableViewController: UITableViewController {
         self.tableView.reloadData()
         self.selectedElement = self.findElement()
     }
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.destination {
-        case let viewController as EUDietsTableViewController:
-            viewController.selectedElement = self.selectedElement
-        default:
-            break
-        }
-    }
 
     @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
         self.navigationController?.isToolbarHidden = true
@@ -63,6 +53,14 @@ class EUHomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let homeType = HomeType(rawValue: indexPath.row) else { return }
         let viewController = UIViewController.getViewController(name: homeType.storyboard, identifier: homeType.identifier)
+        switch viewController {
+        case let vc as EUDietsTableViewController:
+            vc.selectedElement = self.selectedElement
+        case let vc as EUExercisesIndexTableViewController:
+            vc.selectedElement = self.selectedElement
+        default:
+            break
+        }
         self.navigationController?.show(viewController, sender: self)
     }
 }

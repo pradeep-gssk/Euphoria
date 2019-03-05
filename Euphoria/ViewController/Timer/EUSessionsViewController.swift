@@ -62,6 +62,15 @@ extension EUSessionsViewController: UITableViewDataSource {
         cell.timer.text = session.time.duration
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let session = self.sessions[indexPath.row]
+            CoreDataHelper.shared.deleteSession(session)
+            self.sessions.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
 }
 
 extension EUSessionsViewController: UITableViewDelegate {

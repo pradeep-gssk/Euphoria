@@ -18,6 +18,7 @@ class CoreDataHelper: NSObject {
         video?.title = json["title"] as? String
         video?.videoDescription = json["video_description"] as? String
         video?.videoName = json["video_name"] as? String
+        video?.thumbnail = json["thumbnail"] as? String
         if let string = json["video_url"] as? String {
             video?.videoUrl = URL(string: string)
         }
@@ -161,16 +162,15 @@ extension CoreDataHelper {
 extension CoreDataHelper {
     func saveExercises(_ json: [[String: AnyObject]]) {
         for dictionary in json {
-            let exercises = NSEntityDescription.insertNewObject(forEntityName: "Exercises", into: context) as? Exercises
-            exercises?.title = dictionary["title"] as? String
-            exercises?.index = dictionary["index"] as? Int16 ?? 0
-            if let videos = dictionary["videos"] as? [[String: AnyObject]] {
-                for video in videos {
-                    if let response = self.setVideo(video) {
-                        exercises?.addToExerciseVideo(response)
-                    }
-                }
+            let exercise = NSEntityDescription.insertNewObject(forEntityName: "Exercises", into: context) as? Exercises
+            exercise?.videoName = dictionary["video_name"] as? String
+            exercise?.thumbnail = dictionary["thumbnail"] as? String
+            exercise?.videoDescription = dictionary["video_description"] as? String
+            if let string = dictionary["video_url"] as? String {
+                exercise?.videoUrl = URL(string: string)
             }
+            exercise?.element = dictionary["element"] as? String
+            exercise?.exercise = dictionary["exercise"] as? String
         }
         
         do {
@@ -180,10 +180,12 @@ extension CoreDataHelper {
         }
     }
     
-    func fetchExercises() -> [Exercises] {
+    func fetchExerciseforElement(_ element: String, exercise: String) -> [Exercises] {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Exercises.self))
-        let sortDescriptor = NSSortDescriptor(key: "index", ascending: true)
+        let sortDescriptor = NSSortDescriptor(key: "videoName", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
+        fetchRequest.predicate = NSPredicate(format: "(element = %@) AND (exercise = %@)", element, exercise)
+        
         do {
             let data = try context.fetch(fetchRequest) as? [Exercises]
             return data ?? []
@@ -191,6 +193,27 @@ extension CoreDataHelper {
         } catch {
             return []
         }
+    }
+    
+    func fetchUniqueExercises(_ element: String) -> [String] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Exercises.self))
+        fetchRequest.predicate = NSPredicate(format: "element = %@", element)
+        fetchRequest.propertiesToFetch = ["exercise"]
+        fetchRequest.resultType = .dictionaryResultType
+        fetchRequest.returnsDistinctResults = true
+        
+        do {
+            if let data = try context.fetch(fetchRequest) as? [[String: String]] {
+                var array: [String] = []
+                for dict in data {
+                    array.append(contentsOf: dict.values)
+                }
+                return array
+            }
+            
+        } catch {
+        }
+        return []
     }
 }
 
@@ -304,6 +327,15 @@ extension CoreDataHelper {
         stop?.resource = sound.resource
         stop?.type = sound.type
         return stop
+    }
+    
+    func deleteSession(_ session: Session) {
+        context.delete(session)
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
     }
 }
 

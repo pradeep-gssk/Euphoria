@@ -702,6 +702,9 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoGreen" translatesAutoresizingMaskIntoConstraints="NO" id="FCM-3H-e3B">
                                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                 </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pCc-2D-inq">
+                                                    <rect key="frame" x="4" y="4" width="82" height="82"/>
+                                                </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playGreen" translatesAutoresizingMaskIntoConstraints="NO" id="cAO-Xq-wao">
                                                     <rect key="frame" x="25" y="25" width="40" height="40"/>
                                                     <constraints>
@@ -726,13 +729,18 @@
                                             <constraint firstItem="FCM-3H-e3B" firstAttribute="leading" secondItem="ag5-Yf-8rg" secondAttribute="leading" id="4fV-f2-bWx"/>
                                             <constraint firstItem="FCM-3H-e3B" firstAttribute="top" secondItem="ag5-Yf-8rg" secondAttribute="top" id="9yP-Lf-HTB"/>
                                             <constraint firstAttribute="trailing" secondItem="6OC-Km-2IE" secondAttribute="trailing" id="Cx1-ET-V6F"/>
+                                            <constraint firstItem="pCc-2D-inq" firstAttribute="leading" secondItem="ag5-Yf-8rg" secondAttribute="leading" constant="4" id="Djz-4V-tns"/>
+                                            <constraint firstItem="pCc-2D-inq" firstAttribute="bottom" secondItem="FCM-3H-e3B" secondAttribute="bottom" constant="-4" id="IBC-Jn-YTs"/>
                                             <constraint firstItem="6OC-Km-2IE" firstAttribute="top" secondItem="FCM-3H-e3B" secondAttribute="bottom" constant="10" id="Qgi-Fw-nhl"/>
+                                            <constraint firstAttribute="trailing" secondItem="pCc-2D-inq" secondAttribute="trailing" constant="4" id="U44-YT-XKt"/>
                                             <constraint firstItem="cAO-Xq-wao" firstAttribute="centerY" secondItem="FCM-3H-e3B" secondAttribute="centerY" id="cTl-tI-zYr"/>
+                                            <constraint firstItem="pCc-2D-inq" firstAttribute="top" secondItem="ag5-Yf-8rg" secondAttribute="top" constant="4" id="ela-NZ-sAa"/>
                                             <constraint firstAttribute="trailing" secondItem="FCM-3H-e3B" secondAttribute="trailing" id="nEV-BU-ufW"/>
                                             <constraint firstItem="6OC-Km-2IE" firstAttribute="leading" secondItem="ag5-Yf-8rg" secondAttribute="leading" id="sKr-R6-U2h"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="name" destination="6OC-Km-2IE" id="hm5-Vm-5tV"/>
+                                            <outlet property="thumbnail" destination="pCc-2D-inq" id="hTH-Rs-sqr"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

@@ -55,8 +55,8 @@ class EUDietsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedDiet = DietType(rawValue: self.diets[indexPath.row])?.dietString ?? ""
-        let diets = CoreDataHelper.shared.fetchDietforElement(self.selectedElement.rawValue, diet: self.diets[indexPath.row])
-        self.performSegue(withIdentifier: "ShowDietsIndexView", sender: diets)
+        let array = CoreDataHelper.shared.fetchDietforElement(self.selectedElement.rawValue, diet: self.diets[indexPath.row])
+        self.performSegue(withIdentifier: "ShowDietsIndexView", sender: array)
     }
 }
 

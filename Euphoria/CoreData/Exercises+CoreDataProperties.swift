@@ -2,7 +2,7 @@
 //  Exercises+CoreDataProperties.swift
 //  Euphoria
 //
-//  Created by Guduru, Pradeep(AWF) on 2/12/19.
+//  Created by Guduru, Pradeep(AWF) on 3/4/19.
 //  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 //
@@ -17,25 +17,11 @@ extension Exercises {
         return NSFetchRequest<Exercises>(entityName: "Exercises")
     }
 
-    @NSManaged public var index: Int16
-    @NSManaged public var title: String?
-    @NSManaged public var exerciseVideo: NSSet?
-
-}
-
-// MARK: Generated accessors for exerciseVideo
-extension Exercises {
-
-    @objc(addExerciseVideoObject:)
-    @NSManaged public func addToExerciseVideo(_ value: Video)
-
-    @objc(removeExerciseVideoObject:)
-    @NSManaged public func removeFromExerciseVideo(_ value: Video)
-
-    @objc(addExerciseVideo:)
-    @NSManaged public func addToExerciseVideo(_ values: NSSet)
-
-    @objc(removeExerciseVideo:)
-    @NSManaged public func removeFromExerciseVideo(_ values: NSSet)
+    @NSManaged public var videoName: String?
+    @NSManaged public var thumbnail: String?
+    @NSManaged public var videoDescription: String?
+    @NSManaged public var videoUrl: URL?
+    @NSManaged public var element: String?
+    @NSManaged public var exercise: String?
 
 }

@@ -10,8 +10,8 @@ import UIKit
 
 class EUExercisesViewController: UIViewController {
     
-    var exercise: Exercises?
-    var videos: [Video] = []
+    var exercises: [Exercises] = []
+    var selectedExercise: String = ""
     
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -21,15 +21,13 @@ class EUExercisesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.videos = self.exercise?.exerciseVideo?.allObjects as? [Video] ?? []
-        
         self.headerView.layer.borderColor = UIColor.color(red: 197.0, green: 196.0, blue: 192.0, alpha: 1).cgColor
         self.headerView.layer.borderWidth = 1
         self.searchField.layer.borderColor = UIColor.singleColor(value: 151.0, alpha: 1).cgColor
         self.searchField.layer.borderWidth = 1
         self.searchField.setPaddingPointsOnLeft(14, andRight: 14)
-        
-        self.titleLabel.text = self.exercise?.title
+
+        self.titleLabel.text = self.selectedExercise
         self.collectionView.collectionViewLayout = self.collectionViewFlowLayout
     }
     
@@ -40,26 +38,32 @@ class EUExercisesViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? EUExerciseVideoViewController {
-            viewController.video = sender as? Video
+            viewController.exercise = sender as? Exercises
         }
     }
 }
 
 extension EUExercisesViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.videos.count
+        return self.exercises.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExerciseVideos", for: indexPath) as! EUVideosListCell
-        cell.name.text = self.videos[indexPath.row].videoName
+        cell.name.text = self.exercises[indexPath.row].videoName
+        if let image =  self.exercises[indexPath.row].thumbnail {
+            cell.thumbnail.image = UIImage(named: image)
+        }
+        else {
+            cell.thumbnail.image = nil
+        }
         return cell
     }
 }
 
 extension EUExercisesViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let video = self.videos[indexPath.row]
-        self.performSegue(withIdentifier: "ShowExercisesVideo", sender: video)
+        let exercise = self.exercises[indexPath.row]
+        self.performSegue(withIdentifier: "ShowExercisesVideo", sender: exercise)
     }
 }

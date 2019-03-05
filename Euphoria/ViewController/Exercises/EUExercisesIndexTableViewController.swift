@@ -9,12 +9,15 @@
 import UIKit
 
 class EUExercisesIndexTableViewController: UITableViewController {
-
-    var exercises: [Exercises] = []
+    
+    var selectedElement: Element = .Earth
+    var exercises: [String] = []
+    var selectedExercise: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.exercises = CoreDataHelper.shared.fetchUniqueExercises(selectedElement.rawValue)
         self.tableView.tableFooterView = UIView()
-        self.exercises = CoreDataHelper.shared.fetchExercises()
     }
     
     @IBAction func didTapBack(_ sender: Any) {
@@ -23,12 +26,42 @@ class EUExercisesIndexTableViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewController = segue.destination as? EUExercisesViewController {
-            viewController.exercise = sender as? Exercises
+        switch segue.destination {
+        case let viewController as EUExercisesViewController:
+            viewController.exercises = sender as? [Exercises] ?? []
+            viewController.selectedExercise = self.selectedExercise
+        default:
+            break
         }
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {        
-        self.performSegue(withIdentifier: "ShowExercisesView", sender: exercises[indexPath.row])
+    // MARK: - Table view data source
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.exercises.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseCell", for: indexPath) as! EUExercisesTableViewCell
+        cell.title.text = ExerciseType(rawValue: exercises[indexPath.row])?.exerciseString
+        cell.index.text = ExerciseType(rawValue: exercises[indexPath.row])?.firstCharacter
+        return cell
+    }
+    
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedExercise = ExerciseType(rawValue: self.exercises[indexPath.row])?.exerciseString ?? ""
+        let array = CoreDataHelper.shared.fetchExerciseforElement(self.selectedElement.rawValue, exercise: self.exercises[indexPath.row])
+        self.performSegue(withIdentifier: "ShowExercisesView", sender: array)
+    }
+}
+
+class EUExercisesTableViewCell: UITableViewCell {
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var index: UILabel!
 }
