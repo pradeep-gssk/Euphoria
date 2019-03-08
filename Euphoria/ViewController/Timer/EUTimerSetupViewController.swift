@@ -18,7 +18,7 @@ class EUTimerSetupViewController: UIViewController {
     var interval: TimeInterval = 86400
     let timePicker = GSTimeIntervalPicker(frame: .zero)
     
-    var selectedTimeInterval: TimeInterval = 86400
+    var selectedTimeInterval: TimeInterval = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -231,9 +231,6 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoRed" translatesAutoresizingMaskIntoConstraints="NO" id="fCd-4b-9Kz">
                                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ots-cn-YUk">
-                                                    <rect key="frame" x="4" y="4" width="82" height="82"/>
-                                                </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playGreen" translatesAutoresizingMaskIntoConstraints="NO" id="FAT-Nn-pID">
                                                     <rect key="frame" x="25" y="25" width="40" height="40"/>
                                                     <constraints>
@@ -241,12 +238,12 @@
                                                         <constraint firstAttribute="height" constant="40" id="fk1-lE-xEC"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0R-Yv-2jv">
-                                                    <rect key="frame" x="0.0" y="100" width="90" height="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0R-Yv-2jv">
+                                                    <rect key="frame" x="0.0" y="92" width="90" height="33"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="25" id="0H4-d6-NCS"/>
+                                                        <constraint firstAttribute="height" constant="33" id="0H4-d6-NCS"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -254,13 +251,9 @@
                                         </view>
                                         <constraints>
                                             <constraint firstItem="fCd-4b-9Kz" firstAttribute="leading" secondItem="Cmd-ew-6AL" secondAttribute="leading" id="3FH-76-fkB"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ots-cn-YUk" secondAttribute="trailing" constant="4" id="CEz-kG-h58"/>
-                                            <constraint firstItem="s0R-Yv-2jv" firstAttribute="top" secondItem="fCd-4b-9Kz" secondAttribute="bottom" constant="10" id="EWE-bM-1jt"/>
-                                            <constraint firstItem="Ots-cn-YUk" firstAttribute="bottom" secondItem="fCd-4b-9Kz" secondAttribute="bottom" constant="-4" id="IkU-NT-e5P"/>
-                                            <constraint firstItem="Ots-cn-YUk" firstAttribute="leading" secondItem="Cmd-ew-6AL" secondAttribute="leading" constant="4" id="MYN-Ib-E4E"/>
+                                            <constraint firstItem="s0R-Yv-2jv" firstAttribute="top" secondItem="fCd-4b-9Kz" secondAttribute="bottom" constant="2" id="EWE-bM-1jt"/>
                                             <constraint firstItem="fCd-4b-9Kz" firstAttribute="top" secondItem="Cmd-ew-6AL" secondAttribute="top" id="QUl-6w-NbU"/>
                                             <constraint firstItem="FAT-Nn-pID" firstAttribute="centerY" secondItem="fCd-4b-9Kz" secondAttribute="centerY" id="YSM-XS-Mc0"/>
-                                            <constraint firstItem="Ots-cn-YUk" firstAttribute="top" secondItem="Cmd-ew-6AL" secondAttribute="top" constant="4" id="c0g-CD-yng"/>
                                             <constraint firstItem="s0R-Yv-2jv" firstAttribute="leading" secondItem="Cmd-ew-6AL" secondAttribute="leading" id="eve-qu-Vmq"/>
                                             <constraint firstAttribute="bottom" secondItem="s0R-Yv-2jv" secondAttribute="bottom" id="nMx-gx-Pdl"/>
                                             <constraint firstAttribute="trailing" secondItem="s0R-Yv-2jv" secondAttribute="trailing" id="pxD-Rj-u5c"/>
@@ -269,7 +262,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="name" destination="s0R-Yv-2jv" id="OQW-jg-wGy"/>
-                                            <outlet property="thumbnail" destination="Ots-cn-YUk" id="tP0-8u-rC0"/>
+                                            <outlet property="thumbnail" destination="fCd-4b-9Kz" id="AdV-wA-vzb"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

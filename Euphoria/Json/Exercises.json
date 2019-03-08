@@ -1,162 +1,42 @@
 [
     {
-        "video_name": "Video 1",
-        "thumbnail": "small",
+        "video_name": "My Movie EARTH",
+        "thumbnail": "yoga_earth",
         "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
+        "video_url": "https://dl.dropboxusercontent.com/s/lobru4l4epxhjxy/My%20Movie_EARTH.mp4?dl=0",
         "element": "Earth",
         "exercise": "Yoga"
     },
     {
-        "video_name": "Video 2",
-        "thumbnail": "bunny",
+        "video_name": "My Movie FIRE",
+        "thumbnail": "yoga_fire",
         "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
-        "element": "Earth",
-        "exercise": "Pilates"
+        "video_url": "https://dl.dropboxusercontent.com/s/6unl5kte8lmzwjz/My%20Movie_FIRE.mp4?dl=0",
+        "element": "Fire",
+        "exercise": "Yoga"
     },
     {
-        "video_name": "Video 3",
-        "thumbnail": "small",
+        "video_name": "My Movie METAL",
+        "thumbnail": "yoga_metal",
         "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Earth",
-        "exercise": "Pilates"
+        "video_url": "https://dl.dropboxusercontent.com/s/l94c98nrxvpskzh/My%20Movie_METAL.mp4?dl=0",
+        "element": "Metal",
+        "exercise": "Yoga"
     },
     {
-        "video_name": "Video 4",
-        "thumbnail": "small",
+        "video_name": "My Movie WATER",
+        "thumbnail": "yoga_water",
         "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Earth",
-        "exercise": "Running"
-    },
-    {
-        "video_name": "Video 5",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Earth",
-        "exercise": "Climbing"
-    },
-    {
-        "video_name": "Video 6",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Earth",
-        "exercise": "Qi-Gong"
-    },
-    {
-        "video_name": "Video 7",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Earth",
-        "exercise": "Stretching"
-    },
-    {
-        "video_name": "Video 1",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
+        "video_url": "https://dl.dropboxusercontent.com/s/xmgm38l60yvft63/My%20Movie_WATER.mp4?dl=0",
         "element": "Water",
         "exercise": "Yoga"
     },
     {
-        "video_name": "Video 2",
-        "thumbnail": "bunny",
+        "video_name": "My Movie WOOD",
+        "thumbnail": "yoga_wood",
         "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
-        "element": "Water",
-        "exercise": "Pilates"
-    },
-    {
-        "video_name": "Video 3",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Water",
-        "exercise": "Pilates"
-    },
-    {
-        "video_name": "Video 3",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
+        "video_url": "https://dl.dropboxusercontent.com/s/tw05pmu1f6itgje/My%20Movie_WOOD.mp4?dl=0",
         "element": "Wood",
-        "exercise": "Pilates"
-    },
-    {
-        "video_name": "Video 5",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Wood",
-        "exercise": "Climbing"
-    },
-    {
-        "video_name": "Video 6",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Wood",
-        "exercise": "Qi-Gong"
-    },
-    {
-        "video_name": "Video 3",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Fire",
-        "exercise": "Pilates"
-    },
-    {
-        "video_name": "Video 4",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Fire",
-        "exercise": "Running"
-    },
-    {
-        "video_name": "Video 5",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Fire",
-        "exercise": "Climbing"
-    },
-    {
-        "video_name": "Video 2",
-        "thumbnail": "bunny",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
-        "element": "Metal",
-        "exercise": "Pilates"
-    },
-    {
-        "video_name": "Video 3",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Metal",
-        "exercise": "Pilates"
-    },
-    {
-        "video_name": "Video 4",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Metal",
-        "exercise": "Running"
-    },
-    {
-        "video_name": "Video 5",
-        "thumbnail": "small",
-        "video_description": "Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.",
-        "video_url": "http://techslides.com/demos/sample-videos/small.mp4",
-        "element": "Metal",
-        "exercise": "Climbing"
+        "exercise": "Yoga"
     }
 ]

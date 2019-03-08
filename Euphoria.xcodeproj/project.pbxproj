@@ -18,13 +18,6 @@
 		DE4D60A9221265D900D6904C /* EUAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60A8221265D900D6904C /* EUAccountViewController.swift */; };
 		DE4D60AC221268CB00D6904C /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60AA221268CB00D6904C /* Timer.storyboard */; };
 		DE4D60AF22126D5000D6904C /* EUSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60AE22126D5000D6904C /* EUSessionsViewController.swift */; };
-		DE4D60D02212815A00D6904C /* yes-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60C92212815800D6904C /* yes-1.wav */; };
-		DE4D60D12212815A00D6904C /* grow-up.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CA2212815800D6904C /* grow-up.wav */; };
-		DE4D60D22212815A00D6904C /* got-it-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CB2212815900D6904C /* got-it-1.wav */; };
-		DE4D60D32212815A00D6904C /* do-it.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CC2212815900D6904C /* do-it.wav */; };
-		DE4D60D42212815A00D6904C /* too.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CD2212815900D6904C /* too.wav */; };
-		DE4D60D52212815A00D6904C /* got-it-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CE2212815900D6904C /* got-it-2.wav */; };
-		DE4D60D62212815A00D6904C /* yes-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60CF2212815900D6904C /* yes-2.wav */; };
 		DE4D60D9221282CD00D6904C /* Activities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60D7221282CD00D6904C /* Activities.storyboard */; };
 		DE4D60DC221282E900D6904C /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60DA221282E900D6904C /* History.storyboard */; };
 		DE4D60DF221282FB00D6904C /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60DD221282FB00D6904C /* Gallery.storyboard */; };
@@ -111,6 +104,50 @@
 		DEE7F73F2214CEA000098F21 /* URLRequest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F73E2214CEA000098F21 /* URLRequest+.swift */; };
 		DEE7F7432214D09100098F21 /* EUUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F7422214D09100098F21 /* EUUser.swift */; };
 		DEE7F7842214E38D00098F21 /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = DEE7F7832214E38D00098F21 /* Privacy.html */; };
+		DEF8C4F62232D05F00A2ABF8 /* Euphoria Sound-07.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4CA2232D05400A2ABF8 /* Euphoria Sound-07.wav */; };
+		DEF8C4F72232D05F00A2ABF8 /* Euphoria Sound-10.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4CB2232D05400A2ABF8 /* Euphoria Sound-10.wav */; };
+		DEF8C4F82232D05F00A2ABF8 /* Euphoria Sound-29.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4CC2232D05400A2ABF8 /* Euphoria Sound-29.wav */; };
+		DEF8C4F92232D05F00A2ABF8 /* Euphoria Sound-20.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4CD2232D05500A2ABF8 /* Euphoria Sound-20.wav */; };
+		DEF8C4FA2232D05F00A2ABF8 /* Euphoria Sound-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4CE2232D05500A2ABF8 /* Euphoria Sound-02.wav */; };
+		DEF8C4FB2232D05F00A2ABF8 /* Euphoria Sound-06.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4CF2232D05500A2ABF8 /* Euphoria Sound-06.wav */; };
+		DEF8C4FC2232D05F00A2ABF8 /* Euphoria Sound-26.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4D02232D05500A2ABF8 /* Euphoria Sound-26.wav */; };
+		DEF8C4FD2232D05F00A2ABF8 /* Euphoria Sound-05.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4D12232D05500A2ABF8 /* Euphoria Sound-05.wav */; };
+		DEF8C4FE2232D05F00A2ABF8 /* Euphoria Sound-23.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4D22232D05500A2ABF8 /* Euphoria Sound-23.wav */; };
+		DEF8C4FF2232D05F00A2ABF8 /* Euphoria Sound-31.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4D32232D05500A2ABF8 /* Euphoria Sound-31.wav */; };
+		DEF8C5002232D05F00A2ABF8 /* Euphoria Sound-22.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4D42232D05600A2ABF8 /* Euphoria Sound-22.wav */; };
+		DEF8C5012232D05F00A2ABF8 /* Euphoria Sound-12.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4D52232D05600A2ABF8 /* Euphoria Sound-12.wav */; };
+		DEF8C5022232D05F00A2ABF8 /* Euphoria Sound-28.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4D62232D05600A2ABF8 /* Euphoria Sound-28.wav */; };
+		DEF8C5032232D05F00A2ABF8 /* Euphoria Sound-15.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4D72232D05600A2ABF8 /* Euphoria Sound-15.wav */; };
+		DEF8C5042232D05F00A2ABF8 /* Euphoria Sound-09.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4D82232D05600A2ABF8 /* Euphoria Sound-09.wav */; };
+		DEF8C5052232D05F00A2ABF8 /* Euphoria Sound-14.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4D92232D05700A2ABF8 /* Euphoria Sound-14.wav */; };
+		DEF8C5062232D05F00A2ABF8 /* Euphoria Sound-34.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4DA2232D05700A2ABF8 /* Euphoria Sound-34.wav */; };
+		DEF8C5072232D05F00A2ABF8 /* Euphoria Sound-08.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4DB2232D05700A2ABF8 /* Euphoria Sound-08.wav */; };
+		DEF8C5082232D05F00A2ABF8 /* Euphoria Sound-42.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4DC2232D05700A2ABF8 /* Euphoria Sound-42.wav */; };
+		DEF8C5092232D05F00A2ABF8 /* Euphoria Sound-19.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4DD2232D05800A2ABF8 /* Euphoria Sound-19.wav */; };
+		DEF8C50A2232D05F00A2ABF8 /* Euphoria Sound-38.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4DE2232D05800A2ABF8 /* Euphoria Sound-38.wav */; };
+		DEF8C50B2232D05F00A2ABF8 /* Euphoria Sound-41.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4DF2232D05800A2ABF8 /* Euphoria Sound-41.wav */; };
+		DEF8C50C2232D05F00A2ABF8 /* Euphoria Sound-39.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4E02232D05800A2ABF8 /* Euphoria Sound-39.wav */; };
+		DEF8C50D2232D05F00A2ABF8 /* Euphoria Sound-27.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4E12232D05900A2ABF8 /* Euphoria Sound-27.wav */; };
+		DEF8C50E2232D05F00A2ABF8 /* Euphoria Sound-44.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4E22232D05900A2ABF8 /* Euphoria Sound-44.wav */; };
+		DEF8C50F2232D05F00A2ABF8 /* Euphoria Sound-03.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4E32232D05900A2ABF8 /* Euphoria Sound-03.wav */; };
+		DEF8C5102232D05F00A2ABF8 /* Euphoria Sound-25.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4E42232D05900A2ABF8 /* Euphoria Sound-25.wav */; };
+		DEF8C5112232D05F00A2ABF8 /* Euphoria Sound-32.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4E52232D05A00A2ABF8 /* Euphoria Sound-32.wav */; };
+		DEF8C5122232D05F00A2ABF8 /* Euphoria Sound-24.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4E62232D05A00A2ABF8 /* Euphoria Sound-24.wav */; };
+		DEF8C5132232D05F00A2ABF8 /* Euphoria Sound-35.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4E72232D05A00A2ABF8 /* Euphoria Sound-35.wav */; };
+		DEF8C5142232D05F00A2ABF8 /* Euphoria Sound-11.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4E82232D05B00A2ABF8 /* Euphoria Sound-11.wav */; };
+		DEF8C5152232D05F00A2ABF8 /* Euphoria Sound-21.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4E92232D05B00A2ABF8 /* Euphoria Sound-21.wav */; };
+		DEF8C5162232D05F00A2ABF8 /* Euphoria Sound-30.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4EA2232D05B00A2ABF8 /* Euphoria Sound-30.wav */; };
+		DEF8C5172232D05F00A2ABF8 /* Euphoria Sound-16.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4EB2232D05B00A2ABF8 /* Euphoria Sound-16.wav */; };
+		DEF8C5182232D05F00A2ABF8 /* Euphoria Sound-37.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4EC2232D05C00A2ABF8 /* Euphoria Sound-37.wav */; };
+		DEF8C5192232D05F00A2ABF8 /* Euphoria Sound-43.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4ED2232D05C00A2ABF8 /* Euphoria Sound-43.wav */; };
+		DEF8C51A2232D05F00A2ABF8 /* Euphoria Sound-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4EE2232D05C00A2ABF8 /* Euphoria Sound-01.wav */; };
+		DEF8C51B2232D05F00A2ABF8 /* Euphoria Sound-36.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4EF2232D05D00A2ABF8 /* Euphoria Sound-36.wav */; };
+		DEF8C51C2232D05F00A2ABF8 /* Euphoria Sound-18.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4F02232D05D00A2ABF8 /* Euphoria Sound-18.wav */; };
+		DEF8C51D2232D05F00A2ABF8 /* Euphoria Sound-17.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4F12232D05E00A2ABF8 /* Euphoria Sound-17.wav */; };
+		DEF8C51E2232D05F00A2ABF8 /* Euphoria Sound-04.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4F22232D05E00A2ABF8 /* Euphoria Sound-04.wav */; };
+		DEF8C51F2232D05F00A2ABF8 /* Euphoria Sound-13.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4F32232D05E00A2ABF8 /* Euphoria Sound-13.wav */; };
+		DEF8C5202232D05F00A2ABF8 /* Euphoria Sound-33.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4F42232D05F00A2ABF8 /* Euphoria Sound-33.wav */; };
+		DEF8C5212232D05F00A2ABF8 /* Euphoria Sound-40.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4F52232D05F00A2ABF8 /* Euphoria Sound-40.wav */; };
 		DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB2CAA2212AB6600F2188C /* EUSession.swift */; };
 		DEFBD5D6222BBD55006186D9 /* EUDietsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFBD5D5222BBD55006186D9 /* EUDietsTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -146,13 +183,6 @@
 		DE4D60A8221265D900D6904C /* EUAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUAccountViewController.swift; sourceTree = "<group>"; };
 		DE4D60AB221268CB00D6904C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Timer.storyboard; sourceTree = "<group>"; };
 		DE4D60AE22126D5000D6904C /* EUSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSessionsViewController.swift; sourceTree = "<group>"; };
-		DE4D60C92212815800D6904C /* yes-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "yes-1.wav"; sourceTree = "<group>"; };
-		DE4D60CA2212815800D6904C /* grow-up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "grow-up.wav"; sourceTree = "<group>"; };
-		DE4D60CB2212815900D6904C /* got-it-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "got-it-1.wav"; sourceTree = "<group>"; };
-		DE4D60CC2212815900D6904C /* do-it.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "do-it.wav"; sourceTree = "<group>"; };
-		DE4D60CD2212815900D6904C /* too.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = too.wav; sourceTree = "<group>"; };
-		DE4D60CE2212815900D6904C /* got-it-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "got-it-2.wav"; sourceTree = "<group>"; };
-		DE4D60CF2212815900D6904C /* yes-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "yes-2.wav"; sourceTree = "<group>"; };
 		DE4D60D8221282CD00D6904C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Activities.storyboard; sourceTree = "<group>"; };
 		DE4D60DB221282E900D6904C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/History.storyboard; sourceTree = "<group>"; };
 		DE4D60DE221282FB00D6904C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Gallery.storyboard; sourceTree = "<group>"; };
@@ -247,6 +277,50 @@
 		DEE7F73E2214CEA000098F21 /* URLRequest+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+.swift"; sourceTree = "<group>"; };
 		DEE7F7422214D09100098F21 /* EUUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUUser.swift; sourceTree = "<group>"; };
 		DEE7F7832214E38D00098F21 /* Privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Privacy.html; sourceTree = "<group>"; };
+		DEF8C4CA2232D05400A2ABF8 /* Euphoria Sound-07.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-07.wav"; sourceTree = "<group>"; };
+		DEF8C4CB2232D05400A2ABF8 /* Euphoria Sound-10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-10.wav"; sourceTree = "<group>"; };
+		DEF8C4CC2232D05400A2ABF8 /* Euphoria Sound-29.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-29.wav"; sourceTree = "<group>"; };
+		DEF8C4CD2232D05500A2ABF8 /* Euphoria Sound-20.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-20.wav"; sourceTree = "<group>"; };
+		DEF8C4CE2232D05500A2ABF8 /* Euphoria Sound-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-02.wav"; sourceTree = "<group>"; };
+		DEF8C4CF2232D05500A2ABF8 /* Euphoria Sound-06.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-06.wav"; sourceTree = "<group>"; };
+		DEF8C4D02232D05500A2ABF8 /* Euphoria Sound-26.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-26.wav"; sourceTree = "<group>"; };
+		DEF8C4D12232D05500A2ABF8 /* Euphoria Sound-05.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-05.wav"; sourceTree = "<group>"; };
+		DEF8C4D22232D05500A2ABF8 /* Euphoria Sound-23.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-23.wav"; sourceTree = "<group>"; };
+		DEF8C4D32232D05500A2ABF8 /* Euphoria Sound-31.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-31.wav"; sourceTree = "<group>"; };
+		DEF8C4D42232D05600A2ABF8 /* Euphoria Sound-22.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-22.wav"; sourceTree = "<group>"; };
+		DEF8C4D52232D05600A2ABF8 /* Euphoria Sound-12.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-12.wav"; sourceTree = "<group>"; };
+		DEF8C4D62232D05600A2ABF8 /* Euphoria Sound-28.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-28.wav"; sourceTree = "<group>"; };
+		DEF8C4D72232D05600A2ABF8 /* Euphoria Sound-15.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-15.wav"; sourceTree = "<group>"; };
+		DEF8C4D82232D05600A2ABF8 /* Euphoria Sound-09.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-09.wav"; sourceTree = "<group>"; };
+		DEF8C4D92232D05700A2ABF8 /* Euphoria Sound-14.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-14.wav"; sourceTree = "<group>"; };
+		DEF8C4DA2232D05700A2ABF8 /* Euphoria Sound-34.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-34.wav"; sourceTree = "<group>"; };
+		DEF8C4DB2232D05700A2ABF8 /* Euphoria Sound-08.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-08.wav"; sourceTree = "<group>"; };
+		DEF8C4DC2232D05700A2ABF8 /* Euphoria Sound-42.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-42.wav"; sourceTree = "<group>"; };
+		DEF8C4DD2232D05800A2ABF8 /* Euphoria Sound-19.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-19.wav"; sourceTree = "<group>"; };
+		DEF8C4DE2232D05800A2ABF8 /* Euphoria Sound-38.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-38.wav"; sourceTree = "<group>"; };
+		DEF8C4DF2232D05800A2ABF8 /* Euphoria Sound-41.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-41.wav"; sourceTree = "<group>"; };
+		DEF8C4E02232D05800A2ABF8 /* Euphoria Sound-39.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-39.wav"; sourceTree = "<group>"; };
+		DEF8C4E12232D05900A2ABF8 /* Euphoria Sound-27.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-27.wav"; sourceTree = "<group>"; };
+		DEF8C4E22232D05900A2ABF8 /* Euphoria Sound-44.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-44.wav"; sourceTree = "<group>"; };
+		DEF8C4E32232D05900A2ABF8 /* Euphoria Sound-03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-03.wav"; sourceTree = "<group>"; };
+		DEF8C4E42232D05900A2ABF8 /* Euphoria Sound-25.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-25.wav"; sourceTree = "<group>"; };
+		DEF8C4E52232D05A00A2ABF8 /* Euphoria Sound-32.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-32.wav"; sourceTree = "<group>"; };
+		DEF8C4E62232D05A00A2ABF8 /* Euphoria Sound-24.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-24.wav"; sourceTree = "<group>"; };
+		DEF8C4E72232D05A00A2ABF8 /* Euphoria Sound-35.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-35.wav"; sourceTree = "<group>"; };
+		DEF8C4E82232D05B00A2ABF8 /* Euphoria Sound-11.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-11.wav"; sourceTree = "<group>"; };
+		DEF8C4E92232D05B00A2ABF8 /* Euphoria Sound-21.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-21.wav"; sourceTree = "<group>"; };
+		DEF8C4EA2232D05B00A2ABF8 /* Euphoria Sound-30.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-30.wav"; sourceTree = "<group>"; };
+		DEF8C4EB2232D05B00A2ABF8 /* Euphoria Sound-16.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-16.wav"; sourceTree = "<group>"; };
+		DEF8C4EC2232D05C00A2ABF8 /* Euphoria Sound-37.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-37.wav"; sourceTree = "<group>"; };
+		DEF8C4ED2232D05C00A2ABF8 /* Euphoria Sound-43.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-43.wav"; sourceTree = "<group>"; };
+		DEF8C4EE2232D05C00A2ABF8 /* Euphoria Sound-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-01.wav"; sourceTree = "<group>"; };
+		DEF8C4EF2232D05D00A2ABF8 /* Euphoria Sound-36.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-36.wav"; sourceTree = "<group>"; };
+		DEF8C4F02232D05D00A2ABF8 /* Euphoria Sound-18.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-18.wav"; sourceTree = "<group>"; };
+		DEF8C4F12232D05E00A2ABF8 /* Euphoria Sound-17.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-17.wav"; sourceTree = "<group>"; };
+		DEF8C4F22232D05E00A2ABF8 /* Euphoria Sound-04.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-04.wav"; sourceTree = "<group>"; };
+		DEF8C4F32232D05E00A2ABF8 /* Euphoria Sound-13.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-13.wav"; sourceTree = "<group>"; };
+		DEF8C4F42232D05F00A2ABF8 /* Euphoria Sound-33.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-33.wav"; sourceTree = "<group>"; };
+		DEF8C4F52232D05F00A2ABF8 /* Euphoria Sound-40.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-40.wav"; sourceTree = "<group>"; };
 		DEFB2CAA2212AB6600F2188C /* EUSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSession.swift; sourceTree = "<group>"; };
 		DEFBD5D5222BBD55006186D9 /* EUDietsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDietsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -326,13 +400,50 @@
 		DE4D60C82212813100D6904C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				DE4D60CC2212815900D6904C /* do-it.wav */,
-				DE4D60CB2212815900D6904C /* got-it-1.wav */,
-				DE4D60CE2212815900D6904C /* got-it-2.wav */,
-				DE4D60CA2212815800D6904C /* grow-up.wav */,
-				DE4D60CD2212815900D6904C /* too.wav */,
-				DE4D60C92212815800D6904C /* yes-1.wav */,
-				DE4D60CF2212815900D6904C /* yes-2.wav */,
+				DEF8C4EE2232D05C00A2ABF8 /* Euphoria Sound-01.wav */,
+				DEF8C4CE2232D05500A2ABF8 /* Euphoria Sound-02.wav */,
+				DEF8C4E32232D05900A2ABF8 /* Euphoria Sound-03.wav */,
+				DEF8C4F22232D05E00A2ABF8 /* Euphoria Sound-04.wav */,
+				DEF8C4D12232D05500A2ABF8 /* Euphoria Sound-05.wav */,
+				DEF8C4CF2232D05500A2ABF8 /* Euphoria Sound-06.wav */,
+				DEF8C4CA2232D05400A2ABF8 /* Euphoria Sound-07.wav */,
+				DEF8C4DB2232D05700A2ABF8 /* Euphoria Sound-08.wav */,
+				DEF8C4D82232D05600A2ABF8 /* Euphoria Sound-09.wav */,
+				DEF8C4CB2232D05400A2ABF8 /* Euphoria Sound-10.wav */,
+				DEF8C4E82232D05B00A2ABF8 /* Euphoria Sound-11.wav */,
+				DEF8C4D52232D05600A2ABF8 /* Euphoria Sound-12.wav */,
+				DEF8C4F32232D05E00A2ABF8 /* Euphoria Sound-13.wav */,
+				DEF8C4D92232D05700A2ABF8 /* Euphoria Sound-14.wav */,
+				DEF8C4D72232D05600A2ABF8 /* Euphoria Sound-15.wav */,
+				DEF8C4EB2232D05B00A2ABF8 /* Euphoria Sound-16.wav */,
+				DEF8C4F12232D05E00A2ABF8 /* Euphoria Sound-17.wav */,
+				DEF8C4F02232D05D00A2ABF8 /* Euphoria Sound-18.wav */,
+				DEF8C4DD2232D05800A2ABF8 /* Euphoria Sound-19.wav */,
+				DEF8C4CD2232D05500A2ABF8 /* Euphoria Sound-20.wav */,
+				DEF8C4E92232D05B00A2ABF8 /* Euphoria Sound-21.wav */,
+				DEF8C4D42232D05600A2ABF8 /* Euphoria Sound-22.wav */,
+				DEF8C4D22232D05500A2ABF8 /* Euphoria Sound-23.wav */,
+				DEF8C4E62232D05A00A2ABF8 /* Euphoria Sound-24.wav */,
+				DEF8C4E42232D05900A2ABF8 /* Euphoria Sound-25.wav */,
+				DEF8C4D02232D05500A2ABF8 /* Euphoria Sound-26.wav */,
+				DEF8C4E12232D05900A2ABF8 /* Euphoria Sound-27.wav */,
+				DEF8C4D62232D05600A2ABF8 /* Euphoria Sound-28.wav */,
+				DEF8C4CC2232D05400A2ABF8 /* Euphoria Sound-29.wav */,
+				DEF8C4EA2232D05B00A2ABF8 /* Euphoria Sound-30.wav */,
+				DEF8C4D32232D05500A2ABF8 /* Euphoria Sound-31.wav */,
+				DEF8C4E52232D05A00A2ABF8 /* Euphoria Sound-32.wav */,
+				DEF8C4F42232D05F00A2ABF8 /* Euphoria Sound-33.wav */,
+				DEF8C4DA2232D05700A2ABF8 /* Euphoria Sound-34.wav */,
+				DEF8C4E72232D05A00A2ABF8 /* Euphoria Sound-35.wav */,
+				DEF8C4EF2232D05D00A2ABF8 /* Euphoria Sound-36.wav */,
+				DEF8C4EC2232D05C00A2ABF8 /* Euphoria Sound-37.wav */,
+				DEF8C4DE2232D05800A2ABF8 /* Euphoria Sound-38.wav */,
+				DEF8C4E02232D05800A2ABF8 /* Euphoria Sound-39.wav */,
+				DEF8C4F52232D05F00A2ABF8 /* Euphoria Sound-40.wav */,
+				DEF8C4DF2232D05800A2ABF8 /* Euphoria Sound-41.wav */,
+				DEF8C4DC2232D05700A2ABF8 /* Euphoria Sound-42.wav */,
+				DEF8C4ED2232D05C00A2ABF8 /* Euphoria Sound-43.wav */,
+				DEF8C4E22232D05900A2ABF8 /* Euphoria Sound-44.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -715,34 +826,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE94C60A220FD09800C4C2ED /* Questionnaire1.json in Resources */,
+				DEF8C5182232D05F00A2ABF8 /* Euphoria Sound-37.wav in Resources */,
+				DEF8C5102232D05F00A2ABF8 /* Euphoria Sound-25.wav in Resources */,
+				DEF8C50D2232D05F00A2ABF8 /* Euphoria Sound-27.wav in Resources */,
+				DEF8C5212232D05F00A2ABF8 /* Euphoria Sound-40.wav in Resources */,
+				DEF8C5012232D05F00A2ABF8 /* Euphoria Sound-12.wav in Resources */,
 				DEA8322D22113A750000BD43 /* Concent.html in Resources */,
-				DE4D60D22212815A00D6904C /* got-it-1.wav in Resources */,
 				DE94C4ED220F74F200C4C2ED /* LaunchScreen.storyboard in Resources */,
-				DE4D60D12212815A00D6904C /* grow-up.wav in Resources */,
 				DEA83225221134C30000BD43 /* Questionnaire5.json in Resources */,
+				DEF8C51F2232D05F00A2ABF8 /* Euphoria Sound-13.wav in Resources */,
+				DEF8C5122232D05F00A2ABF8 /* Euphoria Sound-24.wav in Resources */,
+				DEF8C5192232D05F00A2ABF8 /* Euphoria Sound-43.wav in Resources */,
 				DE4D60D9221282CD00D6904C /* Activities.storyboard in Resources */,
+				DEF8C50F2232D05F00A2ABF8 /* Euphoria Sound-03.wav in Resources */,
+				DEF8C5202232D05F00A2ABF8 /* Euphoria Sound-33.wav in Resources */,
 				DE4D60EA22128AED00D6904C /* Sounds.json in Resources */,
+				DEF8C5172232D05F00A2ABF8 /* Euphoria Sound-16.wav in Resources */,
+				DEF8C4F82232D05F00A2ABF8 /* Euphoria Sound-29.wav in Resources */,
 				DEA8323B221154740000BD43 /* Exercises.storyboard in Resources */,
-				DE4D60D32212815A00D6904C /* do-it.wav in Resources */,
+				DEF8C4FF2232D05F00A2ABF8 /* Euphoria Sound-31.wav in Resources */,
 				DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */,
 				DE94C4EA220F74F200C4C2ED /* Assets.xcassets in Resources */,
+				DEF8C5112232D05F00A2ABF8 /* Euphoria Sound-32.wav in Resources */,
+				DEF8C4FB2232D05F00A2ABF8 /* Euphoria Sound-06.wav in Resources */,
+				DEF8C50B2232D05F00A2ABF8 /* Euphoria Sound-41.wav in Resources */,
+				DEF8C5022232D05F00A2ABF8 /* Euphoria Sound-28.wav in Resources */,
 				DE4D60DC221282E900D6904C /* History.storyboard in Resources */,
-				DE4D60D02212815A00D6904C /* yes-1.wav in Resources */,
+				DEF8C5002232D05F00A2ABF8 /* Euphoria Sound-22.wav in Resources */,
+				DEF8C5092232D05F00A2ABF8 /* Euphoria Sound-19.wav in Resources */,
 				DE00882C2212350200129D81 /* Exercises.json in Resources */,
 				DEA8322122107AB30000BD43 /* Questionnaire3.json in Resources */,
+				DEF8C4FA2232D05F00A2ABF8 /* Euphoria Sound-02.wav in Resources */,
 				DE94C51D220F7AB000C4C2ED /* Questionnaires.storyboard in Resources */,
+				DEF8C4F72232D05F00A2ABF8 /* Euphoria Sound-10.wav in Resources */,
 				DEE7F7842214E38D00098F21 /* Privacy.html in Resources */,
+				DEF8C5032232D05F00A2ABF8 /* Euphoria Sound-15.wav in Resources */,
 				DE0A83A3222B8C5500FC25B1 /* Diet.json in Resources */,
+				DEF8C5152232D05F00A2ABF8 /* Euphoria Sound-21.wav in Resources */,
+				DEF8C4FD2232D05F00A2ABF8 /* Euphoria Sound-05.wav in Resources */,
+				DEF8C50A2232D05F00A2ABF8 /* Euphoria Sound-38.wav in Resources */,
+				DEF8C51B2232D05F00A2ABF8 /* Euphoria Sound-36.wav in Resources */,
 				DE4D60AC221268CB00D6904C /* Timer.storyboard in Resources */,
+				DEF8C5142232D05F00A2ABF8 /* Euphoria Sound-11.wav in Resources */,
 				DEA83234221142B80000BD43 /* Diet.storyboard in Resources */,
+				DEF8C4FC2232D05F00A2ABF8 /* Euphoria Sound-26.wav in Resources */,
+				DEF8C51C2232D05F00A2ABF8 /* Euphoria Sound-18.wav in Resources */,
+				DEF8C5132232D05F00A2ABF8 /* Euphoria Sound-35.wav in Resources */,
+				DEF8C50C2232D05F00A2ABF8 /* Euphoria Sound-39.wav in Resources */,
+				DEF8C5072232D05F00A2ABF8 /* Euphoria Sound-08.wav in Resources */,
+				DEF8C4F62232D05F00A2ABF8 /* Euphoria Sound-07.wav in Resources */,
+				DEF8C5052232D05F00A2ABF8 /* Euphoria Sound-14.wav in Resources */,
+				DEF8C4F92232D05F00A2ABF8 /* Euphoria Sound-20.wav in Resources */,
+				DEF8C51A2232D05F00A2ABF8 /* Euphoria Sound-01.wav in Resources */,
+				DEF8C5082232D05F00A2ABF8 /* Euphoria Sound-42.wav in Resources */,
+				DEF8C5062232D05F00A2ABF8 /* Euphoria Sound-34.wav in Resources */,
 				DEA83223221133930000BD43 /* Questionnaire4.json in Resources */,
-				DE4D60D62212815A00D6904C /* yes-2.wav in Resources */,
-				DE4D60D42212815A00D6904C /* too.wav in Resources */,
+				DEF8C5042232D05F00A2ABF8 /* Euphoria Sound-09.wav in Resources */,
+				DEF8C51D2232D05F00A2ABF8 /* Euphoria Sound-17.wav in Resources */,
 				DE4D60DF221282FB00D6904C /* Gallery.storyboard in Resources */,
+				DEF8C5162232D05F00A2ABF8 /* Euphoria Sound-30.wav in Resources */,
+				DEF8C50E2232D05F00A2ABF8 /* Euphoria Sound-44.wav in Resources */,
+				DEF8C51E2232D05F00A2ABF8 /* Euphoria Sound-04.wav in Resources */,
 				DEA8322B221139750000BD43 /* Login.storyboard in Resources */,
 				DE94C4E8220F74F200C4C2ED /* Main.storyboard in Resources */,
+				DEF8C4FE2232D05F00A2ABF8 /* Euphoria Sound-23.wav in Resources */,
 				DE9B73102213F03900E82CFD /* Videos.json in Resources */,
-				DE4D60D52212815A00D6904C /* got-it-2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
