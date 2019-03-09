@@ -148,7 +148,7 @@ class EUTimerCountDownViewController: UIViewController {
             player.play()
             
         } catch let error {
-            print(error.localizedDescription)
+            self.showAlertWithMessage("Error playing sound")
         }
     }
 }

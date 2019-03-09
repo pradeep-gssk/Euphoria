@@ -29,7 +29,6 @@
 		DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */; };
 		DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6DA622103625008B4D12 /* Questionnaire2.json */; };
 		DE677BEE222DA31800D51054 /* EUQuestionnaireTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE677BED222DA31800D51054 /* EUQuestionnaireTableViewController.swift */; };
-		DE713CB02214026200010CBE /* EUHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713CAF2214026200010CBE /* EUHistory.swift */; };
 		DE713CB2221404B100010CBE /* EUHistoryIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */; };
 		DE7A96EC222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A96EB222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift */; };
 		DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */; };
@@ -67,7 +66,6 @@
 		DE9B73382213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73262213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift */; };
 		DE9B733B2213F2D200E82CFD /* Videos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */; };
 		DE9B733C2213F2D200E82CFD /* Videos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B733A2213F2D200E82CFD /* Videos+CoreDataProperties.swift */; };
-		DE9B733E2213F66000E82CFD /* VideoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B733D2213F66000E82CFD /* VideoContainer.swift */; };
 		DEA151FA221367CE0035F7D5 /* GSTimeIntervalPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA151F8221367CE0035F7D5 /* GSTimeIntervalPicker.m */; };
 		DEA1520022137E3C0035F7D5 /* ResponderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA151FF22137E3C0035F7D5 /* ResponderTableViewCell.swift */; };
 		DEA1521F221389A10035F7D5 /* EUSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA1521E221389A10035F7D5 /* EUSoundsViewController.swift */; };
@@ -194,7 +192,6 @@
 		DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUAddSessionViewController.swift; sourceTree = "<group>"; };
 		DE5F6DA622103625008B4D12 /* Questionnaire2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire2.json; sourceTree = "<group>"; };
 		DE677BED222DA31800D51054 /* EUQuestionnaireTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireTableViewController.swift; sourceTree = "<group>"; };
-		DE713CAF2214026200010CBE /* EUHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistory.swift; sourceTree = "<group>"; };
 		DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryIndexViewController.swift; sourceTree = "<group>"; };
 		DE7A96EB222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireIndexViewController.swift; sourceTree = "<group>"; };
 		DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUShowSessionViewController.swift; sourceTree = "<group>"; };
@@ -238,7 +235,6 @@
 		DE9B73262213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Questionnaires+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DE9B733A2213F2D200E82CFD /* Videos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		DE9B733D2213F66000E82CFD /* VideoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContainer.swift; sourceTree = "<group>"; };
 		DEA151F4221367B70035F7D5 /* Euphoria-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Euphoria-Bridging-Header.h"; sourceTree = "<group>"; };
 		DEA151F8221367CE0035F7D5 /* GSTimeIntervalPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSTimeIntervalPicker.m; sourceTree = "<group>"; };
 		DEA151F9221367CE0035F7D5 /* GSTimeIntervalPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSTimeIntervalPicker.h; sourceTree = "<group>"; };
@@ -610,7 +606,6 @@
 			children = (
 				DEE7F7422214D09100098F21 /* EUUser.swift */,
 				DEFB2CAA2212AB6600F2188C /* EUSession.swift */,
-				DE713CAF2214026200010CBE /* EUHistory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -695,7 +690,6 @@
 			children = (
 				DEA8324222115E3F0000BD43 /* EUVideosListCell.swift */,
 				DEA151FF22137E3C0035F7D5 /* ResponderTableViewCell.swift */,
-				DE9B733D2213F66000E82CFD /* VideoContainer.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1016,7 +1010,6 @@
 				DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */,
 				DEE7F73F2214CEA000098F21 /* URLRequest+.swift in Sources */,
 				DE94C526220F7CD400C4C2ED /* Enums.swift in Sources */,
-				DE713CB02214026200010CBE /* EUHistory.swift in Sources */,
 				DE9B73312213F23B00E82CFD /* Session+CoreDataClass.swift in Sources */,
 				DEAF7F6C222C61E600FF001A /* EUHistoryShowViewController.swift in Sources */,
 				DE9B73372213F23B00E82CFD /* Questionnaires+CoreDataClass.swift in Sources */,
@@ -1025,7 +1018,6 @@
 				DEA151FA221367CE0035F7D5 /* GSTimeIntervalPicker.m in Sources */,
 				DE4B9D622213C8CF0036664A /* EUTimerCountDownViewController.swift in Sources */,
 				DECA07F3222C5A8F00CC4601 /* History+CoreDataClass.swift in Sources */,
-				DE9B733E2213F66000E82CFD /* VideoContainer.swift in Sources */,
 				DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */,
 				DE9B73122213F0EF00E82CFD /* EUVideosViewController.swift in Sources */,
 				DEA9568A222E48D700FD5E02 /* Exercises+CoreDataClass.swift in Sources */,

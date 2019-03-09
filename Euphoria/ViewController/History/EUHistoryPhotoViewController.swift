@@ -79,8 +79,7 @@ class EUHistoryPhotoViewController: UIViewController {
                 try data.write(to: fileURL)
                 CoreDataHelper.shared.saveHistory(NSDate(), name: fileName, imageType: self.historyType.image)
             } catch {
-                //TODO: Show error
-                print("error saving file:", error)
+                self.showAlertWithMessage("Error saving file")
             }
         }
     }

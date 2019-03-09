@@ -22,14 +22,10 @@ class EUQuestionnaireIndexTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isToolbarHidden = true
-        self.hideEmailButton?(true)
         for i in 1...4 {
             let value = CoreDataHelper.shared.checkIfAllAnswered(forIndex: Int16(i))
             self.cellEnabled[i] = value
         }
-        
-        let value = CoreDataHelper.shared.checkIfAllAnswered(forIndex: 5)
-        self.hideEmailButton?(!value)
         self.tableView.reloadData()
     }
     

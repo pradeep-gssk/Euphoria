@@ -46,9 +46,13 @@ class EUTimerSetupViewController: UIViewController {
     }
    
     @IBAction func didTapOkButton(_ sender: Any) {
-        guard let text = self.textField.text, text.count > 0,
-            self.selectedTimeInterval > 0 else {
-                //TODO: Show error
+        guard let text = self.textField.text, text.trimmingCharacters(in: .whitespaces).count > 0 else {
+            self.showAlertWithMessage("Please enter session name")
+            return
+        }
+        
+        guard self.selectedTimeInterval > 0 else {
+            self.showAlertWithMessage("Please select time interval")
             return
         }
 

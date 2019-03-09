@@ -104,6 +104,24 @@ extension CoreDataHelper {
         return false
     }
     
+    func fetchAnsweredQuestionnaire() -> [Questionnaire]  {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
+        let otherOptions = "(((optionType = \(NSNumber(value: 0))) OR (optionType = \(NSNumber(value: 1)))) AND (answer != nil))"
+        let option2 = "((optionType = \(NSNumber(value: 2))) AND ((answer != nil) OR (details != nil)))"
+        let predicateString = "(\(otherOptions) OR \(option2))"
+        fetchRequest.predicate = NSPredicate(format: predicateString)
+        
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "questionnaires.index", ascending: true),
+                                        NSSortDescriptor(key: "index", ascending: true)]
+        do {
+            let data = try context.fetch(fetchRequest) as? [Questionnaire]
+            return data ?? []
+        } catch {
+        }
+        
+        return []
+    }
+    
     func getElementCount(forString element: String) -> Int {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
         fetchRequest.predicate = NSPredicate(format: "(answer = %@) AND (element = %@)", "Yes", element)

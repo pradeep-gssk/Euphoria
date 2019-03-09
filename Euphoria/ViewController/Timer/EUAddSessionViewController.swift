@@ -153,7 +153,7 @@ extension EUAddSessionViewController: UITableViewDelegate {
     
     func saveStop(_ cell: EUSessionStopTableViewCell)  {
         guard self.currentSelectedInterval > 0 else {
-            //TODO: Show error
+            self.showAlertWithMessage("Please select stop time")
             return
         }
         self.remainingSelectedInterval = self.remainingSelectedInterval - self.currentSelectedInterval

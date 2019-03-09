@@ -13,14 +13,13 @@ class EUVideoViewController: UIViewController {
     
     var video: Video?
     var player: AVPlayer?
-    var playerItem: AVPlayerItem?
-    
+    var avPlayerViewController: AVPlayerViewController?
+
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var videoTitleLabel: UILabel!
     @IBOutlet weak var videDescriptionLabel: UITextView!
-    @IBOutlet weak var slider: UISlider!
-    @IBOutlet weak var videoContainer: VideoContainer!
+    @IBOutlet weak var videoContainer: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,46 +33,19 @@ class EUVideoViewController: UIViewController {
         if let url = video?.videoUrl {
             let playerItem: AVPlayerItem = AVPlayerItem(url: url)
             self.player = AVPlayer(playerItem: playerItem)
-            let playerLayer = AVPlayerLayer(player: player)
-            playerLayer.frame = videoContainer.bounds
-            self.videoContainer.layer.addSublayer(playerLayer)
-            self.videoContainer.playerLayer = playerLayer
+            let playerVC = AVPlayerViewController()
+            playerVC.player = self.player
             
-            slider.minimumValue = 0
-            let duration: CMTime = playerItem.asset.duration
-            let seconds: Float64 = CMTimeGetSeconds(duration)
-            slider.maximumValue = Float(seconds)
-            slider.isContinuous = true
+            self.addChild(playerVC)
+            self.videoContainer.addSubview(playerVC.view)
+            playerVC.view.frame = self.videoContainer.bounds
             
-            self.player?.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1, preferredTimescale: 1), queue: DispatchQueue.main, using: { (time) in
-                
-                if let player = self.player, player.currentItem?.status == .readyToPlay {
-                    let time = CMTimeGetSeconds(player.currentTime());
-                    self.slider.value = Float(time)
-                }
-            })
-            
+            self.avPlayerViewController = playerVC
             self.player?.play()
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        player?.pause()
-        player = nil
-    }
-    
     @IBAction func didTapBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
-    }
-    
-    @IBAction func didChangeSliderValue(_ playbackSlider: UISlider) {
-        let seconds : Int64 = Int64(playbackSlider.value)
-        let targetTime:CMTime = CMTimeMake(value: seconds, timescale: 1)
-        self.player?.seek(to: targetTime)
-        
-        if player?.rate == 0 {
-            player?.play()
-        }
     }
 }

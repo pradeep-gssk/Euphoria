@@ -28,6 +28,12 @@ class EUAccountViewController: UIViewController {
     @IBAction func didTapBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func didTapSignOut(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: USER_PROFILE_DATA)
+        UserDefaults.standard.synchronize()
+        appDelegate.showLoginView()
+    }
 }
 
 extension EUAccountViewController: UITableViewDataSource {

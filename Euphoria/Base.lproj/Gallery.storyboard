@@ -652,31 +652,18 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="CF2-WN-nDp">
-                                        <rect key="frame" x="68" y="5" width="128" height="40"/>
+                                        <rect key="frame" x="68" y="5" width="47" height="40"/>
                                         <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
                                         <color key="textColor" red="0.34509803919999998" green="0.25098039220000001" blue="0.25098039220000001" alpha="0.89766725349999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7zb-3N-2CV">
-                                        <rect key="frame" x="206" y="9" width="150" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="6lG-GQ-chK"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="CF2-WN-nDp" secondAttribute="bottom" constant="5" id="4qa-dO-3UD"/>
                                     <constraint firstItem="2mr-94-g1i" firstAttribute="leading" secondItem="fQc-Sh-kpE" secondAttribute="leading" constant="18" id="8mv-qs-WTP"/>
-                                    <constraint firstItem="7zb-3N-2CV" firstAttribute="leading" secondItem="CF2-WN-nDp" secondAttribute="trailing" constant="10" id="AMN-ys-coa"/>
                                     <constraint firstItem="2mr-94-g1i" firstAttribute="top" secondItem="fQc-Sh-kpE" secondAttribute="top" constant="5" id="BQh-T3-IbE"/>
                                     <constraint firstItem="CF2-WN-nDp" firstAttribute="top" secondItem="fQc-Sh-kpE" secondAttribute="top" constant="5" id="CBm-M4-wuF"/>
-                                    <constraint firstAttribute="trailing" secondItem="7zb-3N-2CV" secondAttribute="trailing" constant="19" id="Naf-h6-YWy"/>
-                                    <constraint firstAttribute="bottom" secondItem="7zb-3N-2CV" secondAttribute="bottom" constant="9" id="j1H-I1-9sb"/>
-                                    <constraint firstItem="7zb-3N-2CV" firstAttribute="top" secondItem="fQc-Sh-kpE" secondAttribute="top" constant="9" id="mC4-4P-8gC"/>
                                     <constraint firstAttribute="bottom" secondItem="2mr-94-g1i" secondAttribute="bottom" constant="5" id="t8j-U5-FSS"/>
                                     <constraint firstAttribute="height" constant="50" id="ulO-hQ-5W5"/>
                                     <constraint firstItem="CF2-WN-nDp" firstAttribute="leading" secondItem="2mr-94-g1i" secondAttribute="trailing" constant="10" id="vOu-IO-3J7"/>
@@ -820,7 +807,6 @@
                     <connections>
                         <outlet property="collectionView" destination="JDG-mh-A2V" id="rdu-tX-kNy"/>
                         <outlet property="headerView" destination="fQc-Sh-kpE" id="bDm-Vo-9qG"/>
-                        <outlet property="searchField" destination="7zb-3N-2CV" id="shn-zN-UnF"/>
                         <outlet property="titleLabel" destination="CF2-WN-nDp" id="2ig-tl-8sI"/>
                         <segue destination="gVj-26-bRV" kind="show" identifier="ShowVideoView" id="QmT-Da-Ajb"/>
                     </connections>
@@ -881,7 +867,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWG-dv-uEB" customClass="VideoContainer" customModule="Euphoria" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWG-dv-uEB">
                                         <rect key="frame" x="8" y="49" width="359" height="173"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -902,24 +888,8 @@
                                     <constraint firstAttribute="trailing" secondItem="KkR-L8-r4C" secondAttribute="trailing" constant="16" id="zAr-kW-clB"/>
                                 </constraints>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fgB-Fa-wHf">
-                                <rect key="frame" x="14" y="349" width="347" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="VsM-HH-SKg"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="didChangeSliderValue:" destination="gVj-26-bRV" eventType="valueChanged" id="mrG-zC-9lS"/>
-                                </connections>
-                            </slider>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jO5-hR-9uO">
-                                <rect key="frame" x="0.0" y="383" width="375" height="1"/>
-                                <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="Inc-4g-eE7"/>
-                                </constraints>
-                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOY-wH-xkb">
-                                <rect key="frame" x="10" y="389" width="355" height="273"/>
+                                <rect key="frame" x="10" y="349" width="355" height="313"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Blablabla is one of adnanced yoga pose, simple to practice and contains lots of benefits.
 Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds. Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow is a most popular agriculture instrument used to prepare the soil for sowing seeds.</string>
@@ -934,16 +904,10 @@ Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow
                             <constraint firstItem="vcA-mC-bDH" firstAttribute="trailing" secondItem="sOY-wH-xkb" secondAttribute="trailing" constant="10" id="7hU-Vx-ep2"/>
                             <constraint firstItem="G7Z-EB-2WM" firstAttribute="top" secondItem="vcA-mC-bDH" secondAttribute="top" id="9Zh-FT-uhZ"/>
                             <constraint firstItem="G7Z-EB-2WM" firstAttribute="leading" secondItem="vcA-mC-bDH" secondAttribute="leading" id="9je-8Y-f6g"/>
-                            <constraint firstItem="fgB-Fa-wHf" firstAttribute="leading" secondItem="Ldy-tU-78v" secondAttribute="leading" constant="16" id="EDL-S4-zAk"/>
-                            <constraint firstItem="jO5-hR-9uO" firstAttribute="top" secondItem="fgB-Fa-wHf" secondAttribute="bottom" constant="5" id="Qwi-z4-mdo"/>
                             <constraint firstItem="G7Z-EB-2WM" firstAttribute="trailing" secondItem="vcA-mC-bDH" secondAttribute="trailing" id="TAq-yY-Hhz"/>
-                            <constraint firstItem="sOY-wH-xkb" firstAttribute="top" secondItem="jO5-hR-9uO" secondAttribute="bottom" constant="5" id="Yta-hn-ouT"/>
-                            <constraint firstItem="vcA-mC-bDH" firstAttribute="trailing" secondItem="fgB-Fa-wHf" secondAttribute="trailing" constant="16" id="Z71-H7-hJA"/>
-                            <constraint firstAttribute="trailing" secondItem="jO5-hR-9uO" secondAttribute="trailing" id="a44-gY-vJn"/>
                             <constraint firstItem="ecR-MX-eBZ" firstAttribute="leading" secondItem="Ldy-tU-78v" secondAttribute="leading" id="bja-Jm-liB"/>
-                            <constraint firstItem="jO5-hR-9uO" firstAttribute="leading" secondItem="Ldy-tU-78v" secondAttribute="leading" id="eHR-KY-y2L"/>
+                            <constraint firstItem="sOY-wH-xkb" firstAttribute="top" secondItem="ecR-MX-eBZ" secondAttribute="bottom" constant="5" id="dPs-dP-BpE"/>
                             <constraint firstItem="vcA-mC-bDH" firstAttribute="bottom" secondItem="sOY-wH-xkb" secondAttribute="bottom" constant="5" id="iEN-n4-0vc"/>
-                            <constraint firstItem="fgB-Fa-wHf" firstAttribute="top" secondItem="ecR-MX-eBZ" secondAttribute="bottom" constant="5" id="iZr-oH-8U4"/>
                             <constraint firstItem="ecR-MX-eBZ" firstAttribute="top" secondItem="G7Z-EB-2WM" secondAttribute="bottom" id="tJk-AV-eGn"/>
                             <constraint firstItem="vcA-mC-bDH" firstAttribute="trailing" secondItem="ecR-MX-eBZ" secondAttribute="trailing" id="zcU-eD-QY5"/>
                         </constraints>
@@ -1006,10 +970,9 @@ Halasana means Plow and Asana means Pose. So it is also named as plow pose. Plow
                     </navigationItem>
                     <connections>
                         <outlet property="headerView" destination="G7Z-EB-2WM" id="9rh-Bo-sGG"/>
-                        <outlet property="slider" destination="fgB-Fa-wHf" id="rg9-NS-MaE"/>
                         <outlet property="titleLabel" destination="41P-5W-Zbg" id="BCg-72-La4"/>
                         <outlet property="videDescriptionLabel" destination="sOY-wH-xkb" id="kXe-kd-Eo3"/>
-                        <outlet property="videoContainer" destination="QWG-dv-uEB" id="6UV-xO-iCp"/>
+                        <outlet property="videoContainer" destination="QWG-dv-uEB" id="fgB-8q-YtK"/>
                         <outlet property="videoTitleLabel" destination="KkR-L8-r4C" id="l7F-jI-IGu"/>
                     </connections>
                 </viewController>

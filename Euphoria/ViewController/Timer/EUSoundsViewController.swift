@@ -38,7 +38,7 @@ class EUSoundsViewController: UIViewController {
     
     func updateSound() {
         guard let indexPath = self.selectedIndexPath else {
-            //TODO: show error
+            self.showAlertWithMessage("Please select a sound")
             return
         }
         self.selectedSound?(self.sounds[indexPath.row])
@@ -63,7 +63,7 @@ class EUSoundsViewController: UIViewController {
             player.play()
             
         } catch let error {
-            print(error.localizedDescription)
+            self.showAlertWithMessage("Error playing sound")
         }
     }
 }

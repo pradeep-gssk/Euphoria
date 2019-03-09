@@ -47,36 +47,36 @@ class EUQuestionnaireIndexViewController: UIViewController {
                 return
         }
         
-        let questionnaires = CoreDataHelper.shared.fetchAllQuestionnaires()
+        let questionnaires = CoreDataHelper.shared.fetchAnsweredQuestionnaire()
         var array: [String] = []
-        
-        for (index, questionnaire) in questionnaires.enumerated() {
-            if let title = questionnaire.title {
-                array.append((index > 0) ? "\n\n\(title)" : title)
+        var currentTitle: String = ""
+        var currentIndex = 0
+       
+        for question in questionnaires {
+            if let title = question.questionnaires?.title,
+                currentTitle != title {
+                currentTitle = title
+                array.append(currentIndex > 0 ? "\n\n\(title)" : title)
+                currentIndex += 1
             }
-            if var questions = questionnaire.questionnaire?.allObjects as? [Questionnaire] {
-                questions.sort { (question1, question2) -> Bool in
-                    return question1.index < question2.index
-                }
-                for question in questions {
-                    let index = question.index + 1
-                    if let value = question.question {
-                        array.append("\n\(index). \(value)")
-                    }
-                    if let value = question.answer {
-                        array.append("Answer: \(value)")
-                    }
-                    if let value = question.details {
-                        array.append("Details: \(value)")
-                    }
-                }
+            
+            let index = question.index + 1
+            if let value = question.question {
+                array.append("\n\(index). \(value)")
             }
+            if let value = question.answer {
+                array.append("Answer: \(value)")
+            }
+            if let value = question.details {
+                array.append("Details: \(value)")
+            }
+
         }
         
         let joined = array.joined(separator: "\n")
-        
+
         guard let data = joined.data(using: .utf8) else { return }
-                
+
         let mail = MFMailComposeViewController()
         mail.setToRecipients([recipient])
         mail.setSubject("Questionnaires")
@@ -84,6 +84,8 @@ class EUQuestionnaireIndexViewController: UIViewController {
         mail.addAttachmentData(data, mimeType: "text/plain", fileName: "Questionnaires.txt")
         self.present(mail, animated: true) {
         }
+        
+        
         
         //        mailComposer.addAttachmentData(data, mimeType: "text/plain", fileName: "test")
         
@@ -127,8 +129,8 @@ class EUQuestionnaireIndexViewController: UIViewController {
 
 extension EUQuestionnaireIndexViewController: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        if let error = error {
-            //TODO: Show error
+        if let _ = error {
+            self.showAlertWithMessage("Error sending email")
         }
         controller.dismiss(animated: true, completion: nil)
     }

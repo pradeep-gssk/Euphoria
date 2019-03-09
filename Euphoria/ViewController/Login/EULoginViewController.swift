@@ -36,6 +36,7 @@ class EULoginViewController: UIViewController {
     @IBAction func didTapSignInButton(_ sender: Any) {
         guard let email = self.emailTextField.text else { return }
         guard let password = self.passwordTextField.text else { return }
+        UserDefaults.standard.set(true, forKey: USER_PROFILE_DATA)
         self.showHomeView()
 //        self.showLoadingScreen()
 //        let router = Router(endpoint: .Login(email: email, password: password))

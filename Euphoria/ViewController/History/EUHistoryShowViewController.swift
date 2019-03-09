@@ -56,7 +56,7 @@ class EUHistoryShowViewController: UIViewController {
             self.navigationController?.popViewController(animated: true)
         }
         catch {
-            print("Error deleting file")
+            self.showAlertWithMessage("Error deleting file")
         }
     }
     
@@ -80,8 +80,8 @@ class EUHistoryShowViewController: UIViewController {
 
 extension EUHistoryPhotoViewController: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        if let error = error {
-            //TODO: Show error
+        if let _ = error {
+            self.showAlertWithMessage("Error sending email")
         }
         controller.dismiss(animated: true, completion: nil)
     }

@@ -488,7 +488,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="T8Z-Kp-kVe">
                                 <rect key="frame" x="319" y="7" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="settings"/>
+                                <state key="normal" image="profile"/>
                                 <connections>
                                     <segue destination="iVX-x4-mhj" kind="show" id="KMc-yj-JrE"/>
                                 </connections>
@@ -536,22 +536,38 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7a-Je-DDR">
-                                        <rect key="frame" x="71" y="5" width="291" height="40"/>
+                                        <rect key="frame" x="71" y="5" width="201" height="40"/>
                                         <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
                                         <color key="textColor" red="0.34509803919999998" green="0.25098039220000001" blue="0.25098039220000001" alpha="0.89766725349999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVs-Y9-L6o">
+                                        <rect key="frame" x="285" y="5" width="70" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="dLv-fY-e71"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
+                                        <state key="normal" title="Signout">
+                                            <color key="titleColor" red="0.6588235294" green="0.094117647060000004" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapSignOut:" destination="iVX-x4-mhj" eventType="touchUpInside" id="d2S-Xx-WTu"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="B7a-Je-DDR" firstAttribute="top" secondItem="CUz-l1-9PH" secondAttribute="top" constant="5" id="3s3-QH-UOI"/>
                                     <constraint firstAttribute="bottom" secondItem="PuY-5P-VRg" secondAttribute="bottom" constant="5" id="4B8-Mn-Kvt"/>
-                                    <constraint firstAttribute="trailing" secondItem="B7a-Je-DDR" secondAttribute="trailing" constant="13" id="7Nv-wP-Ft7"/>
+                                    <constraint firstAttribute="bottom" secondItem="HVs-Y9-L6o" secondAttribute="bottom" constant="5" id="Cri-ke-WLQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="HVs-Y9-L6o" secondAttribute="trailing" constant="20" id="NHa-HN-PG8"/>
                                     <constraint firstItem="PuY-5P-VRg" firstAttribute="leading" secondItem="CUz-l1-9PH" secondAttribute="leading" constant="18" id="Pgg-uo-6pa"/>
-                                    <constraint firstItem="B7a-Je-DDR" firstAttribute="top" secondItem="CUz-l1-9PH" secondAttribute="top" constant="5" id="Qup-7J-DgR"/>
-                                    <constraint firstAttribute="bottom" secondItem="B7a-Je-DDR" secondAttribute="bottom" constant="5" id="Xwa-bA-AGw"/>
+                                    <constraint firstItem="HVs-Y9-L6o" firstAttribute="leading" secondItem="B7a-Je-DDR" secondAttribute="trailing" constant="13" id="a9Q-mf-7iZ"/>
+                                    <constraint firstItem="B7a-Je-DDR" firstAttribute="leading" secondItem="PuY-5P-VRg" secondAttribute="trailing" constant="13" id="alV-tc-7z1"/>
                                     <constraint firstAttribute="height" constant="50" id="byw-sE-dCF"/>
-                                    <constraint firstItem="B7a-Je-DDR" firstAttribute="leading" secondItem="PuY-5P-VRg" secondAttribute="trailing" constant="13" id="dG5-gQ-X9G"/>
+                                    <constraint firstItem="HVs-Y9-L6o" firstAttribute="top" secondItem="CUz-l1-9PH" secondAttribute="top" constant="5" id="gLj-GR-4wU"/>
                                     <constraint firstItem="PuY-5P-VRg" firstAttribute="top" secondItem="CUz-l1-9PH" secondAttribute="top" constant="5" id="rLh-hy-N6g"/>
+                                    <constraint firstAttribute="bottom" secondItem="B7a-Je-DDR" secondAttribute="bottom" constant="5" id="yx2-5L-0Xa"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowerMask" translatesAutoresizingMaskIntoConstraints="NO" id="dyl-u7-A60">
@@ -687,7 +703,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIK-St-p3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1641" y="153"/>
+            <point key="canvasLocation" x="1640.8" y="152.47376311844079"/>
         </scene>
     </scenes>
     <resources>
@@ -699,11 +715,11 @@
         <image name="ovalGreen" width="46" height="46"/>
         <image name="ovalRed" width="46" height="46"/>
         <image name="placeholder" width="155" height="155"/>
+        <image name="profile" width="30" height="30"/>
         <image name="rectangleBlue" width="16" height="60"/>
         <image name="rectangleBrown" width="16" height="60"/>
         <image name="rectangleGreen" width="16" height="60"/>
         <image name="rectangleRed" width="16" height="60"/>
-        <image name="settings" width="27" height="23"/>
         <image name="titleBlue" width="93" height="25"/>
         <image name="titleRed" width="93" height="25"/>
     </resources>

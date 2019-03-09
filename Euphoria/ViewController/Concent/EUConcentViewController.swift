@@ -61,7 +61,7 @@ class EUConcentViewController: UIViewController {
             }
         }
         catch {
-            print("error")
+            self.showAlertWithMessage("Error loding webview")
         }
     }
     
