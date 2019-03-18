@@ -573,57 +573,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4JM-z2-pu0">
-                                <rect key="frame" x="16" y="80" width="343" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9S-C3-uhc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCircle" translatesAutoresizingMaskIntoConstraints="NO" id="BnR-ob-8El">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="0RK-Rr-Ego"/>
-                                            <constraint firstAttribute="height" constant="40" id="5vK-e2-wSw"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="zL0-MN-VO2">
-                                        <rect key="frame" x="48" y="0.0" width="200" height="40"/>
-                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
-                                        <color key="textColor" red="0.34509803919999998" green="0.25098039220000001" blue="0.25098039220000001" alpha="0.89766725349999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhP-it-agT">
-                                        <rect key="frame" x="256" y="0.0" width="44" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="pra-6s-ogx"/>
-                                        </constraints>
-                                        <state key="normal" image="envelopeBlue"/>
-                                        <connections>
-                                            <action selector="didTapEmail:" destination="efV-jR-SGh" eventType="touchUpInside" id="FA9-iT-BcG"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wC-24-MOw">
-                                        <rect key="frame" x="308" y="0.0" width="35" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="35" id="3wt-YD-D9b"/>
-                                        </constraints>
-                                        <state key="normal" image="trash"/>
-                                        <connections>
-                                            <action selector="didTapTrash:" destination="efV-jR-SGh" eventType="touchUpInside" id="g1t-dH-Weg"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4JM-z2-pu0">
+                                        <rect key="frame" x="16" y="5" width="343" height="40"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCircle" translatesAutoresizingMaskIntoConstraints="NO" id="BnR-ob-8El">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="0RK-Rr-Ego"/>
+                                                    <constraint firstAttribute="height" constant="40" id="5vK-e2-wSw"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="zL0-MN-VO2">
+                                                <rect key="frame" x="48" y="0.0" width="200" height="40"/>
+                                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
+                                                <color key="textColor" red="0.34509803919999998" green="0.25098039220000001" blue="0.25098039220000001" alpha="0.89766725349999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhP-it-agT">
+                                                <rect key="frame" x="256" y="0.0" width="44" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="pra-6s-ogx"/>
+                                                </constraints>
+                                                <state key="normal" image="envelopeBlue"/>
+                                                <connections>
+                                                    <action selector="didTapEmail:" destination="efV-jR-SGh" eventType="touchUpInside" id="FA9-iT-BcG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wC-24-MOw">
+                                                <rect key="frame" x="308" y="0.0" width="35" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="3wt-YD-D9b"/>
+                                                </constraints>
+                                                <state key="normal" image="trash"/>
+                                                <connections>
+                                                    <action selector="didTapTrash:" destination="efV-jR-SGh" eventType="touchUpInside" id="g1t-dH-Weg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4JM-z2-pu0" firstAttribute="leading" secondItem="x9S-C3-uhc" secondAttribute="leading" constant="16" id="EG9-9v-HQ5"/>
+                                    <constraint firstAttribute="height" constant="50" id="GPf-Un-IRS"/>
+                                    <constraint firstAttribute="trailing" secondItem="4JM-z2-pu0" secondAttribute="trailing" constant="16" id="Ofx-9y-ECF"/>
+                                    <constraint firstAttribute="bottom" secondItem="4JM-z2-pu0" secondAttribute="bottom" constant="5" id="S2l-mV-VkL"/>
+                                    <constraint firstItem="4JM-z2-pu0" firstAttribute="top" secondItem="x9S-C3-uhc" secondAttribute="top" constant="5" id="z6z-fu-TaC"/>
+                                </constraints>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="uyl-Kn-G8y">
-                                <rect key="frame" x="20" y="140" width="335" height="507"/>
+                                <rect key="frame" x="20" y="134" width="335" height="513"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4JM-z2-pu0" firstAttribute="top" secondItem="rft-Xi-6xa" secondAttribute="top" constant="16" id="059-YU-ru0"/>
-                            <constraint firstItem="rft-Xi-6xa" firstAttribute="trailing" secondItem="4JM-z2-pu0" secondAttribute="trailing" constant="16" id="6Z1-FO-2jV"/>
-                            <constraint firstItem="4JM-z2-pu0" firstAttribute="leading" secondItem="rft-Xi-6xa" secondAttribute="leading" constant="16" id="O2l-74-XZt"/>
-                            <constraint firstItem="rft-Xi-6xa" firstAttribute="trailing" secondItem="uyl-Kn-G8y" secondAttribute="trailing" constant="20" id="ds6-Q6-EV5"/>
-                            <constraint firstItem="uyl-Kn-G8y" firstAttribute="top" secondItem="4JM-z2-pu0" secondAttribute="bottom" constant="20" id="e4o-dc-5vs"/>
-                            <constraint firstItem="rft-Xi-6xa" firstAttribute="bottom" secondItem="uyl-Kn-G8y" secondAttribute="bottom" constant="20" id="fuF-6p-yW6"/>
-                            <constraint firstItem="uyl-Kn-G8y" firstAttribute="leading" secondItem="rft-Xi-6xa" secondAttribute="leading" constant="20" id="hdc-dT-FCu"/>
+                            <constraint firstItem="rft-Xi-6xa" firstAttribute="trailing" secondItem="uyl-Kn-G8y" secondAttribute="trailing" constant="20" id="Vq0-wF-MgL"/>
+                            <constraint firstItem="uyl-Kn-G8y" firstAttribute="leading" secondItem="rft-Xi-6xa" secondAttribute="leading" constant="20" id="ZtD-C6-99s"/>
+                            <constraint firstItem="x9S-C3-uhc" firstAttribute="top" secondItem="rft-Xi-6xa" secondAttribute="top" id="f3b-MB-gm2"/>
+                            <constraint firstItem="uyl-Kn-G8y" firstAttribute="top" secondItem="x9S-C3-uhc" secondAttribute="bottom" constant="20" id="iRJ-ul-tf5"/>
+                            <constraint firstItem="x9S-C3-uhc" firstAttribute="leading" secondItem="rft-Xi-6xa" secondAttribute="leading" id="kFX-3Z-zBy"/>
+                            <constraint firstItem="x9S-C3-uhc" firstAttribute="trailing" secondItem="rft-Xi-6xa" secondAttribute="trailing" id="oKc-Hz-4yY"/>
+                            <constraint firstItem="rft-Xi-6xa" firstAttribute="bottom" secondItem="uyl-Kn-G8y" secondAttribute="bottom" constant="20" id="pNI-wS-zK7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rft-Xi-6xa"/>
                     </view>
@@ -679,6 +692,7 @@
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="headerView" destination="x9S-C3-uhc" id="UX9-nK-UDp"/>
                         <outlet property="imageView" destination="uyl-Kn-G8y" id="Jnk-PW-NUa"/>
                         <outlet property="titleLabel" destination="zL0-MN-VO2" id="XTk-iS-On7"/>
                     </connections>

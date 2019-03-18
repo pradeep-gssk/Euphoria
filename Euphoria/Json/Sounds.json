@@ -218,5 +218,60 @@
         "name": "Sound 44",
         "resource": "Euphoria Sound-44",
         "type": "wav"
+    },
+    {
+        "name": "Bell-01",
+        "resource": "Bell-01",
+        "type": "wav"
+    },
+    {
+        "name": "Bell-02",
+        "resource": "Bell-02",
+        "type": "wav"
+    },
+    {
+        "name": "Bell-03",
+        "resource": "Bell-03",
+        "type": "wav"
+    },
+    {
+        "name": "Bell-04",
+        "resource": "Bell-04",
+        "type": "wav"
+    },
+    {
+        "name": "Bell-05",
+        "resource": "Bell-05",
+        "type": "wav"
+    },
+    {
+        "name": "Bell-06",
+        "resource": "Bell-06",
+        "type": "wav"
+    },
+    {
+        "name": "Bell-07",
+        "resource": "Bell-07",
+        "type": "wav"
+    },
+    {
+        "name": "Bell-08",
+        "resource": "Bell-08",
+        "type": "wav"
+    },
+    {
+        "name": "Bell-09",
+        "resource": "Bell-09",
+        "type": "wav"
+    },
+    {
+        "name": "Bell-10",
+        "resource": "Bell-10",
+        "type": "wav"
+    },
+    {
+        "name": "Bell-11",
+        "resource": "Bell-11",
+        "type": "wav"
     }
 ]

@@ -88,6 +88,17 @@
 		DEAF7F6A222C600D00FF001A /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F69222C600D00FF001A /* Date+.swift */; };
 		DEAF7F6C222C61E600FF001A /* EUHistoryShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F6B222C61E600FF001A /* EUHistoryShowViewController.swift */; };
 		DEAF7F6E222C698D00FF001A /* Operand+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F6D222C698D00FF001A /* Operand+.swift */; };
+		DEC41C842240010500C9A23C /* Bell-10.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEC41C792240010300C9A23C /* Bell-10.wav */; };
+		DEC41C852240010500C9A23C /* Bell-11.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEC41C7A2240010400C9A23C /* Bell-11.wav */; };
+		DEC41C862240010500C9A23C /* Bell-06.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEC41C7B2240010400C9A23C /* Bell-06.wav */; };
+		DEC41C872240010500C9A23C /* Bell-05.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEC41C7C2240010400C9A23C /* Bell-05.wav */; };
+		DEC41C882240010500C9A23C /* Bell-07.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEC41C7D2240010400C9A23C /* Bell-07.wav */; };
+		DEC41C892240010500C9A23C /* Bell-02.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEC41C7E2240010400C9A23C /* Bell-02.wav */; };
+		DEC41C8A2240010500C9A23C /* Bell-09.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEC41C7F2240010500C9A23C /* Bell-09.wav */; };
+		DEC41C8B2240010500C9A23C /* Bell-08.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEC41C802240010500C9A23C /* Bell-08.wav */; };
+		DEC41C8C2240010500C9A23C /* Bell-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEC41C812240010500C9A23C /* Bell-01.wav */; };
+		DEC41C8D2240010500C9A23C /* Bell-04.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEC41C822240010500C9A23C /* Bell-04.wav */; };
+		DEC41C8E2240010500C9A23C /* Bell-03.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEC41C832240010500C9A23C /* Bell-03.wav */; };
 		DECA07F3222C5A8F00CC4601 /* History+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA07F1222C5A8F00CC4601 /* History+CoreDataClass.swift */; };
 		DECA07F4222C5A8F00CC4601 /* History+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA07F2222C5A8F00CC4601 /* History+CoreDataProperties.swift */; };
 		DECCD729222BDEA000BAC698 /* Diet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECCD725222BDEA000BAC698 /* Diet+CoreDataClass.swift */; };
@@ -259,6 +270,17 @@
 		DEAF7F69222C600D00FF001A /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		DEAF7F6B222C61E600FF001A /* EUHistoryShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryShowViewController.swift; sourceTree = "<group>"; };
 		DEAF7F6D222C698D00FF001A /* Operand+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operand+.swift"; sourceTree = "<group>"; };
+		DEC41C792240010300C9A23C /* Bell-10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell-10.wav"; sourceTree = "<group>"; };
+		DEC41C7A2240010400C9A23C /* Bell-11.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell-11.wav"; sourceTree = "<group>"; };
+		DEC41C7B2240010400C9A23C /* Bell-06.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell-06.wav"; sourceTree = "<group>"; };
+		DEC41C7C2240010400C9A23C /* Bell-05.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell-05.wav"; sourceTree = "<group>"; };
+		DEC41C7D2240010400C9A23C /* Bell-07.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell-07.wav"; sourceTree = "<group>"; };
+		DEC41C7E2240010400C9A23C /* Bell-02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell-02.wav"; sourceTree = "<group>"; };
+		DEC41C7F2240010500C9A23C /* Bell-09.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell-09.wav"; sourceTree = "<group>"; };
+		DEC41C802240010500C9A23C /* Bell-08.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell-08.wav"; sourceTree = "<group>"; };
+		DEC41C812240010500C9A23C /* Bell-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell-01.wav"; sourceTree = "<group>"; };
+		DEC41C822240010500C9A23C /* Bell-04.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell-04.wav"; sourceTree = "<group>"; };
+		DEC41C832240010500C9A23C /* Bell-03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell-03.wav"; sourceTree = "<group>"; };
 		DECA07F1222C5A8F00CC4601 /* History+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DECA07F2222C5A8F00CC4601 /* History+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DECCD725222BDEA000BAC698 /* Diet+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Diet+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -440,6 +462,17 @@
 				DEF8C4DC2232D05700A2ABF8 /* Euphoria Sound-42.wav */,
 				DEF8C4ED2232D05C00A2ABF8 /* Euphoria Sound-43.wav */,
 				DEF8C4E22232D05900A2ABF8 /* Euphoria Sound-44.wav */,
+				DEC41C812240010500C9A23C /* Bell-01.wav */,
+				DEC41C7E2240010400C9A23C /* Bell-02.wav */,
+				DEC41C832240010500C9A23C /* Bell-03.wav */,
+				DEC41C822240010500C9A23C /* Bell-04.wav */,
+				DEC41C7C2240010400C9A23C /* Bell-05.wav */,
+				DEC41C7B2240010400C9A23C /* Bell-06.wav */,
+				DEC41C7D2240010400C9A23C /* Bell-07.wav */,
+				DEC41C802240010500C9A23C /* Bell-08.wav */,
+				DEC41C7F2240010500C9A23C /* Bell-09.wav */,
+				DEC41C792240010300C9A23C /* Bell-10.wav */,
+				DEC41C7A2240010400C9A23C /* Bell-11.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -613,28 +646,28 @@
 		DE94C5B2220FC06C00C4C2ED /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				DEA95686222E48D700FD5E02 /* Exercises+CoreDataClass.swift */,
-				DEA95687222E48D700FD5E02 /* Exercises+CoreDataProperties.swift */,
-				DEA95688222E48D700FD5E02 /* Video+CoreDataClass.swift */,
-				DEA95689222E48D700FD5E02 /* Video+CoreDataProperties.swift */,
-				DECA07F1222C5A8F00CC4601 /* History+CoreDataClass.swift */,
-				DECA07F2222C5A8F00CC4601 /* History+CoreDataProperties.swift */,
-				DECCD725222BDEA000BAC698 /* Diet+CoreDataClass.swift */,
-				DECCD726222BDEA000BAC698 /* Diet+CoreDataProperties.swift */,
+				DE9B73252213F23B00E82CFD /* Questionnaires+CoreDataClass.swift */,
+				DE9B73262213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift */,
 				DECCD727222BDEA000BAC698 /* Questionnaire+CoreDataClass.swift */,
 				DECCD728222BDEA000BAC698 /* Questionnaire+CoreDataProperties.swift */,
-				DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */,
-				DE9B733A2213F2D200E82CFD /* Videos+CoreDataProperties.swift */,
-				DE9B73172213F23B00E82CFD /* Sound+CoreDataClass.swift */,
-				DE9B73182213F23B00E82CFD /* Sound+CoreDataProperties.swift */,
 				DE9B731D2213F23B00E82CFD /* Option+CoreDataClass.swift */,
 				DE9B731E2213F23B00E82CFD /* Option+CoreDataProperties.swift */,
+				DECCD725222BDEA000BAC698 /* Diet+CoreDataClass.swift */,
+				DECCD726222BDEA000BAC698 /* Diet+CoreDataProperties.swift */,
+				DEA95686222E48D700FD5E02 /* Exercises+CoreDataClass.swift */,
+				DEA95687222E48D700FD5E02 /* Exercises+CoreDataProperties.swift */,
+				DECA07F1222C5A8F00CC4601 /* History+CoreDataClass.swift */,
+				DECA07F2222C5A8F00CC4601 /* History+CoreDataProperties.swift */,
+				DE9B73392213F2D200E82CFD /* Videos+CoreDataClass.swift */,
+				DE9B733A2213F2D200E82CFD /* Videos+CoreDataProperties.swift */,
+				DEA95688222E48D700FD5E02 /* Video+CoreDataClass.swift */,
+				DEA95689222E48D700FD5E02 /* Video+CoreDataProperties.swift */,
 				DE9B731F2213F23B00E82CFD /* Session+CoreDataClass.swift */,
 				DE9B73202213F23B00E82CFD /* Session+CoreDataProperties.swift */,
 				DE9B73212213F23B00E82CFD /* Stop+CoreDataClass.swift */,
 				DE9B73222213F23B00E82CFD /* Stop+CoreDataProperties.swift */,
-				DE9B73252213F23B00E82CFD /* Questionnaires+CoreDataClass.swift */,
-				DE9B73262213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift */,
+				DE9B73172213F23B00E82CFD /* Sound+CoreDataClass.swift */,
+				DE9B73182213F23B00E82CFD /* Sound+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -826,6 +859,7 @@
 				DEF8C5212232D05F00A2ABF8 /* Euphoria Sound-40.wav in Resources */,
 				DEF8C5012232D05F00A2ABF8 /* Euphoria Sound-12.wav in Resources */,
 				DEA8322D22113A750000BD43 /* Concent.html in Resources */,
+				DEC41C8E2240010500C9A23C /* Bell-03.wav in Resources */,
 				DE94C4ED220F74F200C4C2ED /* LaunchScreen.storyboard in Resources */,
 				DEA83225221134C30000BD43 /* Questionnaire5.json in Resources */,
 				DEF8C51F2232D05F00A2ABF8 /* Euphoria Sound-13.wav in Resources */,
@@ -835,6 +869,7 @@
 				DEF8C50F2232D05F00A2ABF8 /* Euphoria Sound-03.wav in Resources */,
 				DEF8C5202232D05F00A2ABF8 /* Euphoria Sound-33.wav in Resources */,
 				DE4D60EA22128AED00D6904C /* Sounds.json in Resources */,
+				DEC41C882240010500C9A23C /* Bell-07.wav in Resources */,
 				DEF8C5172232D05F00A2ABF8 /* Euphoria Sound-16.wav in Resources */,
 				DEF8C4F82232D05F00A2ABF8 /* Euphoria Sound-29.wav in Resources */,
 				DEA8323B221154740000BD43 /* Exercises.storyboard in Resources */,
@@ -852,6 +887,7 @@
 				DEA8322122107AB30000BD43 /* Questionnaire3.json in Resources */,
 				DEF8C4FA2232D05F00A2ABF8 /* Euphoria Sound-02.wav in Resources */,
 				DE94C51D220F7AB000C4C2ED /* Questionnaires.storyboard in Resources */,
+				DEC41C852240010500C9A23C /* Bell-11.wav in Resources */,
 				DEF8C4F72232D05F00A2ABF8 /* Euphoria Sound-10.wav in Resources */,
 				DEE7F7842214E38D00098F21 /* Privacy.html in Resources */,
 				DEF8C5032232D05F00A2ABF8 /* Euphoria Sound-15.wav in Resources */,
@@ -860,29 +896,37 @@
 				DEF8C4FD2232D05F00A2ABF8 /* Euphoria Sound-05.wav in Resources */,
 				DEF8C50A2232D05F00A2ABF8 /* Euphoria Sound-38.wav in Resources */,
 				DEF8C51B2232D05F00A2ABF8 /* Euphoria Sound-36.wav in Resources */,
+				DEC41C8A2240010500C9A23C /* Bell-09.wav in Resources */,
 				DE4D60AC221268CB00D6904C /* Timer.storyboard in Resources */,
 				DEF8C5142232D05F00A2ABF8 /* Euphoria Sound-11.wav in Resources */,
 				DEA83234221142B80000BD43 /* Diet.storyboard in Resources */,
 				DEF8C4FC2232D05F00A2ABF8 /* Euphoria Sound-26.wav in Resources */,
 				DEF8C51C2232D05F00A2ABF8 /* Euphoria Sound-18.wav in Resources */,
 				DEF8C5132232D05F00A2ABF8 /* Euphoria Sound-35.wav in Resources */,
+				DEC41C872240010500C9A23C /* Bell-05.wav in Resources */,
 				DEF8C50C2232D05F00A2ABF8 /* Euphoria Sound-39.wav in Resources */,
 				DEF8C5072232D05F00A2ABF8 /* Euphoria Sound-08.wav in Resources */,
 				DEF8C4F62232D05F00A2ABF8 /* Euphoria Sound-07.wav in Resources */,
 				DEF8C5052232D05F00A2ABF8 /* Euphoria Sound-14.wav in Resources */,
 				DEF8C4F92232D05F00A2ABF8 /* Euphoria Sound-20.wav in Resources */,
+				DEC41C842240010500C9A23C /* Bell-10.wav in Resources */,
 				DEF8C51A2232D05F00A2ABF8 /* Euphoria Sound-01.wav in Resources */,
 				DEF8C5082232D05F00A2ABF8 /* Euphoria Sound-42.wav in Resources */,
+				DEC41C8B2240010500C9A23C /* Bell-08.wav in Resources */,
 				DEF8C5062232D05F00A2ABF8 /* Euphoria Sound-34.wav in Resources */,
 				DEA83223221133930000BD43 /* Questionnaire4.json in Resources */,
 				DEF8C5042232D05F00A2ABF8 /* Euphoria Sound-09.wav in Resources */,
 				DEF8C51D2232D05F00A2ABF8 /* Euphoria Sound-17.wav in Resources */,
+				DEC41C862240010500C9A23C /* Bell-06.wav in Resources */,
 				DE4D60DF221282FB00D6904C /* Gallery.storyboard in Resources */,
 				DEF8C5162232D05F00A2ABF8 /* Euphoria Sound-30.wav in Resources */,
 				DEF8C50E2232D05F00A2ABF8 /* Euphoria Sound-44.wav in Resources */,
 				DEF8C51E2232D05F00A2ABF8 /* Euphoria Sound-04.wav in Resources */,
 				DEA8322B221139750000BD43 /* Login.storyboard in Resources */,
 				DE94C4E8220F74F200C4C2ED /* Main.storyboard in Resources */,
+				DEC41C8D2240010500C9A23C /* Bell-04.wav in Resources */,
+				DEC41C892240010500C9A23C /* Bell-02.wav in Resources */,
+				DEC41C8C2240010500C9A23C /* Bell-01.wav in Resources */,
 				DEF8C4FE2232D05F00A2ABF8 /* Euphoria Sound-23.wav in Resources */,
 				DE9B73102213F03900E82CFD /* Videos.json in Resources */,
 			);
