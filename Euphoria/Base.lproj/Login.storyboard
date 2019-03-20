@@ -159,7 +159,10 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.6588235294" green="0.094117647060000004" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="IYo-iN-IfE" id="n8c-Mi-QZm"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NJ5-sH-VIj">
                                                 <rect key="frame" x="0.0" y="65" width="240" height="50"/>
@@ -169,7 +172,10 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.6588235294" green="0.094117647060000004" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="IYo-iN-IfE" id="D8K-NJ-2Q1"/>
+                                                </connections>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="buv-QX-Oc6">
                                                 <rect key="frame" x="0.0" y="130" width="240" height="20"/>
