@@ -8,10 +8,52 @@
 
 import UIKit
 
+class EUHomeViewController: UIViewController {
+    var selectedElement: Element = .Earth
+    
+    @IBOutlet weak var logoStackView: UIStackView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if UIScreen.main.bounds.height == 480 {
+            self.logoStackView.isHidden = true
+        }
+        self.homeTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.selectedElement = self.findElement()
+    }
+    
+    func homeTableView() {
+        guard let viewController = self.children.first as? EUHomeTableViewController else { return }
+        viewController.didSelectRowAt = { (indexPath) -> Void in
+            
+            guard let homeType = HomeType(rawValue: indexPath.row) else { return }
+            let viewController = UIViewController.getViewController(name: homeType.storyboard, identifier: homeType.identifier)
+            switch viewController {
+            case let vc as EUDietsTableViewController:
+                vc.selectedElement = self.selectedElement
+            case let vc as EUExercisesIndexTableViewController:
+                vc.selectedElement = self.selectedElement
+            default:
+                break
+            }
+            self.navigationController?.show(viewController, sender: self)
+        }
+    }
+    
+    @IBAction func didTapLogo(_ sender: Any) {
+        guard let url = URL(string: website) else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+}
+
 class EUHomeTableViewController: UITableViewController {
     
+    var didSelectRowAt: ((_ indexPath: IndexPath) -> Void)?
     var questionnaire1Answered = false
-    var selectedElement: Element = .Earth
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +64,6 @@ class EUHomeTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         self.questionnaire1Answered = CoreDataHelper.shared.checkIfAllAnswered(forIndex: 1)
         self.tableView.reloadData()
-        self.selectedElement = self.findElement()
     }
 
     @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
@@ -51,16 +92,6 @@ class EUHomeTableViewController: UITableViewController {
     // MARK: - Table view delegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let homeType = HomeType(rawValue: indexPath.row) else { return }
-        let viewController = UIViewController.getViewController(name: homeType.storyboard, identifier: homeType.identifier)
-        switch viewController {
-        case let vc as EUDietsTableViewController:
-            vc.selectedElement = self.selectedElement
-        case let vc as EUExercisesIndexTableViewController:
-            vc.selectedElement = self.selectedElement
-        default:
-            break
-        }
-        self.navigationController?.show(viewController, sender: self)
+        self.didSelectRowAt?(indexPath)
     }
 }
