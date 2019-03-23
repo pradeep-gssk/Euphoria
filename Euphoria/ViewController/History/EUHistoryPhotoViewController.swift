@@ -49,6 +49,10 @@ class EUHistoryPhotoViewController: UIViewController {
     func openImagePickerForSource(_ sourceType: UIImagePickerController.SourceType) {
         let vc = UIImagePickerController()
         vc.sourceType = sourceType
+        if sourceType == .camera {
+            vc.cameraCaptureMode = UIImagePickerController.CameraCaptureMode.photo
+            vc.cameraDevice = UIImagePickerController.CameraDevice.front
+        }
         vc.allowsEditing = true
         vc.delegate = self
         self.present(vc, animated: true)
