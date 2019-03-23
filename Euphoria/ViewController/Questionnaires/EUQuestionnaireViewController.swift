@@ -14,6 +14,7 @@ class EUQuestionnaireViewController: UIViewController {
     var questions: [Questionnaire] = []
     var questionObject: Questionnaire!
     var questionnaireTableView: EUQuestionnaireTableViewController?
+    var selectedElement: Element?
     
     @IBOutlet weak var titleImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -28,6 +29,10 @@ class EUQuestionnaireViewController: UIViewController {
         self.titleLabel.text = self.questionnaires.title
         self.titleImageView.image = UIImage(named: "titleBlue")?.stretch()
         self.questionnaireTableView = self.children.first as? EUQuestionnaireTableViewController
+        if questionnaires.index == 1, CoreDataHelper.shared.checkIfAllAnswered(forIndex: self.questionnaires.index) {
+            selectedElement = findElement()
+        }
+        
         self.questionnaireTableView?.checkIfAllAnswered = {
             self.checkIfAllAnswered()
         }
@@ -77,11 +82,25 @@ class EUQuestionnaireViewController: UIViewController {
         if CoreDataHelper.shared.checkIfAllAnswered(forIndex: self.questionnaires.index) {
             switch self.questionnaires.index {
             case 1:
-                let selectedElement = self.findElement()
-                self.showAlertWithMessage("You are \(selectedElement.rawValue) element. Please check Diet and Exercises", title: "Congrats")
+                self.showElementAlert()
             default:
                 self.showAlertWithMessage("Thank you for completing Questionnaire \(self.questionnaires.index)")
             }
         }
+    }
+    
+    func showElementAlert() {
+        let currentElement = self.findElement()
+        switch selectedElement {
+        case .none:
+            break
+        case .some(let element):
+            guard element != currentElement else {
+                return
+            }
+        }
+        
+        selectedElement = currentElement
+        self.showAlertWithMessage("You are \(currentElement.rawValue) element. Please check Diet and Exercises", title: "Congrats")
     }
 }
