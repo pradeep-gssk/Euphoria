@@ -13,12 +13,19 @@ class EUAccountViewController: UIViewController {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var bottomView: UIView!
     
-    let titles = ["First name:", "Last Name:", "Date of birth:", "E-mail:"]
-    let values = ["Blabla", "Blablabla", "10/10/1980", "blabla@gmail.com"]
+    var titles = [String]()
+    var values = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let user = EUUser.user {
+            titles = ["First name:", "Last Name:", "Phone:", "E-mail:"]
+            values.append(user.firstName.stringValue)
+            values.append(user.lastName.stringValue)
+            values.append(user.phone.stringValue)
+            values.append(user.email.stringValue)
+        }
         self.headerView.layer.borderColor = UIColor.color(red: 197.0, green: 196.0, blue: 192.0, alpha: 1).cgColor
         self.headerView.layer.borderWidth = 1
         self.bottomView.layer.borderColor = UIColor.singleColor(value: 151.0, alpha: 1).cgColor

@@ -8,44 +8,75 @@
 
 import UIKit
 
-class EUUser: NSObject, NSCoding {
-    var userName: String?
+struct EUUser: Codable {
+    var firstName: String?
+    var lastName: String?
+    var address: String?
+    var town: String?
+    var country: String?
+    var zipcode: String?
     var email: String?
-    var userId: String?
-    var userProfileImage: String?
+    var phone: String?
+    var customerId: Int?
     
-    static let shared = EUUser.getUser()
-    
-    class func getUser() -> EUUser {
-        guard let archivedObject = UserDefaults.standard.object(forKey:USER_PROFILE_DATA),
-            let data = archivedObject as? Data,
-            let user  = NSKeyedUnarchiver.unarchiveObject(with: data) as? EUUser
-            else { return EUUser() }
-        
-        return user
-    }
-    
-    override init() {
-        
+    //Custom Keys
+    enum CodingKeys: String, CodingKey {
+        case firstName = "CustomerName"
+        case lastName = "CustomerSurname"
+        case address = "Address"
+        case town = "Town"
+        case country = "Country"
+        case zipcode = "ZipCode"
+        case email = "Email"
+        case phone = "Phone"
+        case customerId = "CustomerId"
     }
     
     func save() {
-        let data = NSKeyedArchiver.archivedData(withRootObject: self)
-        UserDefaults.standard.set(data, forKey: USER_PROFILE_DATA)
-        UserDefaults.standard.synchronize()
+        if let encoded = try? JSONEncoder().encode(self) {
+            UserDefaults.standard.set(encoded, forKey: USER_PROFILE_DATA)
+            UserDefaults.standard.synchronize()
+        }
     }
     
-    func encode(with aCoder: NSCoder) {
-        aCoder.encode(self.userName, forKey: "userName")
-        aCoder.encode(self.email, forKey: "accessToken")
-        aCoder.encode(self.userId, forKey: "userId")
-        aCoder.encode(self.userProfileImage, forKey: "userProfileImage")
+    static var user: EUUser? {
+        if let data = UserDefaults.standard.object(forKey: USER_PROFILE_DATA) as? Data {
+            if let user = try? JSONDecoder().decode(EUUser.self, from: data) {
+                return user
+            }
+        }
+        return nil
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        self.userName = aDecoder.decodeObject(forKey: "userName") as? String
-        self.email = aDecoder.decodeObject(forKey: "email") as? String
-        self.userId = aDecoder.decodeObject(forKey: "userId") as? String
-        self.userProfileImage = aDecoder.decodeObject(forKey: "userProfileImage") as? String
+}
+
+extension EUUser {
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(firstName, forKey: .firstName)
+        try container.encode(lastName, forKey: .lastName)
+        try container.encode(address, forKey: .address)
+        try container.encode(town, forKey: .town)
+        try container.encode(country, forKey: .country)
+        try container.encode(zipcode, forKey: .zipcode)
+        try container.encode(email, forKey: .email)
+        try container.encode(phone, forKey: .phone)
+        try container.encode(customerId, forKey: .customerId)
+    }
+}
+
+extension EUUser
+{
+    init(from decoder: Decoder) throws
+    {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        firstName = try values.decodeIfPresent(String.self, forKey: .firstName)
+        lastName = try values.decodeIfPresent(String.self, forKey: .lastName)
+        address = try values.decodeIfPresent(String.self, forKey: .address)
+        town = try values.decodeIfPresent(String.self, forKey: .town)
+        country = try values.decodeIfPresent(String.self, forKey: .country)
+        zipcode = try values.decodeIfPresent(String.self, forKey: .zipcode)
+        email = try values.decodeIfPresent(String.self, forKey: .email)
+        phone = try values.decodeIfPresent(String.self, forKey: .phone)
+        customerId = try values.decodeIfPresent(Int.self, forKey: .customerId)
     }
 }

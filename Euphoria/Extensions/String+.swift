@@ -13,3 +13,9 @@ extension String {
         return self == "Yes" ? true : false
     }
 }
+
+extension Optional where Wrapped == String {
+    var stringValue: String {
+        return self ?? ""
+    }
+}

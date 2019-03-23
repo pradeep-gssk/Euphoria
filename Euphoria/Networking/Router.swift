@@ -56,7 +56,7 @@ class Router: NSObject {
     var path: String {
         switch self.endpoint {
         case .Login(let email, let password):
-            return "api/person/Login?user=\(email)&password=\(password)"
+            return "api/customers/\(email)/\(password)"
         case .Registration(_):
             return "api/Person"
         default:

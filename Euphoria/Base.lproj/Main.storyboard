@@ -138,19 +138,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangleBlue" translatesAutoresizingMaskIntoConstraints="NO" id="4sx-fO-tIP">
-                                                    <rect key="frame" x="304" y="0.0" width="16" height="60.5"/>
+                                                    <rect key="frame" x="359" y="0.0" width="16" height="60.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="16" id="w6h-0a-Hv5"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my Questionnaires" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXW-SI-nBU">
-                                                    <rect key="frame" x="93" y="18" width="187" height="23.5"/>
+                                                    <rect key="frame" x="93" y="18" width="242" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yG2-GT-0dj">
-                                                    <rect key="frame" x="0.0" y="59.5" width="304" height="1"/>
+                                                    <rect key="frame" x="0.0" y="59.5" width="359" height="1"/>
                                                     <color key="backgroundColor" red="0.7725490196" green="0.76862745099999996" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="fQl-fP-vqE"/>
@@ -199,19 +199,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangleGreen" translatesAutoresizingMaskIntoConstraints="NO" id="Ekc-Vj-oy5">
-                                                    <rect key="frame" x="304" y="0.0" width="16" height="60.5"/>
+                                                    <rect key="frame" x="359" y="0.0" width="16" height="60.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="16" id="rbn-5g-Nmm"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my Diet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZu-xT-Znf">
-                                                    <rect key="frame" x="93" y="18" width="187" height="23.5"/>
+                                                    <rect key="frame" x="93" y="18" width="242" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZT-sw-hbg">
-                                                    <rect key="frame" x="0.0" y="59.5" width="304" height="1"/>
+                                                    <rect key="frame" x="0.0" y="59.5" width="359" height="1"/>
                                                     <color key="backgroundColor" red="0.7725490196" green="0.76862745099999996" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="iFl-NK-g3I"/>
@@ -260,19 +260,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangleRed" translatesAutoresizingMaskIntoConstraints="NO" id="PAl-Vj-KZc">
-                                                    <rect key="frame" x="304" y="0.0" width="16" height="60.5"/>
+                                                    <rect key="frame" x="359" y="0.0" width="16" height="60.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="16" id="tQn-8g-HYG"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my Exercises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7M-eA-HTh">
-                                                    <rect key="frame" x="93" y="18" width="187" height="23.5"/>
+                                                    <rect key="frame" x="93" y="18" width="242" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwA-aJ-Nzk">
-                                                    <rect key="frame" x="0.0" y="59.5" width="304" height="1"/>
+                                                    <rect key="frame" x="0.0" y="59.5" width="359" height="1"/>
                                                     <color key="backgroundColor" red="0.7725490196" green="0.76862745099999996" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="9sO-VB-PDU"/>
@@ -321,19 +321,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangleBrown" translatesAutoresizingMaskIntoConstraints="NO" id="oFP-ur-QJU">
-                                                    <rect key="frame" x="304" y="0.0" width="16" height="60.5"/>
+                                                    <rect key="frame" x="359" y="0.0" width="16" height="60.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="16" id="4ZE-mN-nxf"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzZ-qb-kUd">
-                                                    <rect key="frame" x="93" y="18" width="187" height="23.5"/>
+                                                    <rect key="frame" x="93" y="18" width="242" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P49-Oa-wJk">
-                                                    <rect key="frame" x="0.0" y="59.5" width="304" height="1"/>
+                                                    <rect key="frame" x="0.0" y="59.5" width="359" height="1"/>
                                                     <color key="backgroundColor" red="0.7725490196" green="0.76862745099999996" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="dBN-8d-BV3"/>
@@ -382,19 +382,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangleBlue" translatesAutoresizingMaskIntoConstraints="NO" id="ogi-1W-uwE">
-                                                    <rect key="frame" x="304" y="0.0" width="16" height="60.5"/>
+                                                    <rect key="frame" x="359" y="0.0" width="16" height="60.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="16" id="BHC-wG-MXl"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL0-zk-5u7">
-                                                    <rect key="frame" x="93" y="18" width="187" height="23.5"/>
+                                                    <rect key="frame" x="93" y="18" width="242" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9L-PC-ncJ">
-                                                    <rect key="frame" x="0.0" y="59.5" width="304" height="1"/>
+                                                    <rect key="frame" x="0.0" y="59.5" width="359" height="1"/>
                                                     <color key="backgroundColor" red="0.7725490196" green="0.76862745099999996" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="F23-be-Pr4"/>
@@ -443,19 +443,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangleGreen" translatesAutoresizingMaskIntoConstraints="NO" id="AR0-VB-p8s">
-                                                    <rect key="frame" x="304" y="0.0" width="16" height="60.5"/>
+                                                    <rect key="frame" x="359" y="0.0" width="16" height="60.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="16" id="Y7D-4W-kt3"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUq-FO-fbt">
-                                                    <rect key="frame" x="93" y="18" width="187" height="23.5"/>
+                                                    <rect key="frame" x="93" y="18" width="242" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSG-Iz-VaQ">
-                                                    <rect key="frame" x="0.0" y="59.5" width="304" height="1"/>
+                                                    <rect key="frame" x="0.0" y="59.5" width="359" height="1"/>
                                                     <color key="backgroundColor" red="0.7725490196" green="0.76862745099999996" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="fuP-XH-37g"/>
@@ -504,19 +504,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangleRed" translatesAutoresizingMaskIntoConstraints="NO" id="8ts-CQ-coi">
-                                                    <rect key="frame" x="304" y="0.0" width="16" height="60.5"/>
+                                                    <rect key="frame" x="359" y="0.0" width="16" height="60.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="16" id="Ojf-EU-v4q"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbN-si-zRY">
-                                                    <rect key="frame" x="93" y="18" width="187" height="23.5"/>
+                                                    <rect key="frame" x="93" y="18" width="242" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="20"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JL4-6r-ZZJ">
-                                                    <rect key="frame" x="0.0" y="59.5" width="304" height="1"/>
+                                                    <rect key="frame" x="0.0" y="59.5" width="359" height="1"/>
                                                     <color key="backgroundColor" red="0.7725490196" green="0.76862745099999996" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="GJl-fR-SC6"/>
@@ -659,13 +659,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvE-vR-zES">
-                                                    <rect key="frame" x="15" y="12" width="136" height="20"/>
+                                                    <rect key="frame" x="15" y="12" width="109" height="20"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTP-7S-LE5">
-                                                    <rect key="frame" x="169" y="12" width="136" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTP-7S-LE5">
+                                                    <rect key="frame" x="142" y="12" width="218" height="20"/>
                                                     <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="18"/>
                                                     <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -674,7 +674,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="NTP-7S-LE5" secondAttribute="trailing" constant="15" id="Bhj-b9-1cw"/>
                                                 <constraint firstItem="NTP-7S-LE5" firstAttribute="leading" secondItem="OvE-vR-zES" secondAttribute="trailing" constant="18" id="I7j-4u-SYl"/>
-                                                <constraint firstItem="NTP-7S-LE5" firstAttribute="width" secondItem="OvE-vR-zES" secondAttribute="width" id="K55-uR-dds"/>
+                                                <constraint firstItem="NTP-7S-LE5" firstAttribute="width" secondItem="OvE-vR-zES" secondAttribute="width" multiplier="2" id="K55-uR-dds"/>
                                                 <constraint firstAttribute="bottom" secondItem="NTP-7S-LE5" secondAttribute="bottom" constant="12" id="LzL-bF-nUo"/>
                                                 <constraint firstItem="OvE-vR-zES" firstAttribute="top" secondItem="fsH-x2-8hx" secondAttribute="top" constant="12" id="Mi3-Cq-hob"/>
                                                 <constraint firstAttribute="bottom" secondItem="OvE-vR-zES" secondAttribute="bottom" constant="12" id="NQ7-eh-Lte"/>

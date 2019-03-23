@@ -44,19 +44,21 @@ class EULoginViewController: UIViewController, UITextFieldDelegate {
     
     //TODO: show errors
     @IBAction func didTapSignInButton(_ sender: Any) {
-        guard let email = self.emailTextField.text else { return }
-        guard let password = self.passwordTextField.text else { return }
-        UserDefaults.standard.set(true, forKey: USER_PROFILE_DATA)
-        self.showHomeView()
-//        self.showLoadingScreen()
-//        let router = Router(endpoint: .Login(email: email, password: password))
-//        APIManager.shared.requestJSON(router: router, success: { (response) in
-//            self.hideLoadingScreen()
-//            appDelegate.showHomeView()
-//        }, failure: { (error) in
-//            self.hideLoadingScreen()
-//            print(error)
-//        })
+        guard let email = self.emailTextField.text,
+            email.trimmingCharacters(in: .whitespaces).count > 0 else { return }
+        guard let password = self.passwordTextField.text,
+            password.trimmingCharacters(in: .whitespaces).count > 0 else { return }
+        self.showLoadingScreen()
+        let router = Router(endpoint: .Login(email: email, password: password))
+        APIManager.shared.requestUser(router: router, success: { (user) in
+            DispatchQueue.main.async {
+                self.hideLoadingScreen()
+                appDelegate.showHomeView()
+            }
+        }, failure: { (error) in
+            self.hideLoadingScreen()
+            print(error)
+        })
     }
     
     func showHomeView() {
