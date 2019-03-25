@@ -70,6 +70,9 @@
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Session" inverseName="stops" inverseEntity="Session" syncable="YES"/>
     </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="customerId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <entity name="Video" representedClassName="Video" syncable="YES">
         <attribute name="thumbnail" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
@@ -95,5 +98,6 @@
         <element name="Stop" positionX="198" positionY="-117" width="128" height="135"/>
         <element name="Video" positionX="198" positionY="-126" width="128" height="135"/>
         <element name="Videos" positionX="189" positionY="-117" width="128" height="90"/>
+        <element name="User" positionX="189" positionY="-108" width="128" height="60"/>
     </elements>
 </model>

@@ -26,6 +26,31 @@ class CoreDataHelper: NSObject {
     }
 }
 
+//MARK: User
+extension CoreDataHelper {
+    func saveUser(_ customerId: Int64) {
+        let user = NSEntityDescription.insertNewObject(forEntityName: "User", into: context) as? User
+        user?.customerId = customerId
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+    
+    func checkIfUserDoesntExist(_ customerId: Int64) -> Bool {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: User.self))
+        fetchRequest.predicate = NSPredicate(format: "customerId = \(NSNumber(value: customerId))")
+        do {
+            if let data = try context.fetch(fetchRequest) as? [User] {
+                return (data.count > 0) ? false : true
+            }
+        } catch {
+        }
+        return false
+    }
+}
+
 //MARK: Questionnaires
 extension CoreDataHelper {
     func saveQuestionnaire(_ json: [String: AnyObject], forIndex index: Int16, withTotal total: Int16, forCustomer customerId: Int64) {
@@ -94,7 +119,7 @@ extension CoreDataHelper {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
         let otherOptions = "(((optionType = \(NSNumber(value: 0))) OR (optionType = \(NSNumber(value: 1)))) AND (answer = nil))"
         let option2 = "((optionType = \(NSNumber(value: 2))) AND (answer = nil) AND (details = nil))"
-        let predicateString = "(\(otherOptions) OR \(option2)) AND (questionnaires.index = \(NSNumber(value: index)) AND (customerId = \(NSNumber(value:customerId)))"
+        let predicateString = "(\(otherOptions) OR \(option2)) AND (questionnaires.index = \(NSNumber(value: index))) AND (questionnaires.customerId = \(NSNumber(value:customerId)))"
         fetchRequest.predicate = NSPredicate(format: predicateString)
         do {
             if let data = try context.fetch(fetchRequest) as? [Questionnaire] {
@@ -109,7 +134,7 @@ extension CoreDataHelper {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
         let otherOptions = "(((optionType = \(NSNumber(value: 0))) OR (optionType = \(NSNumber(value: 1)))) AND (answer != nil))"
         let option2 = "((optionType = \(NSNumber(value: 2))) AND ((answer != nil) OR (details != nil)))"
-        let predicateString = "(\(otherOptions) OR \(option2)) AND (customerId = \(NSNumber(value:customerId)))"
+        let predicateString = "(\(otherOptions) OR \(option2)) AND (questionnaires.customerId = \(NSNumber(value:customerId)))"
         fetchRequest.predicate = NSPredicate(format: predicateString)
         
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "questionnaires.index", ascending: true),
@@ -125,7 +150,7 @@ extension CoreDataHelper {
     
     func clearAllAnswers(_ customerId: Int64) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
-        fetchRequest.predicate = NSPredicate(format: "customerId = \(NSNumber(value:customerId))")
+        fetchRequest.predicate = NSPredicate(format: "questionnaires.customerId = \(NSNumber(value:customerId))")
 
         do {
             if let questionnaires = try context.fetch(fetchRequest) as? [Questionnaire] {
@@ -142,7 +167,7 @@ extension CoreDataHelper {
     
     func getElementCount(forString element: String, _ customerId: Int64) -> Int {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
-        fetchRequest.predicate = NSPredicate(format: "(answer = %@) AND (element = %@)  AND (customerId = %@)", "Yes", element, NSNumber(value:customerId))
+        fetchRequest.predicate = NSPredicate(format: "(answer = %@) AND (element = %@)  AND (questionnaires.customerId = %@)", "Yes", element, NSNumber(value:customerId))
         
         do {
             if let data = try context.fetch(fetchRequest) as? [Questionnaire] {
@@ -183,6 +208,7 @@ extension CoreDataHelper {
     
     func fetchAllQuestionnaires(_ customerId: Int64) -> [Questionnaires] {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaires.self))
+        fetchRequest.predicate = NSPredicate(format: "customerId = %@", NSNumber(value:customerId))
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "index", ascending: true)]
         do {
             let data = try context.fetch(fetchRequest) as? [Questionnaires]

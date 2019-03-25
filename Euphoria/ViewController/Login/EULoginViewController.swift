@@ -64,7 +64,9 @@ class EULoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func preloadData() {
-        guard let customerId = EUUser.user?.customerId else { return }
+        guard let customerId = EUUser.user?.customerId,
+            CoreDataHelper.shared.checkIfUserDoesntExist(Int64(customerId)) else { return }
+        CoreDataHelper.shared.saveUser(Int64(customerId))
         appDelegate.preloadData(customerId: Int64(customerId))
     }
     

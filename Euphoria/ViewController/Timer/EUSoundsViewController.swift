@@ -38,7 +38,7 @@ class EUSoundsViewController: UIViewController {
     
     func updateSound() {
         guard let indexPath = self.selectedIndexPath else {
-            self.showAlertWithMessage("Please select a sound")
+//            self.showAlertWithMessage("Please select a sound")
             return
         }
         self.selectedSound?(self.sounds[indexPath.row])

@@ -25,11 +25,11 @@ class EUQuestionnaireIndexViewController: UIViewController {
     
     func loadFloatingButton() {
         
-        self.floatingButton.add(color: UIColor.color(red: 243.0, green: 239.0, blue: 234.0, alpha: 1), image: UIImage(named: "envelopeBlue")) { (_) in
+        self.floatingButton.add(color: UIColor.color(red: 243.0, green: 239.0, blue: 234.0, alpha: 1), title: "Email", image: UIImage(named: "envelopeBlue")) { (_) in
             self.didTapEmail()
         }
         
-        self.floatingButton.add(color: UIColor.color(red: 243.0, green: 239.0, blue: 234.0, alpha: 1), image: UIImage(named: "refresh")) { (_) in
+        self.floatingButton.add(color: UIColor.color(red: 243.0, green: 239.0, blue: 234.0, alpha: 1), title: "Refresh", image: UIImage(named: "refresh")) { (_) in
             self.clearAllAnswers()
         }
     }

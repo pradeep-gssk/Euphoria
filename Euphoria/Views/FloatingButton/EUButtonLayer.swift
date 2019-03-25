@@ -23,7 +23,6 @@ class EUButtonLayer: CAShapeLayer {
     
     override var frame: CGRect {
         didSet {
-            print (self.frame)
             self.drawPlus()
             self.circleMask()
         }

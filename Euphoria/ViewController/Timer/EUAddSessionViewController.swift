@@ -43,7 +43,8 @@ class EUAddSessionViewController: UIViewController {
         self.session.stops.append(stop)
         self.session.sounds.append(sound)
         self.remainingSelectedInterval = 0
-        self.updateActionButtons()
+        self.addButton.isEnabled = false
+        self.saveButton.isEnabled = true
     }
     
     @IBAction func didTapBack(_ sender: Any) {
@@ -92,12 +93,12 @@ class EUAddSessionViewController: UIViewController {
     func updateActionButtons() {
         if self.remainingSelectedInterval <= 0,
             self.session.stops.count == self.session.sounds.count {
-            self.addButton.isEnabled = false
-            self.saveButton.isEnabled = true
+            self.addButton.isHidden = true
+            self.saveButton.isHidden = false
         }
         else {
-            self.addButton.isEnabled = true
-            self.saveButton.isEnabled = false
+            self.addButton.isHidden = false
+            self.saveButton.isHidden = true
         }
     }
 }
