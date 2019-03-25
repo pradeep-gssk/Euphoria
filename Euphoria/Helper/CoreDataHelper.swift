@@ -122,6 +122,21 @@ extension CoreDataHelper {
         return []
     }
     
+    func clearAllAnswers() {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
+        do {
+            if let questionnaires = try context.fetch(fetchRequest) as? [Questionnaire] {
+                for questionnaire in questionnaires {
+                    questionnaire.answer = nil
+                    questionnaire.details = nil
+                }
+            }
+            
+            try context.save()
+        } catch {
+        }
+    }
+    
     func getElementCount(forString element: String) -> Int {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaire.self))
         fetchRequest.predicate = NSPredicate(format: "(answer = %@) AND (element = %@)", "Yes", element)

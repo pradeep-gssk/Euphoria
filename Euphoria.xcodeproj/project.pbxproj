@@ -27,6 +27,10 @@
 		DE4D60EA22128AED00D6904C /* Sounds.json in Resources */ = {isa = PBXBuildFile; fileRef = DE4D60E922128AED00D6904C /* Sounds.json */; };
 		DE4D60FC221294AB00D6904C /* EUTimerSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */; };
 		DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */; };
+		DE53EF1A2249548A0076A16F /* EUButtonLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53EF16224954890076A16F /* EUButtonLayer.swift */; };
+		DE53EF1B2249548A0076A16F /* EUButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53EF17224954890076A16F /* EUButton.swift */; };
+		DE53EF1C2249548A0076A16F /* EUButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53EF18224954890076A16F /* EUButtonCell.swift */; };
+		DE53EF1D2249548A0076A16F /* EUOverLayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE53EF192249548A0076A16F /* EUOverLayView.swift */; };
 		DE5F6DA722103625008B4D12 /* Questionnaire2.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5F6DA622103625008B4D12 /* Questionnaire2.json */; };
 		DE677BEE222DA31800D51054 /* EUQuestionnaireTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE677BED222DA31800D51054 /* EUQuestionnaireTableViewController.swift */; };
 		DE713CB2221404B100010CBE /* EUHistoryIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */; };
@@ -201,6 +205,10 @@
 		DE4D60E922128AED00D6904C /* Sounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sounds.json; sourceTree = "<group>"; };
 		DE4D60FB221294AB00D6904C /* EUTimerSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUTimerSetupViewController.swift; sourceTree = "<group>"; };
 		DE4D60FD2212994200D6904C /* EUAddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUAddSessionViewController.swift; sourceTree = "<group>"; };
+		DE53EF16224954890076A16F /* EUButtonLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUButtonLayer.swift; sourceTree = "<group>"; };
+		DE53EF17224954890076A16F /* EUButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUButton.swift; sourceTree = "<group>"; };
+		DE53EF18224954890076A16F /* EUButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUButtonCell.swift; sourceTree = "<group>"; };
+		DE53EF192249548A0076A16F /* EUOverLayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUOverLayView.swift; sourceTree = "<group>"; };
 		DE5F6DA622103625008B4D12 /* Questionnaire2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questionnaire2.json; sourceTree = "<group>"; };
 		DE677BED222DA31800D51054 /* EUQuestionnaireTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireTableViewController.swift; sourceTree = "<group>"; };
 		DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryIndexViewController.swift; sourceTree = "<group>"; };
@@ -507,6 +515,17 @@
 			path = Gallery;
 			sourceTree = "<group>";
 		};
+		DE53EF15224954760076A16F /* FloatingButton */ = {
+			isa = PBXGroup;
+			children = (
+				DE53EF17224954890076A16F /* EUButton.swift */,
+				DE53EF18224954890076A16F /* EUButtonCell.swift */,
+				DE53EF16224954890076A16F /* EUButtonLayer.swift */,
+				DE53EF192249548A0076A16F /* EUOverLayView.swift */,
+			);
+			path = FloatingButton;
+			sourceTree = "<group>";
+		};
 		DE94C4D6220F74F200C4C2ED = {
 			isa = PBXGroup;
 			children = (
@@ -723,6 +742,7 @@
 			children = (
 				DEA8324222115E3F0000BD43 /* EUVideosListCell.swift */,
 				DEA151FF22137E3C0035F7D5 /* ResponderTableViewCell.swift */,
+				DE53EF15224954760076A16F /* FloatingButton */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1000,6 +1020,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE53EF1C2249548A0076A16F /* EUButtonCell.swift in Sources */,
 				DE4D60E62212857600D6904C /* EUHistoryTableViewController.swift in Sources */,
 				DECCD72A222BDEA000BAC698 /* Diet+CoreDataProperties.swift in Sources */,
 				DE9B73382213F23B00E82CFD /* Questionnaires+CoreDataProperties.swift in Sources */,
@@ -1010,6 +1031,7 @@
 				DEA9568C222E48D700FD5E02 /* Video+CoreDataClass.swift in Sources */,
 				DEA9568B222E48D700FD5E02 /* Exercises+CoreDataProperties.swift in Sources */,
 				DEA9568D222E48D700FD5E02 /* Video+CoreDataProperties.swift in Sources */,
+				DE53EF1A2249548A0076A16F /* EUButtonLayer.swift in Sources */,
 				DEA8323E221154F50000BD43 /* EUExercisesIndexTableViewController.swift in Sources */,
 				DEAF7F6A222C600D00FF001A /* Date+.swift in Sources */,
 				DE94C523220F7C1B00C4C2ED /* UIViewController+.swift in Sources */,
@@ -1033,6 +1055,7 @@
 				DE9B73332213F23B00E82CFD /* Stop+CoreDataClass.swift in Sources */,
 				DE9B733B2213F2D200E82CFD /* Videos+CoreDataClass.swift in Sources */,
 				DE94C531220F951300C4C2ED /* String+.swift in Sources */,
+				DE53EF1D2249548A0076A16F /* EUOverLayView.swift in Sources */,
 				DE94C520220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift in Sources */,
 				DE94C512220F764A00C4C2ED /* EUHomeTableViewController.swift in Sources */,
 				DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */,
@@ -1056,6 +1079,7 @@
 				DE94C526220F7CD400C4C2ED /* Enums.swift in Sources */,
 				DE9B73312213F23B00E82CFD /* Session+CoreDataClass.swift in Sources */,
 				DEAF7F6C222C61E600FF001A /* EUHistoryShowViewController.swift in Sources */,
+				DE53EF1B2249548A0076A16F /* EUButton.swift in Sources */,
 				DE9B73372213F23B00E82CFD /* Questionnaires+CoreDataClass.swift in Sources */,
 				DE9B73142213F10F00E82CFD /* EUVideoViewController.swift in Sources */,
 				DE9B73322213F23B00E82CFD /* Session+CoreDataProperties.swift in Sources */,

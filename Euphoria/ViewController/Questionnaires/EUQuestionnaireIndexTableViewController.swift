@@ -12,7 +12,6 @@ class EUQuestionnaireIndexTableViewController: UITableViewController {
     
     var cellEnabled: [Bool] = [true, false, false, false, false]
     var didSelectRowAt: ((_ indexPath: IndexPath) -> Void)?
-    var hideEmailButton: ((_ hide: Bool) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +21,10 @@ class EUQuestionnaireIndexTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isToolbarHidden = true
+        self.designViews()
+    }
+    
+    func designViews() {
         for i in 1...4 {
             let value = CoreDataHelper.shared.checkIfAllAnswered(forIndex: Int16(i))
             self.cellEnabled[i] = value

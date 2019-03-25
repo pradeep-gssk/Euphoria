@@ -598,26 +598,23 @@
                                     <segue destination="drR-36-IUm" kind="embed" id="zgD-zj-fuY"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WJ-Pa-6vR">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4I-hd-8Ez" customClass="EUButton" customModule="Euphoria" customModuleProvider="target">
                                 <rect key="frame" x="270" y="562" width="55" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="IJL-9j-etO"/>
-                                    <constraint firstAttribute="width" constant="55" id="rGB-DH-8kR"/>
+                                    <constraint firstAttribute="width" constant="55" id="Vgw-ip-YQz"/>
+                                    <constraint firstAttribute="height" constant="55" id="nUL-0V-GTk"/>
                                 </constraints>
-                                <state key="normal" image="envelopeBlue"/>
-                                <connections>
-                                    <action selector="didTapEmail:" destination="NTk-Py-rB1" eventType="touchUpInside" id="GBp-3Y-CxF"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0Iy-UA-UdZ" firstAttribute="trailing" secondItem="9WJ-Pa-6vR" secondAttribute="trailing" constant="50" id="1Lu-31-9v9"/>
-                            <constraint firstItem="0Iy-UA-UdZ" firstAttribute="bottom" secondItem="9WJ-Pa-6vR" secondAttribute="bottom" constant="50" id="7Du-GE-uyO"/>
+                            <constraint firstItem="0Iy-UA-UdZ" firstAttribute="bottom" secondItem="T4I-hd-8Ez" secondAttribute="bottom" constant="50" id="799-hQ-8nB"/>
                             <constraint firstItem="UEg-ud-mKa" firstAttribute="top" secondItem="0Iy-UA-UdZ" secondAttribute="top" id="7uz-Gh-NQa"/>
                             <constraint firstItem="0Iy-UA-UdZ" firstAttribute="bottom" secondItem="UEg-ud-mKa" secondAttribute="bottom" id="8t1-U1-cSm"/>
                             <constraint firstItem="UEg-ud-mKa" firstAttribute="leading" secondItem="0Iy-UA-UdZ" secondAttribute="leading" id="Grg-zP-IF5"/>
                             <constraint firstItem="0Iy-UA-UdZ" firstAttribute="trailing" secondItem="UEg-ud-mKa" secondAttribute="trailing" id="bTh-59-96L"/>
+                            <constraint firstItem="0Iy-UA-UdZ" firstAttribute="trailing" secondItem="T4I-hd-8Ez" secondAttribute="trailing" constant="50" id="kpd-Vt-VyF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Iy-UA-UdZ"/>
                     </view>
@@ -678,7 +675,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="emailButton" destination="9WJ-Pa-6vR" id="aWH-EG-5UR"/>
+                        <outlet property="floatingButton" destination="T4I-hd-8Ez" id="n3V-Bl-jpE"/>
                         <outlet property="titleImageView" destination="gIU-TU-sBe" id="R5Z-PP-sjP"/>
                         <segue destination="ZQp-B2-GyP" kind="show" identifier="QuestionnaireView" id="Eni-Pv-L5j"/>
                     </connections>
@@ -691,7 +688,6 @@
     </scenes>
     <resources>
         <image name="backBlue" width="24" height="20"/>
-        <image name="envelopeBlue" width="25" height="17"/>
         <image name="home" width="25" height="23"/>
         <image name="logoCircle" width="171" height="171"/>
         <image name="nextBlue" width="24" height="20"/>

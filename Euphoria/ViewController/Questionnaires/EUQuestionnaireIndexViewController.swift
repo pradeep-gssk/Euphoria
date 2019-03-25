@@ -12,46 +12,48 @@ import MessageUI
 class EUQuestionnaireIndexViewController: UIViewController {
     
     @IBOutlet weak var titleImageView: UIImageView!
-    @IBOutlet weak var emailButton: UIButton!
-    
+    @IBOutlet weak var floatingButton: EUButton!
+    var questionnaireTableView: EUQuestionnaireIndexTableViewController?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.titleImageView.image = UIImage(named: "titleBlue")?.stretch()
-        self.designViews()
+        self.loadFloatingButton()
         self.questionnaireIndexTableView()
     }
     
-    func designViews() {
-        self.emailButton.backgroundColor = UIColor.color(red: 243.0, green: 239.0, blue: 234.0, alpha: 1)
-        self.emailButton.layer.shadowColor = UIColor.black.cgColor
-        self.emailButton.layer.shadowOpacity = 0.6
-        self.emailButton.layer.shadowOffset = CGSize(width: 0, height: 0)
-        self.emailButton.layer.masksToBounds = true
-        self.emailButton.layer.cornerRadius = 55.0/2
+    func loadFloatingButton() {
+        
+        self.floatingButton.add(color: UIColor.color(red: 243.0, green: 239.0, blue: 234.0, alpha: 1), image: UIImage(named: "envelopeBlue")) { (_) in
+            self.didTapEmail()
+        }
+        
+        self.floatingButton.add(color: UIColor.color(red: 243.0, green: 239.0, blue: 234.0, alpha: 1), image: UIImage(named: "refresh")) { (_) in
+            self.clearAllAnswers()
+        }
     }
     
     @IBAction func didTapBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func didTapEmail(_ sender: Any) {
-//        guard let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first,
-//            MFMailComposeViewController.canSendMail() else {
-//            //TODO: show failure alert
-//            return
-//        }
-        
+    func clearAllAnswers() {
+        CoreDataHelper.shared.clearAllAnswers()
+        questionnaireTableView?.designViews()
+    }
+    
+    func didTapEmail() {
         guard MFMailComposeViewController.canSendMail() else {
                 //TODO: show failure alert
                 return
         }
-        
+
         let questionnaires = CoreDataHelper.shared.fetchAnsweredQuestionnaire()
         var array: [String] = []
         var currentTitle: String = ""
         var currentIndex = 0
-       
+
         for question in questionnaires {
             if let title = question.questionnaires?.title,
                 currentTitle != title {
@@ -59,7 +61,7 @@ class EUQuestionnaireIndexViewController: UIViewController {
                 array.append(currentIndex > 0 ? "\n\n\(title)" : title)
                 currentIndex += 1
             }
-            
+
             let index = question.index + 1
             if let value = question.question {
                 array.append("\n\(index). \(value)")
@@ -72,7 +74,7 @@ class EUQuestionnaireIndexViewController: UIViewController {
             }
 
         }
-        
+
         let joined = array.joined(separator: "\n")
 
         guard let data = joined.data(using: .utf8) else { return }
@@ -84,31 +86,14 @@ class EUQuestionnaireIndexViewController: UIViewController {
         mail.addAttachmentData(data, mimeType: "text/plain", fileName: "Questionnaires.txt")
         self.present(mail, animated: true) {
         }
-        
-        
-        
-        //        mailComposer.addAttachmentData(data, mimeType: "text/plain", fileName: "test")
-        
-//        let fileURL = documentsDirectory.appendingPathComponent("Questionnaires.txt")
-//        FileManager.default.createFile(atPath: fileURL.path, contents: nil, attributes: nil)
-//        do {
-//            try joined.write(to: fileURL, atomically: true, encoding: .utf8)
-//
-//        }
-//        catch {
-//            print("error")
-//        }
     }
     
     func questionnaireIndexTableView() {
         guard let viewController = self.children.first as? EUQuestionnaireIndexTableViewController else { return }
-        viewController.didSelectRowAt = { (indexPath) -> Void in
+        questionnaireTableView = viewController
+        questionnaireTableView?.didSelectRowAt = { (indexPath) -> Void in
             let questionnaire = CoreDataHelper.shared.fetchQuestionnaire(forIndex: (Int16(indexPath.row.advanced(by: 1))))
             self.performSegue(withIdentifier: "QuestionnaireView", sender: questionnaire)
-        }
-        
-        viewController.hideEmailButton = { (hide) -> Void in
-            self.emailButton.isHidden = hide
         }
     }
     

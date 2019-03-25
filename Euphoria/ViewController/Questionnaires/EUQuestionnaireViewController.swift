@@ -15,6 +15,7 @@ class EUQuestionnaireViewController: UIViewController {
     var questionObject: Questionnaire!
     var questionnaireTableView: EUQuestionnaireTableViewController?
     var selectedElement: Element?
+    var allQuestionsAnswered: Bool = false
     
     @IBOutlet weak var titleImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -31,6 +32,9 @@ class EUQuestionnaireViewController: UIViewController {
         self.questionnaireTableView = self.children.first as? EUQuestionnaireTableViewController
         if questionnaires.index == 1, CoreDataHelper.shared.checkIfAllAnswered(forIndex: self.questionnaires.index) {
             selectedElement = findElement()
+        }
+        else if questionnaires.index != 1 {
+            allQuestionsAnswered = CoreDataHelper.shared.checkIfAllAnswered(forIndex: self.questionnaires.index)
         }
         
         self.questionnaireTableView?.checkIfAllAnswered = {
@@ -84,7 +88,9 @@ class EUQuestionnaireViewController: UIViewController {
             case 1:
                 self.showElementAlert()
             default:
-                self.showAlertWithMessage("Thank you for completing Questionnaire \(self.questionnaires.index)")
+                if allQuestionsAnswered == false {
+                    self.showAlertWithMessage("Thank you for completing Questionnaire \(self.questionnaires.index)")
+                }
             }
         }
     }
