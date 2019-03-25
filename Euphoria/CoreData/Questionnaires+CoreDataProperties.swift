@@ -2,7 +2,7 @@
 //  Questionnaires+CoreDataProperties.swift
 //  Euphoria
 //
-//  Created by Guduru, Pradeep(AWF) on 2/12/19.
+//  Created by Guduru, Pradeep(AWF) on 3/25/19.
 //  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 //
@@ -21,6 +21,7 @@ extension Questionnaires {
     @NSManaged public var state: Int16
     @NSManaged public var title: String?
     @NSManaged public var total: Int16
+    @NSManaged public var customerId: Int64
     @NSManaged public var questionnaire: NSSet?
 
 }

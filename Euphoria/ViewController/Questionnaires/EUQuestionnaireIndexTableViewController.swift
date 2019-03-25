@@ -25,8 +25,9 @@ class EUQuestionnaireIndexTableViewController: UITableViewController {
     }
     
     func designViews() {
+        guard let customerId = EUUser.user?.customerId else { return }
         for i in 1...4 {
-            let value = CoreDataHelper.shared.checkIfAllAnswered(forIndex: Int16(i))
+            let value = CoreDataHelper.shared.checkIfAllAnswered(forIndex: Int16(i), Int64(customerId))
             self.cellEnabled[i] = value
         }
         self.tableView.reloadData()

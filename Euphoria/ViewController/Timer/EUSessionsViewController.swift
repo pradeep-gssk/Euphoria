@@ -21,7 +21,7 @@ class EUSessionsViewController: UIViewController {
         self.headerView.layer.borderColor = UIColor.color(red: 197.0, green: 196.0, blue: 192.0, alpha: 1).cgColor
         self.headerView.layer.borderWidth = 1
         self.sessionsTableView.tableFooterView = UIView()
-        self.sessions = CoreDataHelper.shared.fetchSessions()
+        self.fetchSessions()
     }
     
     @IBAction func didTapBack(_ sender: Any) {
@@ -41,8 +41,13 @@ class EUSessionsViewController: UIViewController {
     }
     
     @IBAction func unwindToSessions(_ sender: UIStoryboardSegue) {
-        self.sessions = CoreDataHelper.shared.fetchSessions()
+        self.fetchSessions()
         self.sessionsTableView.reloadData()
+    }
+    
+    func fetchSessions() {
+        guard let customerId = EUUser.user?.customerId else { return }
+        self.sessions = CoreDataHelper.shared.fetchSessions(Int64(customerId))
     }
 }
 

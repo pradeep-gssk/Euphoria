@@ -58,11 +58,11 @@ extension UIViewController {
         })
     }
     
-    func findElement() -> Element {
+    func findElement(_ customerId: Int64) -> Element {
         var selectedElement: Element = .Earth
         var previousValue = 0
         Element.allValues.forEach { (type) in
-            let value = CoreDataHelper.shared.getElementCount(forString: type.rawValue)
+            let value = CoreDataHelper.shared.getElementCount(forString: type.rawValue, customerId)
             
             if previousValue < value {
                 previousValue = value

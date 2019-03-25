@@ -53,13 +53,19 @@ class EULoginViewController: UIViewController, UITextFieldDelegate {
         let router = Router(endpoint: .Login(email: email, password: password))
         APIManager.shared.requestUser(router: router, success: { (user) in
             DispatchQueue.main.async {
-                self.hideLoadingScreen()
+                self.preloadData()
                 appDelegate.showHomeView()
+                self.hideLoadingScreen()
             }
         }, failure: { (error) in
             self.hideLoadingScreen()
             print(error)
         })
+    }
+    
+    func preloadData() {
+        guard let customerId = EUUser.user?.customerId else { return }
+        appDelegate.preloadData(customerId: Int64(customerId))
     }
     
     func showHomeView() {

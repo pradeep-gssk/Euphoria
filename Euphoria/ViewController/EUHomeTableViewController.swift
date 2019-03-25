@@ -23,7 +23,12 @@ class EUHomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.selectedElement = self.findElement()
+        self.getSelectedElement()
+    }
+    
+    func getSelectedElement() {
+        guard let customerId = EUUser.user?.customerId else { return }
+        self.selectedElement = self.findElement(Int64(customerId))
     }
     
     func homeTableView() {
@@ -62,8 +67,12 @@ class EUHomeTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.questionnaire1Answered = CoreDataHelper.shared.checkIfAllAnswered(forIndex: 1)
         self.tableView.reloadData()
+    }
+    
+    func checkQuetionnaire1Answered() {
+        guard let customerId = EUUser.user?.customerId else { return }
+        self.questionnaire1Answered = CoreDataHelper.shared.checkIfAllAnswered(forIndex: 1, Int64(customerId))
     }
 
     @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {

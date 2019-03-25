@@ -71,7 +71,8 @@ class EUHistoryPhotoViewController: UIViewController {
     
     func saveToDocuments() {
         guard let image = self.imageView.image,
-            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first,
+            let customerId = EUUser.user?.customerId else {
                 //TODO: show failure alert
                 return
         }
@@ -81,7 +82,7 @@ class EUHistoryPhotoViewController: UIViewController {
         if let data = image.pngData() {
             do {
                 try data.write(to: fileURL)
-                CoreDataHelper.shared.saveHistory(NSDate(), name: fileName, imageType: self.historyType.image)
+                CoreDataHelper.shared.saveHistory(NSDate(), name: fileName, imageType: self.historyType.image, customerId: Int64(customerId))
             } catch {
                 self.showAlertWithMessage("Error saving file")
             }

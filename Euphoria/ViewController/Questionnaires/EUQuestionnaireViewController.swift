@@ -30,17 +30,21 @@ class EUQuestionnaireViewController: UIViewController {
         self.titleLabel.text = self.questionnaires.title
         self.titleImageView.image = UIImage(named: "titleBlue")?.stretch()
         self.questionnaireTableView = self.children.first as? EUQuestionnaireTableViewController
-        if questionnaires.index == 1, CoreDataHelper.shared.checkIfAllAnswered(forIndex: self.questionnaires.index) {
-            selectedElement = findElement()
-        }
-        else if questionnaires.index != 1 {
-            allQuestionsAnswered = CoreDataHelper.shared.checkIfAllAnswered(forIndex: self.questionnaires.index)
-        }
-        
+        self.initializeValues()
         self.questionnaireTableView?.checkIfAllAnswered = {
             self.checkIfAllAnswered()
         }
         self.loadQuestionnaire()
+    }
+    
+    func initializeValues() {
+        guard let customerId = EUUser.user?.customerId else { return }
+        if questionnaires.index == 1, CoreDataHelper.shared.checkIfAllAnswered(forIndex: self.questionnaires.index, Int64(customerId)) {
+            selectedElement = findElement(Int64(customerId))
+        }
+        else if questionnaires.index != 1 {
+            allQuestionsAnswered = CoreDataHelper.shared.checkIfAllAnswered(forIndex: self.questionnaires.index, Int64(customerId))
+        }
     }
     
     func loadQuestionnaire() {
@@ -83,7 +87,8 @@ class EUQuestionnaireViewController: UIViewController {
     }
     
     func checkIfAllAnswered() {
-        if CoreDataHelper.shared.checkIfAllAnswered(forIndex: self.questionnaires.index) {
+        guard let customerId = EUUser.user?.customerId else { return }
+        if CoreDataHelper.shared.checkIfAllAnswered(forIndex: self.questionnaires.index, Int64(customerId)) {
             switch self.questionnaires.index {
             case 1:
                 self.showElementAlert()
@@ -96,7 +101,8 @@ class EUQuestionnaireViewController: UIViewController {
     }
     
     func showElementAlert() {
-        let currentElement = self.findElement()
+        guard let customerId = EUUser.user?.customerId else { return }
+        let currentElement = self.findElement(Int64(customerId))
         switch selectedElement {
         case .none:
             break

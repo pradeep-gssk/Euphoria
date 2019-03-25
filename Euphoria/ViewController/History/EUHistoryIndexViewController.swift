@@ -36,9 +36,10 @@ class EUHistoryIndexViewController: UIViewController {
     }
     
     func loadHistories() {
+        guard let customerId = EUUser.user?.customerId else { return }
         self.historyDictionary.removeAll()
         self.historySectionTitles.removeAll()
-        let histories = CoreDataHelper.shared.fetchHistory(self.historyType.image)
+        let histories = CoreDataHelper.shared.fetchHistory(self.historyType.image, Int64(customerId))
         for history in histories {
             let key = ((history.date as Date?)?.monthYearString) ?? "####"
             if var values = historyDictionary[key] {

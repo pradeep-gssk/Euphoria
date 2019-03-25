@@ -62,7 +62,8 @@ class EUAddSessionViewController: UIViewController {
     }
     
     @IBAction func didTapSave(_ sender: Any) {
-        CoreDataHelper.shared.saveSession(self.session)
+        guard let customerId = EUUser.user?.customerId else { return }
+        CoreDataHelper.shared.saveSession(self.session, Int64(customerId))
         self.performSegue(withIdentifier: "GoToSessionsView", sender: self)
     }
     

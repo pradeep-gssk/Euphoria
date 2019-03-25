@@ -39,17 +39,19 @@ class EUQuestionnaireIndexViewController: UIViewController {
     }
     
     func clearAllAnswers() {
-        CoreDataHelper.shared.clearAllAnswers()
+        guard let customerId = EUUser.user?.customerId else { return }
+        CoreDataHelper.shared.clearAllAnswers(Int64(customerId))
         questionnaireTableView?.designViews()
     }
     
     func didTapEmail() {
-        guard MFMailComposeViewController.canSendMail() else {
+        guard MFMailComposeViewController.canSendMail(),
+            let customerId = EUUser.user?.customerId else {
                 //TODO: show failure alert
                 return
         }
 
-        let questionnaires = CoreDataHelper.shared.fetchAnsweredQuestionnaire()
+        let questionnaires = CoreDataHelper.shared.fetchAnsweredQuestionnaire(Int64(customerId))
         var array: [String] = []
         var currentTitle: String = ""
         var currentIndex = 0
@@ -89,10 +91,11 @@ class EUQuestionnaireIndexViewController: UIViewController {
     }
     
     func questionnaireIndexTableView() {
-        guard let viewController = self.children.first as? EUQuestionnaireIndexTableViewController else { return }
+        guard let viewController = self.children.first as? EUQuestionnaireIndexTableViewController,
+            let customerId = EUUser.user?.customerId else { return }
         questionnaireTableView = viewController
         questionnaireTableView?.didSelectRowAt = { (indexPath) -> Void in
-            let questionnaire = CoreDataHelper.shared.fetchQuestionnaire(forIndex: (Int16(indexPath.row.advanced(by: 1))))
+            let questionnaire = CoreDataHelper.shared.fetchQuestionnaire(forIndex: (Int16(indexPath.row.advanced(by: 1))), Int64(customerId))
             self.performSegue(withIdentifier: "QuestionnaireView", sender: questionnaire)
         }
     }
