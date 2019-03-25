@@ -159,10 +159,6 @@
             changeOfMinutes = changeOfMinutes - 60;
         }
         NSInteger changeInSteps = (NSInteger)roundf((CGFloat)changeOfMinutes / _step);
-        if (changeInSteps == 0) {
-            // We are over limit, but when divided by step, it gets rounded off to zero -> scroll down anyway.
-            changeInSteps = -1;
-        }
         
         [self selectRow:selectedRow + changeInSteps inComponent:kComponentMinutes animated:animated];
     }

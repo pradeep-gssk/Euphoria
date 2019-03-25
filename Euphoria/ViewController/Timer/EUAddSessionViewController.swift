@@ -19,7 +19,7 @@ class EUAddSessionViewController: UIViewController {
     @IBOutlet weak var transparentView: UIView!
     
     var session: EUSession!
-    var numberOfSections = 0
+    var numberOfSections = 1
     var remainingSelectedInterval: TimeInterval = 0
     var currentSelectedInterval: TimeInterval = 0
     
@@ -31,8 +31,19 @@ class EUAddSessionViewController: UIViewController {
         self.sessionTime.text = session.time.duration
         self.sessionTableView.tableFooterView = UIView()
         self.remainingSelectedInterval = self.session.time
-        self.saveButton.isHidden = true
         self.transparentView.isHidden = true
+        self.addDefaultStop()
+    }
+    
+    func addDefaultStop() {
+        guard let sound = CoreDataHelper.shared.firstSound() else {
+            return
+        }
+        let stop = EUStop(index: 0, time: self.remainingSelectedInterval)
+        self.session.stops.append(stop)
+        self.session.sounds.append(sound)
+        self.remainingSelectedInterval = 0
+        self.updateActionButtons()
     }
     
     @IBAction func didTapBack(_ sender: Any) {
@@ -80,8 +91,12 @@ class EUAddSessionViewController: UIViewController {
     func updateActionButtons() {
         if self.remainingSelectedInterval <= 0,
             self.session.stops.count == self.session.sounds.count {
-            self.addButton.isHidden = true
-            self.saveButton.isHidden = false
+            self.addButton.isEnabled = false
+            self.saveButton.isEnabled = true
+        }
+        else {
+            self.addButton.isEnabled = true
+            self.saveButton.isEnabled = false
         }
     }
 }
@@ -128,7 +143,7 @@ extension EUAddSessionViewController: UITableViewDelegate {
             }
             
             if filter.count > 0, let stop = filter.first {
-                cell.timePicker.timeInterval = stop.time + 60
+                cell.timePicker.timeInterval = stop.time
                 self.remainingSelectedInterval += stop.time
             }
             else {

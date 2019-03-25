@@ -301,6 +301,19 @@ extension CoreDataHelper {
             return []
         }
     }
+    
+    func firstSound() -> Sound? {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Sound.self))
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        do {
+            let data = try context.fetch(fetchRequest) as? [Sound]
+            return data?.first ?? nil
+            
+        } catch {
+            return nil
+        }
+    }
 }
 
 //MARK: Session

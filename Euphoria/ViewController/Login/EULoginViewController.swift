@@ -44,6 +44,7 @@ class EULoginViewController: UIViewController, UITextFieldDelegate {
     
     //TODO: show errors
     @IBAction func didTapSignInButton(_ sender: Any) {
+        self.view.resignFirstResponder()
         guard let email = self.emailTextField.text,
             email.trimmingCharacters(in: .whitespaces).count > 0 else { return }
         guard let password = self.passwordTextField.text,
