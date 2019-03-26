@@ -35,7 +35,7 @@ class APIManager: NSObject {
         }
     }
     
-    func requestJSON(router: Router, success: @escaping (_ response: Response) -> Void, failure: @escaping (_ error: Error) -> Void) {
+    func requestActivities(router: Router, success: @escaping (_ activities: [EUActivity]) -> Void, failure: @escaping (_ error: Error) -> Void) {
         do {
             let request = try URLRequest(router: router)
             URLSession.shared.dataTask(with: request) { (data, response, error) in
@@ -43,18 +43,46 @@ class APIManager: NSObject {
                     failure(error!)
                 }
                 else {
-                    do {
-                        let response = try Response.getResponseFromData(data)
-                        success(response)
+                    guard let data = data,
+                    let activities = try? JSONDecoder().decode([EUActivity].self, from: data) else {
+                        failure(NSError(domain:"Wrong data", code:999, userInfo:nil))
+                        return
                     }
-                    catch {
-                        failure(error)
-                    }
+                    success(activities)
                 }
-                }.resume()
+            }.resume()
         }
         catch {
             failure(error)
         }
     }
+    
+//    func performRequest<Output>(router: Router,
+//                                success: @escaping (_ result: Output) -> Void,
+//                                failure: @escaping (_ error: Error) -> Void) {
+//    }
+    
+    
+//    func requestJSON(router: Router, success: @escaping (_ response: Response) -> Void, failure: @escaping (_ error: Error) -> Void) {
+//        do {
+//            let request = try URLRequest(router: router)
+//            URLSession.shared.dataTask(with: request) { (data, response, error) in
+//                if error != nil {
+//                    failure(error!)
+//                }
+//                else {
+//                    do {
+//                        let response = try Response.getResponseFromData(data)
+//                        success(response)
+//                    }
+//                    catch {
+//                        failure(error)
+//                    }
+//                }
+//                }.resume()
+//        }
+//        catch {
+//            failure(error)
+//        }
+//    }
 }

@@ -89,6 +89,10 @@
 		DEA9568B222E48D700FD5E02 /* Exercises+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95687222E48D700FD5E02 /* Exercises+CoreDataProperties.swift */; };
 		DEA9568C222E48D700FD5E02 /* Video+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95688222E48D700FD5E02 /* Video+CoreDataClass.swift */; };
 		DEA9568D222E48D700FD5E02 /* Video+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA95689222E48D700FD5E02 /* Video+CoreDataProperties.swift */; };
+		DEAE15ED224998FC0041ECEB /* EUCalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE15EC224998FC0041ECEB /* EUCalendarTableViewController.swift */; };
+		DEAE15F12249A36E0041ECEB /* EUActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE15F02249A36E0041ECEB /* EUActivity.swift */; };
+		DEAE16312249B6160041ECEB /* EUActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE16302249B6160041ECEB /* EUActivityViewController.swift */; };
+		DEAE16332249C5660041ECEB /* EUProgramsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE16322249C5660041ECEB /* EUProgramsViewController.swift */; };
 		DEAF7F6A222C600D00FF001A /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F69222C600D00FF001A /* Date+.swift */; };
 		DEAF7F6C222C61E600FF001A /* EUHistoryShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F6B222C61E600FF001A /* EUHistoryShowViewController.swift */; };
 		DEAF7F6E222C698D00FF001A /* Operand+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF7F6D222C698D00FF001A /* Operand+.swift */; };
@@ -277,6 +281,10 @@
 		DEA95687222E48D700FD5E02 /* Exercises+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exercises+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DEA95688222E48D700FD5E02 /* Video+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DEA95689222E48D700FD5E02 /* Video+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Video+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DEAE15EC224998FC0041ECEB /* EUCalendarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUCalendarTableViewController.swift; sourceTree = "<group>"; };
+		DEAE15F02249A36E0041ECEB /* EUActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUActivity.swift; sourceTree = "<group>"; };
+		DEAE16302249B6160041ECEB /* EUActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUActivityViewController.swift; sourceTree = "<group>"; };
+		DEAE16322249C5660041ECEB /* EUProgramsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUProgramsViewController.swift; sourceTree = "<group>"; };
 		DEAF7F69222C600D00FF001A /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		DEAF7F6B222C61E600FF001A /* EUHistoryShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryShowViewController.swift; sourceTree = "<group>"; };
 		DEAF7F6D222C698D00FF001A /* Operand+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Operand+.swift"; sourceTree = "<group>"; };
@@ -493,6 +501,9 @@
 			isa = PBXGroup;
 			children = (
 				DE4D60E3221283C200D6904C /* EUActivitiesTableViewController.swift */,
+				DEAE15EC224998FC0041ECEB /* EUCalendarTableViewController.swift */,
+				DEAE16302249B6160041ECEB /* EUActivityViewController.swift */,
+				DEAE16322249C5660041ECEB /* EUProgramsViewController.swift */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -662,6 +673,7 @@
 			children = (
 				DEE7F7422214D09100098F21 /* EUUser.swift */,
 				DEFB2CAA2212AB6600F2188C /* EUSession.swift */,
+				DEAE15F02249A36E0041ECEB /* EUActivity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -983,18 +995,20 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBCalendarKit/MBCalendarKit.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCalendarKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Euphoria/Pods-Euphoria-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD96D9B6BA07DDD9C02AD8C6 /* [CP] Check Pods Manifest.lock */ = {
@@ -1051,7 +1065,9 @@
 				DEA1521F221389A10035F7D5 /* EUSoundsViewController.swift in Sources */,
 				DEE7F73B2214CE7900098F21 /* Response.swift in Sources */,
 				DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */,
+				DEAE16332249C5660041ECEB /* EUProgramsViewController.swift in Sources */,
 				DE30674E222BD25F00AAD2E6 /* EUDietIndexViewController.swift in Sources */,
+				DEAE15ED224998FC0041ECEB /* EUCalendarTableViewController.swift in Sources */,
 				DEE7F73D2214CE7900098F21 /* APIManager.swift in Sources */,
 				DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */,
 				DEA1520022137E3C0035F7D5 /* ResponderTableViewCell.swift in Sources */,
@@ -1066,8 +1082,10 @@
 				DE94C512220F764A00C4C2ED /* EUHomeTableViewController.swift in Sources */,
 				DE4D60FE2212994200D6904C /* EUAddSessionViewController.swift in Sources */,
 				DE713CB2221404B100010CBE /* EUHistoryIndexViewController.swift in Sources */,
+				DEAE15F12249A36E0041ECEB /* EUActivity.swift in Sources */,
 				DECCD729222BDEA000BAC698 /* Diet+CoreDataClass.swift in Sources */,
 				DEC0CDEE22496F4200354C2F /* User+CoreDataClass.swift in Sources */,
+				DEAE16312249B6160041ECEB /* EUActivityViewController.swift in Sources */,
 				DE94C56F220FA50600C4C2ED /* UIColor+.swift in Sources */,
 				DE4D60E8221285B600D6904C /* EUGalleryTableViewController.swift in Sources */,
 				DE94C52A220F833D00C4C2ED /* EUQuestionnaireViewController.swift in Sources */,

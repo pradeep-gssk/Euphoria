@@ -33,6 +33,7 @@ enum Endpoint {
     case Login(email: String, password: String)
     case SocialLogin(type: Provider, token: String)
     case Registration(data: Parameters)
+    case Activities(customerId: Int64)
 }
 
 class Router: NSObject {
@@ -45,7 +46,7 @@ class Router: NSObject {
     
     var method: HTTPMethod {
         switch self.endpoint {
-        case .Login(_, _):
+        case .Login(_, _), .Activities(_):
             return .get
         default:
             return .post
@@ -59,6 +60,8 @@ class Router: NSObject {
             return "api/customers/\(email)/\(password)"
         case .Registration(_):
             return "api/Person"
+        case .Activities(let customerId):
+            return "api/appointment/custommerappointments/\(customerId)"
         default:
             return "api/Person"
         }

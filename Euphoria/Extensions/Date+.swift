@@ -28,4 +28,10 @@ extension Date {
         dateFormatter.dateFormat = "MMM, yyyy"
         return dateFormatter.string(from: self)
     }
+    
+    var dateMonthYearString: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        return dateFormatter.string(from: self)
+    }
 }

@@ -64,10 +64,8 @@ extension EUUser {
     }
 }
 
-extension EUUser
-{
-    init(from decoder: Decoder) throws
-    {
+extension EUUser {
+    init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         firstName = try values.decodeIfPresent(String.self, forKey: .firstName)
         lastName = try values.decodeIfPresent(String.self, forKey: .lastName)

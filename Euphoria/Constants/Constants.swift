@@ -16,3 +16,5 @@ let I_AGREE = "i_agree"
 let baseUrl = "http://webapi.spasoftware.gr/"
 let recipient = "euphoriaspa@euphoriaretreat.com"
 let website = "https://www.euphoriaretreat.com/en/"
+
+let offer = "https://www.euphoriaretreat.com/en/offers"
