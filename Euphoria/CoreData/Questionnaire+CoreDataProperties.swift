@@ -2,7 +2,7 @@
 //  Questionnaire+CoreDataProperties.swift
 //  Euphoria
 //
-//  Created by Guduru, Pradeep(AWF) on 3/3/19.
+//  Created by Guduru, Pradeep(AWF) on 4/13/19.
 //  Copyright © 2019 Guduru, Pradeep(AWF). All rights reserved.
 //
 //
@@ -19,11 +19,12 @@ extension Questionnaire {
 
     @NSManaged public var answer: String?
     @NSManaged public var details: String?
+    @NSManaged public var element: String?
     @NSManaged public var index: Int16
     @NSManaged public var optionType: Int16
     @NSManaged public var question: String?
     @NSManaged public var subOptionType: Int16
-    @NSManaged public var element: String?
+    @NSManaged public var colorIndex: Int16
     @NSManaged public var options: NSSet?
     @NSManaged public var questionnaires: Questionnaires?
     @NSManaged public var subOptions: NSSet?

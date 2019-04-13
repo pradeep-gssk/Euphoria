@@ -62,7 +62,7 @@ class EUSoundsViewController: UIViewController {
             
             player.play()
             
-        } catch let error {
+        } catch {
             self.showAlertWithMessage("Error playing sound")
         }
     }

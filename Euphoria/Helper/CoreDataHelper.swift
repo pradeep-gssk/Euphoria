@@ -53,14 +53,15 @@ extension CoreDataHelper {
 
 //MARK: Questionnaires
 extension CoreDataHelper {
-    func saveQuestionnaire(_ json: [String: AnyObject], forIndex index: Int16, withTotal total: Int16, forCustomer customerId: Int64) {
+    func saveQuestionnaire(_ json: [String: AnyObject], forIndex index: Int16, forCustomer customerId: Int64) {
         let questionnaires = NSEntityDescription.insertNewObject(forEntityName: "Questionnaires", into: context) as? Questionnaires
         questionnaires?.title = json["title"] as? String
         questionnaires?.state = 0
+        questionnaires?.total = 0
         questionnaires?.index = index
-        questionnaires?.total = total
         questionnaires?.customerId = customerId
         if let questionnaireList = json["questionnaire"] as? [[String: AnyObject]] {
+            questionnaires?.total = Int16(questionnaireList.count)
             for questionnaire in questionnaireList {
                 if let response = self.setQuestionnaire(questionnaire) {
                     questionnaires?.addToQuestionnaire(response)
@@ -81,6 +82,7 @@ extension CoreDataHelper {
         questionnaire?.details = nil
         questionnaire?.element = json["element"] as? String
         questionnaire?.index = json["index"] as? Int16 ?? 0
+        questionnaire?.colorIndex = json["colorIndex"] as? Int16 ?? 0
         questionnaire?.optionType = json["optionType"] as? Int16 ?? 0
         questionnaire?.subOptionType = json["subOptionType"] as? Int16 ?? 0
         questionnaire?.question = json["question"] as? String

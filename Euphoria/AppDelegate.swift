@@ -95,11 +95,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func preloadData(customerId: Int64) {
-        self.loadQuestionnaire(withResource: "Questionnaire1", forIndex: 1, withTotal: 20, forCustomer: customerId)
-        self.loadQuestionnaire(withResource: "Questionnaire2", forIndex: 2, withTotal: 6, forCustomer: customerId)
-        self.loadQuestionnaire(withResource: "Questionnaire3", forIndex: 3, withTotal: 35, forCustomer: customerId)
-        self.loadQuestionnaire(withResource: "Questionnaire4", forIndex: 4, withTotal: 10, forCustomer: customerId)
-        self.loadQuestionnaire(withResource: "Questionnaire5", forIndex: 5, withTotal: 4, forCustomer: customerId)
+        self.loadQuestionnaire(withResource: "Questionnaire1", forIndex: 1, forCustomer: customerId)
+        self.loadQuestionnaire(withResource: "Questionnaire2", forIndex: 2, forCustomer: customerId)
+        self.loadQuestionnaire(withResource: "Questionnaire3", forIndex: 3, forCustomer: customerId)
+        self.loadQuestionnaire(withResource: "Questionnaire4", forIndex: 4, forCustomer: customerId)
+        self.loadQuestionnaire(withResource: "Questionnaire5", forIndex: 5, forCustomer: customerId)
         self.loadExercises(withResource: "Exercises")
         self.loadSounds(withResource: "Sounds")
         self.loadVideos(withResource: "Videos")
@@ -107,13 +107,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    func loadQuestionnaire(withResource resource: String, forIndex index: Int16, withTotal total: Int16, forCustomer customerId: Int64) {
+    func loadQuestionnaire(withResource resource: String, forIndex index: Int16, forCustomer customerId: Int64) {
         if let path = Bundle.main.path(forResource: resource, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
                 if let jsonResult = jsonResult as? [String: AnyObject] {
-                    CoreDataHelper.shared.saveQuestionnaire(jsonResult, forIndex: index, withTotal: total, forCustomer: customerId)
+                    CoreDataHelper.shared.saveQuestionnaire(jsonResult, forIndex: index, forCustomer: customerId)
                 }
             } catch {
                 // handle error

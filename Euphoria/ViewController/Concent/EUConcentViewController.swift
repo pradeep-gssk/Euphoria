@@ -75,3 +75,10 @@ class EUConcentViewController: UIViewController {
         }
     }
 }
+
+extension EUConcentViewController: UIWebViewDelegate {
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool {
+        print(request)
+        return true
+    }
+}

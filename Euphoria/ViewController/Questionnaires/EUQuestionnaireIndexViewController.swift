@@ -41,7 +41,7 @@ class EUQuestionnaireIndexViewController: UIViewController {
     func clearAllAnswers() {
         guard let customerId = EUUser.user?.customerId else { return }
         CoreDataHelper.shared.clearAllAnswers(Int64(customerId))
-        questionnaireTableView?.designViews()
+//        questionnaireTableView?.designViews()
     }
     
     func didTapEmail() {

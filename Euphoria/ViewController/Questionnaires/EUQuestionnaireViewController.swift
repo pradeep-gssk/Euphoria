@@ -47,9 +47,37 @@ class EUQuestionnaireViewController: UIViewController {
         }
     }
     
+    func getColor(_ colorIndex: Int16) -> UIColor {
+        switch colorIndex {
+        case 1:
+            return UIColor.red
+        case 2:
+            return UIColor.yellow
+        case 3:
+            return UIColor.white
+        case 4:
+            return UIColor.black
+        default:
+            return UIColor.green
+        }
+    }
+    
     func loadQuestionnaire() {
         self.questionObject = questions[Int(questionnaires.state)]
-        self.questionLabel.text = questionObject.question
+        
+        if self.questionnaires.index == 1 {
+            let attributes: [NSAttributedString.Key : Any] =
+                [.foregroundColor: getColor(questionObject.colorIndex),
+                 .font: UIFont.boldSystemFont(ofSize: 30)]
+            let dotText = NSMutableAttributedString(string: "• ", attributes: attributes as [NSAttributedString.Key : Any])
+            let text = NSMutableAttributedString(string: (questionObject.question ?? ""), attributes: [.foregroundColor: UIColor.white])
+            dotText.append(text)
+            self.questionLabel.attributedText = dotText
+        }
+        else {
+            self.questionLabel.text = questionObject.question
+        }
+        
         self.questionnaireTableView?.questionObject = self.questionObject
         self.questionnaireTableView?.options = questionObject.options?.allObjects as? [Option] ?? []
         self.questionnaireTableView?.setNumberOfSections()
@@ -113,6 +141,6 @@ class EUQuestionnaireViewController: UIViewController {
         }
         
         selectedElement = currentElement
-        self.showAlertWithMessage("You are \(currentElement.rawValue) element. Please check Diet and Exercises", title: "Congrats")
+        self.showNoAlertWithMessage("It seems that at this moment you have issues with \(currentElement.rawValue) element. Please check Diet and Exercises")
     }
 }

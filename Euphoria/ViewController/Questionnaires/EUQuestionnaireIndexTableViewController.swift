@@ -10,7 +10,7 @@ import UIKit
 
 class EUQuestionnaireIndexTableViewController: UITableViewController {
     
-    var cellEnabled: [Bool] = [true, false, false, false, false]
+//    var cellEnabled: [Bool] = [true, false, false, false, false]
     var didSelectRowAt: ((_ indexPath: IndexPath) -> Void)?
     
     override func viewDidLoad() {
@@ -21,30 +21,30 @@ class EUQuestionnaireIndexTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isToolbarHidden = true
-        self.designViews()
+//        self.designViews()
     }
     
-    func designViews() {
-        guard let customerId = EUUser.user?.customerId else { return }
-        for i in 1...4 {
-            let value = CoreDataHelper.shared.checkIfAllAnswered(forIndex: Int16(i), Int64(customerId))
-            self.cellEnabled[i] = value
-        }
-        self.tableView.reloadData()
-    }
-    
-    // MARK: - Table view datasource
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = super.tableView(tableView, cellForRowAt: indexPath)
-        let cellEnabled = self.cellEnabled[indexPath.row]
-        cell.isUserInteractionEnabled = cellEnabled
-        cell.contentView.alpha = cellEnabled ? 1 : 0.5
-        cell.contentView.backgroundColor = cellEnabled ?
-            UIColor.white :
-            UIColor.color(red: 199, green: 200, blue: 202, alpha: 0.5)
-        return cell
-    }
+//    func designViews() {
+//        guard let customerId = EUUser.user?.customerId else { return }
+//        for i in 1...4 {
+//            let value = CoreDataHelper.shared.checkIfAllAnswered(forIndex: Int16(i), Int64(customerId))
+//            self.cellEnabled[i] = value
+//        }
+//        self.tableView.reloadData()
+//    }
+//
+//    // MARK: - Table view datasource
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+//        let cellEnabled = self.cellEnabled[indexPath.row]
+//        cell.isUserInteractionEnabled = cellEnabled
+//        cell.contentView.alpha = cellEnabled ? 1 : 0.5
+//        cell.contentView.backgroundColor = cellEnabled ?
+//            UIColor.white :
+//            UIColor.color(red: 199, green: 200, blue: 202, alpha: 0.5)
+//        return cell
+//    }
     
     // MARK: - Table view delegate
     

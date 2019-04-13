@@ -1,8 +1,9 @@
 {
-    "title": "Questionnaire 1",
+    "title": "Element Questionnaire",
     "questionnaire": [
         {
             "index": 0,
+            "colorIndex": 1,
             "optionType": 1,
             "element": "Fire",
             "subOptionType": 0,
@@ -20,6 +21,7 @@
         },
         {
             "index": 1,
+            "colorIndex": 1,
             "optionType": 1,
             "element": "Fire",
             "subOptionType": 0,
@@ -37,6 +39,7 @@
         },
         {
             "index": 2,
+            "colorIndex": 1,
             "optionType": 1,
             "element": "Fire",
             "subOptionType": 0,
@@ -54,6 +57,7 @@
         },
         {
             "index": 3,
+            "colorIndex": 1,
             "optionType": 1,
             "element": "Fire",
             "subOptionType": 0,
@@ -71,6 +75,7 @@
         },
         {
             "index": 4,
+            "colorIndex": 2,
             "optionType": 1,
             "element": "Earth",
             "subOptionType": 0,
@@ -88,6 +93,7 @@
         },
         {
             "index": 5,
+            "colorIndex": 2,
             "optionType": 1,
             "element": "Earth",
             "subOptionType": 0,
@@ -105,6 +111,7 @@
         },
         {
             "index": 6,
+            "colorIndex": 2,
             "optionType": 1,
             "element": "Earth",
             "subOptionType": 0,
@@ -122,6 +129,7 @@
         },
         {
             "index": 7,
+            "colorIndex": 2,
             "optionType": 1,
             "element": "Earth",
             "subOptionType": 0,
@@ -139,6 +147,7 @@
         },
         {
             "index": 8,
+            "colorIndex": 3,
             "optionType": 1,
             "element": "Metal",
             "subOptionType": 0,
@@ -156,6 +165,7 @@
         },
         {
             "index": 9,
+            "colorIndex": 3,
             "optionType": 1,
             "element": "Metal",
             "subOptionType": 0,
@@ -173,6 +183,7 @@
         },
         {
             "index": 10,
+            "colorIndex": 3,
             "optionType": 1,
             "element": "Metal",
             "subOptionType": 0,
@@ -190,6 +201,7 @@
         },
         {
             "index": 11,
+            "colorIndex": 3,
             "optionType": 1,
             "element": "Metal",
             "subOptionType": 0,
@@ -207,6 +219,7 @@
         },
         {
             "index": 12,
+            "colorIndex": 4,
             "optionType": 1,
             "element": "Water",
             "subOptionType": 0,
@@ -224,6 +237,7 @@
         },
         {
             "index": 13,
+            "colorIndex": 4,
             "optionType": 1,
             "element": "Water",
             "subOptionType": 0,
@@ -241,6 +255,7 @@
         },
         {
             "index": 14,
+            "colorIndex": 4,
             "optionType": 1,
             "element": "Water",
             "subOptionType": 0,
@@ -258,6 +273,7 @@
         },
         {
             "index": 15,
+            "colorIndex": 4,
             "optionType": 1,
             "element": "Water",
             "subOptionType": 0,
@@ -275,6 +291,7 @@
         },
         {
             "index": 16,
+            "colorIndex": 5,
             "optionType": 1,
             "element": "Wood",
             "subOptionType": 0,
@@ -292,6 +309,7 @@
         },
         {
             "index": 17,
+            "colorIndex": 5,
             "optionType": 1,
             "element": "Wood",
             "subOptionType": 0,
@@ -309,6 +327,7 @@
         },
         {
             "index": 18,
+            "colorIndex": 5,
             "optionType": 1,
             "element": "Wood",
             "subOptionType": 0,
@@ -326,6 +345,7 @@
         },
         {
             "index": 19,
+            "colorIndex": 5,
             "optionType": 1,
             "element": "Wood",
             "subOptionType": 0,

@@ -58,6 +58,15 @@ extension UIViewController {
         })
     }
     
+    func showNoAlertWithMessage(_ message: String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
+            
+        }))
+        self.navigationController?.present(alert, animated: true, completion: {
+        })
+    }
+    
     func findElement(_ customerId: Int64) -> Element {
         var selectedElement: Element = .Earth
         var previousValue = 0
