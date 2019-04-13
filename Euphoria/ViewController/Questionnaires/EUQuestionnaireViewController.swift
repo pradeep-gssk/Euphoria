@@ -90,7 +90,6 @@ class EUQuestionnaireViewController: UIViewController {
         if state >= 0 {
             CoreDataHelper.shared.updateState(self.questionnaires, state: state)
         }
-        
         self.navigationController?.popViewController(animated: true)
     }
     

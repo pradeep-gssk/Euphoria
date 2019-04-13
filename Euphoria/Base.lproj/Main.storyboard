@@ -86,6 +86,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zJM-BN-EZn">
                                 <rect key="frame" x="319" y="7" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                                 <state key="normal" image="profile"/>
                                 <connections>
                                     <segue destination="iVX-x4-mhj" kind="show" id="65K-on-pRk"/>
@@ -95,6 +96,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="logoStackView" destination="GY7-rb-F7l" id="f90-hC-Gfa"/>
+                        <outlet property="userButton" destination="zJM-BN-EZn" id="qhE-H3-U3j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gpg-Hl-DyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -633,12 +635,15 @@
                                     <constraint firstAttribute="width" secondItem="dyl-u7-A60" secondAttribute="height" multiplier="375:253" id="DhE-gE-1JB"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Znj-sB-LmW">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Znj-sB-LmW">
                                 <rect key="frame" x="110" y="163" width="155" height="155"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="47N-Cl-Eic"/>
                                     <constraint firstAttribute="height" constant="155" id="eQQ-rq-8Fr"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="oxx-oF-VYf" appends="YES" id="sAd-Vv-8bp"/>
+                                </connections>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXp-Hx-b52">
                                 <rect key="frame" x="0.0" y="367" width="375" height="10"/>
@@ -756,9 +761,15 @@
                     <connections>
                         <outlet property="bottomView" destination="IXp-Hx-b52" id="rVC-QR-AJ7"/>
                         <outlet property="headerView" destination="CUz-l1-9PH" id="cNf-qG-SPe"/>
+                        <outlet property="userImageView" destination="Znj-sB-LmW" id="2Dj-3j-b2B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIK-St-p3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oxx-oF-VYf">
+                    <connections>
+                        <action selector="didTapUserImage:" destination="iVX-x4-mhj" id="W1Z-U0-zOE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1640.8" y="152.47376311844079"/>
         </scene>

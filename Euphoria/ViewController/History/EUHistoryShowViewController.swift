@@ -33,8 +33,9 @@ class EUHistoryShowViewController: UIViewController {
         }
         
         let filePath = documentsDirectory.appendingPathComponent(fileName).path
-        self.imageView.image = UIImage(contentsOfFile: filePath)
-        
+        if FileManager.default.fileExists(atPath: filePath) {
+            self.imageView.image = UIImage(contentsOfFile: filePath)
+        }
     }
     
     @IBAction func didTapBack(_ sender: Any) {

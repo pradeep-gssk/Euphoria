@@ -12,6 +12,7 @@ class EUHomeViewController: UIViewController {
     var selectedElement: Element = .Earth
     
     @IBOutlet weak var logoStackView: UIStackView!
+    @IBOutlet weak var userButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,7 @@ class EUHomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.getSelectedElement()
+        self.userButton.loadUserImage()
     }
     
     func getSelectedElement() {

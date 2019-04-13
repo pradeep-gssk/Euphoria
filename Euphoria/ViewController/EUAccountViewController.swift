@@ -12,6 +12,7 @@ class EUAccountViewController: UIViewController {
 
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var userImageView: UIImageView!
     
     var titles = [String]()
     var values = [String]()
@@ -30,6 +31,9 @@ class EUAccountViewController: UIViewController {
         self.headerView.layer.borderWidth = 1
         self.bottomView.layer.borderColor = UIColor.singleColor(value: 151.0, alpha: 1).cgColor
         self.bottomView.layer.borderWidth = 1
+        self.userImageView.layer.cornerRadius = 77.5
+        self.userImageView.layer.masksToBounds = true
+        self.userImageView.loadUserImage()
     }
     
     @IBAction func didTapBack(_ sender: Any) {
@@ -40,6 +44,50 @@ class EUAccountViewController: UIViewController {
         UserDefaults.standard.removeObject(forKey: USER_PROFILE_DATA)
         UserDefaults.standard.synchronize()
         appDelegate.showLoginView()
+    }
+    
+    @IBAction func didTapUserImage(_ sender: Any) {
+        let alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { _ in
+            self.openImagePickerForSource(.camera)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { _ in
+            self.openImagePickerForSource(.photoLibrary)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func openImagePickerForSource(_ sourceType: UIImagePickerController.SourceType) {
+        let vc = UIImagePickerController()
+        vc.sourceType = sourceType
+        if sourceType == .camera {
+            vc.cameraCaptureMode = UIImagePickerController.CameraCaptureMode.photo
+            vc.cameraDevice = UIImagePickerController.CameraDevice.front
+        }
+        vc.allowsEditing = true
+        vc.delegate = self
+        self.present(vc, animated: true)
+    }
+    
+    func saveToDocuments() {
+        guard let image = self.userImageView.image,
+            let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first,
+            let customerId = EUUser.user?.customerId else {
+                //TODO: show failure alert
+                return
+        }
+        
+        let fileURL = documentsDirectory.appendingPathComponent("\(customerId)")
+        if let data = image.pngData() {
+            do {
+                try data.write(to: fileURL)
+            } catch {
+                self.showAlertWithMessage("Error saving file")
+            }
+        }
     }
 }
 
@@ -57,6 +105,14 @@ extension EUAccountViewController: UITableViewDataSource {
         cell.titleLabel.text = self.titles[indexPath.row]
         cell.detailLabel.text = self.values[indexPath.row]
         return cell
+    }
+}
+
+extension EUAccountViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        self.userImageView.image = info[.editedImage] as? UIImage
+        self.saveToDocuments()
     }
 }
 
