@@ -621,7 +621,6 @@ extension CoreDataHelper {
 extension CoreDataHelper {
     func updateAll() {
         let customers = fetchUniqueCustomerId()
-        
         for customerId in customers {
             self.loadQuestionnaire(withResource: "Questionnaire1", forIndex: 1, forCustomer: customerId, update: true)
             self.loadQuestionnaire(withResource: "Questionnaire2", forIndex: 2, forCustomer: customerId, update: true)
@@ -657,8 +656,44 @@ extension CoreDataHelper {
     }
     
     private func updateQuestionnaire(_ json: [String: AnyObject], forIndex index: Int16, forCustomer customerId: Int64) {
-        let questionnaire = self.fetchQuestionnaire(forIndex: index, customerId)
         
+        if let questionnaireList = json["questionnaire"] as? [[String: AnyObject]],
+            let questionnaire = self.fetchQuestionnaire(forIndex: index, customerId) {
+            
+            if questionnaire.total != Int16(questionnaireList.count) {
+                questionnaire.total = Int16(questionnaireList.count)
+            }
+            
+            let newIndexes = questionnaireList.filter({$0["index"] != nil}).map({$0["index"] as? Int16 ?? 0})
+            let questionnaires = questionnaire.questionnaire?.allObjects as? [Questionnaire] ?? []
+            let currentIndexes = questionnaires.map({$0.index})
+            let uniqueValues = Set(newIndexes).symmetricDifference(currentIndexes)
+            if uniqueValues.count > 0 {
+                for value in uniqueValues {
+                    if newIndexes.contains(value) {
+                        let newQuestionnaires = questionnaireList.filter{($0["index"] as? Int16) == value}
+                        for newQuestionnaire in newQuestionnaires {
+                            if let response = self.setQuestionnaire(newQuestionnaire) {
+                                questionnaire.addToQuestionnaire(response)
+                            }
+                        }
+                    }
+                    else if currentIndexes.contains(value) {
+                        let oldQuestionnaires = questionnaires.filter{$0.index == value}
+                        for oldQuestionnaire in oldQuestionnaires {
+                            questionnaire.removeFromQuestionnaire(oldQuestionnaire)
+                            context.delete(oldQuestionnaire)
+                        }
+                    }
+                }
+                
+                do {
+                    try context.save()
+                } catch {
+                    print("Failed saving")
+                }
+            }
+        }
     }
     
     private func deleteOthers() {
