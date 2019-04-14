@@ -4,6 +4,7 @@
         {
             "index": 0,
             "optionType": 1,
+            "selectionType": 0,
             "subOptionType": 0,
             "question": "Do you feel warm? Do you feel better in a cool place?",
             "options": [
@@ -20,6 +21,7 @@
         {
             "index": 1,
             "optionType": 1,
+            "selectionType": 0,
             "subOptionType": 0,
             "question": "Do you feel cold? Do you feel better in a warm place?",
             "options": [
@@ -36,6 +38,7 @@
         {
             "index": 2,
             "optionType": 1,
+            "selectionType": 0,
             "subOptionType": 0,
             "question": "Do you usually have dry mouth and feel thirsty?",
             "options": [
@@ -52,6 +55,7 @@
         {
             "index": 3,
             "optionType": 1,
+            "selectionType": 0,
             "subOptionType": 0,
             "question": "Is it important for you to eat warm food? Do you feel uncomfortable with cold food?",
             "options": [

@@ -38,6 +38,7 @@
         <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="optionType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selectionType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="subOptionType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="options" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Option" inverseName="questionnaireOption" inverseEntity="Option" syncable="YES"/>
         <relationship name="questionnaires" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaires" inverseName="questionnaire" inverseEntity="Questionnaires" syncable="YES"/>
@@ -92,7 +93,7 @@
         <element name="Exercises" positionX="189" positionY="-135" width="128" height="135"/>
         <element name="History" positionX="189" positionY="-108" width="128" height="105"/>
         <element name="Option" positionX="611.33203125" positionY="-124.90625" width="128" height="105"/>
-        <element name="Questionnaire" positionX="234.3671875" positionY="-206.6875" width="128" height="210"/>
+        <element name="Questionnaire" positionX="234.3671875" positionY="-206.6875" width="128" height="225"/>
         <element name="Questionnaires" positionX="-20.4296875" positionY="-217.74609375" width="128" height="135"/>
         <element name="Session" positionX="189" positionY="-126" width="128" height="120"/>
         <element name="Sound" positionX="207" positionY="-108" width="128" height="90"/>

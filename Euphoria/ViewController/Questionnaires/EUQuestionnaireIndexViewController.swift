@@ -74,7 +74,6 @@ class EUQuestionnaireIndexViewController: UIViewController {
             if let value = question.details {
                 array.append("Details: \(value)")
             }
-
         }
 
         let joined = array.joined(separator: "\n")
@@ -82,6 +81,7 @@ class EUQuestionnaireIndexViewController: UIViewController {
         guard let data = joined.data(using: .utf8) else { return }
 
         let mail = MFMailComposeViewController()
+        mail.mailComposeDelegate = self
         mail.setToRecipients([recipient])
         mail.setSubject("Questionnaires")
         mail.setMessageBody("Questions and Answers", isHTML: true)
@@ -117,9 +117,13 @@ class EUQuestionnaireIndexViewController: UIViewController {
 
 extension EUQuestionnaireIndexViewController: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        if let _ = error {
-            self.showAlertWithMessage("Error sending email")
+        controller.dismiss(animated: true) {
+            if let _ = error {
+                self.showAlertWithMessage("Error sending email")
+            }
+            else if result == .sent {
+                self.showAlertWithMessage("Your message has been sent")
+            }
         }
-        controller.dismiss(animated: true, completion: nil)
     }
 }

@@ -18,13 +18,14 @@ extension Questionnaire {
     }
 
     @NSManaged public var answer: String?
+    @NSManaged public var colorIndex: Int16
     @NSManaged public var details: String?
     @NSManaged public var element: String?
     @NSManaged public var index: Int16
     @NSManaged public var optionType: Int16
     @NSManaged public var question: String?
     @NSManaged public var subOptionType: Int16
-    @NSManaged public var colorIndex: Int16
+    @NSManaged public var selectionType: Int16
     @NSManaged public var options: NSSet?
     @NSManaged public var questionnaires: Questionnaires?
     @NSManaged public var subOptions: NSSet?

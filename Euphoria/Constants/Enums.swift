@@ -82,6 +82,11 @@ enum OptionType: Int {
     case always = 2
 }
 
+enum SelectionType: Int {
+    case single = 0
+    case multiple = 1
+}
+
 enum HistoryType: Int {
     case face = 0
     case tongue = 1

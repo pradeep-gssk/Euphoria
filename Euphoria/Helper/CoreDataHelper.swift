@@ -86,7 +86,8 @@ extension CoreDataHelper {
         questionnaire?.optionType = json["optionType"] as? Int16 ?? 0
         questionnaire?.subOptionType = json["subOptionType"] as? Int16 ?? 0
         questionnaire?.question = json["question"] as? String
-        
+        questionnaire?.selectionType = json["selectionType"] as? Int16 ?? 0
+
         if let options = json["options"] as? [[String: AnyObject]] {
             for option in options {
                 if let response = self.setOptions(option) {
