@@ -12,6 +12,7 @@ class EUQuestionnaireTableViewController: UITableViewController {
 
     var questionObject: Questionnaire!
     var options: [Option] = []
+    var multipleAnswers: [String] = []
     var numberOfSections = 2
     var checkIfAllAnswered: (() -> Void)?
     var clearTextField: Bool = true
@@ -73,7 +74,16 @@ class EUQuestionnaireTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OptionCell", for: indexPath) as! EUQuestionnairesViewTableViewCell
         let option = options[indexPath.row]
         cell.titleLabel.text = option.option
-        cell.accessoryType = (questionObject.answer == option.option) ? .checkmark : .none
+        
+        if let selectionType = SelectionType(rawValue: Int(self.questionObject.selectionType)) {
+            switch selectionType {
+            case .single:
+                cell.accessoryType = (questionObject.answer == option.option) ? .checkmark : .none
+            case .multiple:
+                cell.accessoryType = (multipleAnswers.contains(option.option ?? "")) ? .checkmark : .none
+            }
+        }
+        
         return cell
     }
     
@@ -84,16 +94,30 @@ class EUQuestionnaireTableViewController: UITableViewController {
             return
         }
         
-        let answer = self.options[indexPath.row].option
+        guard let answer = self.options[indexPath.row].option,
+            let selectionType = SelectionType(rawValue: Int(self.questionObject.selectionType))
+        else { return }
+        
+        switch selectionType {
+        case .single:
+            self.singleSelection(answer)
+        case .multiple:
+            self.multipleSelection(answer)
+        }
+        
+        tableView.reloadData()
+        self.checkIfAllAnswered?()
+    }
+    
+    func singleSelection(_ answer: String) {
         CoreDataHelper.shared.updateAnswer(self.questionObject, string: answer)
-
         if let optionType = OptionType(rawValue: Int(self.questionObject.optionType)) {
             switch optionType {
             case .toggle:
-                switch answer?.boolValue {
+                switch answer.boolValue {
                 case true:
                     numberOfSections = 2
-                default:
+                case false:
                     numberOfSections = 1
                     self.clearDetails()
                 }
@@ -103,8 +127,28 @@ class EUQuestionnaireTableViewController: UITableViewController {
                 break
             }
         }
-        tableView.reloadData()
-        self.checkIfAllAnswered?()
+    }
+    
+    func multipleSelection(_ answer: String) {
+        
+        guard let savedAnswer = self.questionObject.answer, savedAnswer.count > 0 else {
+            multipleAnswers.append(answer)
+            CoreDataHelper.shared.updateAnswer(self.questionObject, string: answer)
+            return
+        }
+        
+        if multipleAnswers.contains(answer) {
+            if let index = multipleAnswers.firstIndex(of: answer) {
+                multipleAnswers.remove(at: index)
+                let currentAnswer = multipleAnswers.joined(separator: ", ")
+                CoreDataHelper.shared.updateAnswer(self.questionObject, string: currentAnswer)
+            }
+        }
+        else {
+            let currentAnswer = savedAnswer + ", " + answer
+            multipleAnswers.append(answer)
+            CoreDataHelper.shared.updateAnswer(self.questionObject, string: currentAnswer)
+        }
     }
     
     func clearDetails() {

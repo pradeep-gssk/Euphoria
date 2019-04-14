@@ -81,6 +81,13 @@ class EUQuestionnaireViewController: UIViewController {
         self.questionnaireTableView?.questionObject = self.questionObject
         self.questionnaireTableView?.options = questionObject.options?.allObjects as? [Option] ?? []
         self.questionnaireTableView?.setNumberOfSections()
+        
+        if let selectionType = SelectionType(rawValue: Int(self.questionObject.selectionType)),
+            selectionType == .multiple,
+            let answers = self.questionObject.answer {
+            self.questionnaireTableView?.multipleAnswers = answers.components(separatedBy: ", ")
+        }
+        
         self.previousButton.isEnabled = (self.questionnaires.state <= 0) ? false : true
         self.nextButton.isEnabled = (self.questionnaires.state >= (self.questionnaires.total - 1)) ? false : true
     }
