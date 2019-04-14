@@ -119,7 +119,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let data = try Data(contentsOf: url)
                 let decoder = PropertyListDecoder()
                 let update = try decoder.decode(EUUpdate.self, from: data)
-                print(update.update)
                 if update.update == true {
                     //Update Coredata
                     CoreDataHelper.shared.updateAll()

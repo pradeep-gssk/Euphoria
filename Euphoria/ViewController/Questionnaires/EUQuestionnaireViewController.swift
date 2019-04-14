@@ -84,8 +84,12 @@ class EUQuestionnaireViewController: UIViewController {
         
         if let selectionType = SelectionType(rawValue: Int(self.questionObject.selectionType)),
             selectionType == .multiple,
-            let answers = self.questionObject.answer {
-            self.questionnaireTableView?.multipleAnswers = answers.components(separatedBy: ", ")
+            let answer = self.questionObject.answer {
+            let answers = answer.components(separatedBy: ", ")
+            let values = [String](repeating: "0", count: answers.count)
+            var dictionary = [String: String]()
+            zip(answers, values).forEach{dictionary[$0] = $1}
+            self.questionnaireTableView?.multipleAnswers = dictionary
         }
         
         self.previousButton.isEnabled = (self.questionnaires.state <= 0) ? false : true

@@ -12,7 +12,7 @@ class EUQuestionnaireTableViewController: UITableViewController {
 
     var questionObject: Questionnaire!
     var options: [Option] = []
-    var multipleAnswers: [String] = []
+    var multipleAnswers: [String: String] = [:]
     var numberOfSections = 2
     var checkIfAllAnswered: (() -> Void)?
     var clearTextField: Bool = true
@@ -80,7 +80,9 @@ class EUQuestionnaireTableViewController: UITableViewController {
             case .single:
                 cell.accessoryType = (questionObject.answer == option.option) ? .checkmark : .none
             case .multiple:
-                cell.accessoryType = (multipleAnswers.contains(option.option ?? "")) ? .checkmark : .none
+                let currentOption = option.option ?? ""
+                cell.accessoryType = (multipleAnswers[currentOption] != nil) ? .checkmark : .none
+                break
             }
         }
         
@@ -132,21 +134,20 @@ class EUQuestionnaireTableViewController: UITableViewController {
     func multipleSelection(_ answer: String) {
         
         guard let savedAnswer = self.questionObject.answer, savedAnswer.count > 0 else {
-            multipleAnswers.append(answer)
+            multipleAnswers[answer] = "0"
             CoreDataHelper.shared.updateAnswer(self.questionObject, string: answer)
             return
         }
         
-        if multipleAnswers.contains(answer) {
-            if let index = multipleAnswers.firstIndex(of: answer) {
-                multipleAnswers.remove(at: index)
-                let currentAnswer = multipleAnswers.joined(separator: ", ")
-                CoreDataHelper.shared.updateAnswer(self.questionObject, string: currentAnswer)
-            }
+        if (multipleAnswers[answer] != nil) {
+            multipleAnswers.removeValue(forKey: answer)
+            let keys = multipleAnswers.keys
+            let currentAnswer = keys.joined(separator: ", ")
+            CoreDataHelper.shared.updateAnswer(self.questionObject, string: currentAnswer)
         }
         else {
             let currentAnswer = savedAnswer + ", " + answer
-            multipleAnswers.append(answer)
+            multipleAnswers[answer] = "0"
             CoreDataHelper.shared.updateAnswer(self.questionObject, string: currentAnswer)
         }
     }
