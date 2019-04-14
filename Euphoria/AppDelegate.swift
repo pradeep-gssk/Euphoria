@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return true
         }
         
+        self.updatePlist()
         self.showHomeView()
         return true
     }
@@ -94,93 +95,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func preloadData(customerId: Int64) {
-        self.loadQuestionnaire(withResource: "Questionnaire1", forIndex: 1, forCustomer: customerId)
-        self.loadQuestionnaire(withResource: "Questionnaire2", forIndex: 2, forCustomer: customerId)
-        self.loadQuestionnaire(withResource: "Questionnaire3", forIndex: 3, forCustomer: customerId)
-        self.loadQuestionnaire(withResource: "Questionnaire4", forIndex: 4, forCustomer: customerId)
-        self.loadQuestionnaire(withResource: "Questionnaire5", forIndex: 5, forCustomer: customerId)
-        self.loadExercises(withResource: "Exercises")
-        self.loadSounds(withResource: "Sounds")
-        self.loadVideos(withResource: "Videos")
-        self.loadDiet(withResource: "Diet")
-        
-    }
-    
-    func loadQuestionnaire(withResource resource: String, forIndex index: Int16, forCustomer customerId: Int64) {
-        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                if let jsonResult = jsonResult as? [String: AnyObject] {
-                    CoreDataHelper.shared.saveQuestionnaire(jsonResult, forIndex: index, forCustomer: customerId)
-                }
-            } catch {
-                // handle error
-            }
-        }
-    }
-    
-    func loadExercises(withResource resource: String) {
-        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                if let jsonResult = jsonResult as? [[String: AnyObject]] {
-                    CoreDataHelper.shared.saveExercises(jsonResult)
-                }
-            } catch {
-                print(error)
-                // handle error
-            }
-        }
-    }
-    
-    func loadSounds(withResource resource: String) {
-        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                if let jsonResult = jsonResult as? [[String: String]] {
-                    CoreDataHelper.shared.saveSound(jsonResult)
-                }
-            } catch {
-                print(error)
-                // handle error
-            }
-        }
-    }
-    
-    func loadVideos(withResource resource: String) {
-        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                if let jsonResult = jsonResult as? [[String: AnyObject]] {
-                    CoreDataHelper.shared.saveVideos(jsonResult)
-                }
-            } catch {
-                print(error)
-                // handle error
-            }
-        }
-    }
-    
-    func loadDiet(withResource resource: String) {
-        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                if let jsonResult = jsonResult as? [[String: AnyObject]] {
-                    CoreDataHelper.shared.saveDiet(jsonResult)
-                }
-            } catch {
-                print(error)
-                // handle error
-            }
-        }
-    }
-    
     func showLoginView()  {
         guard UserDefaults.standard.bool(forKey: I_AGREE) else {
             self.window?.rootViewController = EUConcentViewController.loadConcentView()
@@ -196,5 +110,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let navigationController = mainStoryboard.instantiateInitialViewController()
         self.window?.rootViewController = navigationController
+    }
+    
+    func updatePlist() {
+        if let url = Bundle.main.url(forResource: "EUUpdate", withExtension: "plist"),
+            let dict = NSMutableDictionary(contentsOf: url) {
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = PropertyListDecoder()
+                let update = try decoder.decode(EUUpdate.self, from: data)
+                print(update.update)
+                if update.update == true {
+                    //Update Coredata
+                    CoreDataHelper.shared.updateAll()
+                    dict["update"] = false
+                    try dict.write(to: url)
+                }
+            } catch {
+                print(error)
+            }
+        }
     }
 }

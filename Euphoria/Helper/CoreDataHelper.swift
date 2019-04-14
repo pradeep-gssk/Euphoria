@@ -26,6 +26,101 @@ class CoreDataHelper: NSObject {
     }
 }
 
+//MARK: Loading
+extension CoreDataHelper {
+    
+    func preloadData(customerId: Int64) {
+        self.loadQuestionnaire(withResource: "Questionnaire1", forIndex: 1, forCustomer: customerId)
+        self.loadQuestionnaire(withResource: "Questionnaire2", forIndex: 2, forCustomer: customerId)
+        self.loadQuestionnaire(withResource: "Questionnaire3", forIndex: 3, forCustomer: customerId)
+        self.loadQuestionnaire(withResource: "Questionnaire4", forIndex: 4, forCustomer: customerId)
+        self.loadQuestionnaire(withResource: "Questionnaire5", forIndex: 5, forCustomer: customerId)
+        self.loadExercises(withResource: "Exercises")
+        self.loadSounds(withResource: "Sounds")
+        self.loadVideos(withResource: "Videos")
+        self.loadDiet(withResource: "Diet")
+    }
+    
+    private func loadQuestionnaire(withResource resource: String, forIndex index: Int16, forCustomer customerId: Int64, update: Bool = false) {
+        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? [String: AnyObject] {
+                    if update == true {
+                        self.updateQuestionnaire(jsonResult, forIndex: index, forCustomer: customerId)
+                    }
+                    else {
+                        self.saveQuestionnaire(jsonResult, forIndex: index, forCustomer: customerId)
+                    }
+                }
+            } catch {
+                // handle error
+            }
+        }
+    }
+    
+    private func loadExercises(withResource resource: String) {
+        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? [[String: AnyObject]] {
+                    self.saveExercises(jsonResult)
+                }
+            } catch {
+                print(error)
+                // handle error
+            }
+        }
+    }
+    
+    private func loadSounds(withResource resource: String) {
+        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? [[String: String]] {
+                    self.saveSound(jsonResult)
+                }
+            } catch {
+                print(error)
+                // handle error
+            }
+        }
+    }
+    
+    private func loadVideos(withResource resource: String) {
+        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? [[String: AnyObject]] {
+                    self.saveVideos(jsonResult)
+                }
+            } catch {
+                print(error)
+                // handle error
+            }
+        }
+    }
+    
+    private func loadDiet(withResource resource: String) {
+        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+                if let jsonResult = jsonResult as? [[String: AnyObject]] {
+                    self.saveDiet(jsonResult)
+                }
+            } catch {
+                print(error)
+                // handle error
+            }
+        }
+    }
+}
+
 //MARK: User
 extension CoreDataHelper {
     func saveUser(_ customerId: Int64) {
@@ -515,6 +610,100 @@ extension CoreDataHelper {
     func deleteHistory(_ history: History) {
         context.delete(history)
         do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+}
+
+//MARK: Update
+extension CoreDataHelper {
+    func updateAll() {
+        let customers = fetchUniqueCustomerId()
+        
+        for customerId in customers {
+            self.loadQuestionnaire(withResource: "Questionnaire1", forIndex: 1, forCustomer: customerId, update: true)
+            self.loadQuestionnaire(withResource: "Questionnaire2", forIndex: 2, forCustomer: customerId, update: true)
+            self.loadQuestionnaire(withResource: "Questionnaire3", forIndex: 3, forCustomer: customerId, update: true)
+            self.loadQuestionnaire(withResource: "Questionnaire4", forIndex: 4, forCustomer: customerId, update: true)
+            self.loadQuestionnaire(withResource: "Questionnaire5", forIndex: 5, forCustomer: customerId, update: true)
+        }
+        
+//        self.deleteOthers()
+//        self.loadExercises(withResource: "Exercises")
+//        self.loadVideos(withResource: "Videos")
+//        self.loadDiet(withResource: "Diet")
+    }
+    
+    private func fetchUniqueCustomerId() -> [Int64] {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Questionnaires.self))
+        fetchRequest.propertiesToFetch = ["customerId"]
+        fetchRequest.resultType = .dictionaryResultType
+        fetchRequest.returnsDistinctResults = true
+        
+        do {
+            if let data = try context.fetch(fetchRequest) as? [[String: Int64]] {
+                var array: [Int64] = []
+                for dict in data {
+                    array.append(contentsOf: dict.values)
+                }
+                return array
+            }
+            
+        } catch {
+        }
+        return []
+    }
+    
+    private func updateQuestionnaire(_ json: [String: AnyObject], forIndex index: Int16, forCustomer customerId: Int64) {
+        let questionnaire = self.fetchQuestionnaire(forIndex: index, customerId)
+        
+    }
+    
+    private func deleteOthers() {
+        self.deleteExercises()
+        self.deleteVideos()
+        self.deleteDiet()
+    }
+    
+    private func deleteExercises() {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Exercises.self))
+        do {
+            let exercises = try context.fetch(fetchRequest) as? [Exercises] ?? []
+            for exercise in exercises {
+                context.delete(exercise)
+            }
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+    
+    private func deleteVideos() {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Videos.self))
+        do {
+            let videos = try context.fetch(fetchRequest) as? [Videos] ?? []
+            for entity in videos {
+                let childEntities = entity.video?.allObjects as? [NSManagedObject] ?? []
+                for video in childEntities {
+                    context.delete(video)
+                }
+                context.delete(entity)
+            }
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
+    }
+    
+    private func deleteDiet() {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: Diet.self))
+        do {
+            let diets = try context.fetch(fetchRequest) as? [Diet] ?? []
+            for diet in diets {
+                context.delete(diet)
+            }
             try context.save()
         } catch {
             print("Failed saving")

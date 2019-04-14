@@ -123,6 +123,8 @@
 		DEE7F73F2214CEA000098F21 /* URLRequest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F73E2214CEA000098F21 /* URLRequest+.swift */; };
 		DEE7F7432214D09100098F21 /* EUUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE7F7422214D09100098F21 /* EUUser.swift */; };
 		DEE7F7842214E38D00098F21 /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = DEE7F7832214E38D00098F21 /* Privacy.html */; };
+		DEF89E9422638B3300C65990 /* EUUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF89E9322638B3300C65990 /* EUUpdate.swift */; };
+		DEF89E9622638BBF00C65990 /* EUUpdate.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEF89E9522638BBF00C65990 /* EUUpdate.plist */; };
 		DEF8C4F62232D05F00A2ABF8 /* Euphoria Sound-07.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4CA2232D05400A2ABF8 /* Euphoria Sound-07.wav */; };
 		DEF8C4F72232D05F00A2ABF8 /* Euphoria Sound-10.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4CB2232D05400A2ABF8 /* Euphoria Sound-10.wav */; };
 		DEF8C4F82232D05F00A2ABF8 /* Euphoria Sound-29.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4CC2232D05400A2ABF8 /* Euphoria Sound-29.wav */; };
@@ -315,6 +317,8 @@
 		DEE7F73E2214CEA000098F21 /* URLRequest+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+.swift"; sourceTree = "<group>"; };
 		DEE7F7422214D09100098F21 /* EUUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUUser.swift; sourceTree = "<group>"; };
 		DEE7F7832214E38D00098F21 /* Privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Privacy.html; sourceTree = "<group>"; };
+		DEF89E9322638B3300C65990 /* EUUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUUpdate.swift; sourceTree = "<group>"; };
+		DEF89E9522638BBF00C65990 /* EUUpdate.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = EUUpdate.plist; sourceTree = "<group>"; };
 		DEF8C4CA2232D05400A2ABF8 /* Euphoria Sound-07.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-07.wav"; sourceTree = "<group>"; };
 		DEF8C4CB2232D05400A2ABF8 /* Euphoria Sound-10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-10.wav"; sourceTree = "<group>"; };
 		DEF8C4CC2232D05400A2ABF8 /* Euphoria Sound-29.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-29.wav"; sourceTree = "<group>"; };
@@ -589,6 +593,7 @@
 				DE94C4EB220F74F200C4C2ED /* LaunchScreen.storyboard */,
 				DE94C4EE220F74F200C4C2ED /* Info.plist */,
 				DE94C5AF220FC00700C4C2ED /* Euphoria.xcdatamodeld */,
+				DEF89E9522638BBF00C65990 /* EUUpdate.plist */,
 				DE4D60C72212811400D6904C /* Json */,
 				DE4D60C82212813100D6904C /* Sounds */,
 				DEA8322C22113A750000BD43 /* Concent.html */,
@@ -674,6 +679,7 @@
 				DEE7F7422214D09100098F21 /* EUUser.swift */,
 				DEFB2CAA2212AB6600F2188C /* EUSession.swift */,
 				DEAE15F02249A36E0041ECEB /* EUActivity.swift */,
+				DEF89E9322638B3300C65990 /* EUUpdate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -891,6 +897,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE94C60A220FD09800C4C2ED /* Questionnaire1.json in Resources */,
+				DEF89E9622638BBF00C65990 /* EUUpdate.plist in Resources */,
 				DEF8C5182232D05F00A2ABF8 /* Euphoria Sound-37.wav in Resources */,
 				DEF8C5102232D05F00A2ABF8 /* Euphoria Sound-25.wav in Resources */,
 				DEF8C50D2232D05F00A2ABF8 /* Euphoria Sound-27.wav in Resources */,
@@ -1122,6 +1129,7 @@
 				DE4D60E4221283C200D6904C /* EUActivitiesTableViewController.swift in Sources */,
 				DEA83228221139440000BD43 /* EUConcentViewController.swift in Sources */,
 				DE9B73292213F23B00E82CFD /* Sound+CoreDataClass.swift in Sources */,
+				DEF89E9422638B3300C65990 /* EUUpdate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
