@@ -171,6 +171,7 @@
 		DEF8C5212232D05F00A2ABF8 /* Euphoria Sound-40.wav in Resources */ = {isa = PBXBuildFile; fileRef = DEF8C4F52232D05F00A2ABF8 /* Euphoria Sound-40.wav */; };
 		DEFB2CAB2212AB6600F2188C /* EUSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB2CAA2212AB6600F2188C /* EUSession.swift */; };
 		DEFBD5D6222BBD55006186D9 /* EUDietsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFBD5D5222BBD55006186D9 /* EUDietsTableViewController.swift */; };
+		FAED89F8226A573F005EAD87 /* EUQuestionnairesAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED89F7226A573F005EAD87 /* EUQuestionnairesAllViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -365,6 +366,7 @@
 		DEF8C4F52232D05F00A2ABF8 /* Euphoria Sound-40.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Euphoria Sound-40.wav"; sourceTree = "<group>"; };
 		DEFB2CAA2212AB6600F2188C /* EUSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUSession.swift; sourceTree = "<group>"; };
 		DEFBD5D5222BBD55006186D9 /* EUDietsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUDietsTableViewController.swift; sourceTree = "<group>"; };
+		FAED89F7226A573F005EAD87 /* EUQuestionnairesAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnairesAllViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -645,6 +647,7 @@
 				DE94C51F220F7B0100C4C2ED /* EUQuestionnaireIndexTableViewController.swift */,
 				DE94C529220F833D00C4C2ED /* EUQuestionnaireViewController.swift */,
 				DE677BED222DA31800D51054 /* EUQuestionnaireTableViewController.swift */,
+				FAED89F7226A573F005EAD87 /* EUQuestionnairesAllViewController.swift */,
 			);
 			path = Questionnaires;
 			sourceTree = "<group>";
@@ -1129,6 +1132,7 @@
 				DE4D60E4221283C200D6904C /* EUActivitiesTableViewController.swift in Sources */,
 				DEA83228221139440000BD43 /* EUConcentViewController.swift in Sources */,
 				DE9B73292213F23B00E82CFD /* Sound+CoreDataClass.swift in Sources */,
+				FAED89F8226A573F005EAD87 /* EUQuestionnairesAllViewController.swift in Sources */,
 				DEF89E9422638B3300C65990 /* EUUpdate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

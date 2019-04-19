@@ -32,6 +32,10 @@ class EUQuestionnaireIndexViewController: UIViewController {
         self.floatingButton.add(color: UIColor.color(red: 243.0, green: 239.0, blue: 234.0, alpha: 1), title: "Refresh", image: UIImage(named: "refresh")) { (_) in
             self.clearAllAnswers()
         }
+        
+        self.floatingButton.add(color: UIColor.color(red: 243.0, green: 239.0, blue: 234.0, alpha: 1), title: "Text", image: UIImage(named: "text")) { (_) in
+            self.performSegue(withIdentifier: "ShowAllView", sender: self)
+        }
     }
     
     @IBAction func didTapBack(_ sender: Any) {
