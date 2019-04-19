@@ -49,6 +49,60 @@
       "scale" : "3x"
     },
     {
+      "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "logoCircle_20.jpg",
+      "scale" : "1x"
+    },
+    {
+      "size" : "20x20",
+      "idiom" : "ipad",
+      "filename" : "logoCircle_40-1.jpg",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "logoCircle_29.jpg",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "logoCircle_58-1.jpg",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "logoCircle_40-2.jpg",
+      "scale" : "1x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "logoCircle_80-1.jpg",
+      "scale" : "2x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "logoCircle_76.jpg",
+      "scale" : "1x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "logoCircle_152.jpg",
+      "scale" : "2x"
+    },
+    {
+      "size" : "83.5x83.5",
+      "idiom" : "ipad",
+      "filename" : "logoCircle_167.jpg",
+      "scale" : "2x"
+    },
+    {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
       "filename" : "logoCircle_1024.jpg",
