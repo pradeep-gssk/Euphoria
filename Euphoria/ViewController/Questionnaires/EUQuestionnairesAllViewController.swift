@@ -81,9 +81,7 @@ class EUQuestionnairesAllViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "    " + self.allQuestionnaires[section].title
     }
-
 }
-
 
 class EUQuestionnairesAllCell: UITableViewCell {
     @IBOutlet weak var questionLabel: UILabel!

@@ -36,6 +36,7 @@
 		DE713CB2221404B100010CBE /* EUHistoryIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */; };
 		DE7A96EC222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7A96EB222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift */; };
 		DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */; };
+		DE8462E422741E6700950E61 /* EUImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8462E322741E6700950E61 /* EUImagePickerViewController.swift */; };
 		DE94C4E3220F74F200C4C2ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */; };
 		DE94C4E8220F74F200C4C2ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE94C4E6220F74F200C4C2ED /* Main.storyboard */; };
 		DE94C4EA220F74F200C4C2ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE94C4E9220F74F200C4C2ED /* Assets.xcassets */; };
@@ -223,6 +224,7 @@
 		DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUHistoryIndexViewController.swift; sourceTree = "<group>"; };
 		DE7A96EB222C83A400C134A0 /* EUQuestionnaireIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUQuestionnaireIndexViewController.swift; sourceTree = "<group>"; };
 		DE7EF5EA2213A5FC004D9172 /* EUShowSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUShowSessionViewController.swift; sourceTree = "<group>"; };
+		DE8462E322741E6700950E61 /* EUImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUImagePickerViewController.swift; sourceTree = "<group>"; };
 		DE94C4DF220F74F200C4C2ED /* Euphoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Euphoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE94C4E2220F74F200C4C2ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE94C4E7220F74F200C4C2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -521,6 +523,7 @@
 				DE713CB1221404B100010CBE /* EUHistoryIndexViewController.swift */,
 				DE3A3ACB2214ACBD003538F9 /* EUHistoryPhotoViewController.swift */,
 				DEAF7F6B222C61E600FF001A /* EUHistoryShowViewController.swift */,
+				DE8462E322741E6700950E61 /* EUImagePickerViewController.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -1080,6 +1083,7 @@
 				DEAE15ED224998FC0041ECEB /* EUCalendarTableViewController.swift in Sources */,
 				DEE7F73D2214CE7900098F21 /* APIManager.swift in Sources */,
 				DE7EF5EB2213A5FC004D9172 /* EUShowSessionViewController.swift in Sources */,
+				DE8462E422741E6700950E61 /* EUImagePickerViewController.swift in Sources */,
 				DEA1520022137E3C0035F7D5 /* ResponderTableViewCell.swift in Sources */,
 				DE4D60AF22126D5000D6904C /* EUSessionsViewController.swift in Sources */,
 				DEA8323122113D090000BD43 /* EULoginViewController.swift in Sources */,

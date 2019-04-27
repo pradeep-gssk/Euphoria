@@ -28,6 +28,14 @@ class EUHistoryPhotoViewController: UIViewController {
         self.buttonsStack.isHidden = true
     }
     
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? EUImagePickerViewController {
+            viewController.delegate = self
+            viewController.historyType = self.historyType
+        }
+    }
+    
     @IBAction func didTapBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -35,25 +43,21 @@ class EUHistoryPhotoViewController: UIViewController {
     @IBAction func didTapPhotoButton(_ sender: Any) {
         let alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { _ in
-            self.openImagePickerForSource(.camera)
+            self.performSegue(withIdentifier: "ShowCameraPicker", sender: self)
         }))
         
         alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { _ in
-            self.openImagePickerForSource(.photoLibrary)
+            self.openPhotoLibrary()
         }))
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
-    func openImagePickerForSource(_ sourceType: UIImagePickerController.SourceType) {
+    func openPhotoLibrary() {
         let vc = UIImagePickerController()
-        vc.sourceType = sourceType
-        if sourceType == .camera {
-            vc.cameraCaptureMode = UIImagePickerController.CameraCaptureMode.photo
-            vc.cameraDevice = UIImagePickerController.CameraDevice.front
-        }
-        vc.allowsEditing = true
+        vc.sourceType = .photoLibrary
+        vc.allowsEditing = false
         vc.delegate = self
         self.present(vc, animated: true)
     }
@@ -93,7 +97,15 @@ class EUHistoryPhotoViewController: UIViewController {
 extension EUHistoryPhotoViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
-        self.imageView.image = info[.editedImage] as? UIImage
+        self.imageView.image = info[.originalImage] as? UIImage
+        self.takePhotoButton.isHidden = true
+        self.buttonsStack.isHidden = false
+    }
+}
+
+extension EUHistoryPhotoViewController: EUImagePickerViewDelegate {
+    func imagePickerController(_ picker: EUImagePickerViewController, didFinishPickingImage image: UIImage) {
+        self.imageView.image = image
         self.takePhotoButton.isHidden = true
         self.buttonsStack.isHidden = false
     }
