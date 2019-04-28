@@ -176,7 +176,7 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.6588235294" green="0.094117647060000004" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="IYo-iN-IfE" id="D8K-NJ-2Q1"/>
                                                 </connections>
@@ -207,7 +207,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="didTapSignInButton:" destination="IYo-iN-IfE" eventType="touchUpInside" id="QFH-Ln-6bb"/>
+                                                    <action selector="didTapSignInButton" destination="IYo-iN-IfE" eventType="touchUpInside" id="OWT-nm-jfI"/>
                                                 </connections>
                                             </button>
                                         </subviews>

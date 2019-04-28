@@ -49,13 +49,20 @@ extension UIViewController {
         }
     }
     
-    func showAlertWithMessage(_ message: String, title: String = "Euphoria") {
+    func showAlertWithMessage(_ message: String, title: String = "Euphoria", actionHandler: (() -> Void)? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
-            
+            actionHandler?()
         }))
-        self.navigationController?.present(alert, animated: true, completion: {
-        })
+        
+        if let controller = self.navigationController {
+            controller.present(alert, animated: true, completion: {
+            })
+        }
+        else {
+            self.present(alert, animated: true, completion: {
+            })
+        }
     }
     
     func showNoAlertWithMessage(_ message: String) {
@@ -63,8 +70,14 @@ extension UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action) in
             
         }))
-        self.navigationController?.present(alert, animated: true, completion: {
-        })
+        if let controller = self.navigationController {
+            controller.present(alert, animated: true, completion: {
+            })
+        }
+        else {
+            self.present(alert, animated: true, completion: {
+            })
+        }
     }
     
     func findElement(_ customerId: Int64) -> Element {

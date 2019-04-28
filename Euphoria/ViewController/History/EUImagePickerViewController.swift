@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Photos
 
 protocol EUImagePickerViewDelegate: class {
     func imagePickerController(_ picker: EUImagePickerViewController, didFinishPickingImage image: UIImage)
@@ -24,11 +25,11 @@ class EUImagePickerViewController: UIViewController {
     weak var delegate: EUImagePickerViewDelegate?
     
     var historyType: HistoryType = .face
-
+    
     var captureSession = AVCaptureSession()
     var previewLayer: AVCaptureVideoPreviewLayer!
     let cameraOutput = AVCapturePhotoOutput()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.cameraOverlayView.image = UIImage(named: historyType.placeholder)
@@ -36,14 +37,45 @@ class EUImagePickerViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        startCamera()
+        self.checkCameraPersmission()
+    }
+    
+    private func checkCameraPersmission() {
+        if AVCaptureDevice.authorizationStatus(for: .video) == .authorized {
+            DispatchQueue.main.async {
+                self.startCamera()
+            }
+        }
+        else {
+            AVCaptureDevice.requestAccess(for: .video) { (granted) in
+                DispatchQueue.main.async {
+                    if granted {
+                        self.startCamera()
+                    } else {
+                        self.showPermissionAlert("Please enable camera permission in settings.")
+                    }
+                }
+            }
+        }
+    }
+    
+    private func showPermissionAlert(_ message: String) {
+        self.showAlertWithMessage(message, actionHandler: {
+            self.openSettings()
+        })
+    }
+    
+    private func openSettings() {
+        guard let url = URL(string: UIApplication.openSettingsURLString),
+            UIApplication.shared.canOpenURL(url) else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
     override var prefersStatusBarHidden: Bool {
         return true
     }
     
-    func startCamera() {
+    private func startCamera() {
         captureSession.sessionPreset = AVCaptureSession.Preset.photo
         guard let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front),
             let input = try? AVCaptureDeviceInput(device: device),
@@ -82,8 +114,33 @@ class EUImagePickerViewController: UIViewController {
     }
     
     @IBAction func didTapUsePhoto(_ sender: Any) {
-        guard let image = self.imageView.image else { return }
-        UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        let status = PHPhotoLibrary.authorizationStatus()
+        switch status {
+        case .authorized:
+            self.saveImage()
+        case .denied, .restricted :
+            DispatchQueue.main.async {
+                self.showPermissionAlert("Please enable photos read and write permission in settings.")
+            }
+        case .notDetermined:
+            PHPhotoLibrary.requestAuthorization { status in
+                switch status {
+                case .authorized:
+                    self.saveImage()
+                default:
+                    DispatchQueue.main.async {
+                        self.showPermissionAlert("Please enable photos read and write permission in settings.")
+                    }
+                }
+            }
+        }
+    }
+    
+    private func saveImage() {
+        DispatchQueue.main.async {
+            guard let image = self.imageView.image else { return }
+            UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
+        }
     }
     
     @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {

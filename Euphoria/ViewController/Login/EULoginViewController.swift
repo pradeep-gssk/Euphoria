@@ -43,7 +43,7 @@ class EULoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     //TODO: show errors
-    @IBAction func didTapSignInButton(_ sender: Any) {
+    @IBAction func didTapSignInButton() {
         self.view.endEditing(true)
         guard let email = self.emailTextField.text,
             email.trimmingCharacters(in: .whitespaces).count > 0 else { return }
@@ -92,7 +92,7 @@ class EULoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+        self.didTapSignInButton()
         return true
     }
 }
