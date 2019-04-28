@@ -10,24 +10,24 @@ import UIKit
 
 extension UITextField {
     
-    func setPaddingPointsOnLeft(_ left:CGFloat, andRight right:CGFloat){
+    func setPaddingPointsOnLeft(_ left: CGFloat, andRight right: CGFloat){
         self.setLeftPaddingPoints(left)
         self.setRightPaddingPoints(right)
     }
     
-    func setLeftPaddingPoints(_ value:CGFloat){
+    func setLeftPaddingPoints(_ value: CGFloat){
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: value, height: self.frame.size.height))
         self.leftView = paddingView
         self.leftViewMode = .always
     }
     
-    func setRightPaddingPoints(_ value:CGFloat) {
+    func setRightPaddingPoints(_ value: CGFloat) {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: value, height: self.frame.size.height))
         self.rightView = paddingView
         self.rightViewMode = .always
     }
     
-    func desginView(left:CGFloat = 14, right:CGFloat = 14) {
+    func desginView(left: CGFloat = 14, right: CGFloat = 14) {
         self.setPaddingPointsOnLeft(left, andRight: right)
         self.layer.masksToBounds = false
         self.layer.cornerRadius = 5.0
@@ -35,6 +35,7 @@ extension UITextField {
         self.layer.shadowOffset = CGSize(width: -1, height: 2)
         self.layer.shadowRadius = 2.0
         self.layer.shouldRasterize = true
+        self.layer.rasterizationScale = UIScreen.main.scale
         self.layer.shadowOpacity = 1.0
         self.layer.sublayerTransform = CATransform3DMakeTranslation(0, 7, 0)
     }

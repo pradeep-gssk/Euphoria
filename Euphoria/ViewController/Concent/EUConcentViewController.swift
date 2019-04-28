@@ -47,6 +47,7 @@ class EUConcentViewController: UIViewController {
         self.policyView.layer.shadowOffset = CGSize(width: -1, height: 2)
         self.policyView.layer.shadowRadius = 4.0
         self.policyView.layer.shouldRasterize = true
+        self.policyView.layer.rasterizationScale = UIScreen.main.scale
         
         self.iagreeButton.setTitle(EUConcentViewController.htmlViewType.title, for: .normal)
     }
