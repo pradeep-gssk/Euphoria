@@ -68,6 +68,12 @@ class EUCalendarTableViewController: UITableViewController {
         self.tableView.tableFooterView = UIView()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.calendar.layoutIfNeeded()
+        print(self.calendar)
+    }
+    
     func fetchActivities() {
         guard let customerId = EUUser.user?.customerId else { return }
         let router = Router(endpoint: .Activities(customerId: Int64(customerId)))

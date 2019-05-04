@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p32-Yi-Azf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p32-Yi-Azf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -543,10 +543,22 @@ Programmes &amp; Retreats</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" red="0.77254901960784317" green="0.76862745098039209" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="eoT-UC-2U0" customClass="CKCalendarView">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="eoT-UC-2U0">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bev-mV-5DU" customClass="CKCalendarView">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="bev-mV-5DU" firstAttribute="top" secondItem="eoT-UC-2U0" secondAttribute="top" id="Af0-qs-gZL"/>
+                                <constraint firstItem="bev-mV-5DU" firstAttribute="leading" secondItem="eoT-UC-2U0" secondAttribute="leading" id="KNW-2c-iZm"/>
+                                <constraint firstAttribute="bottom" secondItem="bev-mV-5DU" secondAttribute="bottom" id="SYG-Cq-VI7"/>
+                                <constraint firstAttribute="trailing" secondItem="bev-mV-5DU" secondAttribute="trailing" id="h4R-Bn-poa"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CalendarCell" rowHeight="60" id="LQQ-7W-1Ah" customClass="EUCalendarCell" customModule="Euphoria" customModuleProvider="target">
@@ -602,7 +614,7 @@ Programmes &amp; Retreats</string>
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="calendar" destination="eoT-UC-2U0" id="lyj-cZ-YLZ"/>
+                        <outlet property="calendar" destination="bev-mV-5DU" id="Gh8-zY-CBh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCY-GB-LA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
