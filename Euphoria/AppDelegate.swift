@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        preloadData()
         guard EUUser.user != nil else {
             self.showLoginView()
             return true
@@ -128,6 +128,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             } catch {
                 print(error)
             }
+        }
+    }
+    
+    func preloadData() {
+        let preload = UserDefaults.standard.bool(forKey: PRELOAD_DATA)
+        if !preload {
+            UserDefaults.standard.set(true, forKey: PRELOAD_DATA)
+            CoreDataHelper.shared.preloadData()
         }
     }
 }

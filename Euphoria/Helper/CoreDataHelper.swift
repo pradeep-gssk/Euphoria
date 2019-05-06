@@ -29,12 +29,15 @@ class CoreDataHelper: NSObject {
 //MARK: Loading
 extension CoreDataHelper {
     
-    func preloadData(customerId: Int64) {
+    func preloadQuestionnaires(customerId: Int64) {
         self.loadQuestionnaire(withResource: "Questionnaire1", forIndex: 1, forCustomer: customerId)
         self.loadQuestionnaire(withResource: "Questionnaire2", forIndex: 2, forCustomer: customerId)
         self.loadQuestionnaire(withResource: "Questionnaire3", forIndex: 3, forCustomer: customerId)
         self.loadQuestionnaire(withResource: "Questionnaire4", forIndex: 4, forCustomer: customerId)
         self.loadQuestionnaire(withResource: "Questionnaire5", forIndex: 5, forCustomer: customerId)
+    }
+    
+    func preloadData() {
         self.loadExercises(withResource: "Exercises")
         self.loadSounds(withResource: "Sounds")
         self.loadVideos(withResource: "Videos")

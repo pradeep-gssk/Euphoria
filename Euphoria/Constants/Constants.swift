@@ -12,6 +12,7 @@ let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
 let USER_PROFILE_DATA = "user_profile_data"
 let I_AGREE = "i_agree"
+let PRELOAD_DATA = "preload_data"
 
 let baseUrl = "http://webapi.spasoftware.gr/"
 let recipient = "euphoriaspa@euphoriaretreat.com"
