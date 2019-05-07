@@ -6,6 +6,6 @@ target 'Euphoria' do
   use_frameworks!
 
   pod 'MBProgressHUD'
-  pod 'MBCalendarKit'
+  pod 'VACalendar'
 
 end

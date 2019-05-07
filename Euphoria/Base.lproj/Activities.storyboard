@@ -547,17 +547,38 @@ Programmes &amp; Retreats</string>
                             <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bev-mV-5DU" customClass="CKCalendarView">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqh-R5-OKn" customClass="VAMonthHeaderView" customModule="VACalendar">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="55" id="Bgm-Dl-abG"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xcq-3j-RXx">
+                                    <rect key="frame" x="0.0" y="55" width="375" height="5"/>
+                                    <color key="backgroundColor" red="0.74117647060000003" green="0.56862745100000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="5" id="OOO-Ur-5th"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAf-k3-DY3" customClass="VAWeekDaysView" customModule="VACalendar">
+                                    <rect key="frame" x="0.0" y="60" width="375" height="30"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="OaE-E9-Are"/>
+                                    </constraints>
                                 </view>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="bev-mV-5DU" firstAttribute="top" secondItem="eoT-UC-2U0" secondAttribute="top" id="Af0-qs-gZL"/>
-                                <constraint firstItem="bev-mV-5DU" firstAttribute="leading" secondItem="eoT-UC-2U0" secondAttribute="leading" id="KNW-2c-iZm"/>
-                                <constraint firstAttribute="bottom" secondItem="bev-mV-5DU" secondAttribute="bottom" id="SYG-Cq-VI7"/>
-                                <constraint firstAttribute="trailing" secondItem="bev-mV-5DU" secondAttribute="trailing" id="h4R-Bn-poa"/>
+                                <constraint firstItem="pAf-k3-DY3" firstAttribute="leading" secondItem="eoT-UC-2U0" secondAttribute="leading" id="3WN-W6-Y7Y"/>
+                                <constraint firstItem="Xcq-3j-RXx" firstAttribute="top" secondItem="gqh-R5-OKn" secondAttribute="bottom" id="3md-Lq-k4f"/>
+                                <constraint firstItem="Xcq-3j-RXx" firstAttribute="leading" secondItem="eoT-UC-2U0" secondAttribute="leading" id="7h1-ZF-DVl"/>
+                                <constraint firstAttribute="trailing" secondItem="pAf-k3-DY3" secondAttribute="trailing" id="C6K-mf-dho"/>
+                                <constraint firstItem="gqh-R5-OKn" firstAttribute="leading" secondItem="eoT-UC-2U0" secondAttribute="leading" id="kUN-IW-Qy6"/>
+                                <constraint firstAttribute="trailing" secondItem="gqh-R5-OKn" secondAttribute="trailing" id="sGi-AR-l3H"/>
+                                <constraint firstItem="gqh-R5-OKn" firstAttribute="top" secondItem="eoT-UC-2U0" secondAttribute="top" id="sWE-TL-wyX"/>
+                                <constraint firstAttribute="trailing" secondItem="Xcq-3j-RXx" secondAttribute="trailing" id="t0y-Pz-CBt"/>
+                                <constraint firstItem="pAf-k3-DY3" firstAttribute="top" secondItem="Xcq-3j-RXx" secondAttribute="bottom" id="vG1-ZT-gAB"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -614,7 +635,8 @@ Programmes &amp; Retreats</string>
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="calendar" destination="bev-mV-5DU" id="Gh8-zY-CBh"/>
+                        <outlet property="monthHeaderView" destination="gqh-R5-OKn" id="b6i-rq-47U"/>
+                        <outlet property="weekDaysView" destination="pAf-k3-DY3" id="c8M-wr-pUJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MCY-GB-LA3" userLabel="First Responder" sceneMemberID="firstResponder"/>

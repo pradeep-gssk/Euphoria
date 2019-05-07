@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MBCalendarKit
+import VACalendar
 
 class EUCalendarViewController: UIViewController {
     @IBOutlet weak var headerView: UIView!
@@ -17,7 +17,6 @@ class EUCalendarViewController: UIViewController {
         self.headerView.layer.borderColor = UIColor.color(red: 197.0, green: 196.0, blue: 192.0, alpha: 1).cgColor
         self.headerView.layer.borderWidth = 1
         self.calendarTableView()
-        
     }
     
     func calendarTableView() {
@@ -44,7 +43,37 @@ class EUCalendarViewController: UIViewController {
 
 class EUCalendarTableViewController: UITableViewController {
 
-    @IBOutlet weak var calendar: CalendarView!
+    let defaultCalendar: Calendar = {
+        var calendar = Calendar.current
+        calendar.firstWeekday = 1
+        return calendar
+    }()
+    
+    @IBOutlet weak var monthHeaderView: VAMonthHeaderView! {
+        didSet {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MMMM, YYYY"
+            let appereance = VAMonthHeaderViewAppearance(monthFont: UIFont(name: "GillSans", size: 18) ?? UIFont.systemFont(ofSize: 18),
+                                                         monthTextColor: UIColor.singleColor(value: 129, alpha: 1.0),
+                                                         monthTextWidth: UIScreen.main.bounds.width - 100,
+                                                         previousButtonImage: #imageLiteral(resourceName: "previous"),
+                                                         nextButtonImage: #imageLiteral(resourceName: "next"),
+                                                         dateFormatter: dateFormatter)
+
+
+            monthHeaderView.delegate = self
+            monthHeaderView.appearance = appereance
+        }
+    }
+
+    @IBOutlet weak var weekDaysView: VAWeekDaysView! {
+        didSet {
+            let appereance = VAWeekDaysViewAppearance(symbolsType: .short, separatorBackgroundColor: UIColor.clear, calendar: defaultCalendar)
+            weekDaysView.appearance = appereance
+        }
+    }
+    
+    var calendarView: VACalendarView!
     var activities: [EUActivity] = []
     var fullActivites: [EUActivity] = []
     var didSelectRowAt: ((_ activity: EUActivity) -> Void)?
@@ -63,15 +92,46 @@ class EUCalendarTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        calendar.delegate = self
+        self.addCalendar()
         self.fetchActivities()
         self.tableView.tableFooterView = UIView()
     }
     
+    private func addCalendar() {
+        let calendar = VACalendar(calendar: defaultCalendar)
+        calendarView = VACalendarView(frame: .zero, calendar: calendar)
+        calendarView.showDaysOut = true
+        calendarView.selectionStyle = .single
+        calendarView.monthDelegate = monthHeaderView
+        calendarView.dayViewAppearanceDelegate = self
+        calendarView.monthViewAppearanceDelegate = self
+        calendarView.calendarDelegate = self
+        calendarView.scrollDirection = .horizontal
+        tableView.tableHeaderView?.addSubview(calendarView)
+    }
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.calendar.layoutIfNeeded()
-        print(self.calendar)
+        if calendarView.frame == .zero {
+            calendarView.frame = CGRect(
+                x: 0,
+                y: weekDaysView.frame.maxY,
+                width: view.frame.width,
+                height: view.frame.height * 0.4
+            )
+            calendarView.setup()
+            self.resetTableHeader()
+        }
+    }
+
+    private func resetTableHeader() {
+        guard let headerView = tableView.tableHeaderView else {
+            return
+        }
+        var frame = headerView.frame
+        frame.size.height = calendarView.frame.height + calendarView.frame.origin.y
+        headerView.frame = frame
+        tableView.tableHeaderView = headerView
     }
     
     func fetchActivities() {
@@ -96,8 +156,6 @@ class EUCalendarTableViewController: UITableViewController {
             self.tableView.reloadData()
         }
     }
-    
-    
 
     // MARK: - Table view data source
 
@@ -139,8 +197,55 @@ class EUCalendarTableViewController: UITableViewController {
     }
 }
 
-extension EUCalendarTableViewController: CalendarViewDelegate {
-    func calendarView(_ calendarView: CalendarView, didSelect date: Date) {
+extension EUCalendarTableViewController: VAMonthHeaderViewDelegate {
+    func didTapNextMonth() {
+        calendarView.nextMonth()
+    }
+
+    func didTapPreviousMonth() {
+        calendarView.previousMonth()
+    }
+}
+
+extension EUCalendarTableViewController: VADayViewAppearanceDelegate {
+    
+    func font(for state: VADayState) -> UIFont {
+        return UIFont(name: "GillSans", size: 14) ?? UIFont.systemFont(ofSize: 14)
+    }
+
+    func textBackgroundColor(for state: VADayState) -> UIColor {
+        switch state {
+        case .selected:
+            return UIColor.color(red: 189, green: 145, blue: 138, alpha: 1.0)
+        default:
+            return UIColor.singleColor(value: 251, alpha: 1.0)
+        }
+    }
+
+    func textColor(for state: VADayState) -> UIColor {
+        switch state {
+        case .out:
+            return UIColor.singleColor(value: 204, alpha: 1.0)
+        case .selected:
+            return .white
+        case .unavailable:
+            return .lightGray
+        default:
+            return UIColor.singleColor(value: 101, alpha: 1.0)
+        }
+    }
+
+    func shape() -> VADayShape {
+        return .square
+    }
+}
+
+extension EUCalendarTableViewController: VAMonthViewAppearanceDelegate {
+
+}
+
+extension EUCalendarTableViewController: VACalendarViewDelegate {
+    func selectedDate(_ date: Date) {
         self.filterActivities(date)
     }
 }
