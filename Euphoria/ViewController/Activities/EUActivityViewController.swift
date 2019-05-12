@@ -35,7 +35,7 @@ class EUActivityViewController: UIViewController {
         self.therapist.text = activity.appointmentTherapist
         self.price.text = NSDecimalNumber(decimal: activity.trtPrice ?? 0).stringValue
         self.discountPercent.text = NSDecimalNumber(decimal: activity.discountPrcnt ?? 0).stringValue + "%"
-        self.discount.text = NSDecimalNumber(decimal: activity.discountValue ?? 0).stringValue + "%"
+        self.discount.text = NSDecimalNumber(decimal: activity.discountValue ?? 0).stringValue
         self.date.text = activity.appointmentDate
         self.duration.text = "\(activity.trtDuration ?? 0)"
         self.startTime.text = activity.appointmentStartTime
